@@ -3,10 +3,12 @@ id: 6e7b91ca-db99-42ff-94be-b5c538c41b05
 management:
   docChecksum: 5dc305ce79e5621fe7917be9b22bc7d4
   docVersion: 24.1.4
-  speakeasyVersion: 1.599.0
-  generationVersion: 2.675.0
-  releaseVersion: 0.0.4
-  configChecksum: 156ca59031590bff276b239f608b7aaf
+  speakeasyVersion: 1.603.0
+  generationVersion: 2.681.1
+  releaseVersion: 0.0.5
+  configChecksum: f6f9d5c80421513c0307d47891f51db9
+  repoURL: https://github.com/subomi/sample-sdk-go.git
+  installationURL: https://github.com/subomi/sample-sdk-go
 features:
   go:
     additionalDependencies: 0.1.0
@@ -21,7 +23,7 @@ features:
     globalServerURLs: 2.82.3
     intellisenseMarkdownSupport: 0.1.0
     responseFormat: 0.1.2
-    retries: 2.84.1
+    retries: 2.84.2
     sdkHooks: 0.2.0
 generatedFiles:
   - .devcontainer/README.md
