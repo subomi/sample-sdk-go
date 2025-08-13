@@ -1,0 +1,19 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Convoy API Reference:
+        inputs:
+            - location: ../openapi.yaml
+        output: .speakeasy/out.openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/subomi-org/subomi-workspace/convoy-api-reference
+targets:
+    convoy:
+        target: go
+        source: Convoy API Reference
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/subomi-org/subomi-workspace/convoy-api-reference-go-code-samples
+            labelOverride:
+                fixedValue: Go (SDK)
+            blocking: false

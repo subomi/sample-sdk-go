@@ -1,0 +1,93 @@
+lockVersion: 2.0.0
+id: 6e7b91ca-db99-42ff-94be-b5c538c41b05
+management:
+  docChecksum: 5dc305ce79e5621fe7917be9b22bc7d4
+  docVersion: 24.1.4
+  speakeasyVersion: 1.599.0
+  generationVersion: 2.675.0
+  releaseVersion: 0.0.4
+  configChecksum: 156ca59031590bff276b239f608b7aaf
+features:
+  go:
+    additionalDependencies: 0.1.0
+    core: 3.9.3
+    defaultEnabledRetries: 0.2.0
+    devContainers: 2.90.0
+    envVarSecurityUsage: 0.3.2
+    flattening: 2.81.1
+    globalSecurity: 2.82.11
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.3
+    intellisenseMarkdownSupport: 0.1.0
+    responseFormat: 0.1.2
+    retries: 2.84.1
+    sdkHooks: 0.2.0
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - /models/apierrors/createendpointevent.go
+  - /models/components/handlersstub.go
+  - /models/components/httpmetadata.go
+  - /models/components/modelscreateevent.go
+  - /models/components/security.go
+  - /models/operations/createendpointevent.go
+  - USAGE.md
+  - convoy.go
+  - docs/models/apierrors/badrequesterror.md
+  - docs/models/apierrors/notfounderror.md
+  - docs/models/apierrors/unauthorizederror.md
+  - docs/models/components/data.md
+  - docs/models/components/handlersstub.md
+  - docs/models/components/httpmetadata.md
+  - docs/models/components/modelscreateevent.md
+  - docs/models/components/security.md
+  - docs/models/operations/createendpointeventrequest.md
+  - docs/models/operations/createendpointeventresponse.md
+  - docs/models/operations/createendpointeventresponsebody.md
+  - docs/models/operations/option.md
+  - docs/sdks/convoy/README.md
+  - docs/sdks/events/README.md
+  - events.go
+  - go.mod
+  - internal/config/sdkconfiguration.go
+  - internal/hooks/hooks.go
+  - internal/utils/contenttype.go
+  - internal/utils/env.go
+  - internal/utils/form.go
+  - internal/utils/headers.go
+  - internal/utils/json.go
+  - internal/utils/pathparams.go
+  - internal/utils/queryparams.go
+  - internal/utils/requestbody.go
+  - internal/utils/retries.go
+  - internal/utils/security.go
+  - internal/utils/utils.go
+  - models/apierrors/apierror.go
+  - models/operations/options.go
+  - retry/config.go
+  - types/bigint.go
+  - types/date.go
+  - types/datetime.go
+  - types/decimal.go
+  - types/pointers.go
+examples:
+  CreateEndpointEvent:
+    speakeasy-default-create-endpoint-event:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+examplesVersion: 1.0.2
