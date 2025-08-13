@@ -1,0 +1,133 @@
+openapi: 3.0.3
+info:
+  title: Convoy API Reference
+  description: Convoy is a fast and secure webhooks proxy. This document contains
+    datastore.s API specification.
+  termsOfService: https://getconvoy.io/terms
+  contact:
+    name: Convoy Support
+    email: support@getconvoy.io
+    url: https://getconvoy.io/docs
+  license:
+    name: Mozilla Public License 2.0
+    url: https://www.mozilla.org/en-US/MPL/2.0/
+  version: 24.1.4
+servers:
+- url: https://dashboard.getconvoy.io/api
+tags:
+- name: Events
+  description: Event related APIs
+paths:
+  /v1/projects/{projectID}/events:
+    post:
+      tags:
+      - Events
+      summary: Create an event
+      description: This endpoint creates an endpoint event
+      operationId: CreateEndpointEvent
+      parameters:
+      - name: projectID
+        in: path
+        description: Project ID
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: Event Details
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/models.CreateEvent'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/util.ServerResponse'
+                - properties:
+                    data:
+                      $ref: '#/components/schemas/handlers.Stub'
+                  type: object
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/util.ServerResponse'
+                - properties:
+                    data:
+                      $ref: '#/components/schemas/handlers.Stub'
+                  type: object
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/util.ServerResponse'
+                - properties:
+                    data:
+                      $ref: '#/components/schemas/handlers.Stub'
+                  type: object
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/util.ServerResponse'
+                - properties:
+                    data:
+                      $ref: '#/components/schemas/handlers.Stub'
+                  type: object
+      security:
+      - ApiKeyAuth: []
+components:
+  schemas:
+    models.CreateEvent:
+      type: object
+      properties:
+        app_id:
+          type: string
+          description: Deprecated but necessary for backward compatibility.
+        custom_headers:
+          type: object
+          additionalProperties:
+            type: string
+          description: Specifies custom headers you want convoy to add when the event
+            is dispatched to your endpoint
+        data:
+          type: object
+          description: |-
+            Data is an arbitrary JSON value that gets sent as the body of the
+            webhook to the endpoints
+        endpoint_id:
+          type: string
+          description: Specifies the endpoint to send this event to.
+        event_type:
+          type: string
+          description: Event Type is used for filtering and debugging e.g invoice.paid
+        idempotency_key:
+          type: string
+          description: Specify a key for event deduplication
+        idempotency_key_ttl:
+          type: string
+          description: Specify a key for event deduplication
+    util.ServerResponse:
+      type: object
+      properties:
+        message:
+          type: string
+        status:
+          type: boolean
+    handlers.Stub:
+      type: object
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: Authorization
