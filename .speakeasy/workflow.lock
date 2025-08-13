@@ -1,27 +1,28 @@
-speakeasyVersion: 1.599.0
+speakeasyVersion: 1.603.0
 sources:
     Convoy API Reference:
         sourceNamespace: convoy-api-reference
-        sourceRevisionDigest: sha256:3dbb4ac535c7ab743789438b1b32cdb664ec4cfa8c5c890b9770ac07263eebdf
-        sourceBlobDigest: sha256:2f925a324b9860866700cddf57cd260e055813915d5d7a77a228e4480d928a7f
+        sourceRevisionDigest: sha256:6dea7a8e5f08863402e52eb1ef83cd4472e8739fdab5a08773a22d08ba9cf781
+        sourceBlobDigest: sha256:537f12b091c71d6c85cf6454f5e244795448b176b0c26eee9cbf03e75b7bafbf
         tags:
             - latest
+            - speakeasy-sdk-regen-1755078836
             - 24.1.4
 targets:
     convoy:
         source: Convoy API Reference
         sourceNamespace: convoy-api-reference
-        sourceRevisionDigest: sha256:3dbb4ac535c7ab743789438b1b32cdb664ec4cfa8c5c890b9770ac07263eebdf
-        sourceBlobDigest: sha256:2f925a324b9860866700cddf57cd260e055813915d5d7a77a228e4480d928a7f
+        sourceRevisionDigest: sha256:6dea7a8e5f08863402e52eb1ef83cd4472e8739fdab5a08773a22d08ba9cf781
+        sourceBlobDigest: sha256:537f12b091c71d6c85cf6454f5e244795448b176b0c26eee9cbf03e75b7bafbf
         codeSamplesNamespace: convoy-api-reference-go-code-samples
-        codeSamplesRevisionDigest: sha256:0d9fad885040db8e1ae206f44569373a88f1195aca1479a680a51b0bb8a5084f
+        codeSamplesRevisionDigest: sha256:4367458ff5a1cfe0cf7bbbbb826b3402e974660ce481bced2ebef5ff99b25a2e
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
     sources:
         Convoy API Reference:
             inputs:
-                - location: ../openapi.yaml
+                - location: openapi.yaml
             output: .speakeasy/out.openapi.yaml
             registry:
                 location: registry.speakeasyapi.dev/subomi-org/subomi-workspace/convoy-api-reference
