@@ -5,7 +5,6 @@ package main
 import (
 	"context"
 	"github.com/frain-dev/convoy"
-	"github.com/frain-dev/convoy/models/components"
 	"log"
 	"os"
 )
@@ -14,10 +13,12 @@ func main() {
 	ctx := context.Background()
 
 	s := convoy.New(
-		convoy.WithSecurity(os.Getenv("CONVOY_API_KEY_AUTH")),
+		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Events.CreateEndpointEvent(ctx, "<id>", components.ModelsCreateEvent{})
+	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
+		ProjectID: "<id>",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}

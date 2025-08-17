@@ -2,7 +2,7 @@
 
 package convoy
 
-// Generated from OpenAPI doc version 24.1.4 and generator version 2.681.1
+// Generated from OpenAPI doc version 24.1.4 and generator version internal
 
 import (
 	"context"
@@ -10,7 +10,6 @@ import (
 	"github.com/frain-dev/convoy/internal/config"
 	"github.com/frain-dev/convoy/internal/hooks"
 	"github.com/frain-dev/convoy/internal/utils"
-	"github.com/frain-dev/convoy/models/components"
 	"github.com/frain-dev/convoy/retry"
 	"net/http"
 	"time"
@@ -47,11 +46,27 @@ func Float64(f float64) *float64 { return &f }
 // Pointer provides a helper function to return a pointer to a type
 func Pointer[T any](v T) *T { return &v }
 
-// Convoy API Reference: Convoy is a fast and secure webhooks proxy. This document contains datastore.s API specification.
+// Convoy API Reference: Convoy is a fast and secure webhooks proxy. This document contains s API specification.
 type Convoy struct {
 	SDKVersion string
+	// Endpoint related APIs
+	Endpoints  *Endpoints
+	EventTypes *EventTypes
+	// EventDelivery related APIs
+	EventDeliveries *EventDeliveries
+	// Delivery Attempt related APIs
+	DeliveryAttempts *DeliveryAttempts
 	// Event related APIs
 	Events *Events
+	// Meta Events related APIs
+	MetaEvents *MetaEvents
+	// Portal Links related APIs
+	PortalLinks *PortalLinks
+	// Source related APIs
+	Sources *Sources
+	// Subscription related APIs
+	Subscriptions *Subscriptions
+	Filters       *Filters
 
 	sdkConfiguration config.SDKConfiguration
 	hooks            *hooks.Hooks
@@ -96,15 +111,15 @@ func WithClient(client HTTPClient) SDKOption {
 }
 
 // WithSecurity configures the SDK to use the provided security details
-func WithSecurity(apiKeyAuth string) SDKOption {
+func WithSecurity(bearerAuth string) SDKOption {
 	return func(sdk *Convoy) {
-		security := components.Security{APIKeyAuth: &apiKeyAuth}
+		security := Security{BearerAuth: &bearerAuth}
 		sdk.sdkConfiguration.Security = utils.AsSecuritySource(&security)
 	}
 }
 
 // WithSecuritySource configures the SDK to invoke the Security Source function on each method call to determine authentication
-func WithSecuritySource(security func(context.Context) (components.Security, error)) SDKOption {
+func WithSecuritySource(security func(context.Context) (Security, error)) SDKOption {
 	return func(sdk *Convoy) {
 		sdk.sdkConfiguration.Security = func(ctx context.Context) (interface{}, error) {
 			return security(ctx)
@@ -128,9 +143,9 @@ func WithTimeout(timeout time.Duration) SDKOption {
 // New creates a new instance of the SDK with the provided options
 func New(opts ...SDKOption) *Convoy {
 	sdk := &Convoy{
-		SDKVersion: "0.0.5",
+		SDKVersion: "0.0.16",
 		sdkConfiguration: config.SDKConfiguration{
-			UserAgent:  "speakeasy-sdk/go 0.0.5 2.681.1 24.1.4 github.com/frain-dev/convoy",
+			UserAgent:  "speakeasy-sdk/go 0.0.16 internal 24.1.4 github.com/frain-dev/convoy",
 			ServerList: ServerList,
 		},
 		hooks: hooks.New(),
@@ -140,7 +155,7 @@ func New(opts ...SDKOption) *Convoy {
 	}
 
 	if sdk.sdkConfiguration.Security == nil {
-		var envVarSecurity components.Security
+		var envVarSecurity Security
 		if utils.PopulateSecurityFromEnv(&envVarSecurity) {
 			sdk.sdkConfiguration.Security = utils.AsSecuritySource(envVarSecurity)
 		}
@@ -153,7 +168,16 @@ func New(opts ...SDKOption) *Convoy {
 
 	sdk.sdkConfiguration = sdk.hooks.SDKInit(sdk.sdkConfiguration)
 
+	sdk.Endpoints = newEndpoints(sdk, sdk.sdkConfiguration, sdk.hooks)
+	sdk.EventTypes = newEventTypes(sdk, sdk.sdkConfiguration, sdk.hooks)
+	sdk.EventDeliveries = newEventDeliveries(sdk, sdk.sdkConfiguration, sdk.hooks)
+	sdk.DeliveryAttempts = newDeliveryAttempts(sdk, sdk.sdkConfiguration, sdk.hooks)
 	sdk.Events = newEvents(sdk, sdk.sdkConfiguration, sdk.hooks)
+	sdk.MetaEvents = newMetaEvents(sdk, sdk.sdkConfiguration, sdk.hooks)
+	sdk.PortalLinks = newPortalLinks(sdk, sdk.sdkConfiguration, sdk.hooks)
+	sdk.Sources = newSources(sdk, sdk.sdkConfiguration, sdk.hooks)
+	sdk.Subscriptions = newSubscriptions(sdk, sdk.sdkConfiguration, sdk.hooks)
+	sdk.Filters = newFilters(sdk, sdk.sdkConfiguration, sdk.hooks)
 
 	return sdk
 }

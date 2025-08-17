@@ -17,7 +17,7 @@ Developer-friendly & type-safe Go SDK specifically catered to leverage *convoy* 
 <!-- Start Summary [summary] -->
 ## Summary
 
-Convoy API Reference: Convoy is a fast and secure webhooks proxy. This document contains datastore.s API specification.
+Convoy API Reference: Convoy is a fast and secure webhooks proxy. This document contains s API specification.
 <!-- End Summary [summary] -->
 
 <!-- Start Table of Contents [toc] -->
@@ -58,7 +58,6 @@ package main
 import (
 	"context"
 	"github.com/frain-dev/convoy"
-	"github.com/frain-dev/convoy/models/components"
 	"log"
 	"os"
 )
@@ -67,10 +66,12 @@ func main() {
 	ctx := context.Background()
 
 	s := convoy.New(
-		convoy.WithSecurity(os.Getenv("CONVOY_API_KEY_AUTH")),
+		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Events.CreateEndpointEvent(ctx, "<id>", components.ModelsCreateEvent{})
+	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
+		ProjectID: "<id>",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -89,9 +90,9 @@ func main() {
 
 This SDK supports the following security scheme globally:
 
-| Name         | Type   | Scheme  | Environment Variable  |
-| ------------ | ------ | ------- | --------------------- |
-| `APIKeyAuth` | apiKey | API key | `CONVOY_API_KEY_AUTH` |
+| Name         | Type | Scheme      | Environment Variable |
+| ------------ | ---- | ----------- | -------------------- |
+| `BearerAuth` | http | HTTP Bearer | `CONVOY_BEARER_AUTH` |
 
 You can configure it using the `WithSecurity` option when initializing the SDK client instance. For example:
 ```go
@@ -100,7 +101,6 @@ package main
 import (
 	"context"
 	"github.com/frain-dev/convoy"
-	"github.com/frain-dev/convoy/models/components"
 	"log"
 	"os"
 )
@@ -109,10 +109,12 @@ func main() {
 	ctx := context.Background()
 
 	s := convoy.New(
-		convoy.WithSecurity(os.Getenv("CONVOY_API_KEY_AUTH")),
+		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Events.CreateEndpointEvent(ctx, "<id>", components.ModelsCreateEvent{})
+	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
+		ProjectID: "<id>",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -131,9 +133,94 @@ func main() {
 <summary>Available methods</summary>
 
 
+### [DeliveryAttempts](docs/sdks/deliveryattempts/README.md)
+
+* [GetDeliveryAttempts](docs/sdks/deliveryattempts/README.md#getdeliveryattempts) - List delivery attempts
+* [GetDeliveryAttempt](docs/sdks/deliveryattempts/README.md#getdeliveryattempt) - Retrieve a delivery attempt
+
+### [Endpoints](docs/sdks/endpoints/README.md)
+
+* [GetEndpoints](docs/sdks/endpoints/README.md#getendpoints) - List all endpoints
+* [CreateEndpoint](docs/sdks/endpoints/README.md#createendpoint) - Create an endpoint
+* [DeleteEndpoint](docs/sdks/endpoints/README.md#deleteendpoint) - Delete endpoint
+* [GetEndpoint](docs/sdks/endpoints/README.md#getendpoint) - Retrieve endpoint
+* [UpdateEndpoint](docs/sdks/endpoints/README.md#updateendpoint) - Update an endpoint
+* [ActivateEndpoint](docs/sdks/endpoints/README.md#activateendpoint) - Activate endpoint
+* [ExpireSecret](docs/sdks/endpoints/README.md#expiresecret) - Roll endpoint secret
+* [PauseEndpoint](docs/sdks/endpoints/README.md#pauseendpoint) - Pause endpoint
+
+### [EventDeliveries](docs/sdks/eventdeliveries/README.md)
+
+* [GetEventDeliveriesPaged](docs/sdks/eventdeliveries/README.md#geteventdeliveriespaged) - List all event deliveries
+* [GetEventDelivery](docs/sdks/eventdeliveries/README.md#geteventdelivery) - Retrieve an event delivery
+* [ResendEventDelivery](docs/sdks/eventdeliveries/README.md#resendeventdelivery) - Retry event delivery
+* [BatchRetryEventDelivery](docs/sdks/eventdeliveries/README.md#batchretryeventdelivery) - Batch retry event delivery
+* [ForceResendEventDeliveries](docs/sdks/eventdeliveries/README.md#forceresendeventdeliveries) - Force retry event delivery
+
 ### [Events](docs/sdks/events/README.md)
 
+* [GetEventsPaged](docs/sdks/events/README.md#geteventspaged) - List all events
 * [CreateEndpointEvent](docs/sdks/events/README.md#createendpointevent) - Create an event
+* [GetEndpointEvent](docs/sdks/events/README.md#getendpointevent) - Retrieve an event
+* [ReplayEndpointEvent](docs/sdks/events/README.md#replayendpointevent) - Replay event
+* [BatchReplayEvents](docs/sdks/events/README.md#batchreplayevents) - Batch replay events
+* [CreateBroadcastEvent](docs/sdks/events/README.md#createbroadcastevent) - Create a broadcast event
+* [CreateDynamicEvent](docs/sdks/events/README.md#createdynamicevent) - Dynamic Events
+* [CreateEndpointFanoutEvent](docs/sdks/events/README.md#createendpointfanoutevent) - Fan out an event
+
+### [EventTypes](docs/sdks/eventtypes/README.md)
+
+* [GetEventTypes](docs/sdks/eventtypes/README.md#geteventtypes) - Retrieves a project's event types
+* [CreateEventType](docs/sdks/eventtypes/README.md#createeventtype) - Create an event type
+* [UpdateEventType](docs/sdks/eventtypes/README.md#updateeventtype) - Updates an event type
+* [DeprecateEventType](docs/sdks/eventtypes/README.md#deprecateeventtype) - Deprecates an event type
+* [ImportOpenAPISpec](docs/sdks/eventtypes/README.md#importopenapispec) - Import event types from OpenAPI spec
+
+### [Filters](docs/sdks/filters/README.md)
+
+* [GetFilters](docs/sdks/filters/README.md#getfilters) - List all filters
+* [CreateFilter](docs/sdks/filters/README.md#createfilter) - Create a new filter
+* [DeleteFilter](docs/sdks/filters/README.md#deletefilter) - Delete a filter
+* [GetFilter](docs/sdks/filters/README.md#getfilter) - Get a filter
+* [UpdateFilter](docs/sdks/filters/README.md#updatefilter) - Update a filter
+* [BulkCreateFilters](docs/sdks/filters/README.md#bulkcreatefilters) - Create multiple subscription filters
+* [BulkUpdateFilters](docs/sdks/filters/README.md#bulkupdatefilters) - Update multiple subscription filters
+* [TestFilter](docs/sdks/filters/README.md#testfilter) - Test a filter
+
+### [MetaEvents](docs/sdks/metaevents/README.md)
+
+* [GetMetaEventsPaged](docs/sdks/metaevents/README.md#getmetaeventspaged) - List all meta events
+* [GetMetaEvent](docs/sdks/metaevents/README.md#getmetaevent) - Retrieve a meta event
+* [ResendMetaEvent](docs/sdks/metaevents/README.md#resendmetaevent) - Retry meta event
+
+### [PortalLinks](docs/sdks/portallinks/README.md)
+
+* [LoadPortalLinksPaged](docs/sdks/portallinks/README.md#loadportallinkspaged) - List all portal links
+* [CreatePortalLink](docs/sdks/portallinks/README.md#createportallink) - Create a portal link
+* [GetPortalLink](docs/sdks/portallinks/README.md#getportallink) - Retrieve a portal link
+* [GeneratePortalToken](docs/sdks/portallinks/README.md#generateportaltoken) - Updates a portal link auth token
+* [UpdatePortalLink](docs/sdks/portallinks/README.md#updateportallink) - Update a portal link
+* [RefreshPortalLinkAuthToken](docs/sdks/portallinks/README.md#refreshportallinkauthtoken) - Get a portal link auth token
+* [RevokePortalLink](docs/sdks/portallinks/README.md#revokeportallink) - Revoke a portal link
+
+### [Sources](docs/sdks/sources/README.md)
+
+* [LoadSourcesPaged](docs/sdks/sources/README.md#loadsourcespaged) - List all sources
+* [CreateSource](docs/sdks/sources/README.md#createsource) - Create a source
+* [DeleteSource](docs/sdks/sources/README.md#deletesource) - Delete a source
+* [GetSource](docs/sdks/sources/README.md#getsource) - Retrieve a source
+* [UpdateSource](docs/sdks/sources/README.md#updatesource) - Update a source
+* [TestSourceFunction](docs/sdks/sources/README.md#testsourcefunction) - Validate source function
+
+### [Subscriptions](docs/sdks/subscriptions/README.md)
+
+* [GetSubscriptions](docs/sdks/subscriptions/README.md#getsubscriptions) - List all subscriptions
+* [CreateSubscription](docs/sdks/subscriptions/README.md#createsubscription) - Create a subscription
+* [DeleteSubscription](docs/sdks/subscriptions/README.md#deletesubscription) - Delete subscription
+* [GetSubscription](docs/sdks/subscriptions/README.md#getsubscription) - Retrieve a subscription
+* [UpdateSubscription](docs/sdks/subscriptions/README.md#updatesubscription) - Update a subscription
+* [TestSubscriptionFilter](docs/sdks/subscriptions/README.md#testsubscriptionfilter) - Validate subscription filter
+* [TestSubscriptionFunction](docs/sdks/subscriptions/README.md#testsubscriptionfunction) - Test a subscription function
 
 </details>
 <!-- End Available Resources and Operations [operations] -->
@@ -148,12 +235,11 @@ To change the default retry strategy for a single API call, simply provide a `re
 package main
 
 import (
+	""
 	"context"
 	"github.com/frain-dev/convoy"
-	"github.com/frain-dev/convoy/models/components"
 	"github.com/frain-dev/convoy/retry"
 	"log"
-	"models/operations"
 	"os"
 )
 
@@ -161,10 +247,12 @@ func main() {
 	ctx := context.Background()
 
 	s := convoy.New(
-		convoy.WithSecurity(os.Getenv("CONVOY_API_KEY_AUTH")),
+		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Events.CreateEndpointEvent(ctx, "<id>", components.ModelsCreateEvent{}, operations.WithRetries(
+	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
+		ProjectID: "<id>",
+	}, convoy.WithRetries(
 		retry.Config{
 			Strategy: "backoff",
 			Backoff: &retry.BackoffStrategy{
@@ -192,7 +280,6 @@ package main
 import (
 	"context"
 	"github.com/frain-dev/convoy"
-	"github.com/frain-dev/convoy/models/components"
 	"github.com/frain-dev/convoy/retry"
 	"log"
 	"os"
@@ -213,10 +300,12 @@ func main() {
 				},
 				RetryConnectionErrors: false,
 			}),
-		convoy.WithSecurity(os.Getenv("CONVOY_API_KEY_AUTH")),
+		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Events.CreateEndpointEvent(ctx, "<id>", components.ModelsCreateEvent{})
+	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
+		ProjectID: "<id>",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -233,16 +322,16 @@ func main() {
 
 Handling errors in this SDK should largely match your expectations. All operations return a response object or an error, they will never return both.
 
-By Default, an API error will return `apierrors.APIError`. When custom error responses are specified for an operation, the SDK may also return their associated error. You can refer to respective *Errors* tables in SDK docs for more details on possible error types for each operation.
+By Default, an API error will return `convoy.APIError`. When custom error responses are specified for an operation, the SDK may also return their associated error. You can refer to respective *Errors* tables in SDK docs for more details on possible error types for each operation.
 
-For example, the `CreateEndpointEvent` function may return the following errors:
+For example, the `GetEndpoints` function may return the following errors:
 
-| Error Type                  | Status Code | Content Type     |
-| --------------------------- | ----------- | ---------------- |
-| apierrors.BadRequestError   | 400         | application/json |
-| apierrors.UnauthorizedError | 401         | application/json |
-| apierrors.NotFoundError     | 404         | application/json |
-| apierrors.APIError          | 4XX, 5XX    | \*/\*            |
+| Error Type                           | Status Code | Content Type     |
+| ------------------------------------ | ----------- | ---------------- |
+| convoy.GetEndpointsBadRequestError   | 400         | application/json |
+| convoy.GetEndpointsUnauthorizedError | 401         | application/json |
+| convoy.GetEndpointsNotFoundError     | 404         | application/json |
+| convoy.APIError                      | 4XX, 5XX    | \*/\*            |
 
 ### Example
 
@@ -253,8 +342,6 @@ import (
 	"context"
 	"errors"
 	"github.com/frain-dev/convoy"
-	"github.com/frain-dev/convoy/models/apierrors"
-	"github.com/frain-dev/convoy/models/components"
 	"log"
 	"os"
 )
@@ -263,31 +350,33 @@ func main() {
 	ctx := context.Background()
 
 	s := convoy.New(
-		convoy.WithSecurity(os.Getenv("CONVOY_API_KEY_AUTH")),
+		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Events.CreateEndpointEvent(ctx, "<id>", components.ModelsCreateEvent{})
+	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
+		ProjectID: "<id>",
+	})
 	if err != nil {
 
-		var e *apierrors.BadRequestError
+		var e *GetEndpointsBadRequestError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
 		}
 
-		var e *apierrors.UnauthorizedError
+		var e *GetEndpointsUnauthorizedError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
 		}
 
-		var e *apierrors.NotFoundError
+		var e *GetEndpointsNotFoundError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
 		}
 
-		var e *apierrors.APIError
+		var e *convoy.APIError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
@@ -310,7 +399,6 @@ package main
 import (
 	"context"
 	"github.com/frain-dev/convoy"
-	"github.com/frain-dev/convoy/models/components"
 	"log"
 	"os"
 )
@@ -320,10 +408,12 @@ func main() {
 
 	s := convoy.New(
 		convoy.WithServerURL("https://dashboard.getconvoy.io/api"),
-		convoy.WithSecurity(os.Getenv("CONVOY_API_KEY_AUTH")),
+		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Events.CreateEndpointEvent(ctx, "<id>", components.ModelsCreateEvent{})
+	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
+		ProjectID: "<id>",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}

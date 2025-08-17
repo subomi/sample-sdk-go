@@ -25,7 +25,7 @@ generation:
     generateNewTests: true
     skipResponseBodyAssertions: false
 go:
-  version: 0.0.5
+  version: 0.0.16
   additionalDependencies: {}
   allowUnknownFieldsInWeakUnions: false
   baseErrorName: ConvoyError
@@ -36,11 +36,11 @@ go:
   imports:
     option: openapi
     paths:
-      callbacks: models/callbacks
-      errors: models/apierrors
-      operations: models/operations
-      shared: models/components
-      webhooks: models/webhooks
+      callbacks: ""
+      errors: ""
+      operations: ""
+      shared: ""
+      webhooks: ""
   inputModelSuffix: input
   maxMethodParams: 4
   methodArguments: require-security-and-request

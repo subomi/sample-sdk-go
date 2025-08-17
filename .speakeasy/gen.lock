@@ -1,12 +1,12 @@
 lockVersion: 2.0.0
 id: 6e7b91ca-db99-42ff-94be-b5c538c41b05
 management:
-  docChecksum: 5dc305ce79e5621fe7917be9b22bc7d4
+  docChecksum: 9e9d5a66c51aa0dfed7f8f361380bd0f
   docVersion: 24.1.4
-  speakeasyVersion: 1.603.0
-  generationVersion: 2.681.1
-  releaseVersion: 0.0.5
-  configChecksum: f6f9d5c80421513c0307d47891f51db9
+  speakeasyVersion: internal
+  generationVersion: internal
+  releaseVersion: 0.0.16
+  configChecksum: 5b8aa5f608f7e5a1f8870547e776cdf8
   repoURL: https://github.com/subomi/sample-sdk-go.git
   installationURL: https://github.com/subomi/sample-sdk-go
 features:
@@ -30,29 +30,623 @@ generatedFiles:
   - .devcontainer/devcontainer.json
   - .devcontainer/setup.sh
   - .gitattributes
-  - /models/apierrors/createendpointevent.go
-  - /models/components/handlersstub.go
-  - /models/components/httpmetadata.go
-  - /models/components/modelscreateevent.go
-  - /models/components/security.go
-  - /models/operations/createendpointevent.go
+  - /activateendpointop.go
+  - /alertconfiguration.go
+  - /amqpauth.go
+  - /amqpexchange.go
+  - /amqppubsubconfig.go
+  - /apierror.go
+  - /apikey.go
+  - /basicauth.go
+  - /batchreplayeventsop.go
+  - /batchretryeventdeliveryop.go
+  - /broadcastevent.go
+  - /bulkcreatefiltersop.go
+  - /bulkupdatefilterrequest.go
+  - /bulkupdatefiltersop.go
+  - /climetadata.go
+  - /createbroadcasteventop.go
+  - /createdynamiceventop.go
+  - /createendpoint.go
+  - /createendpointeventop.go
+  - /createendpointfanouteventop.go
+  - /createendpointop.go
+  - /createevent.go
+  - /createeventtype.go
+  - /createeventtypeop.go
+  - /createfilterop.go
+  - /createfilterrequest.go
+  - /createportallinkop.go
+  - /createsource.go
+  - /createsourceop.go
+  - /createsubscription.go
+  - /createsubscriptionop.go
+  - /customresponse.go
+  - /deleteendpointop.go
+  - /deletefilterop.go
+  - /deletesourceop.go
+  - /deletesubscriptionop.go
+  - /deliveryattempt.go
+  - /deliverymode.go
+  - /deprecateeventtypeop.go
+  - /device.go
+  - /devicestatus.go
+  - /dynamicevent.go
+  - /encodingtype.go
+  - /endpoint.go
+  - /endpointauthentication.go
+  - /endpointauthenticationtype.go
+  - /endpointresponse.go
+  - /endpointstatus.go
+  - /event.go
+  - /eventdeliveryresponse.go
+  - /eventdeliverystatus.go
+  - /eventresponse.go
+  - /eventstatus.go
+  - /eventtyperesponse.go
+  - /expiresecret.go
+  - /expiresecretop.go
+  - /fanoutevent.go
+  - /filterconfiguration.go
+  - /filterresponse.go
+  - /filterschema.go
+  - /forceresendeventdeliveriesop.go
+  - /fs.go
+  - /functionrequest.go
+  - /functionresponse.go
+  - /generateportaltokenop.go
+  - /getdeliveryattemptop.go
+  - /getdeliveryattemptsop.go
+  - /getendpointeventop.go
+  - /getendpointop.go
+  - /getendpointsop.go
+  - /geteventdeliveriespagedop.go
+  - /geteventdeliveryop.go
+  - /geteventspagedop.go
+  - /geteventtypesop.go
+  - /getfilterop.go
+  - /getfiltersop.go
+  - /getmetaeventop.go
+  - /getmetaeventspagedop.go
+  - /getportallinkop.go
+  - /getsourceop.go
+  - /getsubscriptionop.go
+  - /getsubscriptionsop.go
+  - /googlepubsubconfig.go
+  - /hmac.go
+  - /httpmetadata.go
+  - /ids.go
+  - /importopenapispec.go
+  - /importopenapispecop.go
+  - /kafkaauth.go
+  - /kafkapubsubconfig.go
+  - /loadportallinkspagedop.go
+  - /loadsourcespagedop.go
+  - /metadata.go
+  - /metaeventattempt.go
+  - /metaeventresponse.go
+  - /object.go
+  - /paginationdata.go
+  - /pauseendpointop.go
+  - /portallink.go
+  - /portallinkresponse.go
+  - /providerconfig.go
+  - /pubsubconfig.go
+  - /pubsubtype.go
+  - /ratelimitconfiguration.go
+  - /refreshportallinkauthtokenop.go
+  - /replayendpointeventop.go
+  - /resendeventdeliveryop.go
+  - /resendmetaeventop.go
+  - /retryconfiguration.go
+  - /revokeportallinkop.go
+  - /secret.go
+  - /security.go
+  - /source.go
+  - /sourceprovider.go
+  - /sourceresponse.go
+  - /sourcetype.go
+  - /sqspubsubconfig.go
+  - /strategyprovider.go
+  - /subscriptionresponse.go
+  - /subscriptiontype.go
+  - /testfilter.go
+  - /testfilterop.go
+  - /testfilterrequest.go
+  - /testfilterresponse.go
+  - /testsourcefunctionop.go
+  - /testsubscriptionfilterop.go
+  - /testsubscriptionfunctionop.go
+  - /twitterproviderconfig.go
+  - /updatecustomresponse.go
+  - /updateendpoint.go
+  - /updateendpointop.go
+  - /updateeventtype.go
+  - /updateeventtypeop.go
+  - /updatefilterop.go
+  - /updatefilterrequest.go
+  - /updateportallinkop.go
+  - /updatesource.go
+  - /updatesourceop.go
+  - /updatesubscription.go
+  - /updatesubscriptionop.go
+  - /verifierconfig.go
+  - /verifiertype.go
   - USAGE.md
   - convoy.go
-  - docs/models/apierrors/badrequesterror.md
-  - docs/models/apierrors/notfounderror.md
-  - docs/models/apierrors/unauthorizederror.md
-  - docs/models/components/data.md
-  - docs/models/components/handlersstub.md
-  - docs/models/components/httpmetadata.md
-  - docs/models/components/modelscreateevent.md
-  - docs/models/components/security.md
-  - docs/models/operations/createendpointeventrequest.md
-  - docs/models/operations/createendpointeventresponse.md
-  - docs/models/operations/createendpointeventresponsebody.md
-  - docs/models/operations/option.md
+  - deliveryattempts.go
+  - docs/activateendpointbadrequesterror.md
+  - docs/activateendpointnotfounderror.md
+  - docs/activateendpointrequest.md
+  - docs/activateendpointresponse.md
+  - docs/activateendpointresponsebody.md
+  - docs/activateendpointunauthorizederror.md
+  - docs/alertconfiguration.md
+  - docs/amqpauth.md
+  - docs/amqpexchange.md
+  - docs/amqppubsubconfig.md
+  - docs/apikey.md
+  - docs/basicauth.md
+  - docs/batchreplayeventsbadrequesterror.md
+  - docs/batchreplayeventsdirection.md
+  - docs/batchreplayeventsnotfounderror.md
+  - docs/batchreplayeventsrequest.md
+  - docs/batchreplayeventsresponse.md
+  - docs/batchreplayeventsresponsebody.md
+  - docs/batchreplayeventsunauthorizederror.md
+  - docs/batchretryeventdeliverybadrequesterror.md
+  - docs/batchretryeventdeliverydirection.md
+  - docs/batchretryeventdeliverynotfounderror.md
+  - docs/batchretryeventdeliveryrequest.md
+  - docs/batchretryeventdeliveryresponse.md
+  - docs/batchretryeventdeliveryresponsebody.md
+  - docs/batchretryeventdeliveryunauthorizederror.md
+  - docs/broadcastevent.md
+  - docs/broadcasteventdata.md
+  - docs/bulkcreatefiltersbadrequesterror.md
+  - docs/bulkcreatefiltersnotfounderror.md
+  - docs/bulkcreatefiltersrequest.md
+  - docs/bulkcreatefiltersresponse.md
+  - docs/bulkcreatefiltersresponsebody.md
+  - docs/bulkcreatefiltersunauthorizederror.md
+  - docs/bulkupdatefilterrequest.md
+  - docs/bulkupdatefiltersbadrequesterror.md
+  - docs/bulkupdatefiltersnotfounderror.md
+  - docs/bulkupdatefiltersrequest.md
+  - docs/bulkupdatefiltersresponse.md
+  - docs/bulkupdatefiltersresponsebody.md
+  - docs/bulkupdatefiltersunauthorizederror.md
+  - docs/climetadata.md
+  - docs/createbroadcasteventbadrequesterror.md
+  - docs/createbroadcasteventnotfounderror.md
+  - docs/createbroadcasteventrequest.md
+  - docs/createbroadcasteventresponse.md
+  - docs/createbroadcasteventresponsebody.md
+  - docs/createbroadcasteventunauthorizederror.md
+  - docs/createdynamiceventbadrequesterror.md
+  - docs/createdynamiceventnotfounderror.md
+  - docs/createdynamiceventrequest.md
+  - docs/createdynamiceventresponse.md
+  - docs/createdynamiceventunauthorizederror.md
+  - docs/createendpoint.md
+  - docs/createendpointbadrequesterror.md
+  - docs/createendpointeventbadrequesterror.md
+  - docs/createendpointeventnotfounderror.md
+  - docs/createendpointeventrequest.md
+  - docs/createendpointeventresponse.md
+  - docs/createendpointeventresponsebody.md
+  - docs/createendpointeventunauthorizederror.md
+  - docs/createendpointfanouteventbadrequesterror.md
+  - docs/createendpointfanouteventnotfounderror.md
+  - docs/createendpointfanouteventrequest.md
+  - docs/createendpointfanouteventresponse.md
+  - docs/createendpointfanouteventresponsebody.md
+  - docs/createendpointfanouteventunauthorizederror.md
+  - docs/createendpointnotfounderror.md
+  - docs/createendpointrequest.md
+  - docs/createendpointresponse.md
+  - docs/createendpointresponsebody.md
+  - docs/createendpointunauthorizederror.md
+  - docs/createevent.md
+  - docs/createeventdata.md
+  - docs/createeventtype.md
+  - docs/createeventtypebadrequesterror.md
+  - docs/createeventtypenotfounderror.md
+  - docs/createeventtyperequest.md
+  - docs/createeventtyperesponse.md
+  - docs/createeventtyperesponsebody.md
+  - docs/createeventtypeunauthorizederror.md
+  - docs/createfilterbadrequesterror.md
+  - docs/createfilternotfounderror.md
+  - docs/createfilterrequest.md
+  - docs/createfilterrequestrequest.md
+  - docs/createfilterresponse.md
+  - docs/createfilterresponsebody.md
+  - docs/createfilterunauthorizederror.md
+  - docs/createportallinkbadrequesterror.md
+  - docs/createportallinknotfounderror.md
+  - docs/createportallinkrequest.md
+  - docs/createportallinkresponse.md
+  - docs/createportallinkresponsebody.md
+  - docs/createportallinkunauthorizederror.md
+  - docs/createsource.md
+  - docs/createsourcebadrequesterror.md
+  - docs/createsourcenotfounderror.md
+  - docs/createsourcerequest.md
+  - docs/createsourceresponse.md
+  - docs/createsourceresponsebody.md
+  - docs/createsourceunauthorizederror.md
+  - docs/createsubscription.md
+  - docs/createsubscriptionbadrequesterror.md
+  - docs/createsubscriptionnotfounderror.md
+  - docs/createsubscriptionrequest.md
+  - docs/createsubscriptionresponse.md
+  - docs/createsubscriptionresponsebody.md
+  - docs/createsubscriptionunauthorizederror.md
+  - docs/customresponse.md
+  - docs/deleteendpointbadrequesterror.md
+  - docs/deleteendpointnotfounderror.md
+  - docs/deleteendpointrequest.md
+  - docs/deleteendpointresponse.md
+  - docs/deleteendpointresponsebody.md
+  - docs/deleteendpointunauthorizederror.md
+  - docs/deletefilterbadrequesterror.md
+  - docs/deletefilternotfounderror.md
+  - docs/deletefilterrequest.md
+  - docs/deletefilterresponse.md
+  - docs/deletefilterresponsebody.md
+  - docs/deletefilterunauthorizederror.md
+  - docs/deletesourcebadrequesterror.md
+  - docs/deletesourcenotfounderror.md
+  - docs/deletesourcerequest.md
+  - docs/deletesourceresponse.md
+  - docs/deletesourceresponsebody.md
+  - docs/deletesourceunauthorizederror.md
+  - docs/deletesubscriptionbadrequesterror.md
+  - docs/deletesubscriptionnotfounderror.md
+  - docs/deletesubscriptionrequest.md
+  - docs/deletesubscriptionresponse.md
+  - docs/deletesubscriptionresponsebody.md
+  - docs/deletesubscriptionunauthorizederror.md
+  - docs/deliveryattempt.md
+  - docs/deliverymode.md
+  - docs/deprecateeventtypebadrequesterror.md
+  - docs/deprecateeventtypenotfounderror.md
+  - docs/deprecateeventtyperequest.md
+  - docs/deprecateeventtyperesponse.md
+  - docs/deprecateeventtyperesponsebody.md
+  - docs/deprecateeventtypeunauthorizederror.md
+  - docs/device.md
+  - docs/devicestatus.md
+  - docs/dynamicevent.md
+  - docs/dynamiceventdata.md
+  - docs/encodingtype.md
+  - docs/endpoint.md
+  - docs/endpointauthentication.md
+  - docs/endpointauthenticationtype.md
+  - docs/endpointresponse.md
+  - docs/endpointstatus.md
+  - docs/event.md
+  - docs/eventdeliveryresponse.md
+  - docs/eventdeliverystatus.md
+  - docs/eventresponse.md
+  - docs/eventstatus.md
+  - docs/eventtyperesponse.md
+  - docs/expiresecret.md
+  - docs/expiresecretbadrequesterror.md
+  - docs/expiresecretnotfounderror.md
+  - docs/expiresecretrequest.md
+  - docs/expiresecretresponse.md
+  - docs/expiresecretresponsebody.md
+  - docs/expiresecretunauthorizederror.md
+  - docs/fanoutevent.md
+  - docs/fanouteventdata.md
+  - docs/filterconfiguration.md
+  - docs/filterresponse.md
+  - docs/filterschema.md
+  - docs/forceresendeventdeliveriesbadrequesterror.md
+  - docs/forceresendeventdeliveriesnotfounderror.md
+  - docs/forceresendeventdeliveriesrequest.md
+  - docs/forceresendeventdeliveriesresponse.md
+  - docs/forceresendeventdeliveriesresponsebody.md
+  - docs/forceresendeventdeliveriesunauthorizederror.md
+  - docs/fs.md
+  - docs/functionrequest.md
+  - docs/functionresponse.md
+  - docs/generateportaltokenbadrequesterror.md
+  - docs/generateportaltokennotfounderror.md
+  - docs/generateportaltokenrequest.md
+  - docs/generateportaltokenresponse.md
+  - docs/generateportaltokenresponsebody.md
+  - docs/generateportaltokenunauthorizederror.md
+  - docs/getdeliveryattemptbadrequesterror.md
+  - docs/getdeliveryattemptnotfounderror.md
+  - docs/getdeliveryattemptrequest.md
+  - docs/getdeliveryattemptresponse.md
+  - docs/getdeliveryattemptresponsebody.md
+  - docs/getdeliveryattemptsbadrequesterror.md
+  - docs/getdeliveryattemptsnotfounderror.md
+  - docs/getdeliveryattemptsrequest.md
+  - docs/getdeliveryattemptsresponse.md
+  - docs/getdeliveryattemptsresponsebody.md
+  - docs/getdeliveryattemptsunauthorizederror.md
+  - docs/getdeliveryattemptunauthorizederror.md
+  - docs/getendpointbadrequesterror.md
+  - docs/getendpointeventbadrequesterror.md
+  - docs/getendpointeventnotfounderror.md
+  - docs/getendpointeventrequest.md
+  - docs/getendpointeventresponse.md
+  - docs/getendpointeventresponsebody.md
+  - docs/getendpointeventunauthorizederror.md
+  - docs/getendpointnotfounderror.md
+  - docs/getendpointrequest.md
+  - docs/getendpointresponse.md
+  - docs/getendpointresponsebody.md
+  - docs/getendpointsbadrequesterror.md
+  - docs/getendpointsdata.md
+  - docs/getendpointsdirection.md
+  - docs/getendpointsnotfounderror.md
+  - docs/getendpointsrequest.md
+  - docs/getendpointsresponse.md
+  - docs/getendpointsresponsebody.md
+  - docs/getendpointsunauthorizederror.md
+  - docs/getendpointunauthorizederror.md
+  - docs/geteventdeliveriespagedbadrequesterror.md
+  - docs/geteventdeliveriespageddata.md
+  - docs/geteventdeliveriespageddirection.md
+  - docs/geteventdeliveriespagednotfounderror.md
+  - docs/geteventdeliveriespagedrequest.md
+  - docs/geteventdeliveriespagedresponse.md
+  - docs/geteventdeliveriespagedresponsebody.md
+  - docs/geteventdeliveriespagedunauthorizederror.md
+  - docs/geteventdeliverybadrequesterror.md
+  - docs/geteventdeliverynotfounderror.md
+  - docs/geteventdeliveryrequest.md
+  - docs/geteventdeliveryresponse.md
+  - docs/geteventdeliveryresponsebody.md
+  - docs/geteventdeliveryunauthorizederror.md
+  - docs/geteventspagedbadrequesterror.md
+  - docs/geteventspageddata.md
+  - docs/geteventspageddirection.md
+  - docs/geteventspagednotfounderror.md
+  - docs/geteventspagedrequest.md
+  - docs/geteventspagedresponse.md
+  - docs/geteventspagedresponsebody.md
+  - docs/geteventspagedunauthorizederror.md
+  - docs/geteventtypesbadrequesterror.md
+  - docs/geteventtypesnotfounderror.md
+  - docs/geteventtypesrequest.md
+  - docs/geteventtypesresponse.md
+  - docs/geteventtypesresponsebody.md
+  - docs/geteventtypesunauthorizederror.md
+  - docs/getfilterbadrequesterror.md
+  - docs/getfilternotfounderror.md
+  - docs/getfilterrequest.md
+  - docs/getfilterresponse.md
+  - docs/getfilterresponsebody.md
+  - docs/getfiltersbadrequesterror.md
+  - docs/getfiltersnotfounderror.md
+  - docs/getfiltersrequest.md
+  - docs/getfiltersresponse.md
+  - docs/getfiltersresponsebody.md
+  - docs/getfiltersunauthorizederror.md
+  - docs/getfilterunauthorizederror.md
+  - docs/getmetaeventbadrequesterror.md
+  - docs/getmetaeventnotfounderror.md
+  - docs/getmetaeventrequest.md
+  - docs/getmetaeventresponse.md
+  - docs/getmetaeventresponsebody.md
+  - docs/getmetaeventspagedbadrequesterror.md
+  - docs/getmetaeventspageddata.md
+  - docs/getmetaeventspageddirection.md
+  - docs/getmetaeventspagednotfounderror.md
+  - docs/getmetaeventspagedrequest.md
+  - docs/getmetaeventspagedresponse.md
+  - docs/getmetaeventspagedresponsebody.md
+  - docs/getmetaeventspagedunauthorizederror.md
+  - docs/getmetaeventunauthorizederror.md
+  - docs/getportallinkbadrequesterror.md
+  - docs/getportallinknotfounderror.md
+  - docs/getportallinkrequest.md
+  - docs/getportallinkresponse.md
+  - docs/getportallinkresponsebody.md
+  - docs/getportallinkunauthorizederror.md
+  - docs/getsourcebadrequesterror.md
+  - docs/getsourcenotfounderror.md
+  - docs/getsourcerequest.md
+  - docs/getsourceresponse.md
+  - docs/getsourceresponsebody.md
+  - docs/getsourceunauthorizederror.md
+  - docs/getsubscriptionbadrequesterror.md
+  - docs/getsubscriptionnotfounderror.md
+  - docs/getsubscriptionrequest.md
+  - docs/getsubscriptionresponse.md
+  - docs/getsubscriptionresponsebody.md
+  - docs/getsubscriptionsbadrequesterror.md
+  - docs/getsubscriptionsdata.md
+  - docs/getsubscriptionsdirection.md
+  - docs/getsubscriptionsnotfounderror.md
+  - docs/getsubscriptionsrequest.md
+  - docs/getsubscriptionsresponse.md
+  - docs/getsubscriptionsresponsebody.md
+  - docs/getsubscriptionsunauthorizederror.md
+  - docs/getsubscriptionunauthorizederror.md
+  - docs/googlepubsubconfig.md
+  - docs/hmac.md
+  - docs/httpmetadata.md
+  - docs/ids.md
+  - docs/importopenapispec.md
+  - docs/importopenapispecbadrequesterror.md
+  - docs/importopenapispecnotfounderror.md
+  - docs/importopenapispecrequest.md
+  - docs/importopenapispecresponse.md
+  - docs/importopenapispecresponsebody.md
+  - docs/importopenapispecunauthorizederror.md
+  - docs/kafkaauth.md
+  - docs/kafkapubsubconfig.md
+  - docs/loadportallinkspagedbadrequesterror.md
+  - docs/loadportallinkspageddata.md
+  - docs/loadportallinkspageddirection.md
+  - docs/loadportallinkspagednotfounderror.md
+  - docs/loadportallinkspagedrequest.md
+  - docs/loadportallinkspagedresponse.md
+  - docs/loadportallinkspagedresponsebody.md
+  - docs/loadportallinkspagedunauthorizederror.md
+  - docs/loadsourcespagedbadrequesterror.md
+  - docs/loadsourcespageddata.md
+  - docs/loadsourcespageddirection.md
+  - docs/loadsourcespagednotfounderror.md
+  - docs/loadsourcespagedrequest.md
+  - docs/loadsourcespagedresponse.md
+  - docs/loadsourcespagedresponsebody.md
+  - docs/loadsourcespagedunauthorizederror.md
+  - docs/metadata.md
+  - docs/metaeventattempt.md
+  - docs/metaeventresponse.md
+  - docs/object.md
+  - docs/option.md
+  - docs/paginationdata.md
+  - docs/pauseendpointbadrequesterror.md
+  - docs/pauseendpointnotfounderror.md
+  - docs/pauseendpointrequest.md
+  - docs/pauseendpointresponse.md
+  - docs/pauseendpointresponsebody.md
+  - docs/pauseendpointunauthorizederror.md
+  - docs/portallink.md
+  - docs/portallinkresponse.md
+  - docs/providerconfig.md
+  - docs/pubsubconfig.md
+  - docs/pubsubtype.md
+  - docs/ratelimitconfiguration.md
+  - docs/refreshportallinkauthtokenbadrequesterror.md
+  - docs/refreshportallinkauthtokennotfounderror.md
+  - docs/refreshportallinkauthtokenrequest.md
+  - docs/refreshportallinkauthtokenresponse.md
+  - docs/refreshportallinkauthtokenresponsebody.md
+  - docs/refreshportallinkauthtokenunauthorizederror.md
+  - docs/replayendpointeventbadrequesterror.md
+  - docs/replayendpointeventnotfounderror.md
+  - docs/replayendpointeventrequest.md
+  - docs/replayendpointeventresponse.md
+  - docs/replayendpointeventresponsebody.md
+  - docs/replayendpointeventunauthorizederror.md
+  - docs/resendeventdeliverybadrequesterror.md
+  - docs/resendeventdeliverynotfounderror.md
+  - docs/resendeventdeliveryrequest.md
+  - docs/resendeventdeliveryresponse.md
+  - docs/resendeventdeliveryresponsebody.md
+  - docs/resendeventdeliveryunauthorizederror.md
+  - docs/resendmetaeventbadrequesterror.md
+  - docs/resendmetaeventnotfounderror.md
+  - docs/resendmetaeventrequest.md
+  - docs/resendmetaeventresponse.md
+  - docs/resendmetaeventresponsebody.md
+  - docs/resendmetaeventunauthorizederror.md
+  - docs/retryconfiguration.md
+  - docs/revokeportallinkbadrequesterror.md
+  - docs/revokeportallinknotfounderror.md
+  - docs/revokeportallinkrequest.md
+  - docs/revokeportallinkresponse.md
+  - docs/revokeportallinkresponsebody.md
+  - docs/revokeportallinkunauthorizederror.md
   - docs/sdks/convoy/README.md
+  - docs/sdks/deliveryattempts/README.md
+  - docs/sdks/endpoints/README.md
+  - docs/sdks/eventdeliveries/README.md
   - docs/sdks/events/README.md
+  - docs/sdks/eventtypes/README.md
+  - docs/sdks/filters/README.md
+  - docs/sdks/metaevents/README.md
+  - docs/sdks/portallinks/README.md
+  - docs/sdks/sources/README.md
+  - docs/sdks/subscriptions/README.md
+  - docs/secret.md
+  - docs/security.md
+  - docs/source.md
+  - docs/sourceprovider.md
+  - docs/sourceresponse.md
+  - docs/sourcetype.md
+  - docs/sqspubsubconfig.md
+  - docs/strategyprovider.md
+  - docs/subscriptionresponse.md
+  - docs/subscriptiontype.md
+  - docs/testfilter.md
+  - docs/testfilterbadrequesterror.md
+  - docs/testfilternotfounderror.md
+  - docs/testfilterrequest.md
+  - docs/testfilterrequestrequest.md
+  - docs/testfilterresponse.md
+  - docs/testfilterresponsebody.md
+  - docs/testfilterresponseresponse.md
+  - docs/testfilterunauthorizederror.md
+  - docs/testsourcefunctionbadrequesterror.md
+  - docs/testsourcefunctionnotfounderror.md
+  - docs/testsourcefunctionrequest.md
+  - docs/testsourcefunctionresponse.md
+  - docs/testsourcefunctionresponsebody.md
+  - docs/testsourcefunctionunauthorizederror.md
+  - docs/testsubscriptionfilterbadrequesterror.md
+  - docs/testsubscriptionfilternotfounderror.md
+  - docs/testsubscriptionfilterrequest.md
+  - docs/testsubscriptionfilterresponse.md
+  - docs/testsubscriptionfilterresponsebody.md
+  - docs/testsubscriptionfilterunauthorizederror.md
+  - docs/testsubscriptionfunctionbadrequesterror.md
+  - docs/testsubscriptionfunctionnotfounderror.md
+  - docs/testsubscriptionfunctionrequest.md
+  - docs/testsubscriptionfunctionresponse.md
+  - docs/testsubscriptionfunctionresponsebody.md
+  - docs/testsubscriptionfunctionunauthorizederror.md
+  - docs/twitterproviderconfig.md
+  - docs/updatecustomresponse.md
+  - docs/updateendpoint.md
+  - docs/updateendpointbadrequesterror.md
+  - docs/updateendpointnotfounderror.md
+  - docs/updateendpointrequest.md
+  - docs/updateendpointresponse.md
+  - docs/updateendpointresponsebody.md
+  - docs/updateendpointunauthorizederror.md
+  - docs/updateeventtype.md
+  - docs/updateeventtypebadrequesterror.md
+  - docs/updateeventtypenotfounderror.md
+  - docs/updateeventtyperequest.md
+  - docs/updateeventtyperesponse.md
+  - docs/updateeventtyperesponsebody.md
+  - docs/updateeventtypeunauthorizederror.md
+  - docs/updatefilterbadrequesterror.md
+  - docs/updatefilternotfounderror.md
+  - docs/updatefilterrequest.md
+  - docs/updatefilterrequestrequest.md
+  - docs/updatefilterresponse.md
+  - docs/updatefilterresponsebody.md
+  - docs/updatefilterunauthorizederror.md
+  - docs/updateportallinkbadrequesterror.md
+  - docs/updateportallinknotfounderror.md
+  - docs/updateportallinkrequest.md
+  - docs/updateportallinkresponse.md
+  - docs/updateportallinkresponsebody.md
+  - docs/updateportallinkunauthorizederror.md
+  - docs/updatesource.md
+  - docs/updatesourcebadrequesterror.md
+  - docs/updatesourcenotfounderror.md
+  - docs/updatesourcerequest.md
+  - docs/updatesourceresponse.md
+  - docs/updatesourceresponsebody.md
+  - docs/updatesourceunauthorizederror.md
+  - docs/updatesubscription.md
+  - docs/updatesubscriptionbadrequesterror.md
+  - docs/updatesubscriptionnotfounderror.md
+  - docs/updatesubscriptionrequest.md
+  - docs/updatesubscriptionresponse.md
+  - docs/updatesubscriptionresponsebody.md
+  - docs/updatesubscriptionunauthorizederror.md
+  - docs/verifierconfig.md
+  - docs/verifiertype.md
+  - endpoints.go
+  - eventdeliveries.go
   - events.go
+  - eventtypes.go
+  - filters.go
   - go.mod
   - internal/config/sdkconfiguration.go
   - internal/hooks/hooks.go
@@ -67,9 +661,12 @@ generatedFiles:
   - internal/utils/retries.go
   - internal/utils/security.go
   - internal/utils/utils.go
-  - models/apierrors/apierror.go
-  - models/operations/options.go
+  - metaevents.go
+  - options.go
+  - portallinks.go
   - retry/config.go
+  - sources.go
+  - subscriptions.go
   - types/bigint.go
   - types/date.go
   - types/datetime.go
@@ -85,6 +682,922 @@ examples:
         application/json: {}
       responses:
         "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetEndpoints:
+    speakeasy-default-get-endpoints:
+      parameters:
+        path:
+          projectID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  CreateEndpoint:
+    speakeasy-default-create-endpoint:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {"name": "<value>", "url": "https://gaseous-backbone.biz"}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  DeleteEndpoint:
+    speakeasy-default-delete-endpoint:
+      parameters:
+        path:
+          projectID: "<id>"
+          endpointID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetEndpoint:
+    speakeasy-default-get-endpoint:
+      parameters:
+        path:
+          projectID: "<id>"
+          endpointID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  UpdateEndpoint:
+    speakeasy-default-update-endpoint:
+      parameters:
+        path:
+          projectID: "<id>"
+          endpointID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "202":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  ActivateEndpoint:
+    speakeasy-default-activate-endpoint:
+      parameters:
+        path:
+          projectID: "<id>"
+          endpointID: "<id>"
+      responses:
+        "202":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  ExpireSecret:
+    speakeasy-default-expire-secret:
+      parameters:
+        path:
+          projectID: "<id>"
+          endpointID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  PauseEndpoint:
+    speakeasy-default-pause-endpoint:
+      parameters:
+        path:
+          projectID: "<id>"
+          endpointID: "<id>"
+      responses:
+        "202":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetEventTypes:
+    speakeasy-default-get-event-types:
+      parameters:
+        path:
+          projectID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  CreateEventType:
+    speakeasy-default-create-event-type:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  UpdateEventType:
+    speakeasy-default-update-event-type:
+      parameters:
+        path:
+          projectID: "<id>"
+          eventTypeID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  DeprecateEventType:
+    speakeasy-default-deprecate-event-type:
+      parameters:
+        path:
+          projectID: "<id>"
+          eventTypeId: "<id>"
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  ImportOpenApiSpec:
+    speakeasy-default-import-open-api-spec:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetEventDeliveriesPaged:
+    speakeasy-default-get-event-deliveries-paged:
+      parameters:
+        path:
+          projectID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetEventDelivery:
+    speakeasy-default-get-event-delivery:
+      parameters:
+        path:
+          projectID: "<id>"
+          eventDeliveryID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  ResendEventDelivery:
+    speakeasy-default-resend-event-delivery:
+      parameters:
+        path:
+          projectID: "<id>"
+          eventDeliveryID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  BatchRetryEventDelivery:
+    speakeasy-default-batch-retry-event-delivery:
+      parameters:
+        path:
+          projectID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  ForceResendEventDeliveries:
+    speakeasy-default-force-resend-event-deliveries:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetDeliveryAttempts:
+    speakeasy-default-get-delivery-attempts:
+      parameters:
+        path:
+          projectID: "<id>"
+          eventDeliveryID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetDeliveryAttempt:
+    speakeasy-default-get-delivery-attempt:
+      parameters:
+        path:
+          projectID: "<id>"
+          eventDeliveryID: "<id>"
+          deliveryAttemptID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetEventsPaged:
+    speakeasy-default-get-events-paged:
+      parameters:
+        path:
+          projectID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetEndpointEvent:
+    speakeasy-default-get-endpoint-event:
+      parameters:
+        path:
+          projectID: "<id>"
+          eventID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  ReplayEndpointEvent:
+    speakeasy-default-replay-endpoint-event:
+      parameters:
+        path:
+          projectID: "<id>"
+          eventID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  BatchReplayEvents:
+    speakeasy-default-batch-replay-events:
+      parameters:
+        path:
+          projectID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  CreateBroadcastEvent:
+    speakeasy-default-create-broadcast-event:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  CreateDynamicEvent:
+    speakeasy-default-create-dynamic-event:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  CreateEndpointFanoutEvent:
+    speakeasy-default-create-endpoint-fanout-event:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetMetaEventsPaged:
+    speakeasy-default-get-meta-events-paged:
+      parameters:
+        path:
+          projectID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetMetaEvent:
+    speakeasy-default-get-meta-event:
+      parameters:
+        path:
+          projectID: "<id>"
+          metaEventID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  ResendMetaEvent:
+    speakeasy-default-resend-meta-event:
+      parameters:
+        path:
+          projectID: "<id>"
+          metaEventID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  LoadPortalLinksPaged:
+    speakeasy-default-load-portal-links-paged:
+      parameters:
+        path:
+          projectID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  CreatePortalLink:
+    speakeasy-default-create-portal-link:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetPortalLink:
+    speakeasy-default-get-portal-link:
+      parameters:
+        path:
+          projectID: "<id>"
+          portalLinkID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GeneratePortalToken:
+    speakeasy-default-generate-portal-token:
+      parameters:
+        path:
+          projectID: "<id>"
+          portalLinkID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  UpdatePortalLink:
+    speakeasy-default-update-portal-link:
+      parameters:
+        path:
+          projectID: "<id>"
+          portalLinkID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "202":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  RefreshPortalLinkAuthToken:
+    speakeasy-default-refresh-portal-link-auth-token:
+      parameters:
+        path:
+          projectID: "<id>"
+          portalLinkID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  RevokePortalLink:
+    speakeasy-default-revoke-portal-link:
+      parameters:
+        path:
+          projectID: "<id>"
+          portalLinkID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  LoadSourcesPaged:
+    speakeasy-default-load-sources-paged:
+      parameters:
+        path:
+          projectID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  CreateSource:
+    speakeasy-default-create-source:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  DeleteSource:
+    speakeasy-default-delete-source:
+      parameters:
+        path:
+          projectID: "<id>"
+          sourceID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetSource:
+    speakeasy-default-get-source:
+      parameters:
+        path:
+          projectID: "<id>"
+          sourceID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  UpdateSource:
+    speakeasy-default-update-source:
+      parameters:
+        path:
+          projectID: "<id>"
+          sourceID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "202":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  post_/v1/projects/{projectID}/sources/test_function:
+    speakeasy-default-post-/v1-/projects/{project-id}/sources/test-function:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetSubscriptions:
+    speakeasy-default-get-subscriptions:
+      parameters:
+        path:
+          projectID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  CreateSubscription:
+    speakeasy-default-create-subscription:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  DeleteSubscription:
+    speakeasy-default-delete-subscription:
+      parameters:
+        path:
+          projectID: "<id>"
+          subscriptionID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetSubscription:
+    speakeasy-default-get-subscription:
+      parameters:
+        path:
+          projectID: "<id>"
+          subscriptionID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  UpdateSubscription:
+    speakeasy-default-update-subscription:
+      parameters:
+        path:
+          projectID: "<id>"
+          subscriptionID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "202":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  TestSubscriptionFilter:
+    speakeasy-default-test-subscription-filter:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  TestSubscriptionFunction:
+    speakeasy-default-test-subscription-function:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetFilters:
+    speakeasy-default-get-filters:
+      parameters:
+        path:
+          projectID: "<id>"
+          subscriptionID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  CreateFilter:
+    speakeasy-default-create-filter:
+      parameters:
+        path:
+          projectID: "<id>"
+          subscriptionID: "<id>"
+      requestBody:
+        application/json: {"event_type": "<value>"}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  DeleteFilter:
+    speakeasy-default-delete-filter:
+      parameters:
+        path:
+          projectID: "<id>"
+          subscriptionID: "<id>"
+          filterID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  GetFilter:
+    speakeasy-default-get-filter:
+      parameters:
+        path:
+          projectID: "<id>"
+          subscriptionID: "<id>"
+          filterID: "<id>"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  UpdateFilter:
+    speakeasy-default-update-filter:
+      parameters:
+        path:
+          projectID: "<id>"
+          subscriptionID: "<id>"
+          filterID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  BulkCreateFilters:
+    speakeasy-default-bulk-create-filters:
+      parameters:
+        path:
+          projectID: "<id>"
+          subscriptionID: "<id>"
+      requestBody:
+        application/json: [{"event_type": "<value>"}]
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  BulkUpdateFilters:
+    speakeasy-default-bulk-update-filters:
+      parameters:
+        path:
+          projectID: "<id>"
+          subscriptionID: "<id>"
+      requestBody:
+        application/json: []
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  TestFilter:
+    speakeasy-default-test-filter:
+      parameters:
+        path:
+          projectID: "<id>"
+          subscriptionID: "<id>"
+          eventType: "<value>"
+      requestBody:
+        application/json: {"payload": "<value>"}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {}
+        "401":
+          application/json: {}
+        "404":
+          application/json: {}
+  TestSourceFunction:
+    speakeasy-default-test-source-function:
+      parameters:
+        path:
+          projectID: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
           application/json: {}
         "400":
           application/json: {}
