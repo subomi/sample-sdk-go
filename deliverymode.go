@@ -2,11 +2,6 @@
 
 package convoy
 
-import (
-	"encoding/json"
-	"fmt"
-)
-
 type DeliveryMode string
 
 const (
@@ -16,19 +11,4 @@ const (
 
 func (e DeliveryMode) ToPointer() *DeliveryMode {
 	return &e
-}
-func (e *DeliveryMode) UnmarshalJSON(data []byte) error {
-	var v string
-	if err := json.Unmarshal(data, &v); err != nil {
-		return err
-	}
-	switch v {
-	case "at_least_once":
-		fallthrough
-	case "at_most_once":
-		*e = DeliveryMode(v)
-		return nil
-	default:
-		return fmt.Errorf("invalid value for DeliveryMode: %v", v)
-	}
 }

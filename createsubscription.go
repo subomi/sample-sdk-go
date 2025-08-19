@@ -2,13 +2,25 @@
 
 package convoy
 
+// CreateSubscriptionDeliveryMode - Delivery mode configuration
+type CreateSubscriptionDeliveryMode string
+
+const (
+	CreateSubscriptionDeliveryModeAtLeastOnce CreateSubscriptionDeliveryMode = "at_least_once"
+	CreateSubscriptionDeliveryModeAtMostOnce  CreateSubscriptionDeliveryMode = "at_most_once"
+)
+
+func (e CreateSubscriptionDeliveryMode) ToPointer() *CreateSubscriptionDeliveryMode {
+	return &e
+}
+
 type CreateSubscription struct {
 	// Alert configuration
 	AlertConfig *AlertConfiguration `json:"alert_config,omitempty"`
 	// Deprecated but necessary for backward compatibility
 	AppID *string `json:"app_id,omitempty"`
 	// Delivery mode configuration
-	DeliveryMode *DeliveryMode `json:"delivery_mode,omitempty"`
+	DeliveryMode *CreateSubscriptionDeliveryMode `json:"delivery_mode,omitempty"`
 	// Destination endpoint ID
 	EndpointID *string `json:"endpoint_id,omitempty"`
 	// Filter configuration
@@ -38,7 +50,7 @@ func (o *CreateSubscription) GetAppID() *string {
 	return o.AppID
 }
 
-func (o *CreateSubscription) GetDeliveryMode() *DeliveryMode {
+func (o *CreateSubscription) GetDeliveryMode() *CreateSubscriptionDeliveryMode {
 	if o == nil {
 		return nil
 	}

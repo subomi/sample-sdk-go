@@ -1,12 +1,12 @@
 lockVersion: 2.0.0
 id: 6e7b91ca-db99-42ff-94be-b5c538c41b05
 management:
-  docChecksum: 9e9d5a66c51aa0dfed7f8f361380bd0f
+  docChecksum: 5eecbeab1e31ed44df9d8375601f7401
   docVersion: 24.1.4
   speakeasyVersion: 1.606.0
   generationVersion: 2.686.7
-  releaseVersion: 0.0.17
-  configChecksum: 62a857c7db348d75fe70c360c3704881
+  releaseVersion: 0.1.0
+  configChecksum: d4119f0691ca97efcd8a47c4ff79a3d4
   repoURL: https://github.com/subomi/sample-sdk-go.git
   installationURL: https://github.com/subomi/sample-sdk-go
 features:
@@ -22,6 +22,7 @@ features:
     globalSecurityFlattening: 0.1.0
     globalServerURLs: 2.82.3
     intellisenseMarkdownSupport: 0.1.0
+    openEnums: 0.1.0
     responseFormat: 0.1.2
     retries: 2.84.2
     sdkHooks: 0.2.0
@@ -278,6 +279,7 @@ generatedFiles:
   - docs/createsourceunauthorizederror.md
   - docs/createsubscription.md
   - docs/createsubscriptionbadrequesterror.md
+  - docs/createsubscriptiondeliverymode.md
   - docs/createsubscriptionnotfounderror.md
   - docs/createsubscriptionrequest.md
   - docs/createsubscriptionresponse.md
@@ -635,6 +637,7 @@ generatedFiles:
   - docs/updatesourceunauthorizederror.md
   - docs/updatesubscription.md
   - docs/updatesubscriptionbadrequesterror.md
+  - docs/updatesubscriptiondeliverymode.md
   - docs/updatesubscriptionnotfounderror.md
   - docs/updatesubscriptionrequest.md
   - docs/updatesubscriptionresponse.md
@@ -1606,64 +1609,3 @@ examples:
         "404":
           application/json: {}
 examplesVersion: 1.0.2
-releaseNotes: |
-  ## SDK Changes Detected:
-  * `Convoy.Events.CreateEndpointEvent()`:  `request` **Changed** **Breaking** :warning:
-  * `Convoy.Endpoints.GetEndpoints()`: **Added**
-  * `Convoy.Endpoints.CreateEndpoint()`: **Added**
-  * `Convoy.Endpoints.DeleteEndpoint()`: **Added**
-  * `Convoy.Endpoints.GetEndpoint()`: **Added**
-  * `Convoy.Endpoints.UpdateEndpoint()`: **Added**
-  * `Convoy.Endpoints.ActivateEndpoint()`: **Added**
-  * `Convoy.Endpoints.ExpireSecret()`: **Added**
-  * `Convoy.Endpoints.PauseEndpoint()`: **Added**
-  * `Convoy.EventTypes.GetEventTypes()`: **Added**
-  * `Convoy.EventTypes.CreateEventType()`: **Added**
-  * `Convoy.EventTypes.UpdateEventType()`: **Added**
-  * `Convoy.EventTypes.DeprecateEventType()`: **Added**
-  * `Convoy.EventTypes.ImportOpenApiSpec()`: **Added**
-  * `Convoy.EventDeliveries.GetEventDeliveriesPaged()`: **Added**
-  * `Convoy.EventDeliveries.GetEventDelivery()`: **Added**
-  * `Convoy.EventDeliveries.ResendEventDelivery()`: **Added**
-  * `Convoy.EventDeliveries.BatchRetryEventDelivery()`: **Added**
-  * `Convoy.EventDeliveries.ForceResendEventDeliveries()`: **Added**
-  * `Convoy.DeliveryAttempts.GetDeliveryAttempts()`: **Added**
-  * `Convoy.DeliveryAttempts.GetDeliveryAttempt()`: **Added**
-  * `Convoy.Events.GetEventsPaged()`: **Added**
-  * `Convoy.Events.GetEndpointEvent()`: **Added**
-  * `Convoy.Events.ReplayEndpointEvent()`: **Added**
-  * `Convoy.Events.BatchReplayEvents()`: **Added**
-  * `Convoy.Events.CreateBroadcastEvent()`: **Added**
-  * `Convoy.Events.CreateDynamicEvent()`: **Added**
-  * `Convoy.Events.CreateEndpointFanoutEvent()`: **Added**
-  * `Convoy.MetaEvents.GetMetaEventsPaged()`: **Added**
-  * `Convoy.MetaEvents.GetMetaEvent()`: **Added**
-  * `Convoy.MetaEvents.ResendMetaEvent()`: **Added**
-  * `Convoy.PortalLinks.LoadPortalLinksPaged()`: **Added**
-  * `Convoy.PortalLinks.CreatePortalLink()`: **Added**
-  * `Convoy.PortalLinks.GetPortalLink()`: **Added**
-  * `Convoy.PortalLinks.GeneratePortalToken()`: **Added**
-  * `Convoy.PortalLinks.UpdatePortalLink()`: **Added**
-  * `Convoy.PortalLinks.RefreshPortalLinkAuthToken()`: **Added**
-  * `Convoy.PortalLinks.RevokePortalLink()`: **Added**
-  * `Convoy.Sources.LoadSourcesPaged()`: **Added**
-  * `Convoy.Sources.CreateSource()`: **Added**
-  * `Convoy.Sources.DeleteSource()`: **Added**
-  * `Convoy.Sources.GetSource()`: **Added**
-  * `Convoy.Sources.UpdateSource()`: **Added**
-  * `Convoy.Sources.TestSourceFunction()`: **Added**
-  * `Convoy.Subscriptions.GetSubscriptions()`: **Added**
-  * `Convoy.Subscriptions.CreateSubscription()`: **Added**
-  * `Convoy.Subscriptions.DeleteSubscription()`: **Added**
-  * `Convoy.Subscriptions.GetSubscription()`: **Added**
-  * `Convoy.Subscriptions.UpdateSubscription()`: **Added**
-  * `Convoy.Subscriptions.TestSubscriptionFilter()`: **Added**
-  * `Convoy.Subscriptions.TestSubscriptionFunction()`: **Added**
-  * `Convoy.Filters.GetFilters()`: **Added**
-  * `Convoy.Filters.CreateFilter()`: **Added**
-  * `Convoy.Filters.DeleteFilter()`: **Added**
-  * `Convoy.Filters.GetFilter()`: **Added**
-  * `Convoy.Filters.UpdateFilter()`: **Added**
-  * `Convoy.Filters.BulkCreateFilters()`: **Added**
-  * `Convoy.Filters.BulkUpdateFilters()`: **Added**
-  * `Convoy.Filters.TestFilter()`: **Added**

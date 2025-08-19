@@ -143,9 +143,9 @@ func WithTimeout(timeout time.Duration) SDKOption {
 // New creates a new instance of the SDK with the provided options
 func New(opts ...SDKOption) *Convoy {
 	sdk := &Convoy{
-		SDKVersion: "0.0.17",
+		SDKVersion: "0.1.0",
 		sdkConfiguration: config.SDKConfiguration{
-			UserAgent:  "speakeasy-sdk/go 0.0.17 2.686.7 24.1.4 github.com/frain-dev/convoy",
+			UserAgent:  "speakeasy-sdk/go 0.1.0 2.686.7 24.1.4 github.com/frain-dev/convoy",
 			ServerList: ServerList,
 		},
 		hooks: hooks.New(),
