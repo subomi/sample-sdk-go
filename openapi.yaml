@@ -4709,6 +4709,7 @@ components:
       - at_least_once
       - at_most_once
       type: string
+      x-speakeasy-unknown-values: allow
     Device:
       properties:
         created_at:
