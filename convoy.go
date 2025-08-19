@@ -2,7 +2,7 @@
 
 package convoy
 
-// Generated from OpenAPI doc version 24.1.4 and generator version internal
+// Generated from OpenAPI doc version 24.1.4 and generator version 2.686.7
 
 import (
 	"context"
@@ -143,9 +143,9 @@ func WithTimeout(timeout time.Duration) SDKOption {
 // New creates a new instance of the SDK with the provided options
 func New(opts ...SDKOption) *Convoy {
 	sdk := &Convoy{
-		SDKVersion: "0.0.16",
+		SDKVersion: "0.0.17",
 		sdkConfiguration: config.SDKConfiguration{
-			UserAgent:  "speakeasy-sdk/go 0.0.16 internal 24.1.4 github.com/frain-dev/convoy",
+			UserAgent:  "speakeasy-sdk/go 0.0.17 2.686.7 24.1.4 github.com/frain-dev/convoy",
 			ServerList: ServerList,
 		},
 		hooks: hooks.New(),
