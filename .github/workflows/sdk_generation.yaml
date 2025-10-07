@@ -23,7 +23,7 @@ permissions:
       - unlabeled
 jobs:
   generate:
-    uses: subomi/sdk-generation-action/.github/workflows/workflow-executor.yaml@main
+    uses: speakeasy-api/sdk-generation-action/.github/workflows/workflow-executor.yaml@main
     with:
       force: ${{ github.event.inputs.force }}
       mode: pr
