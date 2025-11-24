@@ -22,114 +22,114 @@ type SubscriptionResponse struct {
 	UpdatedAt        *string                 `json:"updated_at,omitempty"`
 }
 
-func (o *SubscriptionResponse) GetAlertConfig() *AlertConfiguration {
-	if o == nil {
+func (s *SubscriptionResponse) GetAlertConfig() *AlertConfiguration {
+	if s == nil {
 		return nil
 	}
-	return o.AlertConfig
+	return s.AlertConfig
 }
 
-func (o *SubscriptionResponse) GetCreatedAt() *string {
-	if o == nil {
+func (s *SubscriptionResponse) GetCreatedAt() *string {
+	if s == nil {
 		return nil
 	}
-	return o.CreatedAt
+	return s.CreatedAt
 }
 
-func (o *SubscriptionResponse) GetDeletedAt() *string {
-	if o == nil {
+func (s *SubscriptionResponse) GetDeletedAt() *string {
+	if s == nil {
 		return nil
 	}
-	return o.DeletedAt
+	return s.DeletedAt
 }
 
-func (o *SubscriptionResponse) GetDeliveryMode() *DeliveryMode {
-	if o == nil {
+func (s *SubscriptionResponse) GetDeliveryMode() *DeliveryMode {
+	if s == nil {
 		return nil
 	}
-	return o.DeliveryMode
+	return s.DeliveryMode
 }
 
-func (o *SubscriptionResponse) GetDeviceMetadata() *Device {
-	if o == nil {
+func (s *SubscriptionResponse) GetDeviceMetadata() *Device {
+	if s == nil {
 		return nil
 	}
-	return o.DeviceMetadata
+	return s.DeviceMetadata
 }
 
-func (o *SubscriptionResponse) GetEndpointMetadata() *Endpoint {
-	if o == nil {
+func (s *SubscriptionResponse) GetEndpointMetadata() *Endpoint {
+	if s == nil {
 		return nil
 	}
-	return o.EndpointMetadata
+	return s.EndpointMetadata
 }
 
-func (o *SubscriptionResponse) GetFilterConfig() *FilterConfiguration {
-	if o == nil {
+func (s *SubscriptionResponse) GetFilterConfig() *FilterConfiguration {
+	if s == nil {
 		return nil
 	}
-	return o.FilterConfig
+	return s.FilterConfig
 }
 
-func (o *SubscriptionResponse) GetFunction() *string {
-	if o == nil {
+func (s *SubscriptionResponse) GetFunction() *string {
+	if s == nil {
 		return nil
 	}
-	return o.Function
+	return s.Function
 }
 
-func (o *SubscriptionResponse) GetName() *string {
-	if o == nil {
+func (s *SubscriptionResponse) GetName() *string {
+	if s == nil {
 		return nil
 	}
-	return o.Name
+	return s.Name
 }
 
-func (o *SubscriptionResponse) GetProjectID() *string {
-	if o == nil {
+func (s *SubscriptionResponse) GetProjectID() *string {
+	if s == nil {
 		return nil
 	}
-	return o.ProjectID
+	return s.ProjectID
 }
 
-func (o *SubscriptionResponse) GetRateLimitConfig() *RateLimitConfiguration {
-	if o == nil {
+func (s *SubscriptionResponse) GetRateLimitConfig() *RateLimitConfiguration {
+	if s == nil {
 		return nil
 	}
-	return o.RateLimitConfig
+	return s.RateLimitConfig
 }
 
-func (o *SubscriptionResponse) GetRetryConfig() *RetryConfiguration {
-	if o == nil {
+func (s *SubscriptionResponse) GetRetryConfig() *RetryConfiguration {
+	if s == nil {
 		return nil
 	}
-	return o.RetryConfig
+	return s.RetryConfig
 }
 
-func (o *SubscriptionResponse) GetSourceMetadata() *Source {
-	if o == nil {
+func (s *SubscriptionResponse) GetSourceMetadata() *Source {
+	if s == nil {
 		return nil
 	}
-	return o.SourceMetadata
+	return s.SourceMetadata
 }
 
-func (o *SubscriptionResponse) GetType() *SubscriptionType {
-	if o == nil {
+func (s *SubscriptionResponse) GetType() *SubscriptionType {
+	if s == nil {
 		return nil
 	}
-	return o.Type
+	return s.Type
 }
 
-func (o *SubscriptionResponse) GetUID() *string {
-	if o == nil {
+func (s *SubscriptionResponse) GetUID() *string {
+	if s == nil {
 		return nil
 	}
-	return o.UID
+	return s.UID
 }
 
-func (o *SubscriptionResponse) GetUpdatedAt() *string {
-	if o == nil {
+func (s *SubscriptionResponse) GetUpdatedAt() *string {
+	if s == nil {
 		return nil
 	}
-	return o.UpdatedAt
+	return s.UpdatedAt
 }

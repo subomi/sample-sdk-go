@@ -22,121 +22,121 @@ type DeliveryAttempt struct {
 	URL                *string           `json:"url,omitempty"`
 }
 
-func (o *DeliveryAttempt) GetAPIVersion() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetAPIVersion() *string {
+	if d == nil {
 		return nil
 	}
-	return o.APIVersion
+	return d.APIVersion
 }
 
-func (o *DeliveryAttempt) GetCreatedAt() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetCreatedAt() *string {
+	if d == nil {
 		return nil
 	}
-	return o.CreatedAt
+	return d.CreatedAt
 }
 
-func (o *DeliveryAttempt) GetDeletedAt() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetDeletedAt() *string {
+	if d == nil {
 		return nil
 	}
-	return o.DeletedAt
+	return d.DeletedAt
 }
 
-func (o *DeliveryAttempt) GetEndpointID() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetEndpointID() *string {
+	if d == nil {
 		return nil
 	}
-	return o.EndpointID
+	return d.EndpointID
 }
 
-func (o *DeliveryAttempt) GetError() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetError() *string {
+	if d == nil {
 		return nil
 	}
-	return o.Error
+	return d.Error
 }
 
-func (o *DeliveryAttempt) GetHTTPStatus() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetHTTPStatus() *string {
+	if d == nil {
 		return nil
 	}
-	return o.HTTPStatus
+	return d.HTTPStatus
 }
 
-func (o *DeliveryAttempt) GetIPAddress() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetIPAddress() *string {
+	if d == nil {
 		return nil
 	}
-	return o.IPAddress
+	return d.IPAddress
 }
 
-func (o *DeliveryAttempt) GetMethod() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetMethod() *string {
+	if d == nil {
 		return nil
 	}
-	return o.Method
+	return d.Method
 }
 
-func (o *DeliveryAttempt) GetMsgID() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetMsgID() *string {
+	if d == nil {
 		return nil
 	}
-	return o.MsgID
+	return d.MsgID
 }
 
-func (o *DeliveryAttempt) GetProjectID() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetProjectID() *string {
+	if d == nil {
 		return nil
 	}
-	return o.ProjectID
+	return d.ProjectID
 }
 
-func (o *DeliveryAttempt) GetRequestHTTPHeader() map[string]string {
-	if o == nil {
+func (d *DeliveryAttempt) GetRequestHTTPHeader() map[string]string {
+	if d == nil {
 		return nil
 	}
-	return o.RequestHTTPHeader
+	return d.RequestHTTPHeader
 }
 
-func (o *DeliveryAttempt) GetResponseData() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetResponseData() *string {
+	if d == nil {
 		return nil
 	}
-	return o.ResponseData
+	return d.ResponseData
 }
 
-func (o *DeliveryAttempt) GetResponseHTTPHeader() map[string]string {
-	if o == nil {
+func (d *DeliveryAttempt) GetResponseHTTPHeader() map[string]string {
+	if d == nil {
 		return nil
 	}
-	return o.ResponseHTTPHeader
+	return d.ResponseHTTPHeader
 }
 
-func (o *DeliveryAttempt) GetStatus() *bool {
-	if o == nil {
+func (d *DeliveryAttempt) GetStatus() *bool {
+	if d == nil {
 		return nil
 	}
-	return o.Status
+	return d.Status
 }
 
-func (o *DeliveryAttempt) GetUID() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetUID() *string {
+	if d == nil {
 		return nil
 	}
-	return o.UID
+	return d.UID
 }
 
-func (o *DeliveryAttempt) GetUpdatedAt() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetUpdatedAt() *string {
+	if d == nil {
 		return nil
 	}
-	return o.UpdatedAt
+	return d.UpdatedAt
 }
 
-func (o *DeliveryAttempt) GetURL() *string {
-	if o == nil {
+func (d *DeliveryAttempt) GetURL() *string {
+	if d == nil {
 		return nil
 	}
-	return o.URL
+	return d.URL
 }

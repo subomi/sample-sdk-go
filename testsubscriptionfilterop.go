@@ -13,18 +13,18 @@ type TestSubscriptionFilterRequest struct {
 	TestFilter TestFilter `request:"mediaType=application/json"`
 }
 
-func (o *TestSubscriptionFilterRequest) GetProjectID() string {
-	if o == nil {
+func (t *TestSubscriptionFilterRequest) GetProjectID() string {
+	if t == nil {
 		return ""
 	}
-	return o.ProjectID
+	return t.ProjectID
 }
 
-func (o *TestSubscriptionFilterRequest) GetTestFilter() TestFilter {
-	if o == nil {
+func (t *TestSubscriptionFilterRequest) GetTestFilter() TestFilter {
+	if t == nil {
 		return TestFilter{}
 	}
-	return o.TestFilter
+	return t.TestFilter
 }
 
 // TestSubscriptionFilterNotFoundError - Not Found
@@ -79,25 +79,25 @@ type TestSubscriptionFilterResponseBody struct {
 	Data    *bool   `json:"data,omitempty"`
 }
 
-func (o *TestSubscriptionFilterResponseBody) GetMessage() *string {
-	if o == nil {
+func (t *TestSubscriptionFilterResponseBody) GetMessage() *string {
+	if t == nil {
 		return nil
 	}
-	return o.Message
+	return t.Message
 }
 
-func (o *TestSubscriptionFilterResponseBody) GetStatus() *bool {
-	if o == nil {
+func (t *TestSubscriptionFilterResponseBody) GetStatus() *bool {
+	if t == nil {
 		return nil
 	}
-	return o.Status
+	return t.Status
 }
 
-func (o *TestSubscriptionFilterResponseBody) GetData() *bool {
-	if o == nil {
+func (t *TestSubscriptionFilterResponseBody) GetData() *bool {
+	if t == nil {
 		return nil
 	}
-	return o.Data
+	return t.Data
 }
 
 type TestSubscriptionFilterResponse struct {
@@ -106,16 +106,16 @@ type TestSubscriptionFilterResponse struct {
 	Object *TestSubscriptionFilterResponseBody
 }
 
-func (o *TestSubscriptionFilterResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (t *TestSubscriptionFilterResponse) GetHTTPMeta() HTTPMetadata {
+	if t == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return t.HTTPMeta
 }
 
-func (o *TestSubscriptionFilterResponse) GetObject() *TestSubscriptionFilterResponseBody {
-	if o == nil {
+func (t *TestSubscriptionFilterResponse) GetObject() *TestSubscriptionFilterResponseBody {
+	if t == nil {
 		return nil
 	}
-	return o.Object
+	return t.Object
 }

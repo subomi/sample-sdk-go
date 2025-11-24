@@ -30,65 +30,65 @@ type CreateSource struct {
 	Verifier *VerifierConfig `json:"verifier,omitempty"`
 }
 
-func (o *CreateSource) GetBodyFunction() *string {
-	if o == nil {
+func (c *CreateSource) GetBodyFunction() *string {
+	if c == nil {
 		return nil
 	}
-	return o.BodyFunction
+	return c.BodyFunction
 }
 
-func (o *CreateSource) GetCustomResponse() *CustomResponse {
-	if o == nil {
+func (c *CreateSource) GetCustomResponse() *CustomResponse {
+	if c == nil {
 		return nil
 	}
-	return o.CustomResponse
+	return c.CustomResponse
 }
 
-func (o *CreateSource) GetHeaderFunction() *string {
-	if o == nil {
+func (c *CreateSource) GetHeaderFunction() *string {
+	if c == nil {
 		return nil
 	}
-	return o.HeaderFunction
+	return c.HeaderFunction
 }
 
-func (o *CreateSource) GetIdempotencyKeys() []string {
-	if o == nil {
+func (c *CreateSource) GetIdempotencyKeys() []string {
+	if c == nil {
 		return nil
 	}
-	return o.IdempotencyKeys
+	return c.IdempotencyKeys
 }
 
-func (o *CreateSource) GetName() *string {
-	if o == nil {
+func (c *CreateSource) GetName() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Name
+	return c.Name
 }
 
-func (o *CreateSource) GetProvider() *SourceProvider {
-	if o == nil {
+func (c *CreateSource) GetProvider() *SourceProvider {
+	if c == nil {
 		return nil
 	}
-	return o.Provider
+	return c.Provider
 }
 
-func (o *CreateSource) GetPubSub() *PubSubConfig {
-	if o == nil {
+func (c *CreateSource) GetPubSub() *PubSubConfig {
+	if c == nil {
 		return nil
 	}
-	return o.PubSub
+	return c.PubSub
 }
 
-func (o *CreateSource) GetType() *SourceType {
-	if o == nil {
+func (c *CreateSource) GetType() *SourceType {
+	if c == nil {
 		return nil
 	}
-	return o.Type
+	return c.Type
 }
 
-func (o *CreateSource) GetVerifier() *VerifierConfig {
-	if o == nil {
+func (c *CreateSource) GetVerifier() *VerifierConfig {
+	if c == nil {
 		return nil
 	}
-	return o.Verifier
+	return c.Verifier
 }

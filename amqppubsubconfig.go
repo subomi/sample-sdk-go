@@ -13,58 +13,58 @@ type AmqpPubSubconfig struct {
 	Vhost              *string       `json:"vhost,omitempty"`
 }
 
-func (o *AmqpPubSubconfig) GetAuth() *AmqpAuth {
-	if o == nil {
+func (a *AmqpPubSubconfig) GetAuth() *AmqpAuth {
+	if a == nil {
 		return nil
 	}
-	return o.Auth
+	return a.Auth
 }
 
-func (o *AmqpPubSubconfig) GetBindExchange() *AmqpExchange {
-	if o == nil {
+func (a *AmqpPubSubconfig) GetBindExchange() *AmqpExchange {
+	if a == nil {
 		return nil
 	}
-	return o.BindExchange
+	return a.BindExchange
 }
 
-func (o *AmqpPubSubconfig) GetDeadLetterExchange() *string {
-	if o == nil {
+func (a *AmqpPubSubconfig) GetDeadLetterExchange() *string {
+	if a == nil {
 		return nil
 	}
-	return o.DeadLetterExchange
+	return a.DeadLetterExchange
 }
 
-func (o *AmqpPubSubconfig) GetHost() *string {
-	if o == nil {
+func (a *AmqpPubSubconfig) GetHost() *string {
+	if a == nil {
 		return nil
 	}
-	return o.Host
+	return a.Host
 }
 
-func (o *AmqpPubSubconfig) GetPort() *string {
-	if o == nil {
+func (a *AmqpPubSubconfig) GetPort() *string {
+	if a == nil {
 		return nil
 	}
-	return o.Port
+	return a.Port
 }
 
-func (o *AmqpPubSubconfig) GetQueue() *string {
-	if o == nil {
+func (a *AmqpPubSubconfig) GetQueue() *string {
+	if a == nil {
 		return nil
 	}
-	return o.Queue
+	return a.Queue
 }
 
-func (o *AmqpPubSubconfig) GetSchema() *string {
-	if o == nil {
+func (a *AmqpPubSubconfig) GetSchema() *string {
+	if a == nil {
 		return nil
 	}
-	return o.Schema
+	return a.Schema
 }
 
-func (o *AmqpPubSubconfig) GetVhost() *string {
-	if o == nil {
+func (a *AmqpPubSubconfig) GetVhost() *string {
+	if a == nil {
 		return nil
 	}
-	return o.Vhost
+	return a.Vhost
 }

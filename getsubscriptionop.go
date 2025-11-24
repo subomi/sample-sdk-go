@@ -13,18 +13,18 @@ type GetSubscriptionRequest struct {
 	SubscriptionID string `pathParam:"style=simple,explode=false,name=subscriptionID"`
 }
 
-func (o *GetSubscriptionRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetSubscriptionRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetSubscriptionRequest) GetSubscriptionID() string {
-	if o == nil {
+func (g *GetSubscriptionRequest) GetSubscriptionID() string {
+	if g == nil {
 		return ""
 	}
-	return o.SubscriptionID
+	return g.SubscriptionID
 }
 
 // GetSubscriptionNotFoundError - Not Found
@@ -79,25 +79,25 @@ type GetSubscriptionResponseBody struct {
 	Data    *SubscriptionResponse `json:"data,omitempty"`
 }
 
-func (o *GetSubscriptionResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetSubscriptionResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetSubscriptionResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetSubscriptionResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetSubscriptionResponseBody) GetData() *SubscriptionResponse {
-	if o == nil {
+func (g *GetSubscriptionResponseBody) GetData() *SubscriptionResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetSubscriptionResponse struct {
@@ -106,16 +106,16 @@ type GetSubscriptionResponse struct {
 	Object *GetSubscriptionResponseBody
 }
 
-func (o *GetSubscriptionResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetSubscriptionResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetSubscriptionResponse) GetObject() *GetSubscriptionResponseBody {
-	if o == nil {
+func (g *GetSubscriptionResponse) GetObject() *GetSubscriptionResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

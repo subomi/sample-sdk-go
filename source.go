@@ -24,135 +24,135 @@ type Source struct {
 	Verifier        *VerifierConfig `json:"verifier,omitempty"`
 }
 
-func (o *Source) GetBodyFunction() *string {
-	if o == nil {
+func (s *Source) GetBodyFunction() *string {
+	if s == nil {
 		return nil
 	}
-	return o.BodyFunction
+	return s.BodyFunction
 }
 
-func (o *Source) GetCreatedAt() *string {
-	if o == nil {
+func (s *Source) GetCreatedAt() *string {
+	if s == nil {
 		return nil
 	}
-	return o.CreatedAt
+	return s.CreatedAt
 }
 
-func (o *Source) GetCustomResponse() *CustomResponse {
-	if o == nil {
+func (s *Source) GetCustomResponse() *CustomResponse {
+	if s == nil {
 		return nil
 	}
-	return o.CustomResponse
+	return s.CustomResponse
 }
 
-func (o *Source) GetDeletedAt() *string {
-	if o == nil {
+func (s *Source) GetDeletedAt() *string {
+	if s == nil {
 		return nil
 	}
-	return o.DeletedAt
+	return s.DeletedAt
 }
 
-func (o *Source) GetForwardHeaders() []string {
-	if o == nil {
+func (s *Source) GetForwardHeaders() []string {
+	if s == nil {
 		return nil
 	}
-	return o.ForwardHeaders
+	return s.ForwardHeaders
 }
 
-func (o *Source) GetHeaderFunction() *string {
-	if o == nil {
+func (s *Source) GetHeaderFunction() *string {
+	if s == nil {
 		return nil
 	}
-	return o.HeaderFunction
+	return s.HeaderFunction
 }
 
-func (o *Source) GetIdempotencyKeys() []string {
-	if o == nil {
+func (s *Source) GetIdempotencyKeys() []string {
+	if s == nil {
 		return nil
 	}
-	return o.IdempotencyKeys
+	return s.IdempotencyKeys
 }
 
-func (o *Source) GetIsDisabled() *bool {
-	if o == nil {
+func (s *Source) GetIsDisabled() *bool {
+	if s == nil {
 		return nil
 	}
-	return o.IsDisabled
+	return s.IsDisabled
 }
 
-func (o *Source) GetMaskID() *string {
-	if o == nil {
+func (s *Source) GetMaskID() *string {
+	if s == nil {
 		return nil
 	}
-	return o.MaskID
+	return s.MaskID
 }
 
-func (o *Source) GetName() *string {
-	if o == nil {
+func (s *Source) GetName() *string {
+	if s == nil {
 		return nil
 	}
-	return o.Name
+	return s.Name
 }
 
-func (o *Source) GetProjectID() *string {
-	if o == nil {
+func (s *Source) GetProjectID() *string {
+	if s == nil {
 		return nil
 	}
-	return o.ProjectID
+	return s.ProjectID
 }
 
-func (o *Source) GetProvider() *SourceProvider {
-	if o == nil {
+func (s *Source) GetProvider() *SourceProvider {
+	if s == nil {
 		return nil
 	}
-	return o.Provider
+	return s.Provider
 }
 
-func (o *Source) GetProviderConfig() *ProviderConfig {
-	if o == nil {
+func (s *Source) GetProviderConfig() *ProviderConfig {
+	if s == nil {
 		return nil
 	}
-	return o.ProviderConfig
+	return s.ProviderConfig
 }
 
-func (o *Source) GetPubSub() *PubSubConfig {
-	if o == nil {
+func (s *Source) GetPubSub() *PubSubConfig {
+	if s == nil {
 		return nil
 	}
-	return o.PubSub
+	return s.PubSub
 }
 
-func (o *Source) GetType() *SourceType {
-	if o == nil {
+func (s *Source) GetType() *SourceType {
+	if s == nil {
 		return nil
 	}
-	return o.Type
+	return s.Type
 }
 
-func (o *Source) GetUID() *string {
-	if o == nil {
+func (s *Source) GetUID() *string {
+	if s == nil {
 		return nil
 	}
-	return o.UID
+	return s.UID
 }
 
-func (o *Source) GetUpdatedAt() *string {
-	if o == nil {
+func (s *Source) GetUpdatedAt() *string {
+	if s == nil {
 		return nil
 	}
-	return o.UpdatedAt
+	return s.UpdatedAt
 }
 
-func (o *Source) GetURL() *string {
-	if o == nil {
+func (s *Source) GetURL() *string {
+	if s == nil {
 		return nil
 	}
-	return o.URL
+	return s.URL
 }
 
-func (o *Source) GetVerifier() *VerifierConfig {
-	if o == nil {
+func (s *Source) GetVerifier() *VerifierConfig {
+	if s == nil {
 		return nil
 	}
-	return o.Verifier
+	return s.Verifier
 }

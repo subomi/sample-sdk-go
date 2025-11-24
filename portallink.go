@@ -13,30 +13,30 @@ type PortalLink struct {
 	OwnerID *string `json:"owner_id,omitempty"`
 }
 
-func (o *PortalLink) GetCanManageEndpoint() *bool {
-	if o == nil {
+func (p *PortalLink) GetCanManageEndpoint() *bool {
+	if p == nil {
 		return nil
 	}
-	return o.CanManageEndpoint
+	return p.CanManageEndpoint
 }
 
-func (o *PortalLink) GetEndpoints() []string {
-	if o == nil {
+func (p *PortalLink) GetEndpoints() []string {
+	if p == nil {
 		return nil
 	}
-	return o.Endpoints
+	return p.Endpoints
 }
 
-func (o *PortalLink) GetName() *string {
-	if o == nil {
+func (p *PortalLink) GetName() *string {
+	if p == nil {
 		return nil
 	}
-	return o.Name
+	return p.Name
 }
 
-func (o *PortalLink) GetOwnerID() *string {
-	if o == nil {
+func (p *PortalLink) GetOwnerID() *string {
+	if p == nil {
 		return nil
 	}
-	return o.OwnerID
+	return p.OwnerID
 }

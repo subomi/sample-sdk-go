@@ -13,18 +13,18 @@ type ReplayEndpointEventRequest struct {
 	EventID string `pathParam:"style=simple,explode=false,name=eventID"`
 }
 
-func (o *ReplayEndpointEventRequest) GetProjectID() string {
-	if o == nil {
+func (r *ReplayEndpointEventRequest) GetProjectID() string {
+	if r == nil {
 		return ""
 	}
-	return o.ProjectID
+	return r.ProjectID
 }
 
-func (o *ReplayEndpointEventRequest) GetEventID() string {
-	if o == nil {
+func (r *ReplayEndpointEventRequest) GetEventID() string {
+	if r == nil {
 		return ""
 	}
-	return o.EventID
+	return r.EventID
 }
 
 // ReplayEndpointEventNotFoundError - Not Found
@@ -79,25 +79,25 @@ type ReplayEndpointEventResponseBody struct {
 	Data    *EventResponse `json:"data,omitempty"`
 }
 
-func (o *ReplayEndpointEventResponseBody) GetMessage() *string {
-	if o == nil {
+func (r *ReplayEndpointEventResponseBody) GetMessage() *string {
+	if r == nil {
 		return nil
 	}
-	return o.Message
+	return r.Message
 }
 
-func (o *ReplayEndpointEventResponseBody) GetStatus() *bool {
-	if o == nil {
+func (r *ReplayEndpointEventResponseBody) GetStatus() *bool {
+	if r == nil {
 		return nil
 	}
-	return o.Status
+	return r.Status
 }
 
-func (o *ReplayEndpointEventResponseBody) GetData() *EventResponse {
-	if o == nil {
+func (r *ReplayEndpointEventResponseBody) GetData() *EventResponse {
+	if r == nil {
 		return nil
 	}
-	return o.Data
+	return r.Data
 }
 
 type ReplayEndpointEventResponse struct {
@@ -106,16 +106,16 @@ type ReplayEndpointEventResponse struct {
 	Object *ReplayEndpointEventResponseBody
 }
 
-func (o *ReplayEndpointEventResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (r *ReplayEndpointEventResponse) GetHTTPMeta() HTTPMetadata {
+	if r == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return r.HTTPMeta
 }
 
-func (o *ReplayEndpointEventResponse) GetObject() *ReplayEndpointEventResponseBody {
-	if o == nil {
+func (r *ReplayEndpointEventResponse) GetObject() *ReplayEndpointEventResponseBody {
+	if r == nil {
 		return nil
 	}
-	return o.Object
+	return r.Object
 }

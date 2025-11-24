@@ -51,60 +51,60 @@ type GetEndpointsRequest struct {
 	Sort *string `queryParam:"style=form,explode=true,name=sort"`
 }
 
-func (o *GetEndpointsRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetEndpointsRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetEndpointsRequest) GetDirection() *GetEndpointsDirection {
-	if o == nil {
+func (g *GetEndpointsRequest) GetDirection() *GetEndpointsDirection {
+	if g == nil {
 		return nil
 	}
-	return o.Direction
+	return g.Direction
 }
 
-func (o *GetEndpointsRequest) GetNextPageCursor() *string {
-	if o == nil {
+func (g *GetEndpointsRequest) GetNextPageCursor() *string {
+	if g == nil {
 		return nil
 	}
-	return o.NextPageCursor
+	return g.NextPageCursor
 }
 
-func (o *GetEndpointsRequest) GetOwnerID() *string {
-	if o == nil {
+func (g *GetEndpointsRequest) GetOwnerID() *string {
+	if g == nil {
 		return nil
 	}
-	return o.OwnerID
+	return g.OwnerID
 }
 
-func (o *GetEndpointsRequest) GetPerPage() *int64 {
-	if o == nil {
+func (g *GetEndpointsRequest) GetPerPage() *int64 {
+	if g == nil {
 		return nil
 	}
-	return o.PerPage
+	return g.PerPage
 }
 
-func (o *GetEndpointsRequest) GetPrevPageCursor() *string {
-	if o == nil {
+func (g *GetEndpointsRequest) GetPrevPageCursor() *string {
+	if g == nil {
 		return nil
 	}
-	return o.PrevPageCursor
+	return g.PrevPageCursor
 }
 
-func (o *GetEndpointsRequest) GetQ() *string {
-	if o == nil {
+func (g *GetEndpointsRequest) GetQ() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Q
+	return g.Q
 }
 
-func (o *GetEndpointsRequest) GetSort() *string {
-	if o == nil {
+func (g *GetEndpointsRequest) GetSort() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Sort
+	return g.Sort
 }
 
 // GetEndpointsNotFoundError - Not Found
@@ -157,18 +157,18 @@ type GetEndpointsData struct {
 	Pagination *PaginationData    `json:"pagination,omitempty"`
 }
 
-func (o *GetEndpointsData) GetContent() []EndpointResponse {
-	if o == nil {
+func (g *GetEndpointsData) GetContent() []EndpointResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Content
+	return g.Content
 }
 
-func (o *GetEndpointsData) GetPagination() *PaginationData {
-	if o == nil {
+func (g *GetEndpointsData) GetPagination() *PaginationData {
+	if g == nil {
 		return nil
 	}
-	return o.Pagination
+	return g.Pagination
 }
 
 // GetEndpointsResponseBody - OK
@@ -178,25 +178,25 @@ type GetEndpointsResponseBody struct {
 	Data    *GetEndpointsData `json:"data,omitempty"`
 }
 
-func (o *GetEndpointsResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetEndpointsResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetEndpointsResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetEndpointsResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetEndpointsResponseBody) GetData() *GetEndpointsData {
-	if o == nil {
+func (g *GetEndpointsResponseBody) GetData() *GetEndpointsData {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetEndpointsResponse struct {
@@ -205,16 +205,16 @@ type GetEndpointsResponse struct {
 	Object *GetEndpointsResponseBody
 }
 
-func (o *GetEndpointsResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetEndpointsResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetEndpointsResponse) GetObject() *GetEndpointsResponseBody {
-	if o == nil {
+func (g *GetEndpointsResponse) GetObject() *GetEndpointsResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

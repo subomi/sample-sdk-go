@@ -1,4 +1,4 @@
-speakeasyVersion: 1.606.0
+speakeasyVersion: 1.660.0
 sources:
     Convoy API Reference:
         sourceNamespace: convoy-api-reference
@@ -6,7 +6,7 @@ sources:
         sourceBlobDigest: sha256:aefbb05246b51767295ed37524f6c02c5a16ca1fcd9f83fea00b8185a2e1d746
         tags:
             - latest
-            - speakeasy-sdk-regen-1755608748
+            - tag-v0.1.0
             - 24.1.4
 targets:
     convoy:
@@ -15,7 +15,7 @@ targets:
         sourceRevisionDigest: sha256:6c57ebb77d7b87091c1153e3dc748781fc6cfac5f6250fe6f38c5f4cc43e0aef
         sourceBlobDigest: sha256:aefbb05246b51767295ed37524f6c02c5a16ca1fcd9f83fea00b8185a2e1d746
         codeSamplesNamespace: convoy-api-reference-go-code-samples
-        codeSamplesRevisionDigest: sha256:7868ebff5d5b970e04fd84252abe8f31dc6e822a2add9e8d499d16bcbd92a1b7
+        codeSamplesRevisionDigest: sha256:52afad1145b7397714b27275b84f37d39cf861587585da8a46c3f5e4f3d497ce
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest

@@ -7,16 +7,16 @@ type Fs struct {
 	Headers map[string]any `json:"headers,omitempty"`
 }
 
-func (o *Fs) GetBody() map[string]any {
-	if o == nil {
+func (f *Fs) GetBody() map[string]any {
+	if f == nil {
 		return nil
 	}
-	return o.Body
+	return f.Body
 }
 
-func (o *Fs) GetHeaders() map[string]any {
-	if o == nil {
+func (f *Fs) GetHeaders() map[string]any {
+	if f == nil {
 		return nil
 	}
-	return o.Headers
+	return f.Headers
 }

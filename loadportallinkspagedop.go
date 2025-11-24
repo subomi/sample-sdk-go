@@ -51,60 +51,60 @@ type LoadPortalLinksPagedRequest struct {
 	Sort *string `queryParam:"style=form,explode=true,name=sort"`
 }
 
-func (o *LoadPortalLinksPagedRequest) GetProjectID() string {
-	if o == nil {
+func (l *LoadPortalLinksPagedRequest) GetProjectID() string {
+	if l == nil {
 		return ""
 	}
-	return o.ProjectID
+	return l.ProjectID
 }
 
-func (o *LoadPortalLinksPagedRequest) GetDirection() *LoadPortalLinksPagedDirection {
-	if o == nil {
+func (l *LoadPortalLinksPagedRequest) GetDirection() *LoadPortalLinksPagedDirection {
+	if l == nil {
 		return nil
 	}
-	return o.Direction
+	return l.Direction
 }
 
-func (o *LoadPortalLinksPagedRequest) GetNextPageCursor() *string {
-	if o == nil {
+func (l *LoadPortalLinksPagedRequest) GetNextPageCursor() *string {
+	if l == nil {
 		return nil
 	}
-	return o.NextPageCursor
+	return l.NextPageCursor
 }
 
-func (o *LoadPortalLinksPagedRequest) GetOwnerID() *string {
-	if o == nil {
+func (l *LoadPortalLinksPagedRequest) GetOwnerID() *string {
+	if l == nil {
 		return nil
 	}
-	return o.OwnerID
+	return l.OwnerID
 }
 
-func (o *LoadPortalLinksPagedRequest) GetPerPage() *int64 {
-	if o == nil {
+func (l *LoadPortalLinksPagedRequest) GetPerPage() *int64 {
+	if l == nil {
 		return nil
 	}
-	return o.PerPage
+	return l.PerPage
 }
 
-func (o *LoadPortalLinksPagedRequest) GetPrevPageCursor() *string {
-	if o == nil {
+func (l *LoadPortalLinksPagedRequest) GetPrevPageCursor() *string {
+	if l == nil {
 		return nil
 	}
-	return o.PrevPageCursor
+	return l.PrevPageCursor
 }
 
-func (o *LoadPortalLinksPagedRequest) GetQ() *string {
-	if o == nil {
+func (l *LoadPortalLinksPagedRequest) GetQ() *string {
+	if l == nil {
 		return nil
 	}
-	return o.Q
+	return l.Q
 }
 
-func (o *LoadPortalLinksPagedRequest) GetSort() *string {
-	if o == nil {
+func (l *LoadPortalLinksPagedRequest) GetSort() *string {
+	if l == nil {
 		return nil
 	}
-	return o.Sort
+	return l.Sort
 }
 
 // LoadPortalLinksPagedNotFoundError - Not Found
@@ -157,18 +157,18 @@ type LoadPortalLinksPagedData struct {
 	Pagination *PaginationData      `json:"pagination,omitempty"`
 }
 
-func (o *LoadPortalLinksPagedData) GetContent() []PortalLinkResponse {
-	if o == nil {
+func (l *LoadPortalLinksPagedData) GetContent() []PortalLinkResponse {
+	if l == nil {
 		return nil
 	}
-	return o.Content
+	return l.Content
 }
 
-func (o *LoadPortalLinksPagedData) GetPagination() *PaginationData {
-	if o == nil {
+func (l *LoadPortalLinksPagedData) GetPagination() *PaginationData {
+	if l == nil {
 		return nil
 	}
-	return o.Pagination
+	return l.Pagination
 }
 
 // LoadPortalLinksPagedResponseBody - OK
@@ -178,25 +178,25 @@ type LoadPortalLinksPagedResponseBody struct {
 	Data    *LoadPortalLinksPagedData `json:"data,omitempty"`
 }
 
-func (o *LoadPortalLinksPagedResponseBody) GetMessage() *string {
-	if o == nil {
+func (l *LoadPortalLinksPagedResponseBody) GetMessage() *string {
+	if l == nil {
 		return nil
 	}
-	return o.Message
+	return l.Message
 }
 
-func (o *LoadPortalLinksPagedResponseBody) GetStatus() *bool {
-	if o == nil {
+func (l *LoadPortalLinksPagedResponseBody) GetStatus() *bool {
+	if l == nil {
 		return nil
 	}
-	return o.Status
+	return l.Status
 }
 
-func (o *LoadPortalLinksPagedResponseBody) GetData() *LoadPortalLinksPagedData {
-	if o == nil {
+func (l *LoadPortalLinksPagedResponseBody) GetData() *LoadPortalLinksPagedData {
+	if l == nil {
 		return nil
 	}
-	return o.Data
+	return l.Data
 }
 
 type LoadPortalLinksPagedResponse struct {
@@ -205,16 +205,16 @@ type LoadPortalLinksPagedResponse struct {
 	Object *LoadPortalLinksPagedResponseBody
 }
 
-func (o *LoadPortalLinksPagedResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (l *LoadPortalLinksPagedResponse) GetHTTPMeta() HTTPMetadata {
+	if l == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return l.HTTPMeta
 }
 
-func (o *LoadPortalLinksPagedResponse) GetObject() *LoadPortalLinksPagedResponseBody {
-	if o == nil {
+func (l *LoadPortalLinksPagedResponse) GetObject() *LoadPortalLinksPagedResponseBody {
+	if l == nil {
 		return nil
 	}
-	return o.Object
+	return l.Object
 }

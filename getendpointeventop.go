@@ -13,18 +13,18 @@ type GetEndpointEventRequest struct {
 	EventID string `pathParam:"style=simple,explode=false,name=eventID"`
 }
 
-func (o *GetEndpointEventRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetEndpointEventRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetEndpointEventRequest) GetEventID() string {
-	if o == nil {
+func (g *GetEndpointEventRequest) GetEventID() string {
+	if g == nil {
 		return ""
 	}
-	return o.EventID
+	return g.EventID
 }
 
 // GetEndpointEventNotFoundError - Not Found
@@ -79,25 +79,25 @@ type GetEndpointEventResponseBody struct {
 	Data    *EventResponse `json:"data,omitempty"`
 }
 
-func (o *GetEndpointEventResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetEndpointEventResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetEndpointEventResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetEndpointEventResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetEndpointEventResponseBody) GetData() *EventResponse {
-	if o == nil {
+func (g *GetEndpointEventResponseBody) GetData() *EventResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetEndpointEventResponse struct {
@@ -106,16 +106,16 @@ type GetEndpointEventResponse struct {
 	Object *GetEndpointEventResponseBody
 }
 
-func (o *GetEndpointEventResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetEndpointEventResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetEndpointEventResponse) GetObject() *GetEndpointEventResponseBody {
-	if o == nil {
+func (g *GetEndpointEventResponse) GetObject() *GetEndpointEventResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

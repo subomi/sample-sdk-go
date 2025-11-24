@@ -13,18 +13,18 @@ type CreateEndpointRequest struct {
 	CreateEndpoint CreateEndpoint `request:"mediaType=application/json"`
 }
 
-func (o *CreateEndpointRequest) GetProjectID() string {
-	if o == nil {
+func (c *CreateEndpointRequest) GetProjectID() string {
+	if c == nil {
 		return ""
 	}
-	return o.ProjectID
+	return c.ProjectID
 }
 
-func (o *CreateEndpointRequest) GetCreateEndpoint() CreateEndpoint {
-	if o == nil {
+func (c *CreateEndpointRequest) GetCreateEndpoint() CreateEndpoint {
+	if c == nil {
 		return CreateEndpoint{}
 	}
-	return o.CreateEndpoint
+	return c.CreateEndpoint
 }
 
 // CreateEndpointNotFoundError - Not Found
@@ -79,25 +79,25 @@ type CreateEndpointResponseBody struct {
 	Data    *EndpointResponse `json:"data,omitempty"`
 }
 
-func (o *CreateEndpointResponseBody) GetMessage() *string {
-	if o == nil {
+func (c *CreateEndpointResponseBody) GetMessage() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Message
+	return c.Message
 }
 
-func (o *CreateEndpointResponseBody) GetStatus() *bool {
-	if o == nil {
+func (c *CreateEndpointResponseBody) GetStatus() *bool {
+	if c == nil {
 		return nil
 	}
-	return o.Status
+	return c.Status
 }
 
-func (o *CreateEndpointResponseBody) GetData() *EndpointResponse {
-	if o == nil {
+func (c *CreateEndpointResponseBody) GetData() *EndpointResponse {
+	if c == nil {
 		return nil
 	}
-	return o.Data
+	return c.Data
 }
 
 type CreateEndpointResponse struct {
@@ -106,16 +106,16 @@ type CreateEndpointResponse struct {
 	Object *CreateEndpointResponseBody
 }
 
-func (o *CreateEndpointResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (c *CreateEndpointResponse) GetHTTPMeta() HTTPMetadata {
+	if c == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return c.HTTPMeta
 }
 
-func (o *CreateEndpointResponse) GetObject() *CreateEndpointResponseBody {
-	if o == nil {
+func (c *CreateEndpointResponse) GetObject() *CreateEndpointResponseBody {
+	if c == nil {
 		return nil
 	}
-	return o.Object
+	return c.Object
 }

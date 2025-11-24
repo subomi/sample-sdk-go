@@ -7,16 +7,16 @@ type AmqpExchange struct {
 	RoutingKey *string `json:"routingKey,omitempty"`
 }
 
-func (o *AmqpExchange) GetExchange() *string {
-	if o == nil {
+func (a *AmqpExchange) GetExchange() *string {
+	if a == nil {
 		return nil
 	}
-	return o.Exchange
+	return a.Exchange
 }
 
-func (o *AmqpExchange) GetRoutingKey() *string {
-	if o == nil {
+func (a *AmqpExchange) GetRoutingKey() *string {
+	if a == nil {
 		return nil
 	}
-	return o.RoutingKey
+	return a.RoutingKey
 }

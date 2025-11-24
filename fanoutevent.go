@@ -21,37 +21,37 @@ type FanoutEvent struct {
 	OwnerID *string `json:"owner_id,omitempty"`
 }
 
-func (o *FanoutEvent) GetCustomHeaders() map[string]string {
-	if o == nil {
+func (f *FanoutEvent) GetCustomHeaders() map[string]string {
+	if f == nil {
 		return nil
 	}
-	return o.CustomHeaders
+	return f.CustomHeaders
 }
 
-func (o *FanoutEvent) GetData() *FanoutEventData {
-	if o == nil {
+func (f *FanoutEvent) GetData() *FanoutEventData {
+	if f == nil {
 		return nil
 	}
-	return o.Data
+	return f.Data
 }
 
-func (o *FanoutEvent) GetEventType() *string {
-	if o == nil {
+func (f *FanoutEvent) GetEventType() *string {
+	if f == nil {
 		return nil
 	}
-	return o.EventType
+	return f.EventType
 }
 
-func (o *FanoutEvent) GetIdempotencyKey() *string {
-	if o == nil {
+func (f *FanoutEvent) GetIdempotencyKey() *string {
+	if f == nil {
 		return nil
 	}
-	return o.IdempotencyKey
+	return f.IdempotencyKey
 }
 
-func (o *FanoutEvent) GetOwnerID() *string {
-	if o == nil {
+func (f *FanoutEvent) GetOwnerID() *string {
+	if f == nil {
 		return nil
 	}
-	return o.OwnerID
+	return f.OwnerID
 }

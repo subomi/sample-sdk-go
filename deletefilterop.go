@@ -15,25 +15,25 @@ type DeleteFilterRequest struct {
 	FilterID string `pathParam:"style=simple,explode=false,name=filterID"`
 }
 
-func (o *DeleteFilterRequest) GetProjectID() string {
-	if o == nil {
+func (d *DeleteFilterRequest) GetProjectID() string {
+	if d == nil {
 		return ""
 	}
-	return o.ProjectID
+	return d.ProjectID
 }
 
-func (o *DeleteFilterRequest) GetSubscriptionID() string {
-	if o == nil {
+func (d *DeleteFilterRequest) GetSubscriptionID() string {
+	if d == nil {
 		return ""
 	}
-	return o.SubscriptionID
+	return d.SubscriptionID
 }
 
-func (o *DeleteFilterRequest) GetFilterID() string {
-	if o == nil {
+func (d *DeleteFilterRequest) GetFilterID() string {
+	if d == nil {
 		return ""
 	}
-	return o.FilterID
+	return d.FilterID
 }
 
 // DeleteFilterNotFoundError - Not Found
@@ -88,25 +88,25 @@ type DeleteFilterResponseBody struct {
 	Data    *Object `json:"data,omitempty"`
 }
 
-func (o *DeleteFilterResponseBody) GetMessage() *string {
-	if o == nil {
+func (d *DeleteFilterResponseBody) GetMessage() *string {
+	if d == nil {
 		return nil
 	}
-	return o.Message
+	return d.Message
 }
 
-func (o *DeleteFilterResponseBody) GetStatus() *bool {
-	if o == nil {
+func (d *DeleteFilterResponseBody) GetStatus() *bool {
+	if d == nil {
 		return nil
 	}
-	return o.Status
+	return d.Status
 }
 
-func (o *DeleteFilterResponseBody) GetData() *Object {
-	if o == nil {
+func (d *DeleteFilterResponseBody) GetData() *Object {
+	if d == nil {
 		return nil
 	}
-	return o.Data
+	return d.Data
 }
 
 type DeleteFilterResponse struct {
@@ -115,16 +115,16 @@ type DeleteFilterResponse struct {
 	Object *DeleteFilterResponseBody
 }
 
-func (o *DeleteFilterResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (d *DeleteFilterResponse) GetHTTPMeta() HTTPMetadata {
+	if d == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return d.HTTPMeta
 }
 
-func (o *DeleteFilterResponse) GetObject() *DeleteFilterResponseBody {
-	if o == nil {
+func (d *DeleteFilterResponse) GetObject() *DeleteFilterResponseBody {
+	if d == nil {
 		return nil
 	}
-	return o.Object
+	return d.Object
 }

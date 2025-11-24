@@ -13,18 +13,18 @@ type TestSourceFunctionRequest struct {
 	FunctionRequest FunctionRequest `request:"mediaType=application/json"`
 }
 
-func (o *TestSourceFunctionRequest) GetProjectID() string {
-	if o == nil {
+func (t *TestSourceFunctionRequest) GetProjectID() string {
+	if t == nil {
 		return ""
 	}
-	return o.ProjectID
+	return t.ProjectID
 }
 
-func (o *TestSourceFunctionRequest) GetFunctionRequest() FunctionRequest {
-	if o == nil {
+func (t *TestSourceFunctionRequest) GetFunctionRequest() FunctionRequest {
+	if t == nil {
 		return FunctionRequest{}
 	}
-	return o.FunctionRequest
+	return t.FunctionRequest
 }
 
 // TestSourceFunctionNotFoundError - Not Found
@@ -79,25 +79,25 @@ type TestSourceFunctionResponseBody struct {
 	Data    *FunctionResponse `json:"data,omitempty"`
 }
 
-func (o *TestSourceFunctionResponseBody) GetMessage() *string {
-	if o == nil {
+func (t *TestSourceFunctionResponseBody) GetMessage() *string {
+	if t == nil {
 		return nil
 	}
-	return o.Message
+	return t.Message
 }
 
-func (o *TestSourceFunctionResponseBody) GetStatus() *bool {
-	if o == nil {
+func (t *TestSourceFunctionResponseBody) GetStatus() *bool {
+	if t == nil {
 		return nil
 	}
-	return o.Status
+	return t.Status
 }
 
-func (o *TestSourceFunctionResponseBody) GetData() *FunctionResponse {
-	if o == nil {
+func (t *TestSourceFunctionResponseBody) GetData() *FunctionResponse {
+	if t == nil {
 		return nil
 	}
-	return o.Data
+	return t.Data
 }
 
 type TestSourceFunctionResponse struct {
@@ -106,16 +106,16 @@ type TestSourceFunctionResponse struct {
 	Object *TestSourceFunctionResponseBody
 }
 
-func (o *TestSourceFunctionResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (t *TestSourceFunctionResponse) GetHTTPMeta() HTTPMetadata {
+	if t == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return t.HTTPMeta
 }
 
-func (o *TestSourceFunctionResponse) GetObject() *TestSourceFunctionResponseBody {
-	if o == nil {
+func (t *TestSourceFunctionResponse) GetObject() *TestSourceFunctionResponseBody {
+	if t == nil {
 		return nil
 	}
-	return o.Object
+	return t.Object
 }

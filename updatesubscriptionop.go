@@ -15,25 +15,25 @@ type UpdateSubscriptionRequest struct {
 	UpdateSubscription UpdateSubscription `request:"mediaType=application/json"`
 }
 
-func (o *UpdateSubscriptionRequest) GetProjectID() string {
-	if o == nil {
+func (u *UpdateSubscriptionRequest) GetProjectID() string {
+	if u == nil {
 		return ""
 	}
-	return o.ProjectID
+	return u.ProjectID
 }
 
-func (o *UpdateSubscriptionRequest) GetSubscriptionID() string {
-	if o == nil {
+func (u *UpdateSubscriptionRequest) GetSubscriptionID() string {
+	if u == nil {
 		return ""
 	}
-	return o.SubscriptionID
+	return u.SubscriptionID
 }
 
-func (o *UpdateSubscriptionRequest) GetUpdateSubscription() UpdateSubscription {
-	if o == nil {
+func (u *UpdateSubscriptionRequest) GetUpdateSubscription() UpdateSubscription {
+	if u == nil {
 		return UpdateSubscription{}
 	}
-	return o.UpdateSubscription
+	return u.UpdateSubscription
 }
 
 // UpdateSubscriptionNotFoundError - Not Found
@@ -88,25 +88,25 @@ type UpdateSubscriptionResponseBody struct {
 	Data    *SubscriptionResponse `json:"data,omitempty"`
 }
 
-func (o *UpdateSubscriptionResponseBody) GetMessage() *string {
-	if o == nil {
+func (u *UpdateSubscriptionResponseBody) GetMessage() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Message
+	return u.Message
 }
 
-func (o *UpdateSubscriptionResponseBody) GetStatus() *bool {
-	if o == nil {
+func (u *UpdateSubscriptionResponseBody) GetStatus() *bool {
+	if u == nil {
 		return nil
 	}
-	return o.Status
+	return u.Status
 }
 
-func (o *UpdateSubscriptionResponseBody) GetData() *SubscriptionResponse {
-	if o == nil {
+func (u *UpdateSubscriptionResponseBody) GetData() *SubscriptionResponse {
+	if u == nil {
 		return nil
 	}
-	return o.Data
+	return u.Data
 }
 
 type UpdateSubscriptionResponse struct {
@@ -115,16 +115,16 @@ type UpdateSubscriptionResponse struct {
 	Object *UpdateSubscriptionResponseBody
 }
 
-func (o *UpdateSubscriptionResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (u *UpdateSubscriptionResponse) GetHTTPMeta() HTTPMetadata {
+	if u == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return u.HTTPMeta
 }
 
-func (o *UpdateSubscriptionResponse) GetObject() *UpdateSubscriptionResponseBody {
-	if o == nil {
+func (u *UpdateSubscriptionResponse) GetObject() *UpdateSubscriptionResponseBody {
+	if u == nil {
 		return nil
 	}
-	return o.Object
+	return u.Object
 }

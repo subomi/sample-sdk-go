@@ -9,30 +9,30 @@ type VerifierConfig struct {
 	Type      VerifierType `json:"type"`
 }
 
-func (o *VerifierConfig) GetAPIKey() *APIKey {
-	if o == nil {
+func (v *VerifierConfig) GetAPIKey() *APIKey {
+	if v == nil {
 		return nil
 	}
-	return o.APIKey
+	return v.APIKey
 }
 
-func (o *VerifierConfig) GetBasicAuth() *BasicAuth {
-	if o == nil {
+func (v *VerifierConfig) GetBasicAuth() *BasicAuth {
+	if v == nil {
 		return nil
 	}
-	return o.BasicAuth
+	return v.BasicAuth
 }
 
-func (o *VerifierConfig) GetHmac() *HMac {
-	if o == nil {
+func (v *VerifierConfig) GetHmac() *HMac {
+	if v == nil {
 		return nil
 	}
-	return o.Hmac
+	return v.Hmac
 }
 
-func (o *VerifierConfig) GetType() VerifierType {
-	if o == nil {
+func (v *VerifierConfig) GetType() VerifierType {
+	if v == nil {
 		return VerifierType("")
 	}
-	return o.Type
+	return v.Type
 }

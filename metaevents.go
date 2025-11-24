@@ -60,7 +60,7 @@ func (s *MetaEvents) GetMetaEventsPaged(ctx context.Context, request GetMetaEven
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetMetaEventsPaged",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -350,7 +350,7 @@ func (s *MetaEvents) GetMetaEvent(ctx context.Context, projectID string, metaEve
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetMetaEvent",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -636,7 +636,7 @@ func (s *MetaEvents) ResendMetaEvent(ctx context.Context, projectID string, meta
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "ResendMetaEvent",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 

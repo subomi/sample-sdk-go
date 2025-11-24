@@ -60,7 +60,7 @@ func (s *Sources) LoadSourcesPaged(ctx context.Context, request LoadSourcesPaged
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "LoadSourcesPaged",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -350,7 +350,7 @@ func (s *Sources) CreateSource(ctx context.Context, projectID string, createSour
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "CreateSource",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "CreateSource", "json", `request:"mediaType=application/json"`)
@@ -643,7 +643,7 @@ func (s *Sources) DeleteSource(ctx context.Context, projectID string, sourceID s
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "DeleteSource",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -929,7 +929,7 @@ func (s *Sources) GetSource(ctx context.Context, projectID string, sourceID stri
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetSource",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -1216,7 +1216,7 @@ func (s *Sources) UpdateSource(ctx context.Context, projectID string, sourceID s
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "UpdateSource",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "UpdateSource", "json", `request:"mediaType=application/json"`)
@@ -1509,7 +1509,7 @@ func (s *Sources) TestSourceFunction(ctx context.Context, projectID string, func
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "TestSourceFunction",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "FunctionRequest", "json", `request:"mediaType=application/json"`)

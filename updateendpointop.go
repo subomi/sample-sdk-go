@@ -15,25 +15,25 @@ type UpdateEndpointRequest struct {
 	UpdateEndpoint UpdateEndpoint `request:"mediaType=application/json"`
 }
 
-func (o *UpdateEndpointRequest) GetProjectID() string {
-	if o == nil {
+func (u *UpdateEndpointRequest) GetProjectID() string {
+	if u == nil {
 		return ""
 	}
-	return o.ProjectID
+	return u.ProjectID
 }
 
-func (o *UpdateEndpointRequest) GetEndpointID() string {
-	if o == nil {
+func (u *UpdateEndpointRequest) GetEndpointID() string {
+	if u == nil {
 		return ""
 	}
-	return o.EndpointID
+	return u.EndpointID
 }
 
-func (o *UpdateEndpointRequest) GetUpdateEndpoint() UpdateEndpoint {
-	if o == nil {
+func (u *UpdateEndpointRequest) GetUpdateEndpoint() UpdateEndpoint {
+	if u == nil {
 		return UpdateEndpoint{}
 	}
-	return o.UpdateEndpoint
+	return u.UpdateEndpoint
 }
 
 // UpdateEndpointNotFoundError - Not Found
@@ -88,25 +88,25 @@ type UpdateEndpointResponseBody struct {
 	Data    *EndpointResponse `json:"data,omitempty"`
 }
 
-func (o *UpdateEndpointResponseBody) GetMessage() *string {
-	if o == nil {
+func (u *UpdateEndpointResponseBody) GetMessage() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Message
+	return u.Message
 }
 
-func (o *UpdateEndpointResponseBody) GetStatus() *bool {
-	if o == nil {
+func (u *UpdateEndpointResponseBody) GetStatus() *bool {
+	if u == nil {
 		return nil
 	}
-	return o.Status
+	return u.Status
 }
 
-func (o *UpdateEndpointResponseBody) GetData() *EndpointResponse {
-	if o == nil {
+func (u *UpdateEndpointResponseBody) GetData() *EndpointResponse {
+	if u == nil {
 		return nil
 	}
-	return o.Data
+	return u.Data
 }
 
 type UpdateEndpointResponse struct {
@@ -115,16 +115,16 @@ type UpdateEndpointResponse struct {
 	Object *UpdateEndpointResponseBody
 }
 
-func (o *UpdateEndpointResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (u *UpdateEndpointResponse) GetHTTPMeta() HTTPMetadata {
+	if u == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return u.HTTPMeta
 }
 
-func (o *UpdateEndpointResponse) GetObject() *UpdateEndpointResponseBody {
-	if o == nil {
+func (u *UpdateEndpointResponse) GetObject() *UpdateEndpointResponseBody {
+	if u == nil {
 		return nil
 	}
-	return o.Object
+	return u.Object
 }

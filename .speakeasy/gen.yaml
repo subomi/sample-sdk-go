@@ -19,13 +19,17 @@ generation:
   auth:
     oAuth2ClientCredentialsEnabled: true
     oAuth2PasswordEnabled: true
+    hoistGlobalSecurity: true
   sdkHooksConfigAccess: true
+  schemas:
+    allOfMergeStrategy: shallowMerge
+  requestBodyFieldName: ""
   tests:
     generateTests: false
     generateNewTests: true
     skipResponseBodyAssertions: false
 go:
-  version: 0.1.0
+  version: 0.2.0
   additionalDependencies: {}
   allowUnknownFieldsInWeakUnions: false
   baseErrorName: ConvoyError
@@ -41,10 +45,14 @@ go:
       operations: ""
       shared: ""
       webhooks: ""
+  includeEmptyObjects: false
   inputModelSuffix: input
   maxMethodParams: 4
   methodArguments: require-security-and-request
   modulePath: github.com/frain-dev/convoy
+  nullableOptionalWrapper: false
   outputModelSuffix: output
+  respectRequiredFields: false
   responseFormat: envelope-http
   sdkPackageName: Convoy
+  unionStrategy: left-to-right

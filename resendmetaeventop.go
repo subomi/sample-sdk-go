@@ -13,18 +13,18 @@ type ResendMetaEventRequest struct {
 	MetaEventID string `pathParam:"style=simple,explode=false,name=metaEventID"`
 }
 
-func (o *ResendMetaEventRequest) GetProjectID() string {
-	if o == nil {
+func (r *ResendMetaEventRequest) GetProjectID() string {
+	if r == nil {
 		return ""
 	}
-	return o.ProjectID
+	return r.ProjectID
 }
 
-func (o *ResendMetaEventRequest) GetMetaEventID() string {
-	if o == nil {
+func (r *ResendMetaEventRequest) GetMetaEventID() string {
+	if r == nil {
 		return ""
 	}
-	return o.MetaEventID
+	return r.MetaEventID
 }
 
 // ResendMetaEventNotFoundError - Not Found
@@ -79,25 +79,25 @@ type ResendMetaEventResponseBody struct {
 	Data    *MetaEventResponse `json:"data,omitempty"`
 }
 
-func (o *ResendMetaEventResponseBody) GetMessage() *string {
-	if o == nil {
+func (r *ResendMetaEventResponseBody) GetMessage() *string {
+	if r == nil {
 		return nil
 	}
-	return o.Message
+	return r.Message
 }
 
-func (o *ResendMetaEventResponseBody) GetStatus() *bool {
-	if o == nil {
+func (r *ResendMetaEventResponseBody) GetStatus() *bool {
+	if r == nil {
 		return nil
 	}
-	return o.Status
+	return r.Status
 }
 
-func (o *ResendMetaEventResponseBody) GetData() *MetaEventResponse {
-	if o == nil {
+func (r *ResendMetaEventResponseBody) GetData() *MetaEventResponse {
+	if r == nil {
 		return nil
 	}
-	return o.Data
+	return r.Data
 }
 
 type ResendMetaEventResponse struct {
@@ -106,16 +106,16 @@ type ResendMetaEventResponse struct {
 	Object *ResendMetaEventResponseBody
 }
 
-func (o *ResendMetaEventResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (r *ResendMetaEventResponse) GetHTTPMeta() HTTPMetadata {
+	if r == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return r.HTTPMeta
 }
 
-func (o *ResendMetaEventResponse) GetObject() *ResendMetaEventResponseBody {
-	if o == nil {
+func (r *ResendMetaEventResponse) GetObject() *ResendMetaEventResponseBody {
+	if r == nil {
 		return nil
 	}
-	return o.Object
+	return r.Object
 }

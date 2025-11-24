@@ -13,30 +13,30 @@ type UpdateFilterRequest struct {
 	IsFlattened *bool `json:"is_flattened,omitempty"`
 }
 
-func (o *UpdateFilterRequest) GetBody() map[string]any {
-	if o == nil {
+func (u *UpdateFilterRequest) GetBody() map[string]any {
+	if u == nil {
 		return nil
 	}
-	return o.Body
+	return u.Body
 }
 
-func (o *UpdateFilterRequest) GetEventType() *string {
-	if o == nil {
+func (u *UpdateFilterRequest) GetEventType() *string {
+	if u == nil {
 		return nil
 	}
-	return o.EventType
+	return u.EventType
 }
 
-func (o *UpdateFilterRequest) GetHeaders() map[string]any {
-	if o == nil {
+func (u *UpdateFilterRequest) GetHeaders() map[string]any {
+	if u == nil {
 		return nil
 	}
-	return o.Headers
+	return u.Headers
 }
 
-func (o *UpdateFilterRequest) GetIsFlattened() *bool {
-	if o == nil {
+func (u *UpdateFilterRequest) GetIsFlattened() *bool {
+	if u == nil {
 		return nil
 	}
-	return o.IsFlattened
+	return u.IsFlattened
 }

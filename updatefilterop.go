@@ -17,32 +17,32 @@ type UpdateFilterRequestRequest struct {
 	UpdateFilterRequest UpdateFilterRequest `request:"mediaType=application/json"`
 }
 
-func (o *UpdateFilterRequestRequest) GetProjectID() string {
-	if o == nil {
+func (u *UpdateFilterRequestRequest) GetProjectID() string {
+	if u == nil {
 		return ""
 	}
-	return o.ProjectID
+	return u.ProjectID
 }
 
-func (o *UpdateFilterRequestRequest) GetSubscriptionID() string {
-	if o == nil {
+func (u *UpdateFilterRequestRequest) GetSubscriptionID() string {
+	if u == nil {
 		return ""
 	}
-	return o.SubscriptionID
+	return u.SubscriptionID
 }
 
-func (o *UpdateFilterRequestRequest) GetFilterID() string {
-	if o == nil {
+func (u *UpdateFilterRequestRequest) GetFilterID() string {
+	if u == nil {
 		return ""
 	}
-	return o.FilterID
+	return u.FilterID
 }
 
-func (o *UpdateFilterRequestRequest) GetUpdateFilterRequest() UpdateFilterRequest {
-	if o == nil {
+func (u *UpdateFilterRequestRequest) GetUpdateFilterRequest() UpdateFilterRequest {
+	if u == nil {
 		return UpdateFilterRequest{}
 	}
-	return o.UpdateFilterRequest
+	return u.UpdateFilterRequest
 }
 
 // UpdateFilterNotFoundError - Not Found
@@ -97,25 +97,25 @@ type UpdateFilterResponseBody struct {
 	Data    *FilterResponse `json:"data,omitempty"`
 }
 
-func (o *UpdateFilterResponseBody) GetMessage() *string {
-	if o == nil {
+func (u *UpdateFilterResponseBody) GetMessage() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Message
+	return u.Message
 }
 
-func (o *UpdateFilterResponseBody) GetStatus() *bool {
-	if o == nil {
+func (u *UpdateFilterResponseBody) GetStatus() *bool {
+	if u == nil {
 		return nil
 	}
-	return o.Status
+	return u.Status
 }
 
-func (o *UpdateFilterResponseBody) GetData() *FilterResponse {
-	if o == nil {
+func (u *UpdateFilterResponseBody) GetData() *FilterResponse {
+	if u == nil {
 		return nil
 	}
-	return o.Data
+	return u.Data
 }
 
 type UpdateFilterResponse struct {
@@ -124,16 +124,16 @@ type UpdateFilterResponse struct {
 	Object *UpdateFilterResponseBody
 }
 
-func (o *UpdateFilterResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (u *UpdateFilterResponse) GetHTTPMeta() HTTPMetadata {
+	if u == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return u.HTTPMeta
 }
 
-func (o *UpdateFilterResponse) GetObject() *UpdateFilterResponseBody {
-	if o == nil {
+func (u *UpdateFilterResponse) GetObject() *UpdateFilterResponseBody {
+	if u == nil {
 		return nil
 	}
-	return o.Object
+	return u.Object
 }

@@ -7,16 +7,16 @@ type AmqpAuth struct {
 	User     *string `json:"user,omitempty"`
 }
 
-func (o *AmqpAuth) GetPassword() *string {
-	if o == nil {
+func (a *AmqpAuth) GetPassword() *string {
+	if a == nil {
 		return nil
 	}
-	return o.Password
+	return a.Password
 }
 
-func (o *AmqpAuth) GetUser() *string {
-	if o == nil {
+func (a *AmqpAuth) GetUser() *string {
+	if a == nil {
 		return nil
 	}
-	return o.User
+	return a.User
 }

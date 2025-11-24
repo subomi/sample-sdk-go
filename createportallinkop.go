@@ -13,18 +13,18 @@ type CreatePortalLinkRequest struct {
 	PortalLink PortalLink `request:"mediaType=application/json"`
 }
 
-func (o *CreatePortalLinkRequest) GetProjectID() string {
-	if o == nil {
+func (c *CreatePortalLinkRequest) GetProjectID() string {
+	if c == nil {
 		return ""
 	}
-	return o.ProjectID
+	return c.ProjectID
 }
 
-func (o *CreatePortalLinkRequest) GetPortalLink() PortalLink {
-	if o == nil {
+func (c *CreatePortalLinkRequest) GetPortalLink() PortalLink {
+	if c == nil {
 		return PortalLink{}
 	}
-	return o.PortalLink
+	return c.PortalLink
 }
 
 // CreatePortalLinkNotFoundError - Not Found
@@ -79,25 +79,25 @@ type CreatePortalLinkResponseBody struct {
 	Data    *PortalLinkResponse `json:"data,omitempty"`
 }
 
-func (o *CreatePortalLinkResponseBody) GetMessage() *string {
-	if o == nil {
+func (c *CreatePortalLinkResponseBody) GetMessage() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Message
+	return c.Message
 }
 
-func (o *CreatePortalLinkResponseBody) GetStatus() *bool {
-	if o == nil {
+func (c *CreatePortalLinkResponseBody) GetStatus() *bool {
+	if c == nil {
 		return nil
 	}
-	return o.Status
+	return c.Status
 }
 
-func (o *CreatePortalLinkResponseBody) GetData() *PortalLinkResponse {
-	if o == nil {
+func (c *CreatePortalLinkResponseBody) GetData() *PortalLinkResponse {
+	if c == nil {
 		return nil
 	}
-	return o.Data
+	return c.Data
 }
 
 type CreatePortalLinkResponse struct {
@@ -106,16 +106,16 @@ type CreatePortalLinkResponse struct {
 	Object *CreatePortalLinkResponseBody
 }
 
-func (o *CreatePortalLinkResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (c *CreatePortalLinkResponse) GetHTTPMeta() HTTPMetadata {
+	if c == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return c.HTTPMeta
 }
 
-func (o *CreatePortalLinkResponse) GetObject() *CreatePortalLinkResponseBody {
-	if o == nil {
+func (c *CreatePortalLinkResponse) GetObject() *CreatePortalLinkResponseBody {
+	if c == nil {
 		return nil
 	}
-	return o.Object
+	return c.Object
 }

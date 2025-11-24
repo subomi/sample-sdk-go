@@ -25,142 +25,142 @@ type Endpoint struct {
 	URL                *string                 `json:"url,omitempty"`
 }
 
-func (o *Endpoint) GetAdvancedSignatures() *bool {
-	if o == nil {
+func (e *Endpoint) GetAdvancedSignatures() *bool {
+	if e == nil {
 		return nil
 	}
-	return o.AdvancedSignatures
+	return e.AdvancedSignatures
 }
 
-func (o *Endpoint) GetAuthentication() *EndpointAuthentication {
-	if o == nil {
+func (e *Endpoint) GetAuthentication() *EndpointAuthentication {
+	if e == nil {
 		return nil
 	}
-	return o.Authentication
+	return e.Authentication
 }
 
-func (o *Endpoint) GetCreatedAt() *string {
-	if o == nil {
+func (e *Endpoint) GetCreatedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.CreatedAt
+	return e.CreatedAt
 }
 
-func (o *Endpoint) GetDeletedAt() *string {
-	if o == nil {
+func (e *Endpoint) GetDeletedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.DeletedAt
+	return e.DeletedAt
 }
 
-func (o *Endpoint) GetDescription() *string {
-	if o == nil {
+func (e *Endpoint) GetDescription() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Description
+	return e.Description
 }
 
-func (o *Endpoint) GetEvents() *int64 {
-	if o == nil {
+func (e *Endpoint) GetEvents() *int64 {
+	if e == nil {
 		return nil
 	}
-	return o.Events
+	return e.Events
 }
 
-func (o *Endpoint) GetFailureRate() *float64 {
-	if o == nil {
+func (e *Endpoint) GetFailureRate() *float64 {
+	if e == nil {
 		return nil
 	}
-	return o.FailureRate
+	return e.FailureRate
 }
 
-func (o *Endpoint) GetHTTPTimeout() *int64 {
-	if o == nil {
+func (e *Endpoint) GetHTTPTimeout() *int64 {
+	if e == nil {
 		return nil
 	}
-	return o.HTTPTimeout
+	return e.HTTPTimeout
 }
 
-func (o *Endpoint) GetName() *string {
-	if o == nil {
+func (e *Endpoint) GetName() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Name
+	return e.Name
 }
 
-func (o *Endpoint) GetOwnerID() *string {
-	if o == nil {
+func (e *Endpoint) GetOwnerID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.OwnerID
+	return e.OwnerID
 }
 
-func (o *Endpoint) GetProjectID() *string {
-	if o == nil {
+func (e *Endpoint) GetProjectID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.ProjectID
+	return e.ProjectID
 }
 
-func (o *Endpoint) GetRateLimit() *int64 {
-	if o == nil {
+func (e *Endpoint) GetRateLimit() *int64 {
+	if e == nil {
 		return nil
 	}
-	return o.RateLimit
+	return e.RateLimit
 }
 
-func (o *Endpoint) GetRateLimitDuration() *int64 {
-	if o == nil {
+func (e *Endpoint) GetRateLimitDuration() *int64 {
+	if e == nil {
 		return nil
 	}
-	return o.RateLimitDuration
+	return e.RateLimitDuration
 }
 
-func (o *Endpoint) GetSecrets() []Secret {
-	if o == nil {
+func (e *Endpoint) GetSecrets() []Secret {
+	if e == nil {
 		return nil
 	}
-	return o.Secrets
+	return e.Secrets
 }
 
-func (o *Endpoint) GetSlackWebhookURL() *string {
-	if o == nil {
+func (e *Endpoint) GetSlackWebhookURL() *string {
+	if e == nil {
 		return nil
 	}
-	return o.SlackWebhookURL
+	return e.SlackWebhookURL
 }
 
-func (o *Endpoint) GetStatus() *EndpointStatus {
-	if o == nil {
+func (e *Endpoint) GetStatus() *EndpointStatus {
+	if e == nil {
 		return nil
 	}
-	return o.Status
+	return e.Status
 }
 
-func (o *Endpoint) GetSupportEmail() *string {
-	if o == nil {
+func (e *Endpoint) GetSupportEmail() *string {
+	if e == nil {
 		return nil
 	}
-	return o.SupportEmail
+	return e.SupportEmail
 }
 
-func (o *Endpoint) GetUID() *string {
-	if o == nil {
+func (e *Endpoint) GetUID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.UID
+	return e.UID
 }
 
-func (o *Endpoint) GetUpdatedAt() *string {
-	if o == nil {
+func (e *Endpoint) GetUpdatedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.UpdatedAt
+	return e.UpdatedAt
 }
 
-func (o *Endpoint) GetURL() *string {
-	if o == nil {
+func (e *Endpoint) GetURL() *string {
+	if e == nil {
 		return nil
 	}
-	return o.URL
+	return e.URL
 }

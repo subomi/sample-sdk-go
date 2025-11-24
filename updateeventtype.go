@@ -11,23 +11,23 @@ type UpdateEventType struct {
 	JSONSchema map[string]any `json:"json_schema,omitempty"`
 }
 
-func (o *UpdateEventType) GetCategory() *string {
-	if o == nil {
+func (u *UpdateEventType) GetCategory() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Category
+	return u.Category
 }
 
-func (o *UpdateEventType) GetDescription() *string {
-	if o == nil {
+func (u *UpdateEventType) GetDescription() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Description
+	return u.Description
 }
 
-func (o *UpdateEventType) GetJSONSchema() map[string]any {
-	if o == nil {
+func (u *UpdateEventType) GetJSONSchema() map[string]any {
+	if u == nil {
 		return nil
 	}
-	return o.JSONSchema
+	return u.JSONSchema
 }

@@ -10,37 +10,37 @@ type PaginationData struct {
 	PrevPageCursor *string `json:"prev_page_cursor,omitempty"`
 }
 
-func (o *PaginationData) GetHasNextPage() *bool {
-	if o == nil {
+func (p *PaginationData) GetHasNextPage() *bool {
+	if p == nil {
 		return nil
 	}
-	return o.HasNextPage
+	return p.HasNextPage
 }
 
-func (o *PaginationData) GetHasPrevPage() *bool {
-	if o == nil {
+func (p *PaginationData) GetHasPrevPage() *bool {
+	if p == nil {
 		return nil
 	}
-	return o.HasPrevPage
+	return p.HasPrevPage
 }
 
-func (o *PaginationData) GetNextPageCursor() *string {
-	if o == nil {
+func (p *PaginationData) GetNextPageCursor() *string {
+	if p == nil {
 		return nil
 	}
-	return o.NextPageCursor
+	return p.NextPageCursor
 }
 
-func (o *PaginationData) GetPerPage() *int64 {
-	if o == nil {
+func (p *PaginationData) GetPerPage() *int64 {
+	if p == nil {
 		return nil
 	}
-	return o.PerPage
+	return p.PerPage
 }
 
-func (o *PaginationData) GetPrevPageCursor() *string {
-	if o == nil {
+func (p *PaginationData) GetPrevPageCursor() *string {
+	if p == nil {
 		return nil
 	}
-	return o.PrevPageCursor
+	return p.PrevPageCursor
 }
