@@ -27,7 +27,7 @@ jobs:
     with:
       force: ${{ github.event.inputs.force }}
       mode: pr
-      feature_branch: tag/v0.1.1
+      feature_branch: tag/v0.0.18
       set_version: ${{ github.event.inputs.set_version }}
     secrets:
       github_access_token: ${{ secrets.GITHUB_TOKEN }}
