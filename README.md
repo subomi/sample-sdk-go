@@ -69,7 +69,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.ActivateEndpoint(ctx, "<id>", "<id>")
+	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -110,7 +110,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.ActivateEndpoint(ctx, "<id>", "<id>")
+	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -135,8 +135,6 @@ func main() {
 
 ### [Endpoints](docs/sdks/endpoints/README.md)
 
-* [ActivateEndpoint](docs/sdks/endpoints/README.md#activateendpoint) - Activate endpoint
-* [ExpireSecret](docs/sdks/endpoints/README.md#expiresecret) - Roll endpoint secret
 * [PauseEndpoint](docs/sdks/endpoints/README.md#pauseendpoint) - Pause endpoint
 
 ### [EventDeliveries](docs/sdks/eventdeliveries/README.md)
@@ -240,7 +238,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.ActivateEndpoint(ctx, "<id>", "<id>", convoy.WithRetries(
+	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>", convoy.WithRetries(
 		retry.Config{
 			Strategy: "backoff",
 			Backoff: &retry.BackoffStrategy{
@@ -291,7 +289,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.ActivateEndpoint(ctx, "<id>", "<id>")
+	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -310,14 +308,14 @@ Handling errors in this SDK should largely match your expectations. All operatio
 
 By Default, an API error will return `convoy.APIError`. When custom error responses are specified for an operation, the SDK may also return their associated error. You can refer to respective *Errors* tables in SDK docs for more details on possible error types for each operation.
 
-For example, the `ActivateEndpoint` function may return the following errors:
+For example, the `PauseEndpoint` function may return the following errors:
 
-| Error Type                               | Status Code | Content Type     |
-| ---------------------------------------- | ----------- | ---------------- |
-| convoy.ActivateEndpointBadRequestError   | 400         | application/json |
-| convoy.ActivateEndpointUnauthorizedError | 401         | application/json |
-| convoy.ActivateEndpointNotFoundError     | 404         | application/json |
-| convoy.APIError                          | 4XX, 5XX    | \*/\*            |
+| Error Type                            | Status Code | Content Type     |
+| ------------------------------------- | ----------- | ---------------- |
+| convoy.PauseEndpointBadRequestError   | 400         | application/json |
+| convoy.PauseEndpointUnauthorizedError | 401         | application/json |
+| convoy.PauseEndpointNotFoundError     | 404         | application/json |
+| convoy.APIError                       | 4XX, 5XX    | \*/\*            |
 
 ### Example
 
@@ -339,22 +337,22 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.ActivateEndpoint(ctx, "<id>", "<id>")
+	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>")
 	if err != nil {
 
-		var e *ActivateEndpointBadRequestError
+		var e *PauseEndpointBadRequestError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
 		}
 
-		var e *ActivateEndpointUnauthorizedError
+		var e *PauseEndpointUnauthorizedError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
 		}
 
-		var e *ActivateEndpointNotFoundError
+		var e *PauseEndpointNotFoundError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
@@ -395,7 +393,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.ActivateEndpoint(ctx, "<id>", "<id>")
+	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}
