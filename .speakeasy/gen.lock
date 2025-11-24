@@ -1,12 +1,12 @@
 lockVersion: 2.0.0
 id: 6e7b91ca-db99-42ff-94be-b5c538c41b05
 management:
-  docChecksum: d231645c2b6111e682ff9b8aa7edda39
+  docChecksum: a1a0ce3ac516d962a429e7b47463f5d3
   docVersion: 24.1.4
   speakeasyVersion: 1.660.0
   generationVersion: 2.760.2
-  releaseVersion: 0.1.0-rc.1
-  configChecksum: 2d53926b6c4695115e8fa28dd8d8adde
+  releaseVersion: 0.2.0
+  configChecksum: c7a6e4dc13d77b27b7535459a4504880
   repoURL: https://github.com/subomi/sample-sdk-go.git
   installationURL: https://github.com/subomi/sample-sdk-go
 features:
@@ -61,7 +61,6 @@ generatedFiles:
   - /createsubscription.go
   - /createsubscriptionop.go
   - /customresponse.go
-  - /deleteendpointop.go
   - /deletefilterop.go
   - /deletesourceop.go
   - /deletesubscriptionop.go
@@ -97,7 +96,6 @@ generatedFiles:
   - /getdeliveryattemptop.go
   - /getdeliveryattemptsop.go
   - /getendpointeventop.go
-  - /getendpointop.go
   - /geteventdeliveriespagedop.go
   - /geteventdeliveryop.go
   - /geteventspagedop.go
@@ -157,8 +155,6 @@ generatedFiles:
   - /testsubscriptionfunctionop.go
   - /twitterproviderconfig.go
   - /updatecustomresponse.go
-  - /updateendpoint.go
-  - /updateendpointop.go
   - /updateeventtype.go
   - /updateeventtypeop.go
   - /updatefilterop.go
@@ -276,12 +272,6 @@ generatedFiles:
   - docs/createsubscriptionresponsebody.md
   - docs/createsubscriptionunauthorizederror.md
   - docs/customresponse.md
-  - docs/deleteendpointbadrequesterror.md
-  - docs/deleteendpointnotfounderror.md
-  - docs/deleteendpointrequest.md
-  - docs/deleteendpointresponse.md
-  - docs/deleteendpointresponsebody.md
-  - docs/deleteendpointunauthorizederror.md
   - docs/deletefilterbadrequesterror.md
   - docs/deletefilternotfounderror.md
   - docs/deletefilterrequest.md
@@ -363,18 +353,12 @@ generatedFiles:
   - docs/getdeliveryattemptsresponsebody.md
   - docs/getdeliveryattemptsunauthorizederror.md
   - docs/getdeliveryattemptunauthorizederror.md
-  - docs/getendpointbadrequesterror.md
   - docs/getendpointeventbadrequesterror.md
   - docs/getendpointeventnotfounderror.md
   - docs/getendpointeventrequest.md
   - docs/getendpointeventresponse.md
   - docs/getendpointeventresponsebody.md
   - docs/getendpointeventunauthorizederror.md
-  - docs/getendpointnotfounderror.md
-  - docs/getendpointrequest.md
-  - docs/getendpointresponse.md
-  - docs/getendpointresponsebody.md
-  - docs/getendpointunauthorizederror.md
   - docs/geteventdeliveriespagedbadrequesterror.md
   - docs/geteventdeliveriespageddata.md
   - docs/geteventdeliveriespageddirection.md
@@ -582,13 +566,6 @@ generatedFiles:
   - docs/testsubscriptionfunctionunauthorizederror.md
   - docs/twitterproviderconfig.md
   - docs/updatecustomresponse.md
-  - docs/updateendpoint.md
-  - docs/updateendpointbadrequesterror.md
-  - docs/updateendpointnotfounderror.md
-  - docs/updateendpointrequest.md
-  - docs/updateendpointresponse.md
-  - docs/updateendpointresponsebody.md
-  - docs/updateendpointunauthorizederror.md
   - docs/updateeventtype.md
   - docs/updateeventtypebadrequesterror.md
   - docs/updateeventtypenotfounderror.md
@@ -1593,5 +1570,6 @@ examples:
 examplesVersion: 1.0.2
 releaseNotes: |
   ## Go SDK Changes Detected:
-  * `Convoy.Endpoints.GetEndpoints()`: **Deleted** **Breaking** :warning:
-  * `Convoy.Endpoints.CreateEndpoint()`: **Deleted** **Breaking** :warning:
+  * `Convoy.Endpoints.DeleteEndpoint()`: **Deleted** **Breaking** :warning:
+  * `Convoy.Endpoints.GetEndpoint()`: **Deleted** **Breaking** :warning:
+  * `Convoy.Endpoints.UpdateEndpoint()`: **Deleted** **Breaking** :warning:
