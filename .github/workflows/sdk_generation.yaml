@@ -61,6 +61,10 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "GitHub Actions Bot"
           
+          # Delete old revert branch if it exists
+          git branch -D "$BRANCH_NAME" 2>/dev/null || true
+          git push origin --delete "$BRANCH_NAME" 2>/dev/null || true
+          
           # Create branch from main
           git checkout -b "$BRANCH_NAME" origin/main
           
