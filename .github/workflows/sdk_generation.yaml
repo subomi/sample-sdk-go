@@ -78,24 +78,35 @@ jobs:
 
       - name: Create Pull Request
         id: create-pr
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: revert-locks-to-${{ steps.find-tag.outputs.last_ga_tag }}
-          title: "🔄 Revert workflow.lock to ${{ steps.find-tag.outputs.last_ga_tag }} for GA release"
-          body: |
-            ## Automated workflow.lock Revert
-            
-            This PR reverts `.speakeasy/workflow.lock` to its state at the last GA release tag: **${{ steps.find-tag.outputs.last_ga_tag }}**
-            
-            ### Purpose
-            This ensures the SDK generation workflow uses the same workflow lock file version as the last stable GA release.
-            
-            ### Auto-merge
-            This PR will be automatically merged to proceed with the GA release workflow.
-          labels: |
-            automated
-            ga-release
+        run: |
+          LAST_GA_TAG="${{ steps.find-tag.outputs.last_ga_tag }}"
+          BRANCH_NAME="revert-locks-to-${LAST_GA_TAG}"
+          
+          # Create PR body as a variable
+          PR_BODY="## Automated workflow.lock Revert
+
+          This PR reverts \`.speakeasy/workflow.lock\` to its state at the last GA release tag: **$LAST_GA_TAG**
+
+          ### Purpose
+          This ensures the SDK generation workflow uses the same workflow lock file version as the last stable GA release.
+
+          ### Auto-merge
+          This PR will be automatically merged to proceed with the GA release workflow."
+          
+          PR_URL=$(gh pr create \
+            --base main \
+            --head "$BRANCH_NAME" \
+            --title "🔄 Revert workflow.lock to $LAST_GA_TAG for GA release" \
+            --body "$PR_BODY" \
+            --label "automated" \
+            --label "ga-release")
+          
+          # Extract PR number from URL
+          PR_NUMBER=$(echo "$PR_URL" | grep -oE '[0-9]+$')
+          
+          echo "pull-request-number=$PR_NUMBER" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Enable auto-merge
         if: steps.create-pr.outputs.pull-request-number != ''
