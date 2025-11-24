@@ -1,12 +1,12 @@
 lockVersion: 2.0.0
 id: 6e7b91ca-db99-42ff-94be-b5c538c41b05
 management:
-  docChecksum: a1a0ce3ac516d962a429e7b47463f5d3
+  docChecksum: 786e9588f09901c0ec56f6424c5b5358
   docVersion: 24.1.4
   speakeasyVersion: 1.660.0
   generationVersion: 2.760.2
-  releaseVersion: 0.2.0
-  configChecksum: c7a6e4dc13d77b27b7535459a4504880
+  releaseVersion: 0.3.0
+  configChecksum: faff75b4b69a0503d06e5aa51dbfe433
   repoURL: https://github.com/subomi/sample-sdk-go.git
   installationURL: https://github.com/subomi/sample-sdk-go
 features:
@@ -31,7 +31,6 @@ generatedFiles:
   - .devcontainer/devcontainer.json
   - .devcontainer/setup.sh
   - .gitattributes
-  - /activateendpointop.go
   - /alertconfiguration.go
   - /amqpauth.go
   - /amqpexchange.go
@@ -51,8 +50,6 @@ generatedFiles:
   - /createendpointeventop.go
   - /createendpointfanouteventop.go
   - /createevent.go
-  - /createeventtype.go
-  - /createeventtypeop.go
   - /createfilterop.go
   - /createfilterrequest.go
   - /createportallinkop.go
@@ -74,7 +71,6 @@ generatedFiles:
   - /endpoint.go
   - /endpointauthentication.go
   - /endpointauthenticationtype.go
-  - /endpointresponse.go
   - /endpointstatus.go
   - /event.go
   - /eventdeliveryresponse.go
@@ -82,8 +78,6 @@ generatedFiles:
   - /eventresponse.go
   - /eventstatus.go
   - /eventtyperesponse.go
-  - /expiresecret.go
-  - /expiresecretop.go
   - /fanoutevent.go
   - /filterconfiguration.go
   - /filterresponse.go
@@ -99,7 +93,6 @@ generatedFiles:
   - /geteventdeliveriespagedop.go
   - /geteventdeliveryop.go
   - /geteventspagedop.go
-  - /geteventtypesop.go
   - /getfilterop.go
   - /getfiltersop.go
   - /getmetaeventop.go
@@ -123,7 +116,6 @@ generatedFiles:
   - /metaeventresponse.go
   - /object.go
   - /paginationdata.go
-  - /pauseendpointop.go
   - /portallink.go
   - /portallinkresponse.go
   - /providerconfig.go
@@ -155,8 +147,6 @@ generatedFiles:
   - /testsubscriptionfunctionop.go
   - /twitterproviderconfig.go
   - /updatecustomresponse.go
-  - /updateeventtype.go
-  - /updateeventtypeop.go
   - /updatefilterop.go
   - /updatefilterrequest.go
   - /updateportallinkop.go
@@ -169,12 +159,6 @@ generatedFiles:
   - USAGE.md
   - convoy.go
   - deliveryattempts.go
-  - docs/activateendpointbadrequesterror.md
-  - docs/activateendpointnotfounderror.md
-  - docs/activateendpointrequest.md
-  - docs/activateendpointresponse.md
-  - docs/activateendpointresponsebody.md
-  - docs/activateendpointunauthorizederror.md
   - docs/alertconfiguration.md
   - docs/amqpauth.md
   - docs/amqpexchange.md
@@ -236,13 +220,6 @@ generatedFiles:
   - docs/createendpointfanouteventunauthorizederror.md
   - docs/createevent.md
   - docs/createeventdata.md
-  - docs/createeventtype.md
-  - docs/createeventtypebadrequesterror.md
-  - docs/createeventtypenotfounderror.md
-  - docs/createeventtyperequest.md
-  - docs/createeventtyperesponse.md
-  - docs/createeventtyperesponsebody.md
-  - docs/createeventtypeunauthorizederror.md
   - docs/createfilterbadrequesterror.md
   - docs/createfilternotfounderror.md
   - docs/createfilterrequest.md
@@ -306,7 +283,6 @@ generatedFiles:
   - docs/endpoint.md
   - docs/endpointauthentication.md
   - docs/endpointauthenticationtype.md
-  - docs/endpointresponse.md
   - docs/endpointstatus.md
   - docs/event.md
   - docs/eventdeliveryresponse.md
@@ -314,13 +290,6 @@ generatedFiles:
   - docs/eventresponse.md
   - docs/eventstatus.md
   - docs/eventtyperesponse.md
-  - docs/expiresecret.md
-  - docs/expiresecretbadrequesterror.md
-  - docs/expiresecretnotfounderror.md
-  - docs/expiresecretrequest.md
-  - docs/expiresecretresponse.md
-  - docs/expiresecretresponsebody.md
-  - docs/expiresecretunauthorizederror.md
   - docs/fanoutevent.md
   - docs/fanouteventdata.md
   - docs/filterconfiguration.md
@@ -381,12 +350,6 @@ generatedFiles:
   - docs/geteventspagedresponse.md
   - docs/geteventspagedresponsebody.md
   - docs/geteventspagedunauthorizederror.md
-  - docs/geteventtypesbadrequesterror.md
-  - docs/geteventtypesnotfounderror.md
-  - docs/geteventtypesrequest.md
-  - docs/geteventtypesresponse.md
-  - docs/geteventtypesresponsebody.md
-  - docs/geteventtypesunauthorizederror.md
   - docs/getfilterbadrequesterror.md
   - docs/getfilternotfounderror.md
   - docs/getfilterrequest.md
@@ -474,12 +437,6 @@ generatedFiles:
   - docs/object.md
   - docs/option.md
   - docs/paginationdata.md
-  - docs/pauseendpointbadrequesterror.md
-  - docs/pauseendpointnotfounderror.md
-  - docs/pauseendpointrequest.md
-  - docs/pauseendpointresponse.md
-  - docs/pauseendpointresponsebody.md
-  - docs/pauseendpointunauthorizederror.md
   - docs/portallink.md
   - docs/portallinkresponse.md
   - docs/providerconfig.md
@@ -518,7 +475,6 @@ generatedFiles:
   - docs/revokeportallinkresponsebody.md
   - docs/revokeportallinkunauthorizederror.md
   - docs/sdks/deliveryattempts/README.md
-  - docs/sdks/endpoints/README.md
   - docs/sdks/eventdeliveries/README.md
   - docs/sdks/events/README.md
   - docs/sdks/eventtypes/README.md
@@ -566,13 +522,6 @@ generatedFiles:
   - docs/testsubscriptionfunctionunauthorizederror.md
   - docs/twitterproviderconfig.md
   - docs/updatecustomresponse.md
-  - docs/updateeventtype.md
-  - docs/updateeventtypebadrequesterror.md
-  - docs/updateeventtypenotfounderror.md
-  - docs/updateeventtyperequest.md
-  - docs/updateeventtyperesponse.md
-  - docs/updateeventtyperesponsebody.md
-  - docs/updateeventtypeunauthorizederror.md
   - docs/updatefilterbadrequesterror.md
   - docs/updatefilternotfounderror.md
   - docs/updatefilterrequest.md
@@ -603,7 +552,6 @@ generatedFiles:
   - docs/updatesubscriptionunauthorizederror.md
   - docs/verifierconfig.md
   - docs/verifiertype.md
-  - endpoints.go
   - eventdeliveries.go
   - events.go
   - eventtypes.go
@@ -1570,6 +1518,9 @@ examples:
 examplesVersion: 1.0.2
 releaseNotes: |
   ## Go SDK Changes Detected:
-  * `Convoy.Endpoints.DeleteEndpoint()`: **Deleted** **Breaking** :warning:
-  * `Convoy.Endpoints.GetEndpoint()`: **Deleted** **Breaking** :warning:
-  * `Convoy.Endpoints.UpdateEndpoint()`: **Deleted** **Breaking** :warning:
+  * `Convoy.Endpoints.ActivateEndpoint()`: **Deleted** **Breaking** :warning:
+  * `Convoy.Endpoints.ExpireSecret()`: **Deleted** **Breaking** :warning:
+  * `Convoy.Endpoints.PauseEndpoint()`: **Deleted** **Breaking** :warning:
+  * `Convoy.EventTypes.GetEventTypes()`: **Deleted** **Breaking** :warning:
+  * `Convoy.EventTypes.CreateEventType()`: **Deleted** **Breaking** :warning:
+  * `Convoy.EventTypes.UpdateEventType()`: **Deleted** **Breaking** :warning:
