@@ -1573,3 +1573,4 @@ releaseNotes: |
   * `Convoy.Endpoints.DeleteEndpoint()`: **Deleted** **Breaking** :warning:
   * `Convoy.Endpoints.GetEndpoint()`: **Deleted** **Breaking** :warning:
   * `Convoy.Endpoints.UpdateEndpoint()`: **Deleted** **Breaking** :warning:
+
