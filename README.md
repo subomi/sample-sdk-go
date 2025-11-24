@@ -132,7 +132,6 @@ func main() {
 <details open>
 <summary>Available methods</summary>
 
-
 ### [DeliveryAttempts](docs/sdks/deliveryattempts/README.md)
 
 * [GetDeliveryAttempts](docs/sdks/deliveryattempts/README.md#getdeliveryattempts) - List delivery attempts

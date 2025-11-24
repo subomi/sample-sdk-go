@@ -15,25 +15,25 @@ type GetDeliveryAttemptRequest struct {
 	DeliveryAttemptID string `pathParam:"style=simple,explode=false,name=deliveryAttemptID"`
 }
 
-func (o *GetDeliveryAttemptRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetDeliveryAttemptRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetDeliveryAttemptRequest) GetEventDeliveryID() string {
-	if o == nil {
+func (g *GetDeliveryAttemptRequest) GetEventDeliveryID() string {
+	if g == nil {
 		return ""
 	}
-	return o.EventDeliveryID
+	return g.EventDeliveryID
 }
 
-func (o *GetDeliveryAttemptRequest) GetDeliveryAttemptID() string {
-	if o == nil {
+func (g *GetDeliveryAttemptRequest) GetDeliveryAttemptID() string {
+	if g == nil {
 		return ""
 	}
-	return o.DeliveryAttemptID
+	return g.DeliveryAttemptID
 }
 
 // GetDeliveryAttemptNotFoundError - Not Found
@@ -88,25 +88,25 @@ type GetDeliveryAttemptResponseBody struct {
 	Data    *DeliveryAttempt `json:"data,omitempty"`
 }
 
-func (o *GetDeliveryAttemptResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetDeliveryAttemptResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetDeliveryAttemptResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetDeliveryAttemptResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetDeliveryAttemptResponseBody) GetData() *DeliveryAttempt {
-	if o == nil {
+func (g *GetDeliveryAttemptResponseBody) GetData() *DeliveryAttempt {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetDeliveryAttemptResponse struct {
@@ -115,16 +115,16 @@ type GetDeliveryAttemptResponse struct {
 	Object *GetDeliveryAttemptResponseBody
 }
 
-func (o *GetDeliveryAttemptResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetDeliveryAttemptResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetDeliveryAttemptResponse) GetObject() *GetDeliveryAttemptResponseBody {
-	if o == nil {
+func (g *GetDeliveryAttemptResponse) GetObject() *GetDeliveryAttemptResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

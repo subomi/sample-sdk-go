@@ -7,9 +7,9 @@ type TestFilterResponse struct {
 	IsMatch *bool `json:"is_match,omitempty"`
 }
 
-func (o *TestFilterResponse) GetIsMatch() *bool {
-	if o == nil {
+func (t *TestFilterResponse) GetIsMatch() *bool {
+	if t == nil {
 		return nil
 	}
-	return o.IsMatch
+	return t.IsMatch
 }

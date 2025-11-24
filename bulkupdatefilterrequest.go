@@ -9,30 +9,30 @@ type BulkUpdateFilterRequest struct {
 	UID       string         `json:"uid"`
 }
 
-func (o *BulkUpdateFilterRequest) GetBody() map[string]any {
-	if o == nil {
+func (b *BulkUpdateFilterRequest) GetBody() map[string]any {
+	if b == nil {
 		return nil
 	}
-	return o.Body
+	return b.Body
 }
 
-func (o *BulkUpdateFilterRequest) GetEventType() *string {
-	if o == nil {
+func (b *BulkUpdateFilterRequest) GetEventType() *string {
+	if b == nil {
 		return nil
 	}
-	return o.EventType
+	return b.EventType
 }
 
-func (o *BulkUpdateFilterRequest) GetHeaders() map[string]any {
-	if o == nil {
+func (b *BulkUpdateFilterRequest) GetHeaders() map[string]any {
+	if b == nil {
 		return nil
 	}
-	return o.Headers
+	return b.Headers
 }
 
-func (o *BulkUpdateFilterRequest) GetUID() string {
-	if o == nil {
+func (b *BulkUpdateFilterRequest) GetUID() string {
+	if b == nil {
 		return ""
 	}
-	return o.UID
+	return b.UID
 }

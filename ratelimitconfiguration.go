@@ -7,16 +7,16 @@ type RateLimitConfiguration struct {
 	Duration *int64 `json:"duration,omitempty"`
 }
 
-func (o *RateLimitConfiguration) GetCount() *int64 {
-	if o == nil {
+func (r *RateLimitConfiguration) GetCount() *int64 {
+	if r == nil {
 		return nil
 	}
-	return o.Count
+	return r.Count
 }
 
-func (o *RateLimitConfiguration) GetDuration() *int64 {
-	if o == nil {
+func (r *RateLimitConfiguration) GetDuration() *int64 {
+	if r == nil {
 		return nil
 	}
-	return o.Duration
+	return r.Duration
 }

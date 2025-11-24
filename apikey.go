@@ -7,16 +7,16 @@ type APIKey struct {
 	HeaderValue string `json:"header_value"`
 }
 
-func (o *APIKey) GetHeaderName() string {
-	if o == nil {
+func (a *APIKey) GetHeaderName() string {
+	if a == nil {
 		return ""
 	}
-	return o.HeaderName
+	return a.HeaderName
 }
 
-func (o *APIKey) GetHeaderValue() string {
-	if o == nil {
+func (a *APIKey) GetHeaderValue() string {
+	if a == nil {
 		return ""
 	}
-	return o.HeaderValue
+	return a.HeaderValue
 }

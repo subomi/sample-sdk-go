@@ -13,18 +13,18 @@ type DeprecateEventTypeRequest struct {
 	EventTypeID string `pathParam:"style=simple,explode=false,name=eventTypeId"`
 }
 
-func (o *DeprecateEventTypeRequest) GetProjectID() string {
-	if o == nil {
+func (d *DeprecateEventTypeRequest) GetProjectID() string {
+	if d == nil {
 		return ""
 	}
-	return o.ProjectID
+	return d.ProjectID
 }
 
-func (o *DeprecateEventTypeRequest) GetEventTypeID() string {
-	if o == nil {
+func (d *DeprecateEventTypeRequest) GetEventTypeID() string {
+	if d == nil {
 		return ""
 	}
-	return o.EventTypeID
+	return d.EventTypeID
 }
 
 // DeprecateEventTypeNotFoundError - Not Found
@@ -79,25 +79,25 @@ type DeprecateEventTypeResponseBody struct {
 	Data    *EventTypeResponse `json:"data,omitempty"`
 }
 
-func (o *DeprecateEventTypeResponseBody) GetMessage() *string {
-	if o == nil {
+func (d *DeprecateEventTypeResponseBody) GetMessage() *string {
+	if d == nil {
 		return nil
 	}
-	return o.Message
+	return d.Message
 }
 
-func (o *DeprecateEventTypeResponseBody) GetStatus() *bool {
-	if o == nil {
+func (d *DeprecateEventTypeResponseBody) GetStatus() *bool {
+	if d == nil {
 		return nil
 	}
-	return o.Status
+	return d.Status
 }
 
-func (o *DeprecateEventTypeResponseBody) GetData() *EventTypeResponse {
-	if o == nil {
+func (d *DeprecateEventTypeResponseBody) GetData() *EventTypeResponse {
+	if d == nil {
 		return nil
 	}
-	return o.Data
+	return d.Data
 }
 
 type DeprecateEventTypeResponse struct {
@@ -106,16 +106,16 @@ type DeprecateEventTypeResponse struct {
 	Object *DeprecateEventTypeResponseBody
 }
 
-func (o *DeprecateEventTypeResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (d *DeprecateEventTypeResponse) GetHTTPMeta() HTTPMetadata {
+	if d == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return d.HTTPMeta
 }
 
-func (o *DeprecateEventTypeResponse) GetObject() *DeprecateEventTypeResponseBody {
-	if o == nil {
+func (d *DeprecateEventTypeResponse) GetObject() *DeprecateEventTypeResponseBody {
+	if d == nil {
 		return nil
 	}
-	return o.Object
+	return d.Object
 }

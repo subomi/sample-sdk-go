@@ -13,18 +13,18 @@ type DeleteSubscriptionRequest struct {
 	SubscriptionID string `pathParam:"style=simple,explode=false,name=subscriptionID"`
 }
 
-func (o *DeleteSubscriptionRequest) GetProjectID() string {
-	if o == nil {
+func (d *DeleteSubscriptionRequest) GetProjectID() string {
+	if d == nil {
 		return ""
 	}
-	return o.ProjectID
+	return d.ProjectID
 }
 
-func (o *DeleteSubscriptionRequest) GetSubscriptionID() string {
-	if o == nil {
+func (d *DeleteSubscriptionRequest) GetSubscriptionID() string {
+	if d == nil {
 		return ""
 	}
-	return o.SubscriptionID
+	return d.SubscriptionID
 }
 
 // DeleteSubscriptionNotFoundError - Not Found
@@ -79,25 +79,25 @@ type DeleteSubscriptionResponseBody struct {
 	Data    *Object `json:"data,omitempty"`
 }
 
-func (o *DeleteSubscriptionResponseBody) GetMessage() *string {
-	if o == nil {
+func (d *DeleteSubscriptionResponseBody) GetMessage() *string {
+	if d == nil {
 		return nil
 	}
-	return o.Message
+	return d.Message
 }
 
-func (o *DeleteSubscriptionResponseBody) GetStatus() *bool {
-	if o == nil {
+func (d *DeleteSubscriptionResponseBody) GetStatus() *bool {
+	if d == nil {
 		return nil
 	}
-	return o.Status
+	return d.Status
 }
 
-func (o *DeleteSubscriptionResponseBody) GetData() *Object {
-	if o == nil {
+func (d *DeleteSubscriptionResponseBody) GetData() *Object {
+	if d == nil {
 		return nil
 	}
-	return o.Data
+	return d.Data
 }
 
 type DeleteSubscriptionResponse struct {
@@ -106,16 +106,16 @@ type DeleteSubscriptionResponse struct {
 	Object *DeleteSubscriptionResponseBody
 }
 
-func (o *DeleteSubscriptionResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (d *DeleteSubscriptionResponse) GetHTTPMeta() HTTPMetadata {
+	if d == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return d.HTTPMeta
 }
 
-func (o *DeleteSubscriptionResponse) GetObject() *DeleteSubscriptionResponseBody {
-	if o == nil {
+func (d *DeleteSubscriptionResponse) GetObject() *DeleteSubscriptionResponseBody {
+	if d == nil {
 		return nil
 	}
-	return o.Object
+	return d.Object
 }

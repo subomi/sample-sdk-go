@@ -65,7 +65,7 @@ func (s *DeliveryAttempts) GetDeliveryAttempts(ctx context.Context, projectID st
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetDeliveryAttempts",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -352,7 +352,7 @@ func (s *DeliveryAttempts) GetDeliveryAttempt(ctx context.Context, projectID str
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetDeliveryAttempt",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 

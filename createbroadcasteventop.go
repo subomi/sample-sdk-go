@@ -13,18 +13,18 @@ type CreateBroadcastEventRequest struct {
 	BroadcastEvent BroadcastEvent `request:"mediaType=application/json"`
 }
 
-func (o *CreateBroadcastEventRequest) GetProjectID() string {
-	if o == nil {
+func (c *CreateBroadcastEventRequest) GetProjectID() string {
+	if c == nil {
 		return ""
 	}
-	return o.ProjectID
+	return c.ProjectID
 }
 
-func (o *CreateBroadcastEventRequest) GetBroadcastEvent() BroadcastEvent {
-	if o == nil {
+func (c *CreateBroadcastEventRequest) GetBroadcastEvent() BroadcastEvent {
+	if c == nil {
 		return BroadcastEvent{}
 	}
-	return o.BroadcastEvent
+	return c.BroadcastEvent
 }
 
 // CreateBroadcastEventNotFoundError - Not Found
@@ -79,25 +79,25 @@ type CreateBroadcastEventResponseBody struct {
 	Data    *EventResponse `json:"data,omitempty"`
 }
 
-func (o *CreateBroadcastEventResponseBody) GetMessage() *string {
-	if o == nil {
+func (c *CreateBroadcastEventResponseBody) GetMessage() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Message
+	return c.Message
 }
 
-func (o *CreateBroadcastEventResponseBody) GetStatus() *bool {
-	if o == nil {
+func (c *CreateBroadcastEventResponseBody) GetStatus() *bool {
+	if c == nil {
 		return nil
 	}
-	return o.Status
+	return c.Status
 }
 
-func (o *CreateBroadcastEventResponseBody) GetData() *EventResponse {
-	if o == nil {
+func (c *CreateBroadcastEventResponseBody) GetData() *EventResponse {
+	if c == nil {
 		return nil
 	}
-	return o.Data
+	return c.Data
 }
 
 type CreateBroadcastEventResponse struct {
@@ -106,16 +106,16 @@ type CreateBroadcastEventResponse struct {
 	Object *CreateBroadcastEventResponseBody
 }
 
-func (o *CreateBroadcastEventResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (c *CreateBroadcastEventResponse) GetHTTPMeta() HTTPMetadata {
+	if c == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return c.HTTPMeta
 }
 
-func (o *CreateBroadcastEventResponse) GetObject() *CreateBroadcastEventResponseBody {
-	if o == nil {
+func (c *CreateBroadcastEventResponse) GetObject() *CreateBroadcastEventResponseBody {
+	if c == nil {
 		return nil
 	}
-	return o.Object
+	return c.Object
 }

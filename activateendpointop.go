@@ -13,18 +13,18 @@ type ActivateEndpointRequest struct {
 	EndpointID string `pathParam:"style=simple,explode=false,name=endpointID"`
 }
 
-func (o *ActivateEndpointRequest) GetProjectID() string {
-	if o == nil {
+func (a *ActivateEndpointRequest) GetProjectID() string {
+	if a == nil {
 		return ""
 	}
-	return o.ProjectID
+	return a.ProjectID
 }
 
-func (o *ActivateEndpointRequest) GetEndpointID() string {
-	if o == nil {
+func (a *ActivateEndpointRequest) GetEndpointID() string {
+	if a == nil {
 		return ""
 	}
-	return o.EndpointID
+	return a.EndpointID
 }
 
 // ActivateEndpointNotFoundError - Not Found
@@ -79,25 +79,25 @@ type ActivateEndpointResponseBody struct {
 	Data    *EndpointResponse `json:"data,omitempty"`
 }
 
-func (o *ActivateEndpointResponseBody) GetMessage() *string {
-	if o == nil {
+func (a *ActivateEndpointResponseBody) GetMessage() *string {
+	if a == nil {
 		return nil
 	}
-	return o.Message
+	return a.Message
 }
 
-func (o *ActivateEndpointResponseBody) GetStatus() *bool {
-	if o == nil {
+func (a *ActivateEndpointResponseBody) GetStatus() *bool {
+	if a == nil {
 		return nil
 	}
-	return o.Status
+	return a.Status
 }
 
-func (o *ActivateEndpointResponseBody) GetData() *EndpointResponse {
-	if o == nil {
+func (a *ActivateEndpointResponseBody) GetData() *EndpointResponse {
+	if a == nil {
 		return nil
 	}
-	return o.Data
+	return a.Data
 }
 
 type ActivateEndpointResponse struct {
@@ -106,16 +106,16 @@ type ActivateEndpointResponse struct {
 	Object *ActivateEndpointResponseBody
 }
 
-func (o *ActivateEndpointResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (a *ActivateEndpointResponse) GetHTTPMeta() HTTPMetadata {
+	if a == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return a.HTTPMeta
 }
 
-func (o *ActivateEndpointResponse) GetObject() *ActivateEndpointResponseBody {
-	if o == nil {
+func (a *ActivateEndpointResponse) GetObject() *ActivateEndpointResponseBody {
+	if a == nil {
 		return nil
 	}
-	return o.Object
+	return a.Object
 }

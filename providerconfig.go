@@ -6,9 +6,9 @@ type ProviderConfig struct {
 	Twitter *TwitterProviderConfig `json:"twitter,omitempty"`
 }
 
-func (o *ProviderConfig) GetTwitter() *TwitterProviderConfig {
-	if o == nil {
+func (p *ProviderConfig) GetTwitter() *TwitterProviderConfig {
+	if p == nil {
 		return nil
 	}
-	return o.Twitter
+	return p.Twitter
 }

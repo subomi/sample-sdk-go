@@ -13,18 +13,18 @@ type ImportOpenAPISpecRequest struct {
 	ImportOpenAPISpec ImportOpenAPISpec `request:"mediaType=application/json"`
 }
 
-func (o *ImportOpenAPISpecRequest) GetProjectID() string {
-	if o == nil {
+func (i *ImportOpenAPISpecRequest) GetProjectID() string {
+	if i == nil {
 		return ""
 	}
-	return o.ProjectID
+	return i.ProjectID
 }
 
-func (o *ImportOpenAPISpecRequest) GetImportOpenAPISpec() ImportOpenAPISpec {
-	if o == nil {
+func (i *ImportOpenAPISpecRequest) GetImportOpenAPISpec() ImportOpenAPISpec {
+	if i == nil {
 		return ImportOpenAPISpec{}
 	}
-	return o.ImportOpenAPISpec
+	return i.ImportOpenAPISpec
 }
 
 // ImportOpenAPISpecNotFoundError - Not Found
@@ -79,25 +79,25 @@ type ImportOpenAPISpecResponseBody struct {
 	Data    []EventTypeResponse `json:"data,omitempty"`
 }
 
-func (o *ImportOpenAPISpecResponseBody) GetMessage() *string {
-	if o == nil {
+func (i *ImportOpenAPISpecResponseBody) GetMessage() *string {
+	if i == nil {
 		return nil
 	}
-	return o.Message
+	return i.Message
 }
 
-func (o *ImportOpenAPISpecResponseBody) GetStatus() *bool {
-	if o == nil {
+func (i *ImportOpenAPISpecResponseBody) GetStatus() *bool {
+	if i == nil {
 		return nil
 	}
-	return o.Status
+	return i.Status
 }
 
-func (o *ImportOpenAPISpecResponseBody) GetData() []EventTypeResponse {
-	if o == nil {
+func (i *ImportOpenAPISpecResponseBody) GetData() []EventTypeResponse {
+	if i == nil {
 		return nil
 	}
-	return o.Data
+	return i.Data
 }
 
 type ImportOpenAPISpecResponse struct {
@@ -106,16 +106,16 @@ type ImportOpenAPISpecResponse struct {
 	Object *ImportOpenAPISpecResponseBody
 }
 
-func (o *ImportOpenAPISpecResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (i *ImportOpenAPISpecResponse) GetHTTPMeta() HTTPMetadata {
+	if i == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return i.HTTPMeta
 }
 
-func (o *ImportOpenAPISpecResponse) GetObject() *ImportOpenAPISpecResponseBody {
-	if o == nil {
+func (i *ImportOpenAPISpecResponse) GetObject() *ImportOpenAPISpecResponseBody {
+	if i == nil {
 		return nil
 	}
-	return o.Object
+	return i.Object
 }

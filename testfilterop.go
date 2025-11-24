@@ -17,32 +17,32 @@ type TestFilterRequestRequest struct {
 	TestFilterRequest TestFilterRequest `request:"mediaType=application/json"`
 }
 
-func (o *TestFilterRequestRequest) GetProjectID() string {
-	if o == nil {
+func (t *TestFilterRequestRequest) GetProjectID() string {
+	if t == nil {
 		return ""
 	}
-	return o.ProjectID
+	return t.ProjectID
 }
 
-func (o *TestFilterRequestRequest) GetSubscriptionID() string {
-	if o == nil {
+func (t *TestFilterRequestRequest) GetSubscriptionID() string {
+	if t == nil {
 		return ""
 	}
-	return o.SubscriptionID
+	return t.SubscriptionID
 }
 
-func (o *TestFilterRequestRequest) GetEventType() string {
-	if o == nil {
+func (t *TestFilterRequestRequest) GetEventType() string {
+	if t == nil {
 		return ""
 	}
-	return o.EventType
+	return t.EventType
 }
 
-func (o *TestFilterRequestRequest) GetTestFilterRequest() TestFilterRequest {
-	if o == nil {
+func (t *TestFilterRequestRequest) GetTestFilterRequest() TestFilterRequest {
+	if t == nil {
 		return TestFilterRequest{}
 	}
-	return o.TestFilterRequest
+	return t.TestFilterRequest
 }
 
 // TestFilterNotFoundError - Not Found
@@ -97,25 +97,25 @@ type TestFilterResponseBody struct {
 	Data    *TestFilterResponse `json:"data,omitempty"`
 }
 
-func (o *TestFilterResponseBody) GetMessage() *string {
-	if o == nil {
+func (t *TestFilterResponseBody) GetMessage() *string {
+	if t == nil {
 		return nil
 	}
-	return o.Message
+	return t.Message
 }
 
-func (o *TestFilterResponseBody) GetStatus() *bool {
-	if o == nil {
+func (t *TestFilterResponseBody) GetStatus() *bool {
+	if t == nil {
 		return nil
 	}
-	return o.Status
+	return t.Status
 }
 
-func (o *TestFilterResponseBody) GetData() *TestFilterResponse {
-	if o == nil {
+func (t *TestFilterResponseBody) GetData() *TestFilterResponse {
+	if t == nil {
 		return nil
 	}
-	return o.Data
+	return t.Data
 }
 
 type TestFilterResponseResponse struct {
@@ -124,16 +124,16 @@ type TestFilterResponseResponse struct {
 	Object *TestFilterResponseBody
 }
 
-func (o *TestFilterResponseResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (t *TestFilterResponseResponse) GetHTTPMeta() HTTPMetadata {
+	if t == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return t.HTTPMeta
 }
 
-func (o *TestFilterResponseResponse) GetObject() *TestFilterResponseBody {
-	if o == nil {
+func (t *TestFilterResponseResponse) GetObject() *TestFilterResponseBody {
+	if t == nil {
 		return nil
 	}
-	return o.Object
+	return t.Object
 }

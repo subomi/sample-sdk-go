@@ -25,142 +25,142 @@ type EndpointResponse struct {
 	URL                string                  `json:"url"`
 }
 
-func (o *EndpointResponse) GetAdvancedSignatures() *bool {
-	if o == nil {
+func (e *EndpointResponse) GetAdvancedSignatures() *bool {
+	if e == nil {
 		return nil
 	}
-	return o.AdvancedSignatures
+	return e.AdvancedSignatures
 }
 
-func (o *EndpointResponse) GetAuthentication() *EndpointAuthentication {
-	if o == nil {
+func (e *EndpointResponse) GetAuthentication() *EndpointAuthentication {
+	if e == nil {
 		return nil
 	}
-	return o.Authentication
+	return e.Authentication
 }
 
-func (o *EndpointResponse) GetCreatedAt() *string {
-	if o == nil {
+func (e *EndpointResponse) GetCreatedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.CreatedAt
+	return e.CreatedAt
 }
 
-func (o *EndpointResponse) GetDeletedAt() *string {
-	if o == nil {
+func (e *EndpointResponse) GetDeletedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.DeletedAt
+	return e.DeletedAt
 }
 
-func (o *EndpointResponse) GetDescription() *string {
-	if o == nil {
+func (e *EndpointResponse) GetDescription() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Description
+	return e.Description
 }
 
-func (o *EndpointResponse) GetEvents() *int64 {
-	if o == nil {
+func (e *EndpointResponse) GetEvents() *int64 {
+	if e == nil {
 		return nil
 	}
-	return o.Events
+	return e.Events
 }
 
-func (o *EndpointResponse) GetFailureRate() *float64 {
-	if o == nil {
+func (e *EndpointResponse) GetFailureRate() *float64 {
+	if e == nil {
 		return nil
 	}
-	return o.FailureRate
+	return e.FailureRate
 }
 
-func (o *EndpointResponse) GetHTTPTimeout() *int64 {
-	if o == nil {
+func (e *EndpointResponse) GetHTTPTimeout() *int64 {
+	if e == nil {
 		return nil
 	}
-	return o.HTTPTimeout
+	return e.HTTPTimeout
 }
 
-func (o *EndpointResponse) GetName() string {
-	if o == nil {
+func (e *EndpointResponse) GetName() string {
+	if e == nil {
 		return ""
 	}
-	return o.Name
+	return e.Name
 }
 
-func (o *EndpointResponse) GetOwnerID() *string {
-	if o == nil {
+func (e *EndpointResponse) GetOwnerID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.OwnerID
+	return e.OwnerID
 }
 
-func (o *EndpointResponse) GetProjectID() *string {
-	if o == nil {
+func (e *EndpointResponse) GetProjectID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.ProjectID
+	return e.ProjectID
 }
 
-func (o *EndpointResponse) GetRateLimit() *int64 {
-	if o == nil {
+func (e *EndpointResponse) GetRateLimit() *int64 {
+	if e == nil {
 		return nil
 	}
-	return o.RateLimit
+	return e.RateLimit
 }
 
-func (o *EndpointResponse) GetRateLimitDuration() *int64 {
-	if o == nil {
+func (e *EndpointResponse) GetRateLimitDuration() *int64 {
+	if e == nil {
 		return nil
 	}
-	return o.RateLimitDuration
+	return e.RateLimitDuration
 }
 
-func (o *EndpointResponse) GetSecrets() []Secret {
-	if o == nil {
+func (e *EndpointResponse) GetSecrets() []Secret {
+	if e == nil {
 		return nil
 	}
-	return o.Secrets
+	return e.Secrets
 }
 
-func (o *EndpointResponse) GetSlackWebhookURL() *string {
-	if o == nil {
+func (e *EndpointResponse) GetSlackWebhookURL() *string {
+	if e == nil {
 		return nil
 	}
-	return o.SlackWebhookURL
+	return e.SlackWebhookURL
 }
 
-func (o *EndpointResponse) GetStatus() *EndpointStatus {
-	if o == nil {
+func (e *EndpointResponse) GetStatus() *EndpointStatus {
+	if e == nil {
 		return nil
 	}
-	return o.Status
+	return e.Status
 }
 
-func (o *EndpointResponse) GetSupportEmail() *string {
-	if o == nil {
+func (e *EndpointResponse) GetSupportEmail() *string {
+	if e == nil {
 		return nil
 	}
-	return o.SupportEmail
+	return e.SupportEmail
 }
 
-func (o *EndpointResponse) GetUID() string {
-	if o == nil {
+func (e *EndpointResponse) GetUID() string {
+	if e == nil {
 		return ""
 	}
-	return o.UID
+	return e.UID
 }
 
-func (o *EndpointResponse) GetUpdatedAt() *string {
-	if o == nil {
+func (e *EndpointResponse) GetUpdatedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.UpdatedAt
+	return e.UpdatedAt
 }
 
-func (o *EndpointResponse) GetURL() string {
-	if o == nil {
+func (e *EndpointResponse) GetURL() string {
+	if e == nil {
 		return ""
 	}
-	return o.URL
+	return e.URL
 }

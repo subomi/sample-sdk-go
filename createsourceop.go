@@ -13,18 +13,18 @@ type CreateSourceRequest struct {
 	CreateSource CreateSource `request:"mediaType=application/json"`
 }
 
-func (o *CreateSourceRequest) GetProjectID() string {
-	if o == nil {
+func (c *CreateSourceRequest) GetProjectID() string {
+	if c == nil {
 		return ""
 	}
-	return o.ProjectID
+	return c.ProjectID
 }
 
-func (o *CreateSourceRequest) GetCreateSource() CreateSource {
-	if o == nil {
+func (c *CreateSourceRequest) GetCreateSource() CreateSource {
+	if c == nil {
 		return CreateSource{}
 	}
-	return o.CreateSource
+	return c.CreateSource
 }
 
 // CreateSourceNotFoundError - Not Found
@@ -79,25 +79,25 @@ type CreateSourceResponseBody struct {
 	Data    *SourceResponse `json:"data,omitempty"`
 }
 
-func (o *CreateSourceResponseBody) GetMessage() *string {
-	if o == nil {
+func (c *CreateSourceResponseBody) GetMessage() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Message
+	return c.Message
 }
 
-func (o *CreateSourceResponseBody) GetStatus() *bool {
-	if o == nil {
+func (c *CreateSourceResponseBody) GetStatus() *bool {
+	if c == nil {
 		return nil
 	}
-	return o.Status
+	return c.Status
 }
 
-func (o *CreateSourceResponseBody) GetData() *SourceResponse {
-	if o == nil {
+func (c *CreateSourceResponseBody) GetData() *SourceResponse {
+	if c == nil {
 		return nil
 	}
-	return o.Data
+	return c.Data
 }
 
 type CreateSourceResponse struct {
@@ -106,16 +106,16 @@ type CreateSourceResponse struct {
 	Object *CreateSourceResponseBody
 }
 
-func (o *CreateSourceResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (c *CreateSourceResponse) GetHTTPMeta() HTTPMetadata {
+	if c == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return c.HTTPMeta
 }
 
-func (o *CreateSourceResponse) GetObject() *CreateSourceResponseBody {
-	if o == nil {
+func (c *CreateSourceResponse) GetObject() *CreateSourceResponseBody {
+	if c == nil {
 		return nil
 	}
-	return o.Object
+	return c.Object
 }

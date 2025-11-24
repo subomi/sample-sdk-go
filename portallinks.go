@@ -60,7 +60,7 @@ func (s *PortalLinks) LoadPortalLinksPaged(ctx context.Context, request LoadPort
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "LoadPortalLinksPaged",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -350,7 +350,7 @@ func (s *PortalLinks) CreatePortalLink(ctx context.Context, projectID string, po
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "CreatePortalLink",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "PortalLink", "json", `request:"mediaType=application/json"`)
@@ -643,7 +643,7 @@ func (s *PortalLinks) GetPortalLink(ctx context.Context, projectID string, porta
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetPortalLink",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -929,7 +929,7 @@ func (s *PortalLinks) GeneratePortalToken(ctx context.Context, projectID string,
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GeneratePortalToken",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -1216,7 +1216,7 @@ func (s *PortalLinks) UpdatePortalLink(ctx context.Context, projectID string, po
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "UpdatePortalLink",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "PortalLink", "json", `request:"mediaType=application/json"`)
@@ -1509,7 +1509,7 @@ func (s *PortalLinks) RefreshPortalLinkAuthToken(ctx context.Context, projectID 
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "RefreshPortalLinkAuthToken",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -1795,7 +1795,7 @@ func (s *PortalLinks) RevokePortalLink(ctx context.Context, projectID string, po
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "RevokePortalLink",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 

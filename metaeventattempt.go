@@ -8,23 +8,23 @@ type MetaEventAttempt struct {
 	ResponseHTTPHeader map[string]string `json:"response_http_header,omitempty"`
 }
 
-func (o *MetaEventAttempt) GetRequestHTTPHeader() map[string]string {
-	if o == nil {
+func (m *MetaEventAttempt) GetRequestHTTPHeader() map[string]string {
+	if m == nil {
 		return nil
 	}
-	return o.RequestHTTPHeader
+	return m.RequestHTTPHeader
 }
 
-func (o *MetaEventAttempt) GetResponseData() *string {
-	if o == nil {
+func (m *MetaEventAttempt) GetResponseData() *string {
+	if m == nil {
 		return nil
 	}
-	return o.ResponseData
+	return m.ResponseData
 }
 
-func (o *MetaEventAttempt) GetResponseHTTPHeader() map[string]string {
-	if o == nil {
+func (m *MetaEventAttempt) GetResponseHTTPHeader() map[string]string {
+	if m == nil {
 		return nil
 	}
-	return o.ResponseHTTPHeader
+	return m.ResponseHTTPHeader
 }

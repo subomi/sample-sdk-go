@@ -13,18 +13,18 @@ type CreateEndpointFanoutEventRequest struct {
 	FanoutEvent FanoutEvent `request:"mediaType=application/json"`
 }
 
-func (o *CreateEndpointFanoutEventRequest) GetProjectID() string {
-	if o == nil {
+func (c *CreateEndpointFanoutEventRequest) GetProjectID() string {
+	if c == nil {
 		return ""
 	}
-	return o.ProjectID
+	return c.ProjectID
 }
 
-func (o *CreateEndpointFanoutEventRequest) GetFanoutEvent() FanoutEvent {
-	if o == nil {
+func (c *CreateEndpointFanoutEventRequest) GetFanoutEvent() FanoutEvent {
+	if c == nil {
 		return FanoutEvent{}
 	}
-	return o.FanoutEvent
+	return c.FanoutEvent
 }
 
 // CreateEndpointFanoutEventNotFoundError - Not Found
@@ -79,25 +79,25 @@ type CreateEndpointFanoutEventResponseBody struct {
 	Data    *Object `json:"data,omitempty"`
 }
 
-func (o *CreateEndpointFanoutEventResponseBody) GetMessage() *string {
-	if o == nil {
+func (c *CreateEndpointFanoutEventResponseBody) GetMessage() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Message
+	return c.Message
 }
 
-func (o *CreateEndpointFanoutEventResponseBody) GetStatus() *bool {
-	if o == nil {
+func (c *CreateEndpointFanoutEventResponseBody) GetStatus() *bool {
+	if c == nil {
 		return nil
 	}
-	return o.Status
+	return c.Status
 }
 
-func (o *CreateEndpointFanoutEventResponseBody) GetData() *Object {
-	if o == nil {
+func (c *CreateEndpointFanoutEventResponseBody) GetData() *Object {
+	if c == nil {
 		return nil
 	}
-	return o.Data
+	return c.Data
 }
 
 type CreateEndpointFanoutEventResponse struct {
@@ -106,16 +106,16 @@ type CreateEndpointFanoutEventResponse struct {
 	Object *CreateEndpointFanoutEventResponseBody
 }
 
-func (o *CreateEndpointFanoutEventResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (c *CreateEndpointFanoutEventResponse) GetHTTPMeta() HTTPMetadata {
+	if c == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return c.HTTPMeta
 }
 
-func (o *CreateEndpointFanoutEventResponse) GetObject() *CreateEndpointFanoutEventResponseBody {
-	if o == nil {
+func (c *CreateEndpointFanoutEventResponse) GetObject() *CreateEndpointFanoutEventResponseBody {
+	if c == nil {
 		return nil
 	}
-	return o.Object
+	return c.Object
 }

@@ -6,9 +6,9 @@ type TwitterProviderConfig struct {
 	CrcVerifiedAt *string `json:"crc_verified_at,omitempty"`
 }
 
-func (o *TwitterProviderConfig) GetCrcVerifiedAt() *string {
-	if o == nil {
+func (t *TwitterProviderConfig) GetCrcVerifiedAt() *string {
+	if t == nil {
 		return nil
 	}
-	return o.CrcVerifiedAt
+	return t.CrcVerifiedAt
 }

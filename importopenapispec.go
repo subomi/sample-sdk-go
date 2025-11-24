@@ -6,9 +6,9 @@ type ImportOpenAPISpec struct {
 	Spec *string `json:"spec,omitempty"`
 }
 
-func (o *ImportOpenAPISpec) GetSpec() *string {
-	if o == nil {
+func (i *ImportOpenAPISpec) GetSpec() *string {
+	if i == nil {
 		return nil
 	}
-	return o.Spec
+	return i.Spec
 }

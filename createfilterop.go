@@ -15,25 +15,25 @@ type CreateFilterRequestRequest struct {
 	CreateFilterRequest CreateFilterRequest `request:"mediaType=application/json"`
 }
 
-func (o *CreateFilterRequestRequest) GetProjectID() string {
-	if o == nil {
+func (c *CreateFilterRequestRequest) GetProjectID() string {
+	if c == nil {
 		return ""
 	}
-	return o.ProjectID
+	return c.ProjectID
 }
 
-func (o *CreateFilterRequestRequest) GetSubscriptionID() string {
-	if o == nil {
+func (c *CreateFilterRequestRequest) GetSubscriptionID() string {
+	if c == nil {
 		return ""
 	}
-	return o.SubscriptionID
+	return c.SubscriptionID
 }
 
-func (o *CreateFilterRequestRequest) GetCreateFilterRequest() CreateFilterRequest {
-	if o == nil {
+func (c *CreateFilterRequestRequest) GetCreateFilterRequest() CreateFilterRequest {
+	if c == nil {
 		return CreateFilterRequest{}
 	}
-	return o.CreateFilterRequest
+	return c.CreateFilterRequest
 }
 
 // CreateFilterNotFoundError - Not Found
@@ -88,25 +88,25 @@ type CreateFilterResponseBody struct {
 	Data    *FilterResponse `json:"data,omitempty"`
 }
 
-func (o *CreateFilterResponseBody) GetMessage() *string {
-	if o == nil {
+func (c *CreateFilterResponseBody) GetMessage() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Message
+	return c.Message
 }
 
-func (o *CreateFilterResponseBody) GetStatus() *bool {
-	if o == nil {
+func (c *CreateFilterResponseBody) GetStatus() *bool {
+	if c == nil {
 		return nil
 	}
-	return o.Status
+	return c.Status
 }
 
-func (o *CreateFilterResponseBody) GetData() *FilterResponse {
-	if o == nil {
+func (c *CreateFilterResponseBody) GetData() *FilterResponse {
+	if c == nil {
 		return nil
 	}
-	return o.Data
+	return c.Data
 }
 
 type CreateFilterResponse struct {
@@ -115,16 +115,16 @@ type CreateFilterResponse struct {
 	Object *CreateFilterResponseBody
 }
 
-func (o *CreateFilterResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (c *CreateFilterResponse) GetHTTPMeta() HTTPMetadata {
+	if c == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return c.HTTPMeta
 }
 
-func (o *CreateFilterResponse) GetObject() *CreateFilterResponseBody {
-	if o == nil {
+func (c *CreateFilterResponse) GetObject() *CreateFilterResponseBody {
+	if c == nil {
 		return nil
 	}
-	return o.Object
+	return c.Object
 }

@@ -13,18 +13,18 @@ type CreateSubscriptionRequest struct {
 	CreateSubscription CreateSubscription `request:"mediaType=application/json"`
 }
 
-func (o *CreateSubscriptionRequest) GetProjectID() string {
-	if o == nil {
+func (c *CreateSubscriptionRequest) GetProjectID() string {
+	if c == nil {
 		return ""
 	}
-	return o.ProjectID
+	return c.ProjectID
 }
 
-func (o *CreateSubscriptionRequest) GetCreateSubscription() CreateSubscription {
-	if o == nil {
+func (c *CreateSubscriptionRequest) GetCreateSubscription() CreateSubscription {
+	if c == nil {
 		return CreateSubscription{}
 	}
-	return o.CreateSubscription
+	return c.CreateSubscription
 }
 
 // CreateSubscriptionNotFoundError - Not Found
@@ -79,25 +79,25 @@ type CreateSubscriptionResponseBody struct {
 	Data    *SubscriptionResponse `json:"data,omitempty"`
 }
 
-func (o *CreateSubscriptionResponseBody) GetMessage() *string {
-	if o == nil {
+func (c *CreateSubscriptionResponseBody) GetMessage() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Message
+	return c.Message
 }
 
-func (o *CreateSubscriptionResponseBody) GetStatus() *bool {
-	if o == nil {
+func (c *CreateSubscriptionResponseBody) GetStatus() *bool {
+	if c == nil {
 		return nil
 	}
-	return o.Status
+	return c.Status
 }
 
-func (o *CreateSubscriptionResponseBody) GetData() *SubscriptionResponse {
-	if o == nil {
+func (c *CreateSubscriptionResponseBody) GetData() *SubscriptionResponse {
+	if c == nil {
 		return nil
 	}
-	return o.Data
+	return c.Data
 }
 
 type CreateSubscriptionResponse struct {
@@ -106,16 +106,16 @@ type CreateSubscriptionResponse struct {
 	Object *CreateSubscriptionResponseBody
 }
 
-func (o *CreateSubscriptionResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (c *CreateSubscriptionResponse) GetHTTPMeta() HTTPMetadata {
+	if c == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return c.HTTPMeta
 }
 
-func (o *CreateSubscriptionResponse) GetObject() *CreateSubscriptionResponseBody {
-	if o == nil {
+func (c *CreateSubscriptionResponse) GetObject() *CreateSubscriptionResponseBody {
+	if c == nil {
 		return nil
 	}
-	return o.Object
+	return c.Object
 }

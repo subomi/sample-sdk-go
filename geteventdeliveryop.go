@@ -13,18 +13,18 @@ type GetEventDeliveryRequest struct {
 	EventDeliveryID string `pathParam:"style=simple,explode=false,name=eventDeliveryID"`
 }
 
-func (o *GetEventDeliveryRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetEventDeliveryRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetEventDeliveryRequest) GetEventDeliveryID() string {
-	if o == nil {
+func (g *GetEventDeliveryRequest) GetEventDeliveryID() string {
+	if g == nil {
 		return ""
 	}
-	return o.EventDeliveryID
+	return g.EventDeliveryID
 }
 
 // GetEventDeliveryNotFoundError - Not Found
@@ -79,25 +79,25 @@ type GetEventDeliveryResponseBody struct {
 	Data    *EventDeliveryResponse `json:"data,omitempty"`
 }
 
-func (o *GetEventDeliveryResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetEventDeliveryResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetEventDeliveryResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetEventDeliveryResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetEventDeliveryResponseBody) GetData() *EventDeliveryResponse {
-	if o == nil {
+func (g *GetEventDeliveryResponseBody) GetData() *EventDeliveryResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetEventDeliveryResponse struct {
@@ -106,16 +106,16 @@ type GetEventDeliveryResponse struct {
 	Object *GetEventDeliveryResponseBody
 }
 
-func (o *GetEventDeliveryResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetEventDeliveryResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetEventDeliveryResponse) GetObject() *GetEventDeliveryResponseBody {
-	if o == nil {
+func (g *GetEventDeliveryResponse) GetObject() *GetEventDeliveryResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

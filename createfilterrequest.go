@@ -11,23 +11,23 @@ type CreateFilterRequest struct {
 	Headers map[string]any `json:"headers,omitempty"`
 }
 
-func (o *CreateFilterRequest) GetBody() map[string]any {
-	if o == nil {
+func (c *CreateFilterRequest) GetBody() map[string]any {
+	if c == nil {
 		return nil
 	}
-	return o.Body
+	return c.Body
 }
 
-func (o *CreateFilterRequest) GetEventType() string {
-	if o == nil {
+func (c *CreateFilterRequest) GetEventType() string {
+	if c == nil {
 		return ""
 	}
-	return o.EventType
+	return c.EventType
 }
 
-func (o *CreateFilterRequest) GetHeaders() map[string]any {
-	if o == nil {
+func (c *CreateFilterRequest) GetHeaders() map[string]any {
+	if c == nil {
 		return nil
 	}
-	return o.Headers
+	return c.Headers
 }

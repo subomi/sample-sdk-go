@@ -8,23 +8,23 @@ type GooglePubSubConfig struct {
 	SubscriptionID *string `json:"subscription_id,omitempty"`
 }
 
-func (o *GooglePubSubConfig) GetProjectID() *string {
-	if o == nil {
+func (g *GooglePubSubConfig) GetProjectID() *string {
+	if g == nil {
 		return nil
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GooglePubSubConfig) GetServiceAccount() []int64 {
-	if o == nil {
+func (g *GooglePubSubConfig) GetServiceAccount() []int64 {
+	if g == nil {
 		return nil
 	}
-	return o.ServiceAccount
+	return g.ServiceAccount
 }
 
-func (o *GooglePubSubConfig) GetSubscriptionID() *string {
-	if o == nil {
+func (g *GooglePubSubConfig) GetSubscriptionID() *string {
+	if g == nil {
 		return nil
 	}
-	return o.SubscriptionID
+	return g.SubscriptionID
 }
