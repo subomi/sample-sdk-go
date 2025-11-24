@@ -16,7 +16,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>")
+	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{})
 	if err != nil {
 		log.Fatal(err)
 	}

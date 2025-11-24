@@ -5,66 +5,10 @@
 
 ### Available Operations
 
-* [GetEventTypes](#geteventtypes) - Retrieves a project's event types
 * [CreateEventType](#createeventtype) - Create an event type
 * [UpdateEventType](#updateeventtype) - Updates an event type
 * [DeprecateEventType](#deprecateeventtype) - Deprecates an event type
 * [ImportOpenAPISpec](#importopenapispec) - Import event types from OpenAPI spec
-
-## GetEventTypes
-
-This endpoint fetches the project's event types
-
-### Example Usage
-
-<!-- UsageSnippet language="go" operationID="GetEventTypes" method="get" path="/v1/projects/{projectID}/event-types" -->
-```go
-package main
-
-import(
-	"context"
-	"os"
-	"github.com/frain-dev/convoy"
-	"log"
-)
-
-func main() {
-    ctx := context.Background()
-
-    s := convoy.New(
-        convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
-    )
-
-    res, err := s.EventTypes.GetEventTypes(ctx, "<id>")
-    if err != nil {
-        log.Fatal(err)
-    }
-    if res.Object != nil {
-        // handle response
-    }
-}
-```
-
-### Parameters
-
-| Parameter                                             | Type                                                  | Required                                              | Description                                           |
-| ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
-| `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
-
-### Response
-
-**[*GetEventTypesResponse](../../geteventtypesresponse.md), error**
-
-### Errors
-
-| Error Type                            | Status Code                           | Content Type                          |
-| ------------------------------------- | ------------------------------------- | ------------------------------------- |
-| convoy.GetEventTypesBadRequestError   | 400                                   | application/json                      |
-| convoy.GetEventTypesUnauthorizedError | 401                                   | application/json                      |
-| convoy.GetEventTypesNotFoundError     | 404                                   | application/json                      |
-| convoy.APIError                       | 4XX, 5XX                              | \*/\*                                 |
 
 ## CreateEventType
 

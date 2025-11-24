@@ -13,7 +13,6 @@ import (
 	"net/http"
 )
 
-// PortalLinks - Portal Links related APIs
 type PortalLinks struct {
 	rootSDK          *Convoy
 	sdkConfiguration config.SDKConfiguration

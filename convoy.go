@@ -49,8 +49,6 @@ func Pointer[T any](v T) *T { return &v }
 // Convoy API Reference: Convoy is a fast and secure webhooks proxy. This document contains s API specification.
 type Convoy struct {
 	SDKVersion string
-	// Endpoint related APIs
-	Endpoints  *Endpoints
 	EventTypes *EventTypes
 	// EventDelivery related APIs
 	EventDeliveries  *EventDeliveries
@@ -58,8 +56,7 @@ type Convoy struct {
 	// Event related APIs
 	Events *Events
 	// Meta Events related APIs
-	MetaEvents *MetaEvents
-	// Portal Links related APIs
+	MetaEvents  *MetaEvents
 	PortalLinks *PortalLinks
 	// Source related APIs
 	Sources *Sources
@@ -142,9 +139,9 @@ func WithTimeout(timeout time.Duration) SDKOption {
 // New creates a new instance of the SDK with the provided options
 func New(opts ...SDKOption) *Convoy {
 	sdk := &Convoy{
-		SDKVersion: "0.2.0-rc.1",
+		SDKVersion: "0.3.0-rc.1",
 		sdkConfiguration: config.SDKConfiguration{
-			UserAgent:  "speakeasy-sdk/go 0.2.0-rc.1 2.760.2 24.1.4 github.com/frain-dev/convoy",
+			UserAgent:  "speakeasy-sdk/go 0.3.0-rc.1 2.760.2 24.1.4 github.com/frain-dev/convoy",
 			ServerList: ServerList,
 		},
 		hooks: hooks.New(),
@@ -167,7 +164,6 @@ func New(opts ...SDKOption) *Convoy {
 
 	sdk.sdkConfiguration = sdk.hooks.SDKInit(sdk.sdkConfiguration)
 
-	sdk.Endpoints = newEndpoints(sdk, sdk.sdkConfiguration, sdk.hooks)
 	sdk.EventTypes = newEventTypes(sdk, sdk.sdkConfiguration, sdk.hooks)
 	sdk.EventDeliveries = newEventDeliveries(sdk, sdk.sdkConfiguration, sdk.hooks)
 	sdk.DeliveryAttempts = newDeliveryAttempts(sdk, sdk.sdkConfiguration, sdk.hooks)
