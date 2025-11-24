@@ -13,18 +13,18 @@ type GetEndpointRequest struct {
 	EndpointID string `pathParam:"style=simple,explode=false,name=endpointID"`
 }
 
-func (o *GetEndpointRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetEndpointRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetEndpointRequest) GetEndpointID() string {
-	if o == nil {
+func (g *GetEndpointRequest) GetEndpointID() string {
+	if g == nil {
 		return ""
 	}
-	return o.EndpointID
+	return g.EndpointID
 }
 
 // GetEndpointNotFoundError - Not Found
@@ -79,25 +79,25 @@ type GetEndpointResponseBody struct {
 	Data    *EndpointResponse `json:"data,omitempty"`
 }
 
-func (o *GetEndpointResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetEndpointResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetEndpointResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetEndpointResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetEndpointResponseBody) GetData() *EndpointResponse {
-	if o == nil {
+func (g *GetEndpointResponseBody) GetData() *EndpointResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetEndpointResponse struct {
@@ -106,16 +106,16 @@ type GetEndpointResponse struct {
 	Object *GetEndpointResponseBody
 }
 
-func (o *GetEndpointResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetEndpointResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetEndpointResponse) GetObject() *GetEndpointResponseBody {
-	if o == nil {
+func (g *GetEndpointResponse) GetObject() *GetEndpointResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

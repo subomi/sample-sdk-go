@@ -13,18 +13,18 @@ type GeneratePortalTokenRequest struct {
 	PortalLinkID string `pathParam:"style=simple,explode=false,name=portalLinkID"`
 }
 
-func (o *GeneratePortalTokenRequest) GetProjectID() string {
-	if o == nil {
+func (g *GeneratePortalTokenRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GeneratePortalTokenRequest) GetPortalLinkID() string {
-	if o == nil {
+func (g *GeneratePortalTokenRequest) GetPortalLinkID() string {
+	if g == nil {
 		return ""
 	}
-	return o.PortalLinkID
+	return g.PortalLinkID
 }
 
 // GeneratePortalTokenNotFoundError - Not Found
@@ -79,25 +79,25 @@ type GeneratePortalTokenResponseBody struct {
 	Data    *PortalLinkResponse `json:"data,omitempty"`
 }
 
-func (o *GeneratePortalTokenResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GeneratePortalTokenResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GeneratePortalTokenResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GeneratePortalTokenResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GeneratePortalTokenResponseBody) GetData() *PortalLinkResponse {
-	if o == nil {
+func (g *GeneratePortalTokenResponseBody) GetData() *PortalLinkResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GeneratePortalTokenResponse struct {
@@ -106,16 +106,16 @@ type GeneratePortalTokenResponse struct {
 	Object *GeneratePortalTokenResponseBody
 }
 
-func (o *GeneratePortalTokenResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GeneratePortalTokenResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GeneratePortalTokenResponse) GetObject() *GeneratePortalTokenResponseBody {
-	if o == nil {
+func (g *GeneratePortalTokenResponse) GetObject() *GeneratePortalTokenResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

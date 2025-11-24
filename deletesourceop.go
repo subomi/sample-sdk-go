@@ -13,18 +13,18 @@ type DeleteSourceRequest struct {
 	SourceID string `pathParam:"style=simple,explode=false,name=sourceID"`
 }
 
-func (o *DeleteSourceRequest) GetProjectID() string {
-	if o == nil {
+func (d *DeleteSourceRequest) GetProjectID() string {
+	if d == nil {
 		return ""
 	}
-	return o.ProjectID
+	return d.ProjectID
 }
 
-func (o *DeleteSourceRequest) GetSourceID() string {
-	if o == nil {
+func (d *DeleteSourceRequest) GetSourceID() string {
+	if d == nil {
 		return ""
 	}
-	return o.SourceID
+	return d.SourceID
 }
 
 // DeleteSourceNotFoundError - Not Found
@@ -79,25 +79,25 @@ type DeleteSourceResponseBody struct {
 	Data    *Object `json:"data,omitempty"`
 }
 
-func (o *DeleteSourceResponseBody) GetMessage() *string {
-	if o == nil {
+func (d *DeleteSourceResponseBody) GetMessage() *string {
+	if d == nil {
 		return nil
 	}
-	return o.Message
+	return d.Message
 }
 
-func (o *DeleteSourceResponseBody) GetStatus() *bool {
-	if o == nil {
+func (d *DeleteSourceResponseBody) GetStatus() *bool {
+	if d == nil {
 		return nil
 	}
-	return o.Status
+	return d.Status
 }
 
-func (o *DeleteSourceResponseBody) GetData() *Object {
-	if o == nil {
+func (d *DeleteSourceResponseBody) GetData() *Object {
+	if d == nil {
 		return nil
 	}
-	return o.Data
+	return d.Data
 }
 
 type DeleteSourceResponse struct {
@@ -106,16 +106,16 @@ type DeleteSourceResponse struct {
 	Object *DeleteSourceResponseBody
 }
 
-func (o *DeleteSourceResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (d *DeleteSourceResponse) GetHTTPMeta() HTTPMetadata {
+	if d == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return d.HTTPMeta
 }
 
-func (o *DeleteSourceResponse) GetObject() *DeleteSourceResponseBody {
-	if o == nil {
+func (d *DeleteSourceResponse) GetObject() *DeleteSourceResponseBody {
+	if d == nil {
 		return nil
 	}
-	return o.Object
+	return d.Object
 }

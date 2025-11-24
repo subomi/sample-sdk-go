@@ -9,16 +9,16 @@ type TestFilter struct {
 	Schema *FilterSchema `json:"schema,omitempty"`
 }
 
-func (o *TestFilter) GetRequest() *FilterSchema {
-	if o == nil {
+func (t *TestFilter) GetRequest() *FilterSchema {
+	if t == nil {
 		return nil
 	}
-	return o.Request
+	return t.Request
 }
 
-func (o *TestFilter) GetSchema() *FilterSchema {
-	if o == nil {
+func (t *TestFilter) GetSchema() *FilterSchema {
+	if t == nil {
 		return nil
 	}
-	return o.Schema
+	return t.Schema
 }

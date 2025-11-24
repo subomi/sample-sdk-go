@@ -36,65 +36,65 @@ type CreateSubscription struct {
 	SourceID *string `json:"source_id,omitempty"`
 }
 
-func (o *CreateSubscription) GetAlertConfig() *AlertConfiguration {
-	if o == nil {
+func (c *CreateSubscription) GetAlertConfig() *AlertConfiguration {
+	if c == nil {
 		return nil
 	}
-	return o.AlertConfig
+	return c.AlertConfig
 }
 
-func (o *CreateSubscription) GetAppID() *string {
-	if o == nil {
+func (c *CreateSubscription) GetAppID() *string {
+	if c == nil {
 		return nil
 	}
-	return o.AppID
+	return c.AppID
 }
 
-func (o *CreateSubscription) GetDeliveryMode() *CreateSubscriptionDeliveryMode {
-	if o == nil {
+func (c *CreateSubscription) GetDeliveryMode() *CreateSubscriptionDeliveryMode {
+	if c == nil {
 		return nil
 	}
-	return o.DeliveryMode
+	return c.DeliveryMode
 }
 
-func (o *CreateSubscription) GetEndpointID() *string {
-	if o == nil {
+func (c *CreateSubscription) GetEndpointID() *string {
+	if c == nil {
 		return nil
 	}
-	return o.EndpointID
+	return c.EndpointID
 }
 
-func (o *CreateSubscription) GetFilterConfig() *FilterConfiguration {
-	if o == nil {
+func (c *CreateSubscription) GetFilterConfig() *FilterConfiguration {
+	if c == nil {
 		return nil
 	}
-	return o.FilterConfig
+	return c.FilterConfig
 }
 
-func (o *CreateSubscription) GetFunction() *string {
-	if o == nil {
+func (c *CreateSubscription) GetFunction() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Function
+	return c.Function
 }
 
-func (o *CreateSubscription) GetName() *string {
-	if o == nil {
+func (c *CreateSubscription) GetName() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Name
+	return c.Name
 }
 
-func (o *CreateSubscription) GetRateLimitConfig() *RateLimitConfiguration {
-	if o == nil {
+func (c *CreateSubscription) GetRateLimitConfig() *RateLimitConfiguration {
+	if c == nil {
 		return nil
 	}
-	return o.RateLimitConfig
+	return c.RateLimitConfig
 }
 
-func (o *CreateSubscription) GetSourceID() *string {
-	if o == nil {
+func (c *CreateSubscription) GetSourceID() *string {
+	if c == nil {
 		return nil
 	}
-	return o.SourceID
+	return c.SourceID
 }

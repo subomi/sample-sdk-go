@@ -7,16 +7,16 @@ type CLIMetadata struct {
 	SourceID  *string `json:"source_id,omitempty"`
 }
 
-func (o *CLIMetadata) GetEventType() *string {
-	if o == nil {
+func (c *CLIMetadata) GetEventType() *string {
+	if c == nil {
 		return nil
 	}
-	return o.EventType
+	return c.EventType
 }
 
-func (o *CLIMetadata) GetSourceID() *string {
-	if o == nil {
+func (c *CLIMetadata) GetSourceID() *string {
+	if c == nil {
 		return nil
 	}
-	return o.SourceID
+	return c.SourceID
 }

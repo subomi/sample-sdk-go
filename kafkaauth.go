@@ -10,37 +10,37 @@ type KafkaAuth struct {
 	Username *string `json:"username,omitempty"`
 }
 
-func (o *KafkaAuth) GetHash() *string {
-	if o == nil {
+func (k *KafkaAuth) GetHash() *string {
+	if k == nil {
 		return nil
 	}
-	return o.Hash
+	return k.Hash
 }
 
-func (o *KafkaAuth) GetPassword() *string {
-	if o == nil {
+func (k *KafkaAuth) GetPassword() *string {
+	if k == nil {
 		return nil
 	}
-	return o.Password
+	return k.Password
 }
 
-func (o *KafkaAuth) GetTLS() *bool {
-	if o == nil {
+func (k *KafkaAuth) GetTLS() *bool {
+	if k == nil {
 		return nil
 	}
-	return o.TLS
+	return k.TLS
 }
 
-func (o *KafkaAuth) GetType() *string {
-	if o == nil {
+func (k *KafkaAuth) GetType() *string {
+	if k == nil {
 		return nil
 	}
-	return o.Type
+	return k.Type
 }
 
-func (o *KafkaAuth) GetUsername() *string {
-	if o == nil {
+func (k *KafkaAuth) GetUsername() *string {
+	if k == nil {
 		return nil
 	}
-	return o.Username
+	return k.Username
 }

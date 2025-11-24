@@ -13,18 +13,18 @@ type CreateEventTypeRequest struct {
 	CreateEventType CreateEventType `request:"mediaType=application/json"`
 }
 
-func (o *CreateEventTypeRequest) GetProjectID() string {
-	if o == nil {
+func (c *CreateEventTypeRequest) GetProjectID() string {
+	if c == nil {
 		return ""
 	}
-	return o.ProjectID
+	return c.ProjectID
 }
 
-func (o *CreateEventTypeRequest) GetCreateEventType() CreateEventType {
-	if o == nil {
+func (c *CreateEventTypeRequest) GetCreateEventType() CreateEventType {
+	if c == nil {
 		return CreateEventType{}
 	}
-	return o.CreateEventType
+	return c.CreateEventType
 }
 
 // CreateEventTypeNotFoundError - Not Found
@@ -79,25 +79,25 @@ type CreateEventTypeResponseBody struct {
 	Data    *EventTypeResponse `json:"data,omitempty"`
 }
 
-func (o *CreateEventTypeResponseBody) GetMessage() *string {
-	if o == nil {
+func (c *CreateEventTypeResponseBody) GetMessage() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Message
+	return c.Message
 }
 
-func (o *CreateEventTypeResponseBody) GetStatus() *bool {
-	if o == nil {
+func (c *CreateEventTypeResponseBody) GetStatus() *bool {
+	if c == nil {
 		return nil
 	}
-	return o.Status
+	return c.Status
 }
 
-func (o *CreateEventTypeResponseBody) GetData() *EventTypeResponse {
-	if o == nil {
+func (c *CreateEventTypeResponseBody) GetData() *EventTypeResponse {
+	if c == nil {
 		return nil
 	}
-	return o.Data
+	return c.Data
 }
 
 type CreateEventTypeResponse struct {
@@ -106,16 +106,16 @@ type CreateEventTypeResponse struct {
 	Object *CreateEventTypeResponseBody
 }
 
-func (o *CreateEventTypeResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (c *CreateEventTypeResponse) GetHTTPMeta() HTTPMetadata {
+	if c == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return c.HTTPMeta
 }
 
-func (o *CreateEventTypeResponse) GetObject() *CreateEventTypeResponseBody {
-	if o == nil {
+func (c *CreateEventTypeResponse) GetObject() *CreateEventTypeResponseBody {
+	if c == nil {
 		return nil
 	}
-	return o.Object
+	return c.Object
 }

@@ -13,18 +13,18 @@ type GetPortalLinkRequest struct {
 	PortalLinkID string `pathParam:"style=simple,explode=false,name=portalLinkID"`
 }
 
-func (o *GetPortalLinkRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetPortalLinkRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetPortalLinkRequest) GetPortalLinkID() string {
-	if o == nil {
+func (g *GetPortalLinkRequest) GetPortalLinkID() string {
+	if g == nil {
 		return ""
 	}
-	return o.PortalLinkID
+	return g.PortalLinkID
 }
 
 // GetPortalLinkNotFoundError - Not Found
@@ -79,25 +79,25 @@ type GetPortalLinkResponseBody struct {
 	Data    *PortalLinkResponse `json:"data,omitempty"`
 }
 
-func (o *GetPortalLinkResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetPortalLinkResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetPortalLinkResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetPortalLinkResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetPortalLinkResponseBody) GetData() *PortalLinkResponse {
-	if o == nil {
+func (g *GetPortalLinkResponseBody) GetData() *PortalLinkResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetPortalLinkResponse struct {
@@ -106,16 +106,16 @@ type GetPortalLinkResponse struct {
 	Object *GetPortalLinkResponseBody
 }
 
-func (o *GetPortalLinkResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetPortalLinkResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetPortalLinkResponse) GetObject() *GetPortalLinkResponseBody {
-	if o == nil {
+func (g *GetPortalLinkResponse) GetObject() *GetPortalLinkResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

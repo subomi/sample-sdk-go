@@ -13,30 +13,30 @@ type RetryConfiguration struct {
 	Type *StrategyProvider `json:"type,omitempty"`
 }
 
-func (o *RetryConfiguration) GetDuration() *string {
-	if o == nil {
+func (r *RetryConfiguration) GetDuration() *string {
+	if r == nil {
 		return nil
 	}
-	return o.Duration
+	return r.Duration
 }
 
-func (o *RetryConfiguration) GetIntervalSeconds() *int64 {
-	if o == nil {
+func (r *RetryConfiguration) GetIntervalSeconds() *int64 {
+	if r == nil {
 		return nil
 	}
-	return o.IntervalSeconds
+	return r.IntervalSeconds
 }
 
-func (o *RetryConfiguration) GetRetryCount() *int64 {
-	if o == nil {
+func (r *RetryConfiguration) GetRetryCount() *int64 {
+	if r == nil {
 		return nil
 	}
-	return o.RetryCount
+	return r.RetryCount
 }
 
-func (o *RetryConfiguration) GetType() *StrategyProvider {
-	if o == nil {
+func (r *RetryConfiguration) GetType() *StrategyProvider {
+	if r == nil {
 		return nil
 	}
-	return o.Type
+	return r.Type
 }

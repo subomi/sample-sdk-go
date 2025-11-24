@@ -19,100 +19,100 @@ type PortalLinkResponse struct {
 	URL               *string    `json:"url,omitempty"`
 }
 
-func (o *PortalLinkResponse) GetAuthKey() *string {
-	if o == nil {
+func (p *PortalLinkResponse) GetAuthKey() *string {
+	if p == nil {
 		return nil
 	}
-	return o.AuthKey
+	return p.AuthKey
 }
 
-func (o *PortalLinkResponse) GetCanManageEndpoint() *bool {
-	if o == nil {
+func (p *PortalLinkResponse) GetCanManageEndpoint() *bool {
+	if p == nil {
 		return nil
 	}
-	return o.CanManageEndpoint
+	return p.CanManageEndpoint
 }
 
-func (o *PortalLinkResponse) GetCreatedAt() *string {
-	if o == nil {
+func (p *PortalLinkResponse) GetCreatedAt() *string {
+	if p == nil {
 		return nil
 	}
-	return o.CreatedAt
+	return p.CreatedAt
 }
 
-func (o *PortalLinkResponse) GetDeletedAt() *string {
-	if o == nil {
+func (p *PortalLinkResponse) GetDeletedAt() *string {
+	if p == nil {
 		return nil
 	}
-	return o.DeletedAt
+	return p.DeletedAt
 }
 
-func (o *PortalLinkResponse) GetEndpointCount() *int64 {
-	if o == nil {
+func (p *PortalLinkResponse) GetEndpointCount() *int64 {
+	if p == nil {
 		return nil
 	}
-	return o.EndpointCount
+	return p.EndpointCount
 }
 
-func (o *PortalLinkResponse) GetEndpoints() []string {
-	if o == nil {
+func (p *PortalLinkResponse) GetEndpoints() []string {
+	if p == nil {
 		return nil
 	}
-	return o.Endpoints
+	return p.Endpoints
 }
 
-func (o *PortalLinkResponse) GetEndpointsMetadata() []Endpoint {
-	if o == nil {
+func (p *PortalLinkResponse) GetEndpointsMetadata() []Endpoint {
+	if p == nil {
 		return nil
 	}
-	return o.EndpointsMetadata
+	return p.EndpointsMetadata
 }
 
-func (o *PortalLinkResponse) GetName() *string {
-	if o == nil {
+func (p *PortalLinkResponse) GetName() *string {
+	if p == nil {
 		return nil
 	}
-	return o.Name
+	return p.Name
 }
 
-func (o *PortalLinkResponse) GetOwnerID() *string {
-	if o == nil {
+func (p *PortalLinkResponse) GetOwnerID() *string {
+	if p == nil {
 		return nil
 	}
-	return o.OwnerID
+	return p.OwnerID
 }
 
-func (o *PortalLinkResponse) GetProjectID() *string {
-	if o == nil {
+func (p *PortalLinkResponse) GetProjectID() *string {
+	if p == nil {
 		return nil
 	}
-	return o.ProjectID
+	return p.ProjectID
 }
 
-func (o *PortalLinkResponse) GetToken() *string {
-	if o == nil {
+func (p *PortalLinkResponse) GetToken() *string {
+	if p == nil {
 		return nil
 	}
-	return o.Token
+	return p.Token
 }
 
-func (o *PortalLinkResponse) GetUID() *string {
-	if o == nil {
+func (p *PortalLinkResponse) GetUID() *string {
+	if p == nil {
 		return nil
 	}
-	return o.UID
+	return p.UID
 }
 
-func (o *PortalLinkResponse) GetUpdatedAt() *string {
-	if o == nil {
+func (p *PortalLinkResponse) GetUpdatedAt() *string {
+	if p == nil {
 		return nil
 	}
-	return o.UpdatedAt
+	return p.UpdatedAt
 }
 
-func (o *PortalLinkResponse) GetURL() *string {
-	if o == nil {
+func (p *PortalLinkResponse) GetURL() *string {
+	if p == nil {
 		return nil
 	}
-	return o.URL
+	return p.URL
 }

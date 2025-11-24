@@ -14,65 +14,65 @@ type Device struct {
 	UpdatedAt  *string       `json:"updated_at,omitempty"`
 }
 
-func (o *Device) GetCreatedAt() *string {
-	if o == nil {
+func (d *Device) GetCreatedAt() *string {
+	if d == nil {
 		return nil
 	}
-	return o.CreatedAt
+	return d.CreatedAt
 }
 
-func (o *Device) GetDeletedAt() *string {
-	if o == nil {
+func (d *Device) GetDeletedAt() *string {
+	if d == nil {
 		return nil
 	}
-	return o.DeletedAt
+	return d.DeletedAt
 }
 
-func (o *Device) GetEndpointID() *string {
-	if o == nil {
+func (d *Device) GetEndpointID() *string {
+	if d == nil {
 		return nil
 	}
-	return o.EndpointID
+	return d.EndpointID
 }
 
-func (o *Device) GetHostName() *string {
-	if o == nil {
+func (d *Device) GetHostName() *string {
+	if d == nil {
 		return nil
 	}
-	return o.HostName
+	return d.HostName
 }
 
-func (o *Device) GetLastSeenAt() *string {
-	if o == nil {
+func (d *Device) GetLastSeenAt() *string {
+	if d == nil {
 		return nil
 	}
-	return o.LastSeenAt
+	return d.LastSeenAt
 }
 
-func (o *Device) GetProjectID() *string {
-	if o == nil {
+func (d *Device) GetProjectID() *string {
+	if d == nil {
 		return nil
 	}
-	return o.ProjectID
+	return d.ProjectID
 }
 
-func (o *Device) GetStatus() *DeviceStatus {
-	if o == nil {
+func (d *Device) GetStatus() *DeviceStatus {
+	if d == nil {
 		return nil
 	}
-	return o.Status
+	return d.Status
 }
 
-func (o *Device) GetUID() *string {
-	if o == nil {
+func (d *Device) GetUID() *string {
+	if d == nil {
 		return nil
 	}
-	return o.UID
+	return d.UID
 }
 
-func (o *Device) GetUpdatedAt() *string {
-	if o == nil {
+func (d *Device) GetUpdatedAt() *string {
+	if d == nil {
 		return nil
 	}
-	return o.UpdatedAt
+	return d.UpdatedAt
 }

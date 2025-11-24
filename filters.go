@@ -64,7 +64,7 @@ func (s *Filters) GetFilters(ctx context.Context, projectID string, subscription
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetFilters",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -351,7 +351,7 @@ func (s *Filters) CreateFilter(ctx context.Context, projectID string, subscripti
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "CreateFilter",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "CreateFilterRequest", "json", `request:"mediaType=application/json"`)
@@ -645,7 +645,7 @@ func (s *Filters) DeleteFilter(ctx context.Context, projectID string, subscripti
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "DeleteFilter",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -932,7 +932,7 @@ func (s *Filters) GetFilter(ctx context.Context, projectID string, subscriptionI
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetFilter",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -1220,7 +1220,7 @@ func (s *Filters) UpdateFilter(ctx context.Context, projectID string, subscripti
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "UpdateFilter",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "UpdateFilterRequest", "json", `request:"mediaType=application/json"`)
@@ -1514,7 +1514,7 @@ func (s *Filters) BulkCreateFilters(ctx context.Context, projectID string, subsc
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "BulkCreateFilters",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "RequestBody", "json", `request:"mediaType=application/json"`)
@@ -1808,7 +1808,7 @@ func (s *Filters) BulkUpdateFilters(ctx context.Context, projectID string, subsc
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "BulkUpdateFilters",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "RequestBody", "json", `request:"mediaType=application/json"`)
@@ -2103,7 +2103,7 @@ func (s *Filters) TestFilter(ctx context.Context, projectID string, subscription
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "TestFilter",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "TestFilterRequest", "json", `request:"mediaType=application/json"`)

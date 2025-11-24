@@ -7,16 +7,16 @@ type EndpointAuthentication struct {
 	Type   *EndpointAuthenticationType `json:"type,omitempty"`
 }
 
-func (o *EndpointAuthentication) GetAPIKey() *APIKey {
-	if o == nil {
+func (e *EndpointAuthentication) GetAPIKey() *APIKey {
+	if e == nil {
 		return nil
 	}
-	return o.APIKey
+	return e.APIKey
 }
 
-func (o *EndpointAuthentication) GetType() *EndpointAuthenticationType {
-	if o == nil {
+func (e *EndpointAuthentication) GetType() *EndpointAuthenticationType {
+	if e == nil {
 		return nil
 	}
-	return o.Type
+	return e.Type
 }

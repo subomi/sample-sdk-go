@@ -59,88 +59,88 @@ type BatchReplayEventsRequest struct {
 	StartDate *string `queryParam:"style=form,explode=true,name=startDate"`
 }
 
-func (o *BatchReplayEventsRequest) GetProjectID() string {
-	if o == nil {
+func (b *BatchReplayEventsRequest) GetProjectID() string {
+	if b == nil {
 		return ""
 	}
-	return o.ProjectID
+	return b.ProjectID
 }
 
-func (o *BatchReplayEventsRequest) GetDirection() *BatchReplayEventsDirection {
-	if o == nil {
+func (b *BatchReplayEventsRequest) GetDirection() *BatchReplayEventsDirection {
+	if b == nil {
 		return nil
 	}
-	return o.Direction
+	return b.Direction
 }
 
-func (o *BatchReplayEventsRequest) GetEndDate() *string {
-	if o == nil {
+func (b *BatchReplayEventsRequest) GetEndDate() *string {
+	if b == nil {
 		return nil
 	}
-	return o.EndDate
+	return b.EndDate
 }
 
-func (o *BatchReplayEventsRequest) GetEndpointID() []string {
-	if o == nil {
+func (b *BatchReplayEventsRequest) GetEndpointID() []string {
+	if b == nil {
 		return nil
 	}
-	return o.EndpointID
+	return b.EndpointID
 }
 
-func (o *BatchReplayEventsRequest) GetIdempotencyKey() *string {
-	if o == nil {
+func (b *BatchReplayEventsRequest) GetIdempotencyKey() *string {
+	if b == nil {
 		return nil
 	}
-	return o.IdempotencyKey
+	return b.IdempotencyKey
 }
 
-func (o *BatchReplayEventsRequest) GetNextPageCursor() *string {
-	if o == nil {
+func (b *BatchReplayEventsRequest) GetNextPageCursor() *string {
+	if b == nil {
 		return nil
 	}
-	return o.NextPageCursor
+	return b.NextPageCursor
 }
 
-func (o *BatchReplayEventsRequest) GetPerPage() *int64 {
-	if o == nil {
+func (b *BatchReplayEventsRequest) GetPerPage() *int64 {
+	if b == nil {
 		return nil
 	}
-	return o.PerPage
+	return b.PerPage
 }
 
-func (o *BatchReplayEventsRequest) GetPrevPageCursor() *string {
-	if o == nil {
+func (b *BatchReplayEventsRequest) GetPrevPageCursor() *string {
+	if b == nil {
 		return nil
 	}
-	return o.PrevPageCursor
+	return b.PrevPageCursor
 }
 
-func (o *BatchReplayEventsRequest) GetQuery() *string {
-	if o == nil {
+func (b *BatchReplayEventsRequest) GetQuery() *string {
+	if b == nil {
 		return nil
 	}
-	return o.Query
+	return b.Query
 }
 
-func (o *BatchReplayEventsRequest) GetSort() *string {
-	if o == nil {
+func (b *BatchReplayEventsRequest) GetSort() *string {
+	if b == nil {
 		return nil
 	}
-	return o.Sort
+	return b.Sort
 }
 
-func (o *BatchReplayEventsRequest) GetSourceID() []string {
-	if o == nil {
+func (b *BatchReplayEventsRequest) GetSourceID() []string {
+	if b == nil {
 		return nil
 	}
-	return o.SourceID
+	return b.SourceID
 }
 
-func (o *BatchReplayEventsRequest) GetStartDate() *string {
-	if o == nil {
+func (b *BatchReplayEventsRequest) GetStartDate() *string {
+	if b == nil {
 		return nil
 	}
-	return o.StartDate
+	return b.StartDate
 }
 
 // BatchReplayEventsNotFoundError - Not Found
@@ -195,25 +195,25 @@ type BatchReplayEventsResponseBody struct {
 	Data    *string `json:"data,omitempty"`
 }
 
-func (o *BatchReplayEventsResponseBody) GetMessage() *string {
-	if o == nil {
+func (b *BatchReplayEventsResponseBody) GetMessage() *string {
+	if b == nil {
 		return nil
 	}
-	return o.Message
+	return b.Message
 }
 
-func (o *BatchReplayEventsResponseBody) GetStatus() *bool {
-	if o == nil {
+func (b *BatchReplayEventsResponseBody) GetStatus() *bool {
+	if b == nil {
 		return nil
 	}
-	return o.Status
+	return b.Status
 }
 
-func (o *BatchReplayEventsResponseBody) GetData() *string {
-	if o == nil {
+func (b *BatchReplayEventsResponseBody) GetData() *string {
+	if b == nil {
 		return nil
 	}
-	return o.Data
+	return b.Data
 }
 
 type BatchReplayEventsResponse struct {
@@ -222,16 +222,16 @@ type BatchReplayEventsResponse struct {
 	Object *BatchReplayEventsResponseBody
 }
 
-func (o *BatchReplayEventsResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (b *BatchReplayEventsResponse) GetHTTPMeta() HTTPMetadata {
+	if b == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return b.HTTPMeta
 }
 
-func (o *BatchReplayEventsResponse) GetObject() *BatchReplayEventsResponseBody {
-	if o == nil {
+func (b *BatchReplayEventsResponse) GetObject() *BatchReplayEventsResponseBody {
+	if b == nil {
 		return nil
 	}
-	return o.Object
+	return b.Object
 }

@@ -20,37 +20,37 @@ type BroadcastEvent struct {
 	IdempotencyKey *string `json:"idempotency_key,omitempty"`
 }
 
-func (o *BroadcastEvent) GetAcknowledgedAt() *string {
-	if o == nil {
+func (b *BroadcastEvent) GetAcknowledgedAt() *string {
+	if b == nil {
 		return nil
 	}
-	return o.AcknowledgedAt
+	return b.AcknowledgedAt
 }
 
-func (o *BroadcastEvent) GetCustomHeaders() map[string]string {
-	if o == nil {
+func (b *BroadcastEvent) GetCustomHeaders() map[string]string {
+	if b == nil {
 		return nil
 	}
-	return o.CustomHeaders
+	return b.CustomHeaders
 }
 
-func (o *BroadcastEvent) GetData() *BroadcastEventData {
-	if o == nil {
+func (b *BroadcastEvent) GetData() *BroadcastEventData {
+	if b == nil {
 		return nil
 	}
-	return o.Data
+	return b.Data
 }
 
-func (o *BroadcastEvent) GetEventType() *string {
-	if o == nil {
+func (b *BroadcastEvent) GetEventType() *string {
+	if b == nil {
 		return nil
 	}
-	return o.EventType
+	return b.EventType
 }
 
-func (o *BroadcastEvent) GetIdempotencyKey() *string {
-	if o == nil {
+func (b *BroadcastEvent) GetIdempotencyKey() *string {
+	if b == nil {
 		return nil
 	}
-	return o.IdempotencyKey
+	return b.IdempotencyKey
 }

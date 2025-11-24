@@ -15,25 +15,25 @@ type ExpireSecretRequest struct {
 	ExpireSecret ExpireSecret `request:"mediaType=application/json"`
 }
 
-func (o *ExpireSecretRequest) GetProjectID() string {
-	if o == nil {
+func (e *ExpireSecretRequest) GetProjectID() string {
+	if e == nil {
 		return ""
 	}
-	return o.ProjectID
+	return e.ProjectID
 }
 
-func (o *ExpireSecretRequest) GetEndpointID() string {
-	if o == nil {
+func (e *ExpireSecretRequest) GetEndpointID() string {
+	if e == nil {
 		return ""
 	}
-	return o.EndpointID
+	return e.EndpointID
 }
 
-func (o *ExpireSecretRequest) GetExpireSecret() ExpireSecret {
-	if o == nil {
+func (e *ExpireSecretRequest) GetExpireSecret() ExpireSecret {
+	if e == nil {
 		return ExpireSecret{}
 	}
-	return o.ExpireSecret
+	return e.ExpireSecret
 }
 
 // ExpireSecretNotFoundError - Not Found
@@ -88,25 +88,25 @@ type ExpireSecretResponseBody struct {
 	Data    *EndpointResponse `json:"data,omitempty"`
 }
 
-func (o *ExpireSecretResponseBody) GetMessage() *string {
-	if o == nil {
+func (e *ExpireSecretResponseBody) GetMessage() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Message
+	return e.Message
 }
 
-func (o *ExpireSecretResponseBody) GetStatus() *bool {
-	if o == nil {
+func (e *ExpireSecretResponseBody) GetStatus() *bool {
+	if e == nil {
 		return nil
 	}
-	return o.Status
+	return e.Status
 }
 
-func (o *ExpireSecretResponseBody) GetData() *EndpointResponse {
-	if o == nil {
+func (e *ExpireSecretResponseBody) GetData() *EndpointResponse {
+	if e == nil {
 		return nil
 	}
-	return o.Data
+	return e.Data
 }
 
 type ExpireSecretResponse struct {
@@ -115,16 +115,16 @@ type ExpireSecretResponse struct {
 	Object *ExpireSecretResponseBody
 }
 
-func (o *ExpireSecretResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (e *ExpireSecretResponse) GetHTTPMeta() HTTPMetadata {
+	if e == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return e.HTTPMeta
 }
 
-func (o *ExpireSecretResponse) GetObject() *ExpireSecretResponseBody {
-	if o == nil {
+func (e *ExpireSecretResponse) GetObject() *ExpireSecretResponseBody {
+	if e == nil {
 		return nil
 	}
-	return o.Object
+	return e.Object
 }

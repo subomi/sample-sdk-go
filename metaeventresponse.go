@@ -14,65 +14,65 @@ type MetaEventResponse struct {
 	UpdatedAt *string              `json:"updated_at,omitempty"`
 }
 
-func (o *MetaEventResponse) GetAttempt() *MetaEventAttempt {
-	if o == nil {
+func (m *MetaEventResponse) GetAttempt() *MetaEventAttempt {
+	if m == nil {
 		return nil
 	}
-	return o.Attempt
+	return m.Attempt
 }
 
-func (o *MetaEventResponse) GetCreatedAt() *string {
-	if o == nil {
+func (m *MetaEventResponse) GetCreatedAt() *string {
+	if m == nil {
 		return nil
 	}
-	return o.CreatedAt
+	return m.CreatedAt
 }
 
-func (o *MetaEventResponse) GetDeletedAt() *string {
-	if o == nil {
+func (m *MetaEventResponse) GetDeletedAt() *string {
+	if m == nil {
 		return nil
 	}
-	return o.DeletedAt
+	return m.DeletedAt
 }
 
-func (o *MetaEventResponse) GetEventType() *string {
-	if o == nil {
+func (m *MetaEventResponse) GetEventType() *string {
+	if m == nil {
 		return nil
 	}
-	return o.EventType
+	return m.EventType
 }
 
-func (o *MetaEventResponse) GetMetadata() *Metadata {
-	if o == nil {
+func (m *MetaEventResponse) GetMetadata() *Metadata {
+	if m == nil {
 		return nil
 	}
-	return o.Metadata
+	return m.Metadata
 }
 
-func (o *MetaEventResponse) GetProjectID() *string {
-	if o == nil {
+func (m *MetaEventResponse) GetProjectID() *string {
+	if m == nil {
 		return nil
 	}
-	return o.ProjectID
+	return m.ProjectID
 }
 
-func (o *MetaEventResponse) GetStatus() *EventDeliveryStatus {
-	if o == nil {
+func (m *MetaEventResponse) GetStatus() *EventDeliveryStatus {
+	if m == nil {
 		return nil
 	}
-	return o.Status
+	return m.Status
 }
 
-func (o *MetaEventResponse) GetUID() *string {
-	if o == nil {
+func (m *MetaEventResponse) GetUID() *string {
+	if m == nil {
 		return nil
 	}
-	return o.UID
+	return m.UID
 }
 
-func (o *MetaEventResponse) GetUpdatedAt() *string {
-	if o == nil {
+func (m *MetaEventResponse) GetUpdatedAt() *string {
+	if m == nil {
 		return nil
 	}
-	return o.UpdatedAt
+	return m.UpdatedAt
 }

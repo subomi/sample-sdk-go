@@ -3,8 +3,6 @@
 
 ## Overview
 
-Delivery Attempt related APIs
-
 ### Available Operations
 
 * [GetDeliveryAttempts](#getdeliveryattempts) - List delivery attempts

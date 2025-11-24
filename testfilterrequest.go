@@ -7,9 +7,9 @@ type TestFilterRequest struct {
 	Payload any `json:"payload"`
 }
 
-func (o *TestFilterRequest) GetPayload() any {
-	if o == nil {
+func (t *TestFilterRequest) GetPayload() any {
+	if t == nil {
 		return nil
 	}
-	return o.Payload
+	return t.Payload
 }

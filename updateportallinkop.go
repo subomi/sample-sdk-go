@@ -15,25 +15,25 @@ type UpdatePortalLinkRequest struct {
 	PortalLink PortalLink `request:"mediaType=application/json"`
 }
 
-func (o *UpdatePortalLinkRequest) GetProjectID() string {
-	if o == nil {
+func (u *UpdatePortalLinkRequest) GetProjectID() string {
+	if u == nil {
 		return ""
 	}
-	return o.ProjectID
+	return u.ProjectID
 }
 
-func (o *UpdatePortalLinkRequest) GetPortalLinkID() string {
-	if o == nil {
+func (u *UpdatePortalLinkRequest) GetPortalLinkID() string {
+	if u == nil {
 		return ""
 	}
-	return o.PortalLinkID
+	return u.PortalLinkID
 }
 
-func (o *UpdatePortalLinkRequest) GetPortalLink() PortalLink {
-	if o == nil {
+func (u *UpdatePortalLinkRequest) GetPortalLink() PortalLink {
+	if u == nil {
 		return PortalLink{}
 	}
-	return o.PortalLink
+	return u.PortalLink
 }
 
 // UpdatePortalLinkNotFoundError - Not Found
@@ -88,25 +88,25 @@ type UpdatePortalLinkResponseBody struct {
 	Data    *PortalLinkResponse `json:"data,omitempty"`
 }
 
-func (o *UpdatePortalLinkResponseBody) GetMessage() *string {
-	if o == nil {
+func (u *UpdatePortalLinkResponseBody) GetMessage() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Message
+	return u.Message
 }
 
-func (o *UpdatePortalLinkResponseBody) GetStatus() *bool {
-	if o == nil {
+func (u *UpdatePortalLinkResponseBody) GetStatus() *bool {
+	if u == nil {
 		return nil
 	}
-	return o.Status
+	return u.Status
 }
 
-func (o *UpdatePortalLinkResponseBody) GetData() *PortalLinkResponse {
-	if o == nil {
+func (u *UpdatePortalLinkResponseBody) GetData() *PortalLinkResponse {
+	if u == nil {
 		return nil
 	}
-	return o.Data
+	return u.Data
 }
 
 type UpdatePortalLinkResponse struct {
@@ -115,16 +115,16 @@ type UpdatePortalLinkResponse struct {
 	Object *UpdatePortalLinkResponseBody
 }
 
-func (o *UpdatePortalLinkResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (u *UpdatePortalLinkResponse) GetHTTPMeta() HTTPMetadata {
+	if u == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return u.HTTPMeta
 }
 
-func (o *UpdatePortalLinkResponse) GetObject() *UpdatePortalLinkResponseBody {
-	if o == nil {
+func (u *UpdatePortalLinkResponse) GetObject() *UpdatePortalLinkResponseBody {
+	if u == nil {
 		return nil
 	}
-	return o.Object
+	return u.Object
 }

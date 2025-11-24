@@ -13,18 +13,18 @@ type TestSubscriptionFunctionRequest struct {
 	FunctionRequest FunctionRequest `request:"mediaType=application/json"`
 }
 
-func (o *TestSubscriptionFunctionRequest) GetProjectID() string {
-	if o == nil {
+func (t *TestSubscriptionFunctionRequest) GetProjectID() string {
+	if t == nil {
 		return ""
 	}
-	return o.ProjectID
+	return t.ProjectID
 }
 
-func (o *TestSubscriptionFunctionRequest) GetFunctionRequest() FunctionRequest {
-	if o == nil {
+func (t *TestSubscriptionFunctionRequest) GetFunctionRequest() FunctionRequest {
+	if t == nil {
 		return FunctionRequest{}
 	}
-	return o.FunctionRequest
+	return t.FunctionRequest
 }
 
 // TestSubscriptionFunctionNotFoundError - Not Found
@@ -79,25 +79,25 @@ type TestSubscriptionFunctionResponseBody struct {
 	Data    *FunctionResponse `json:"data,omitempty"`
 }
 
-func (o *TestSubscriptionFunctionResponseBody) GetMessage() *string {
-	if o == nil {
+func (t *TestSubscriptionFunctionResponseBody) GetMessage() *string {
+	if t == nil {
 		return nil
 	}
-	return o.Message
+	return t.Message
 }
 
-func (o *TestSubscriptionFunctionResponseBody) GetStatus() *bool {
-	if o == nil {
+func (t *TestSubscriptionFunctionResponseBody) GetStatus() *bool {
+	if t == nil {
 		return nil
 	}
-	return o.Status
+	return t.Status
 }
 
-func (o *TestSubscriptionFunctionResponseBody) GetData() *FunctionResponse {
-	if o == nil {
+func (t *TestSubscriptionFunctionResponseBody) GetData() *FunctionResponse {
+	if t == nil {
 		return nil
 	}
-	return o.Data
+	return t.Data
 }
 
 type TestSubscriptionFunctionResponse struct {
@@ -106,16 +106,16 @@ type TestSubscriptionFunctionResponse struct {
 	Object *TestSubscriptionFunctionResponseBody
 }
 
-func (o *TestSubscriptionFunctionResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (t *TestSubscriptionFunctionResponse) GetHTTPMeta() HTTPMetadata {
+	if t == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return t.HTTPMeta
 }
 
-func (o *TestSubscriptionFunctionResponse) GetObject() *TestSubscriptionFunctionResponseBody {
-	if o == nil {
+func (t *TestSubscriptionFunctionResponse) GetObject() *TestSubscriptionFunctionResponseBody {
+	if t == nil {
 		return nil
 	}
-	return o.Object
+	return t.Object
 }

@@ -32,72 +32,72 @@ type UpdateSource struct {
 	Verifier *VerifierConfig `json:"verifier,omitempty"`
 }
 
-func (o *UpdateSource) GetBodyFunction() *string {
-	if o == nil {
+func (u *UpdateSource) GetBodyFunction() *string {
+	if u == nil {
 		return nil
 	}
-	return o.BodyFunction
+	return u.BodyFunction
 }
 
-func (o *UpdateSource) GetCustomResponse() *UpdateCustomResponse {
-	if o == nil {
+func (u *UpdateSource) GetCustomResponse() *UpdateCustomResponse {
+	if u == nil {
 		return nil
 	}
-	return o.CustomResponse
+	return u.CustomResponse
 }
 
-func (o *UpdateSource) GetForwardHeaders() []string {
-	if o == nil {
+func (u *UpdateSource) GetForwardHeaders() []string {
+	if u == nil {
 		return nil
 	}
-	return o.ForwardHeaders
+	return u.ForwardHeaders
 }
 
-func (o *UpdateSource) GetHeaderFunction() *string {
-	if o == nil {
+func (u *UpdateSource) GetHeaderFunction() *string {
+	if u == nil {
 		return nil
 	}
-	return o.HeaderFunction
+	return u.HeaderFunction
 }
 
-func (o *UpdateSource) GetIdempotencyKeys() []string {
-	if o == nil {
+func (u *UpdateSource) GetIdempotencyKeys() []string {
+	if u == nil {
 		return nil
 	}
-	return o.IdempotencyKeys
+	return u.IdempotencyKeys
 }
 
-func (o *UpdateSource) GetIsDisabled() *bool {
-	if o == nil {
+func (u *UpdateSource) GetIsDisabled() *bool {
+	if u == nil {
 		return nil
 	}
-	return o.IsDisabled
+	return u.IsDisabled
 }
 
-func (o *UpdateSource) GetName() *string {
-	if o == nil {
+func (u *UpdateSource) GetName() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Name
+	return u.Name
 }
 
-func (o *UpdateSource) GetPubSub() *PubSubConfig {
-	if o == nil {
+func (u *UpdateSource) GetPubSub() *PubSubConfig {
+	if u == nil {
 		return nil
 	}
-	return o.PubSub
+	return u.PubSub
 }
 
-func (o *UpdateSource) GetType() *SourceType {
-	if o == nil {
+func (u *UpdateSource) GetType() *SourceType {
+	if u == nil {
 		return nil
 	}
-	return o.Type
+	return u.Type
 }
 
-func (o *UpdateSource) GetVerifier() *VerifierConfig {
-	if o == nil {
+func (u *UpdateSource) GetVerifier() *VerifierConfig {
+	if u == nil {
 		return nil
 	}
-	return o.Verifier
+	return u.Verifier
 }

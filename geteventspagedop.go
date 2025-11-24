@@ -59,88 +59,88 @@ type GetEventsPagedRequest struct {
 	StartDate *string `queryParam:"style=form,explode=true,name=startDate"`
 }
 
-func (o *GetEventsPagedRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetEventsPagedRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetEventsPagedRequest) GetDirection() *GetEventsPagedDirection {
-	if o == nil {
+func (g *GetEventsPagedRequest) GetDirection() *GetEventsPagedDirection {
+	if g == nil {
 		return nil
 	}
-	return o.Direction
+	return g.Direction
 }
 
-func (o *GetEventsPagedRequest) GetEndDate() *string {
-	if o == nil {
+func (g *GetEventsPagedRequest) GetEndDate() *string {
+	if g == nil {
 		return nil
 	}
-	return o.EndDate
+	return g.EndDate
 }
 
-func (o *GetEventsPagedRequest) GetEndpointID() []string {
-	if o == nil {
+func (g *GetEventsPagedRequest) GetEndpointID() []string {
+	if g == nil {
 		return nil
 	}
-	return o.EndpointID
+	return g.EndpointID
 }
 
-func (o *GetEventsPagedRequest) GetIdempotencyKey() *string {
-	if o == nil {
+func (g *GetEventsPagedRequest) GetIdempotencyKey() *string {
+	if g == nil {
 		return nil
 	}
-	return o.IdempotencyKey
+	return g.IdempotencyKey
 }
 
-func (o *GetEventsPagedRequest) GetNextPageCursor() *string {
-	if o == nil {
+func (g *GetEventsPagedRequest) GetNextPageCursor() *string {
+	if g == nil {
 		return nil
 	}
-	return o.NextPageCursor
+	return g.NextPageCursor
 }
 
-func (o *GetEventsPagedRequest) GetPerPage() *int64 {
-	if o == nil {
+func (g *GetEventsPagedRequest) GetPerPage() *int64 {
+	if g == nil {
 		return nil
 	}
-	return o.PerPage
+	return g.PerPage
 }
 
-func (o *GetEventsPagedRequest) GetPrevPageCursor() *string {
-	if o == nil {
+func (g *GetEventsPagedRequest) GetPrevPageCursor() *string {
+	if g == nil {
 		return nil
 	}
-	return o.PrevPageCursor
+	return g.PrevPageCursor
 }
 
-func (o *GetEventsPagedRequest) GetQuery() *string {
-	if o == nil {
+func (g *GetEventsPagedRequest) GetQuery() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Query
+	return g.Query
 }
 
-func (o *GetEventsPagedRequest) GetSort() *string {
-	if o == nil {
+func (g *GetEventsPagedRequest) GetSort() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Sort
+	return g.Sort
 }
 
-func (o *GetEventsPagedRequest) GetSourceID() []string {
-	if o == nil {
+func (g *GetEventsPagedRequest) GetSourceID() []string {
+	if g == nil {
 		return nil
 	}
-	return o.SourceID
+	return g.SourceID
 }
 
-func (o *GetEventsPagedRequest) GetStartDate() *string {
-	if o == nil {
+func (g *GetEventsPagedRequest) GetStartDate() *string {
+	if g == nil {
 		return nil
 	}
-	return o.StartDate
+	return g.StartDate
 }
 
 // GetEventsPagedNotFoundError - Not Found
@@ -193,18 +193,18 @@ type GetEventsPagedData struct {
 	Pagination *PaginationData `json:"pagination,omitempty"`
 }
 
-func (o *GetEventsPagedData) GetContent() []EventResponse {
-	if o == nil {
+func (g *GetEventsPagedData) GetContent() []EventResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Content
+	return g.Content
 }
 
-func (o *GetEventsPagedData) GetPagination() *PaginationData {
-	if o == nil {
+func (g *GetEventsPagedData) GetPagination() *PaginationData {
+	if g == nil {
 		return nil
 	}
-	return o.Pagination
+	return g.Pagination
 }
 
 // GetEventsPagedResponseBody - OK
@@ -214,25 +214,25 @@ type GetEventsPagedResponseBody struct {
 	Data    *GetEventsPagedData `json:"data,omitempty"`
 }
 
-func (o *GetEventsPagedResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetEventsPagedResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetEventsPagedResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetEventsPagedResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetEventsPagedResponseBody) GetData() *GetEventsPagedData {
-	if o == nil {
+func (g *GetEventsPagedResponseBody) GetData() *GetEventsPagedData {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetEventsPagedResponse struct {
@@ -241,16 +241,16 @@ type GetEventsPagedResponse struct {
 	Object *GetEventsPagedResponseBody
 }
 
-func (o *GetEventsPagedResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetEventsPagedResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetEventsPagedResponse) GetObject() *GetEventsPagedResponseBody {
-	if o == nil {
+func (g *GetEventsPagedResponse) GetObject() *GetEventsPagedResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

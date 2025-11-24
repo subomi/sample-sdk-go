@@ -9,30 +9,30 @@ type HMac struct {
 	Secret   string       `json:"secret"`
 }
 
-func (o *HMac) GetEncoding() EncodingType {
-	if o == nil {
+func (h *HMac) GetEncoding() EncodingType {
+	if h == nil {
 		return EncodingType("")
 	}
-	return o.Encoding
+	return h.Encoding
 }
 
-func (o *HMac) GetHash() string {
-	if o == nil {
+func (h *HMac) GetHash() string {
+	if h == nil {
 		return ""
 	}
-	return o.Hash
+	return h.Hash
 }
 
-func (o *HMac) GetHeader() string {
-	if o == nil {
+func (h *HMac) GetHeader() string {
+	if h == nil {
 		return ""
 	}
-	return o.Header
+	return h.Header
 }
 
-func (o *HMac) GetSecret() string {
-	if o == nil {
+func (h *HMac) GetSecret() string {
+	if h == nil {
 		return ""
 	}
-	return o.Secret
+	return h.Secret
 }

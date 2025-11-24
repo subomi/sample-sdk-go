@@ -15,25 +15,25 @@ type UpdateSourceRequest struct {
 	UpdateSource UpdateSource `request:"mediaType=application/json"`
 }
 
-func (o *UpdateSourceRequest) GetProjectID() string {
-	if o == nil {
+func (u *UpdateSourceRequest) GetProjectID() string {
+	if u == nil {
 		return ""
 	}
-	return o.ProjectID
+	return u.ProjectID
 }
 
-func (o *UpdateSourceRequest) GetSourceID() string {
-	if o == nil {
+func (u *UpdateSourceRequest) GetSourceID() string {
+	if u == nil {
 		return ""
 	}
-	return o.SourceID
+	return u.SourceID
 }
 
-func (o *UpdateSourceRequest) GetUpdateSource() UpdateSource {
-	if o == nil {
+func (u *UpdateSourceRequest) GetUpdateSource() UpdateSource {
+	if u == nil {
 		return UpdateSource{}
 	}
-	return o.UpdateSource
+	return u.UpdateSource
 }
 
 // UpdateSourceNotFoundError - Not Found
@@ -88,25 +88,25 @@ type UpdateSourceResponseBody struct {
 	Data    *SourceResponse `json:"data,omitempty"`
 }
 
-func (o *UpdateSourceResponseBody) GetMessage() *string {
-	if o == nil {
+func (u *UpdateSourceResponseBody) GetMessage() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Message
+	return u.Message
 }
 
-func (o *UpdateSourceResponseBody) GetStatus() *bool {
-	if o == nil {
+func (u *UpdateSourceResponseBody) GetStatus() *bool {
+	if u == nil {
 		return nil
 	}
-	return o.Status
+	return u.Status
 }
 
-func (o *UpdateSourceResponseBody) GetData() *SourceResponse {
-	if o == nil {
+func (u *UpdateSourceResponseBody) GetData() *SourceResponse {
+	if u == nil {
 		return nil
 	}
-	return o.Data
+	return u.Data
 }
 
 type UpdateSourceResponse struct {
@@ -115,16 +115,16 @@ type UpdateSourceResponse struct {
 	Object *UpdateSourceResponseBody
 }
 
-func (o *UpdateSourceResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (u *UpdateSourceResponse) GetHTTPMeta() HTTPMetadata {
+	if u == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return u.HTTPMeta
 }
 
-func (o *UpdateSourceResponse) GetObject() *UpdateSourceResponseBody {
-	if o == nil {
+func (u *UpdateSourceResponse) GetObject() *UpdateSourceResponseBody {
+	if u == nil {
 		return nil
 	}
-	return o.Object
+	return u.Object
 }

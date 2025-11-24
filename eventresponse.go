@@ -28,142 +28,142 @@ type EventResponse struct {
 	URLQueryParams   *string             `json:"url_query_params,omitempty"`
 }
 
-func (o *EventResponse) GetAcknowledgedAt() *string {
-	if o == nil {
+func (e *EventResponse) GetAcknowledgedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.AcknowledgedAt
+	return e.AcknowledgedAt
 }
 
-func (o *EventResponse) GetAppID() *string {
-	if o == nil {
+func (e *EventResponse) GetAppID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.AppID
+	return e.AppID
 }
 
-func (o *EventResponse) GetCreatedAt() *string {
-	if o == nil {
+func (e *EventResponse) GetCreatedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.CreatedAt
+	return e.CreatedAt
 }
 
-func (o *EventResponse) GetData() []int64 {
-	if o == nil {
+func (e *EventResponse) GetData() []int64 {
+	if e == nil {
 		return nil
 	}
-	return o.Data
+	return e.Data
 }
 
-func (o *EventResponse) GetDeletedAt() *string {
-	if o == nil {
+func (e *EventResponse) GetDeletedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.DeletedAt
+	return e.DeletedAt
 }
 
-func (o *EventResponse) GetEndpointMetadata() []Endpoint {
-	if o == nil {
+func (e *EventResponse) GetEndpointMetadata() []Endpoint {
+	if e == nil {
 		return nil
 	}
-	return o.EndpointMetadata
+	return e.EndpointMetadata
 }
 
-func (o *EventResponse) GetEndpoints() []string {
-	if o == nil {
+func (e *EventResponse) GetEndpoints() []string {
+	if e == nil {
 		return nil
 	}
-	return o.Endpoints
+	return e.Endpoints
 }
 
-func (o *EventResponse) GetEventType() *string {
-	if o == nil {
+func (e *EventResponse) GetEventType() *string {
+	if e == nil {
 		return nil
 	}
-	return o.EventType
+	return e.EventType
 }
 
-func (o *EventResponse) GetHeaders() map[string][]string {
-	if o == nil {
+func (e *EventResponse) GetHeaders() map[string][]string {
+	if e == nil {
 		return nil
 	}
-	return o.Headers
+	return e.Headers
 }
 
-func (o *EventResponse) GetIdempotencyKey() *string {
-	if o == nil {
+func (e *EventResponse) GetIdempotencyKey() *string {
+	if e == nil {
 		return nil
 	}
-	return o.IdempotencyKey
+	return e.IdempotencyKey
 }
 
-func (o *EventResponse) GetIsDuplicateEvent() *bool {
-	if o == nil {
+func (e *EventResponse) GetIsDuplicateEvent() *bool {
+	if e == nil {
 		return nil
 	}
-	return o.IsDuplicateEvent
+	return e.IsDuplicateEvent
 }
 
-func (o *EventResponse) GetMetadata() *string {
-	if o == nil {
+func (e *EventResponse) GetMetadata() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Metadata
+	return e.Metadata
 }
 
-func (o *EventResponse) GetProjectID() *string {
-	if o == nil {
+func (e *EventResponse) GetProjectID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.ProjectID
+	return e.ProjectID
 }
 
-func (o *EventResponse) GetRaw() *string {
-	if o == nil {
+func (e *EventResponse) GetRaw() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Raw
+	return e.Raw
 }
 
-func (o *EventResponse) GetSourceID() *string {
-	if o == nil {
+func (e *EventResponse) GetSourceID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.SourceID
+	return e.SourceID
 }
 
-func (o *EventResponse) GetSourceMetadata() *Source {
-	if o == nil {
+func (e *EventResponse) GetSourceMetadata() *Source {
+	if e == nil {
 		return nil
 	}
-	return o.SourceMetadata
+	return e.SourceMetadata
 }
 
-func (o *EventResponse) GetStatus() *EventStatus {
-	if o == nil {
+func (e *EventResponse) GetStatus() *EventStatus {
+	if e == nil {
 		return nil
 	}
-	return o.Status
+	return e.Status
 }
 
-func (o *EventResponse) GetUID() *string {
-	if o == nil {
+func (e *EventResponse) GetUID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.UID
+	return e.UID
 }
 
-func (o *EventResponse) GetUpdatedAt() *string {
-	if o == nil {
+func (e *EventResponse) GetUpdatedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.UpdatedAt
+	return e.UpdatedAt
 }
 
-func (o *EventResponse) GetURLQueryParams() *string {
-	if o == nil {
+func (e *EventResponse) GetURLQueryParams() *string {
+	if e == nil {
 		return nil
 	}
-	return o.URLQueryParams
+	return e.URLQueryParams
 }
