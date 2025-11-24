@@ -13,18 +13,18 @@ type RefreshPortalLinkAuthTokenRequest struct {
 	PortalLinkID string `pathParam:"style=simple,explode=false,name=portalLinkID"`
 }
 
-func (o *RefreshPortalLinkAuthTokenRequest) GetProjectID() string {
-	if o == nil {
+func (r *RefreshPortalLinkAuthTokenRequest) GetProjectID() string {
+	if r == nil {
 		return ""
 	}
-	return o.ProjectID
+	return r.ProjectID
 }
 
-func (o *RefreshPortalLinkAuthTokenRequest) GetPortalLinkID() string {
-	if o == nil {
+func (r *RefreshPortalLinkAuthTokenRequest) GetPortalLinkID() string {
+	if r == nil {
 		return ""
 	}
-	return o.PortalLinkID
+	return r.PortalLinkID
 }
 
 // RefreshPortalLinkAuthTokenNotFoundError - Not Found
@@ -79,25 +79,25 @@ type RefreshPortalLinkAuthTokenResponseBody struct {
 	Data    *string `json:"data,omitempty"`
 }
 
-func (o *RefreshPortalLinkAuthTokenResponseBody) GetMessage() *string {
-	if o == nil {
+func (r *RefreshPortalLinkAuthTokenResponseBody) GetMessage() *string {
+	if r == nil {
 		return nil
 	}
-	return o.Message
+	return r.Message
 }
 
-func (o *RefreshPortalLinkAuthTokenResponseBody) GetStatus() *bool {
-	if o == nil {
+func (r *RefreshPortalLinkAuthTokenResponseBody) GetStatus() *bool {
+	if r == nil {
 		return nil
 	}
-	return o.Status
+	return r.Status
 }
 
-func (o *RefreshPortalLinkAuthTokenResponseBody) GetData() *string {
-	if o == nil {
+func (r *RefreshPortalLinkAuthTokenResponseBody) GetData() *string {
+	if r == nil {
 		return nil
 	}
-	return o.Data
+	return r.Data
 }
 
 type RefreshPortalLinkAuthTokenResponse struct {
@@ -106,16 +106,16 @@ type RefreshPortalLinkAuthTokenResponse struct {
 	Object *RefreshPortalLinkAuthTokenResponseBody
 }
 
-func (o *RefreshPortalLinkAuthTokenResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (r *RefreshPortalLinkAuthTokenResponse) GetHTTPMeta() HTTPMetadata {
+	if r == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return r.HTTPMeta
 }
 
-func (o *RefreshPortalLinkAuthTokenResponse) GetObject() *RefreshPortalLinkAuthTokenResponseBody {
-	if o == nil {
+func (r *RefreshPortalLinkAuthTokenResponse) GetObject() *RefreshPortalLinkAuthTokenResponseBody {
+	if r == nil {
 		return nil
 	}
-	return o.Object
+	return r.Object
 }

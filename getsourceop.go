@@ -13,18 +13,18 @@ type GetSourceRequest struct {
 	SourceID string `pathParam:"style=simple,explode=false,name=sourceID"`
 }
 
-func (o *GetSourceRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetSourceRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetSourceRequest) GetSourceID() string {
-	if o == nil {
+func (g *GetSourceRequest) GetSourceID() string {
+	if g == nil {
 		return ""
 	}
-	return o.SourceID
+	return g.SourceID
 }
 
 // GetSourceNotFoundError - Not Found
@@ -79,25 +79,25 @@ type GetSourceResponseBody struct {
 	Data    *SourceResponse `json:"data,omitempty"`
 }
 
-func (o *GetSourceResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetSourceResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetSourceResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetSourceResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetSourceResponseBody) GetData() *SourceResponse {
-	if o == nil {
+func (g *GetSourceResponseBody) GetData() *SourceResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetSourceResponse struct {
@@ -106,16 +106,16 @@ type GetSourceResponse struct {
 	Object *GetSourceResponseBody
 }
 
-func (o *GetSourceResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetSourceResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetSourceResponse) GetObject() *GetSourceResponseBody {
-	if o == nil {
+func (g *GetSourceResponse) GetObject() *GetSourceResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

@@ -15,25 +15,25 @@ type UpdateEventTypeRequest struct {
 	UpdateEventType UpdateEventType `request:"mediaType=application/json"`
 }
 
-func (o *UpdateEventTypeRequest) GetProjectID() string {
-	if o == nil {
+func (u *UpdateEventTypeRequest) GetProjectID() string {
+	if u == nil {
 		return ""
 	}
-	return o.ProjectID
+	return u.ProjectID
 }
 
-func (o *UpdateEventTypeRequest) GetEventTypeID() string {
-	if o == nil {
+func (u *UpdateEventTypeRequest) GetEventTypeID() string {
+	if u == nil {
 		return ""
 	}
-	return o.EventTypeID
+	return u.EventTypeID
 }
 
-func (o *UpdateEventTypeRequest) GetUpdateEventType() UpdateEventType {
-	if o == nil {
+func (u *UpdateEventTypeRequest) GetUpdateEventType() UpdateEventType {
+	if u == nil {
 		return UpdateEventType{}
 	}
-	return o.UpdateEventType
+	return u.UpdateEventType
 }
 
 // UpdateEventTypeNotFoundError - Not Found
@@ -88,25 +88,25 @@ type UpdateEventTypeResponseBody struct {
 	Data    *EventTypeResponse `json:"data,omitempty"`
 }
 
-func (o *UpdateEventTypeResponseBody) GetMessage() *string {
-	if o == nil {
+func (u *UpdateEventTypeResponseBody) GetMessage() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Message
+	return u.Message
 }
 
-func (o *UpdateEventTypeResponseBody) GetStatus() *bool {
-	if o == nil {
+func (u *UpdateEventTypeResponseBody) GetStatus() *bool {
+	if u == nil {
 		return nil
 	}
-	return o.Status
+	return u.Status
 }
 
-func (o *UpdateEventTypeResponseBody) GetData() *EventTypeResponse {
-	if o == nil {
+func (u *UpdateEventTypeResponseBody) GetData() *EventTypeResponse {
+	if u == nil {
 		return nil
 	}
-	return o.Data
+	return u.Data
 }
 
 type UpdateEventTypeResponse struct {
@@ -115,16 +115,16 @@ type UpdateEventTypeResponse struct {
 	Object *UpdateEventTypeResponseBody
 }
 
-func (o *UpdateEventTypeResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (u *UpdateEventTypeResponse) GetHTTPMeta() HTTPMetadata {
+	if u == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return u.HTTPMeta
 }
 
-func (o *UpdateEventTypeResponse) GetObject() *UpdateEventTypeResponseBody {
-	if o == nil {
+func (u *UpdateEventTypeResponse) GetObject() *UpdateEventTypeResponseBody {
+	if u == nil {
 		return nil
 	}
-	return o.Object
+	return u.Object
 }

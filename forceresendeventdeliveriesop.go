@@ -13,18 +13,18 @@ type ForceResendEventDeliveriesRequest struct {
 	IDs IDs `request:"mediaType=application/json"`
 }
 
-func (o *ForceResendEventDeliveriesRequest) GetProjectID() string {
-	if o == nil {
+func (f *ForceResendEventDeliveriesRequest) GetProjectID() string {
+	if f == nil {
 		return ""
 	}
-	return o.ProjectID
+	return f.ProjectID
 }
 
-func (o *ForceResendEventDeliveriesRequest) GetIDs() IDs {
-	if o == nil {
+func (f *ForceResendEventDeliveriesRequest) GetIDs() IDs {
+	if f == nil {
 		return IDs{}
 	}
-	return o.IDs
+	return f.IDs
 }
 
 // ForceResendEventDeliveriesNotFoundError - Not Found
@@ -79,25 +79,25 @@ type ForceResendEventDeliveriesResponseBody struct {
 	Data    *Object `json:"data,omitempty"`
 }
 
-func (o *ForceResendEventDeliveriesResponseBody) GetMessage() *string {
-	if o == nil {
+func (f *ForceResendEventDeliveriesResponseBody) GetMessage() *string {
+	if f == nil {
 		return nil
 	}
-	return o.Message
+	return f.Message
 }
 
-func (o *ForceResendEventDeliveriesResponseBody) GetStatus() *bool {
-	if o == nil {
+func (f *ForceResendEventDeliveriesResponseBody) GetStatus() *bool {
+	if f == nil {
 		return nil
 	}
-	return o.Status
+	return f.Status
 }
 
-func (o *ForceResendEventDeliveriesResponseBody) GetData() *Object {
-	if o == nil {
+func (f *ForceResendEventDeliveriesResponseBody) GetData() *Object {
+	if f == nil {
 		return nil
 	}
-	return o.Data
+	return f.Data
 }
 
 type ForceResendEventDeliveriesResponse struct {
@@ -106,16 +106,16 @@ type ForceResendEventDeliveriesResponse struct {
 	Object *ForceResendEventDeliveriesResponseBody
 }
 
-func (o *ForceResendEventDeliveriesResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (f *ForceResendEventDeliveriesResponse) GetHTTPMeta() HTTPMetadata {
+	if f == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return f.HTTPMeta
 }
 
-func (o *ForceResendEventDeliveriesResponse) GetObject() *ForceResendEventDeliveriesResponseBody {
-	if o == nil {
+func (f *ForceResendEventDeliveriesResponse) GetObject() *ForceResendEventDeliveriesResponseBody {
+	if f == nil {
 		return nil
 	}
-	return o.Object
+	return f.Object
 }

@@ -13,18 +13,18 @@ type CreateDynamicEventRequest struct {
 	DynamicEvent DynamicEvent `request:"mediaType=application/json"`
 }
 
-func (o *CreateDynamicEventRequest) GetProjectID() string {
-	if o == nil {
+func (c *CreateDynamicEventRequest) GetProjectID() string {
+	if c == nil {
 		return ""
 	}
-	return o.ProjectID
+	return c.ProjectID
 }
 
-func (o *CreateDynamicEventRequest) GetDynamicEvent() DynamicEvent {
-	if o == nil {
+func (c *CreateDynamicEventRequest) GetDynamicEvent() DynamicEvent {
+	if c == nil {
 		return DynamicEvent{}
 	}
-	return o.DynamicEvent
+	return c.DynamicEvent
 }
 
 // CreateDynamicEventNotFoundError - Not Found
@@ -78,16 +78,16 @@ type CreateDynamicEventResponse struct {
 	Object *Object
 }
 
-func (o *CreateDynamicEventResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (c *CreateDynamicEventResponse) GetHTTPMeta() HTTPMetadata {
+	if c == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return c.HTTPMeta
 }
 
-func (o *CreateDynamicEventResponse) GetObject() *Object {
-	if o == nil {
+func (c *CreateDynamicEventResponse) GetObject() *Object {
+	if c == nil {
 		return nil
 	}
-	return o.Object
+	return c.Object
 }

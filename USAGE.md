@@ -16,9 +16,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
-		ProjectID: "<id>",
-	})
+	res, err := s.Endpoints.DeleteEndpoint(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}

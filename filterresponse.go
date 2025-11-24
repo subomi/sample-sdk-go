@@ -12,51 +12,51 @@ type FilterResponse struct {
 	UID            *string        `json:"uid,omitempty"`
 }
 
-func (o *FilterResponse) GetBody() map[string]any {
-	if o == nil {
+func (f *FilterResponse) GetBody() map[string]any {
+	if f == nil {
 		return nil
 	}
-	return o.Body
+	return f.Body
 }
 
-func (o *FilterResponse) GetEventType() *string {
-	if o == nil {
+func (f *FilterResponse) GetEventType() *string {
+	if f == nil {
 		return nil
 	}
-	return o.EventType
+	return f.EventType
 }
 
-func (o *FilterResponse) GetHeaders() map[string]any {
-	if o == nil {
+func (f *FilterResponse) GetHeaders() map[string]any {
+	if f == nil {
 		return nil
 	}
-	return o.Headers
+	return f.Headers
 }
 
-func (o *FilterResponse) GetRawBody() map[string]any {
-	if o == nil {
+func (f *FilterResponse) GetRawBody() map[string]any {
+	if f == nil {
 		return nil
 	}
-	return o.RawBody
+	return f.RawBody
 }
 
-func (o *FilterResponse) GetRawHeaders() map[string]any {
-	if o == nil {
+func (f *FilterResponse) GetRawHeaders() map[string]any {
+	if f == nil {
 		return nil
 	}
-	return o.RawHeaders
+	return f.RawHeaders
 }
 
-func (o *FilterResponse) GetSubscriptionID() *string {
-	if o == nil {
+func (f *FilterResponse) GetSubscriptionID() *string {
+	if f == nil {
 		return nil
 	}
-	return o.SubscriptionID
+	return f.SubscriptionID
 }
 
-func (o *FilterResponse) GetUID() *string {
-	if o == nil {
+func (f *FilterResponse) GetUID() *string {
+	if f == nil {
 		return nil
 	}
-	return o.UID
+	return f.UID
 }

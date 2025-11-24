@@ -15,25 +15,25 @@ type GetFilterRequest struct {
 	FilterID string `pathParam:"style=simple,explode=false,name=filterID"`
 }
 
-func (o *GetFilterRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetFilterRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetFilterRequest) GetSubscriptionID() string {
-	if o == nil {
+func (g *GetFilterRequest) GetSubscriptionID() string {
+	if g == nil {
 		return ""
 	}
-	return o.SubscriptionID
+	return g.SubscriptionID
 }
 
-func (o *GetFilterRequest) GetFilterID() string {
-	if o == nil {
+func (g *GetFilterRequest) GetFilterID() string {
+	if g == nil {
 		return ""
 	}
-	return o.FilterID
+	return g.FilterID
 }
 
 // GetFilterNotFoundError - Not Found
@@ -88,25 +88,25 @@ type GetFilterResponseBody struct {
 	Data    *FilterResponse `json:"data,omitempty"`
 }
 
-func (o *GetFilterResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetFilterResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetFilterResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetFilterResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetFilterResponseBody) GetData() *FilterResponse {
-	if o == nil {
+func (g *GetFilterResponseBody) GetData() *FilterResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetFilterResponse struct {
@@ -115,16 +115,16 @@ type GetFilterResponse struct {
 	Object *GetFilterResponseBody
 }
 
-func (o *GetFilterResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetFilterResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetFilterResponse) GetObject() *GetFilterResponseBody {
-	if o == nil {
+func (g *GetFilterResponse) GetObject() *GetFilterResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

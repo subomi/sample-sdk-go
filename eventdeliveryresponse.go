@@ -31,177 +31,177 @@ type EventDeliveryResponse struct {
 	URLQueryParams *string              `json:"url_query_params,omitempty"`
 }
 
-func (o *EventDeliveryResponse) GetAcknowledgedAt() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetAcknowledgedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.AcknowledgedAt
+	return e.AcknowledgedAt
 }
 
-func (o *EventDeliveryResponse) GetCliMetadata() *CLIMetadata {
-	if o == nil {
+func (e *EventDeliveryResponse) GetCliMetadata() *CLIMetadata {
+	if e == nil {
 		return nil
 	}
-	return o.CliMetadata
+	return e.CliMetadata
 }
 
-func (o *EventDeliveryResponse) GetCreatedAt() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetCreatedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.CreatedAt
+	return e.CreatedAt
 }
 
-func (o *EventDeliveryResponse) GetDeletedAt() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetDeletedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.DeletedAt
+	return e.DeletedAt
 }
 
-func (o *EventDeliveryResponse) GetDeliveryMode() *DeliveryMode {
-	if o == nil {
+func (e *EventDeliveryResponse) GetDeliveryMode() *DeliveryMode {
+	if e == nil {
 		return nil
 	}
-	return o.DeliveryMode
+	return e.DeliveryMode
 }
 
-func (o *EventDeliveryResponse) GetDescription() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetDescription() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Description
+	return e.Description
 }
 
-func (o *EventDeliveryResponse) GetDeviceID() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetDeviceID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.DeviceID
+	return e.DeviceID
 }
 
-func (o *EventDeliveryResponse) GetDeviceMetadata() *Device {
-	if o == nil {
+func (e *EventDeliveryResponse) GetDeviceMetadata() *Device {
+	if e == nil {
 		return nil
 	}
-	return o.DeviceMetadata
+	return e.DeviceMetadata
 }
 
-func (o *EventDeliveryResponse) GetEndpointID() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetEndpointID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.EndpointID
+	return e.EndpointID
 }
 
-func (o *EventDeliveryResponse) GetEndpointMetadata() *Endpoint {
-	if o == nil {
+func (e *EventDeliveryResponse) GetEndpointMetadata() *Endpoint {
+	if e == nil {
 		return nil
 	}
-	return o.EndpointMetadata
+	return e.EndpointMetadata
 }
 
-func (o *EventDeliveryResponse) GetEventID() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetEventID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.EventID
+	return e.EventID
 }
 
-func (o *EventDeliveryResponse) GetEventMetadata() *Event {
-	if o == nil {
+func (e *EventDeliveryResponse) GetEventMetadata() *Event {
+	if e == nil {
 		return nil
 	}
-	return o.EventMetadata
+	return e.EventMetadata
 }
 
-func (o *EventDeliveryResponse) GetEventType() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetEventType() *string {
+	if e == nil {
 		return nil
 	}
-	return o.EventType
+	return e.EventType
 }
 
-func (o *EventDeliveryResponse) GetHeaders() map[string][]string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetHeaders() map[string][]string {
+	if e == nil {
 		return nil
 	}
-	return o.Headers
+	return e.Headers
 }
 
-func (o *EventDeliveryResponse) GetIdempotencyKey() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetIdempotencyKey() *string {
+	if e == nil {
 		return nil
 	}
-	return o.IdempotencyKey
+	return e.IdempotencyKey
 }
 
-func (o *EventDeliveryResponse) GetLatency() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetLatency() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Latency
+	return e.Latency
 }
 
-func (o *EventDeliveryResponse) GetLatencySeconds() *float64 {
-	if o == nil {
+func (e *EventDeliveryResponse) GetLatencySeconds() *float64 {
+	if e == nil {
 		return nil
 	}
-	return o.LatencySeconds
+	return e.LatencySeconds
 }
 
-func (o *EventDeliveryResponse) GetMetadata() *Metadata {
-	if o == nil {
+func (e *EventDeliveryResponse) GetMetadata() *Metadata {
+	if e == nil {
 		return nil
 	}
-	return o.Metadata
+	return e.Metadata
 }
 
-func (o *EventDeliveryResponse) GetProjectID() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetProjectID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.ProjectID
+	return e.ProjectID
 }
 
-func (o *EventDeliveryResponse) GetSourceMetadata() *Source {
-	if o == nil {
+func (e *EventDeliveryResponse) GetSourceMetadata() *Source {
+	if e == nil {
 		return nil
 	}
-	return o.SourceMetadata
+	return e.SourceMetadata
 }
 
-func (o *EventDeliveryResponse) GetStatus() *EventDeliveryStatus {
-	if o == nil {
+func (e *EventDeliveryResponse) GetStatus() *EventDeliveryStatus {
+	if e == nil {
 		return nil
 	}
-	return o.Status
+	return e.Status
 }
 
-func (o *EventDeliveryResponse) GetSubscriptionID() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetSubscriptionID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.SubscriptionID
+	return e.SubscriptionID
 }
 
-func (o *EventDeliveryResponse) GetUID() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetUID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.UID
+	return e.UID
 }
 
-func (o *EventDeliveryResponse) GetUpdatedAt() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetUpdatedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.UpdatedAt
+	return e.UpdatedAt
 }
 
-func (o *EventDeliveryResponse) GetURLQueryParams() *string {
-	if o == nil {
+func (e *EventDeliveryResponse) GetURLQueryParams() *string {
+	if e == nil {
 		return nil
 	}
-	return o.URLQueryParams
+	return e.URLQueryParams
 }

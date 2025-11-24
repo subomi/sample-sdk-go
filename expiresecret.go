@@ -11,16 +11,16 @@ type ExpireSecret struct {
 	Secret *string `json:"secret,omitempty"`
 }
 
-func (o *ExpireSecret) GetExpiration() *int64 {
-	if o == nil {
+func (e *ExpireSecret) GetExpiration() *int64 {
+	if e == nil {
 		return nil
 	}
-	return o.Expiration
+	return e.Expiration
 }
 
-func (o *ExpireSecret) GetSecret() *string {
-	if o == nil {
+func (e *ExpireSecret) GetSecret() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Secret
+	return e.Secret
 }

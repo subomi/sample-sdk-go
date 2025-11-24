@@ -69,9 +69,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
-		ProjectID: "<id>",
-	})
+	res, err := s.Endpoints.DeleteEndpoint(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -112,9 +110,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
-		ProjectID: "<id>",
-	})
+	res, err := s.Endpoints.DeleteEndpoint(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -132,7 +128,6 @@ func main() {
 <details open>
 <summary>Available methods</summary>
 
-
 ### [DeliveryAttempts](docs/sdks/deliveryattempts/README.md)
 
 * [GetDeliveryAttempts](docs/sdks/deliveryattempts/README.md#getdeliveryattempts) - List delivery attempts
@@ -140,8 +135,6 @@ func main() {
 
 ### [Endpoints](docs/sdks/endpoints/README.md)
 
-* [GetEndpoints](docs/sdks/endpoints/README.md#getendpoints) - List all endpoints
-* [CreateEndpoint](docs/sdks/endpoints/README.md#createendpoint) - Create an endpoint
 * [DeleteEndpoint](docs/sdks/endpoints/README.md#deleteendpoint) - Delete endpoint
 * [GetEndpoint](docs/sdks/endpoints/README.md#getendpoint) - Retrieve endpoint
 * [UpdateEndpoint](docs/sdks/endpoints/README.md#updateendpoint) - Update an endpoint
@@ -250,9 +243,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
-		ProjectID: "<id>",
-	}, convoy.WithRetries(
+	res, err := s.Endpoints.DeleteEndpoint(ctx, "<id>", "<id>", convoy.WithRetries(
 		retry.Config{
 			Strategy: "backoff",
 			Backoff: &retry.BackoffStrategy{
@@ -303,9 +294,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
-		ProjectID: "<id>",
-	})
+	res, err := s.Endpoints.DeleteEndpoint(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -324,14 +313,14 @@ Handling errors in this SDK should largely match your expectations. All operatio
 
 By Default, an API error will return `convoy.APIError`. When custom error responses are specified for an operation, the SDK may also return their associated error. You can refer to respective *Errors* tables in SDK docs for more details on possible error types for each operation.
 
-For example, the `GetEndpoints` function may return the following errors:
+For example, the `DeleteEndpoint` function may return the following errors:
 
-| Error Type                           | Status Code | Content Type     |
-| ------------------------------------ | ----------- | ---------------- |
-| convoy.GetEndpointsBadRequestError   | 400         | application/json |
-| convoy.GetEndpointsUnauthorizedError | 401         | application/json |
-| convoy.GetEndpointsNotFoundError     | 404         | application/json |
-| convoy.APIError                      | 4XX, 5XX    | \*/\*            |
+| Error Type                             | Status Code | Content Type     |
+| -------------------------------------- | ----------- | ---------------- |
+| convoy.DeleteEndpointBadRequestError   | 400         | application/json |
+| convoy.DeleteEndpointUnauthorizedError | 401         | application/json |
+| convoy.DeleteEndpointNotFoundError     | 404         | application/json |
+| convoy.APIError                        | 4XX, 5XX    | \*/\*            |
 
 ### Example
 
@@ -353,24 +342,22 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
-		ProjectID: "<id>",
-	})
+	res, err := s.Endpoints.DeleteEndpoint(ctx, "<id>", "<id>")
 	if err != nil {
 
-		var e *GetEndpointsBadRequestError
+		var e *DeleteEndpointBadRequestError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
 		}
 
-		var e *GetEndpointsUnauthorizedError
+		var e *DeleteEndpointUnauthorizedError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
 		}
 
-		var e *GetEndpointsNotFoundError
+		var e *DeleteEndpointNotFoundError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
@@ -411,9 +398,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.GetEndpoints(ctx, convoy.GetEndpointsRequest{
-		ProjectID: "<id>",
-	})
+	res, err := s.Endpoints.DeleteEndpoint(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}

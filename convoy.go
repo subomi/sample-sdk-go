@@ -2,7 +2,7 @@
 
 package convoy
 
-// Generated from OpenAPI doc version 24.1.4 and generator version 2.686.7
+// Generated from OpenAPI doc version 24.1.4 and generator version 2.760.2
 
 import (
 	"context"
@@ -53,8 +53,7 @@ type Convoy struct {
 	Endpoints  *Endpoints
 	EventTypes *EventTypes
 	// EventDelivery related APIs
-	EventDeliveries *EventDeliveries
-	// Delivery Attempt related APIs
+	EventDeliveries  *EventDeliveries
 	DeliveryAttempts *DeliveryAttempts
 	// Event related APIs
 	Events *Events
@@ -143,9 +142,9 @@ func WithTimeout(timeout time.Duration) SDKOption {
 // New creates a new instance of the SDK with the provided options
 func New(opts ...SDKOption) *Convoy {
 	sdk := &Convoy{
-		SDKVersion: "0.1.0",
+		SDKVersion: "0.1.0-rc.1",
 		sdkConfiguration: config.SDKConfiguration{
-			UserAgent:  "speakeasy-sdk/go 0.1.0 2.686.7 24.1.4 github.com/frain-dev/convoy",
+			UserAgent:  "speakeasy-sdk/go 0.1.0-rc.1 2.760.2 24.1.4 github.com/frain-dev/convoy",
 			ServerList: ServerList,
 		},
 		hooks: hooks.New(),

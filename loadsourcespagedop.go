@@ -51,60 +51,60 @@ type LoadSourcesPagedRequest struct {
 	Type *string `queryParam:"style=form,explode=true,name=type"`
 }
 
-func (o *LoadSourcesPagedRequest) GetProjectID() string {
-	if o == nil {
+func (l *LoadSourcesPagedRequest) GetProjectID() string {
+	if l == nil {
 		return ""
 	}
-	return o.ProjectID
+	return l.ProjectID
 }
 
-func (o *LoadSourcesPagedRequest) GetDirection() *LoadSourcesPagedDirection {
-	if o == nil {
+func (l *LoadSourcesPagedRequest) GetDirection() *LoadSourcesPagedDirection {
+	if l == nil {
 		return nil
 	}
-	return o.Direction
+	return l.Direction
 }
 
-func (o *LoadSourcesPagedRequest) GetNextPageCursor() *string {
-	if o == nil {
+func (l *LoadSourcesPagedRequest) GetNextPageCursor() *string {
+	if l == nil {
 		return nil
 	}
-	return o.NextPageCursor
+	return l.NextPageCursor
 }
 
-func (o *LoadSourcesPagedRequest) GetPerPage() *int64 {
-	if o == nil {
+func (l *LoadSourcesPagedRequest) GetPerPage() *int64 {
+	if l == nil {
 		return nil
 	}
-	return o.PerPage
+	return l.PerPage
 }
 
-func (o *LoadSourcesPagedRequest) GetPrevPageCursor() *string {
-	if o == nil {
+func (l *LoadSourcesPagedRequest) GetPrevPageCursor() *string {
+	if l == nil {
 		return nil
 	}
-	return o.PrevPageCursor
+	return l.PrevPageCursor
 }
 
-func (o *LoadSourcesPagedRequest) GetProvider() *string {
-	if o == nil {
+func (l *LoadSourcesPagedRequest) GetProvider() *string {
+	if l == nil {
 		return nil
 	}
-	return o.Provider
+	return l.Provider
 }
 
-func (o *LoadSourcesPagedRequest) GetSort() *string {
-	if o == nil {
+func (l *LoadSourcesPagedRequest) GetSort() *string {
+	if l == nil {
 		return nil
 	}
-	return o.Sort
+	return l.Sort
 }
 
-func (o *LoadSourcesPagedRequest) GetType() *string {
-	if o == nil {
+func (l *LoadSourcesPagedRequest) GetType() *string {
+	if l == nil {
 		return nil
 	}
-	return o.Type
+	return l.Type
 }
 
 // LoadSourcesPagedNotFoundError - Not Found
@@ -157,18 +157,18 @@ type LoadSourcesPagedData struct {
 	Pagination *PaginationData  `json:"pagination,omitempty"`
 }
 
-func (o *LoadSourcesPagedData) GetContent() []SourceResponse {
-	if o == nil {
+func (l *LoadSourcesPagedData) GetContent() []SourceResponse {
+	if l == nil {
 		return nil
 	}
-	return o.Content
+	return l.Content
 }
 
-func (o *LoadSourcesPagedData) GetPagination() *PaginationData {
-	if o == nil {
+func (l *LoadSourcesPagedData) GetPagination() *PaginationData {
+	if l == nil {
 		return nil
 	}
-	return o.Pagination
+	return l.Pagination
 }
 
 // LoadSourcesPagedResponseBody - OK
@@ -178,25 +178,25 @@ type LoadSourcesPagedResponseBody struct {
 	Data    *LoadSourcesPagedData `json:"data,omitempty"`
 }
 
-func (o *LoadSourcesPagedResponseBody) GetMessage() *string {
-	if o == nil {
+func (l *LoadSourcesPagedResponseBody) GetMessage() *string {
+	if l == nil {
 		return nil
 	}
-	return o.Message
+	return l.Message
 }
 
-func (o *LoadSourcesPagedResponseBody) GetStatus() *bool {
-	if o == nil {
+func (l *LoadSourcesPagedResponseBody) GetStatus() *bool {
+	if l == nil {
 		return nil
 	}
-	return o.Status
+	return l.Status
 }
 
-func (o *LoadSourcesPagedResponseBody) GetData() *LoadSourcesPagedData {
-	if o == nil {
+func (l *LoadSourcesPagedResponseBody) GetData() *LoadSourcesPagedData {
+	if l == nil {
 		return nil
 	}
-	return o.Data
+	return l.Data
 }
 
 type LoadSourcesPagedResponse struct {
@@ -205,16 +205,16 @@ type LoadSourcesPagedResponse struct {
 	Object *LoadSourcesPagedResponseBody
 }
 
-func (o *LoadSourcesPagedResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (l *LoadSourcesPagedResponse) GetHTTPMeta() HTTPMetadata {
+	if l == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return l.HTTPMeta
 }
 
-func (o *LoadSourcesPagedResponse) GetObject() *LoadSourcesPagedResponseBody {
-	if o == nil {
+func (l *LoadSourcesPagedResponse) GetObject() *LoadSourcesPagedResponseBody {
+	if l == nil {
 		return nil
 	}
-	return o.Object
+	return l.Object
 }

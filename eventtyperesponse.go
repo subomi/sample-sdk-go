@@ -11,44 +11,44 @@ type EventTypeResponse struct {
 	UID          *string `json:"uid,omitempty"`
 }
 
-func (o *EventTypeResponse) GetCategory() *string {
-	if o == nil {
+func (e *EventTypeResponse) GetCategory() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Category
+	return e.Category
 }
 
-func (o *EventTypeResponse) GetDeprecatedAt() *string {
-	if o == nil {
+func (e *EventTypeResponse) GetDeprecatedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.DeprecatedAt
+	return e.DeprecatedAt
 }
 
-func (o *EventTypeResponse) GetDescription() *string {
-	if o == nil {
+func (e *EventTypeResponse) GetDescription() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Description
+	return e.Description
 }
 
-func (o *EventTypeResponse) GetJSONSchema() []int64 {
-	if o == nil {
+func (e *EventTypeResponse) GetJSONSchema() []int64 {
+	if e == nil {
 		return nil
 	}
-	return o.JSONSchema
+	return e.JSONSchema
 }
 
-func (o *EventTypeResponse) GetName() *string {
-	if o == nil {
+func (e *EventTypeResponse) GetName() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Name
+	return e.Name
 }
 
-func (o *EventTypeResponse) GetUID() *string {
-	if o == nil {
+func (e *EventTypeResponse) GetUID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.UID
+	return e.UID
 }

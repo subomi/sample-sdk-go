@@ -13,18 +13,18 @@ type RevokePortalLinkRequest struct {
 	PortalLinkID string `pathParam:"style=simple,explode=false,name=portalLinkID"`
 }
 
-func (o *RevokePortalLinkRequest) GetProjectID() string {
-	if o == nil {
+func (r *RevokePortalLinkRequest) GetProjectID() string {
+	if r == nil {
 		return ""
 	}
-	return o.ProjectID
+	return r.ProjectID
 }
 
-func (o *RevokePortalLinkRequest) GetPortalLinkID() string {
-	if o == nil {
+func (r *RevokePortalLinkRequest) GetPortalLinkID() string {
+	if r == nil {
 		return ""
 	}
-	return o.PortalLinkID
+	return r.PortalLinkID
 }
 
 // RevokePortalLinkNotFoundError - Not Found
@@ -79,25 +79,25 @@ type RevokePortalLinkResponseBody struct {
 	Data    *Object `json:"data,omitempty"`
 }
 
-func (o *RevokePortalLinkResponseBody) GetMessage() *string {
-	if o == nil {
+func (r *RevokePortalLinkResponseBody) GetMessage() *string {
+	if r == nil {
 		return nil
 	}
-	return o.Message
+	return r.Message
 }
 
-func (o *RevokePortalLinkResponseBody) GetStatus() *bool {
-	if o == nil {
+func (r *RevokePortalLinkResponseBody) GetStatus() *bool {
+	if r == nil {
 		return nil
 	}
-	return o.Status
+	return r.Status
 }
 
-func (o *RevokePortalLinkResponseBody) GetData() *Object {
-	if o == nil {
+func (r *RevokePortalLinkResponseBody) GetData() *Object {
+	if r == nil {
 		return nil
 	}
-	return o.Data
+	return r.Data
 }
 
 type RevokePortalLinkResponse struct {
@@ -106,16 +106,16 @@ type RevokePortalLinkResponse struct {
 	Object *RevokePortalLinkResponseBody
 }
 
-func (o *RevokePortalLinkResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (r *RevokePortalLinkResponse) GetHTTPMeta() HTTPMetadata {
+	if r == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return r.HTTPMeta
 }
 
-func (o *RevokePortalLinkResponse) GetObject() *RevokePortalLinkResponseBody {
-	if o == nil {
+func (r *RevokePortalLinkResponse) GetObject() *RevokePortalLinkResponseBody {
+	if r == nil {
 		return nil
 	}
-	return o.Object
+	return r.Object
 }

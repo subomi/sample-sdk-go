@@ -13,18 +13,18 @@ type CreateEndpointEventRequest struct {
 	CreateEvent CreateEvent `request:"mediaType=application/json"`
 }
 
-func (o *CreateEndpointEventRequest) GetProjectID() string {
-	if o == nil {
+func (c *CreateEndpointEventRequest) GetProjectID() string {
+	if c == nil {
 		return ""
 	}
-	return o.ProjectID
+	return c.ProjectID
 }
 
-func (o *CreateEndpointEventRequest) GetCreateEvent() CreateEvent {
-	if o == nil {
+func (c *CreateEndpointEventRequest) GetCreateEvent() CreateEvent {
+	if c == nil {
 		return CreateEvent{}
 	}
-	return o.CreateEvent
+	return c.CreateEvent
 }
 
 // CreateEndpointEventNotFoundError - Not Found
@@ -79,25 +79,25 @@ type CreateEndpointEventResponseBody struct {
 	Data    *Object `json:"data,omitempty"`
 }
 
-func (o *CreateEndpointEventResponseBody) GetMessage() *string {
-	if o == nil {
+func (c *CreateEndpointEventResponseBody) GetMessage() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Message
+	return c.Message
 }
 
-func (o *CreateEndpointEventResponseBody) GetStatus() *bool {
-	if o == nil {
+func (c *CreateEndpointEventResponseBody) GetStatus() *bool {
+	if c == nil {
 		return nil
 	}
-	return o.Status
+	return c.Status
 }
 
-func (o *CreateEndpointEventResponseBody) GetData() *Object {
-	if o == nil {
+func (c *CreateEndpointEventResponseBody) GetData() *Object {
+	if c == nil {
 		return nil
 	}
-	return o.Data
+	return c.Data
 }
 
 type CreateEndpointEventResponse struct {
@@ -106,16 +106,16 @@ type CreateEndpointEventResponse struct {
 	Object *CreateEndpointEventResponseBody
 }
 
-func (o *CreateEndpointEventResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (c *CreateEndpointEventResponse) GetHTTPMeta() HTTPMetadata {
+	if c == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return c.HTTPMeta
 }
 
-func (o *CreateEndpointEventResponse) GetObject() *CreateEndpointEventResponseBody {
-	if o == nil {
+func (c *CreateEndpointEventResponse) GetObject() *CreateEndpointEventResponseBody {
+	if c == nil {
 		return nil
 	}
-	return o.Object
+	return c.Object
 }

@@ -11,44 +11,44 @@ type PubSubConfig struct {
 	Workers *int64              `json:"workers,omitempty"`
 }
 
-func (o *PubSubConfig) GetAmqp() *AmqpPubSubconfig {
-	if o == nil {
+func (p *PubSubConfig) GetAmqp() *AmqpPubSubconfig {
+	if p == nil {
 		return nil
 	}
-	return o.Amqp
+	return p.Amqp
 }
 
-func (o *PubSubConfig) GetGoogle() *GooglePubSubConfig {
-	if o == nil {
+func (p *PubSubConfig) GetGoogle() *GooglePubSubConfig {
+	if p == nil {
 		return nil
 	}
-	return o.Google
+	return p.Google
 }
 
-func (o *PubSubConfig) GetKafka() *KafkaPubSubConfig {
-	if o == nil {
+func (p *PubSubConfig) GetKafka() *KafkaPubSubConfig {
+	if p == nil {
 		return nil
 	}
-	return o.Kafka
+	return p.Kafka
 }
 
-func (o *PubSubConfig) GetSqs() *SQSPubSubConfig {
-	if o == nil {
+func (p *PubSubConfig) GetSqs() *SQSPubSubConfig {
+	if p == nil {
 		return nil
 	}
-	return o.Sqs
+	return p.Sqs
 }
 
-func (o *PubSubConfig) GetType() *PubSubType {
-	if o == nil {
+func (p *PubSubConfig) GetType() *PubSubType {
+	if p == nil {
 		return nil
 	}
-	return o.Type
+	return p.Type
 }
 
-func (o *PubSubConfig) GetWorkers() *int64 {
-	if o == nil {
+func (p *PubSubConfig) GetWorkers() *int64 {
+	if p == nil {
 		return nil
 	}
-	return o.Workers
+	return p.Workers
 }

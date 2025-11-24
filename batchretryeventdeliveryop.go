@@ -63,102 +63,102 @@ type BatchRetryEventDeliveryRequest struct {
 	SubscriptionID *string `queryParam:"style=form,explode=true,name=subscriptionId"`
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetProjectID() string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetProjectID() string {
+	if b == nil {
 		return ""
 	}
-	return o.ProjectID
+	return b.ProjectID
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetDirection() *BatchRetryEventDeliveryDirection {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetDirection() *BatchRetryEventDeliveryDirection {
+	if b == nil {
 		return nil
 	}
-	return o.Direction
+	return b.Direction
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetEndDate() *string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetEndDate() *string {
+	if b == nil {
 		return nil
 	}
-	return o.EndDate
+	return b.EndDate
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetEndpointID() []string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetEndpointID() []string {
+	if b == nil {
 		return nil
 	}
-	return o.EndpointID
+	return b.EndpointID
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetEventID() *string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetEventID() *string {
+	if b == nil {
 		return nil
 	}
-	return o.EventID
+	return b.EventID
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetEventType() *string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetEventType() *string {
+	if b == nil {
 		return nil
 	}
-	return o.EventType
+	return b.EventType
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetIdempotencyKey() *string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetIdempotencyKey() *string {
+	if b == nil {
 		return nil
 	}
-	return o.IdempotencyKey
+	return b.IdempotencyKey
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetNextPageCursor() *string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetNextPageCursor() *string {
+	if b == nil {
 		return nil
 	}
-	return o.NextPageCursor
+	return b.NextPageCursor
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetPerPage() *int64 {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetPerPage() *int64 {
+	if b == nil {
 		return nil
 	}
-	return o.PerPage
+	return b.PerPage
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetPrevPageCursor() *string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetPrevPageCursor() *string {
+	if b == nil {
 		return nil
 	}
-	return o.PrevPageCursor
+	return b.PrevPageCursor
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetSort() *string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetSort() *string {
+	if b == nil {
 		return nil
 	}
-	return o.Sort
+	return b.Sort
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetStartDate() *string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetStartDate() *string {
+	if b == nil {
 		return nil
 	}
-	return o.StartDate
+	return b.StartDate
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetStatus() []string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetStatus() []string {
+	if b == nil {
 		return nil
 	}
-	return o.Status
+	return b.Status
 }
 
-func (o *BatchRetryEventDeliveryRequest) GetSubscriptionID() *string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryRequest) GetSubscriptionID() *string {
+	if b == nil {
 		return nil
 	}
-	return o.SubscriptionID
+	return b.SubscriptionID
 }
 
 // BatchRetryEventDeliveryNotFoundError - Not Found
@@ -213,25 +213,25 @@ type BatchRetryEventDeliveryResponseBody struct {
 	Data    *Object `json:"data,omitempty"`
 }
 
-func (o *BatchRetryEventDeliveryResponseBody) GetMessage() *string {
-	if o == nil {
+func (b *BatchRetryEventDeliveryResponseBody) GetMessage() *string {
+	if b == nil {
 		return nil
 	}
-	return o.Message
+	return b.Message
 }
 
-func (o *BatchRetryEventDeliveryResponseBody) GetStatus() *bool {
-	if o == nil {
+func (b *BatchRetryEventDeliveryResponseBody) GetStatus() *bool {
+	if b == nil {
 		return nil
 	}
-	return o.Status
+	return b.Status
 }
 
-func (o *BatchRetryEventDeliveryResponseBody) GetData() *Object {
-	if o == nil {
+func (b *BatchRetryEventDeliveryResponseBody) GetData() *Object {
+	if b == nil {
 		return nil
 	}
-	return o.Data
+	return b.Data
 }
 
 type BatchRetryEventDeliveryResponse struct {
@@ -240,16 +240,16 @@ type BatchRetryEventDeliveryResponse struct {
 	Object *BatchRetryEventDeliveryResponseBody
 }
 
-func (o *BatchRetryEventDeliveryResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (b *BatchRetryEventDeliveryResponse) GetHTTPMeta() HTTPMetadata {
+	if b == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return b.HTTPMeta
 }
 
-func (o *BatchRetryEventDeliveryResponse) GetObject() *BatchRetryEventDeliveryResponseBody {
-	if o == nil {
+func (b *BatchRetryEventDeliveryResponse) GetObject() *BatchRetryEventDeliveryResponseBody {
+	if b == nil {
 		return nil
 	}
-	return o.Object
+	return b.Object
 }

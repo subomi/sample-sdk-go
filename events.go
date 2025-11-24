@@ -60,7 +60,7 @@ func (s *Events) GetEventsPaged(ctx context.Context, request GetEventsPagedReque
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetEventsPaged",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -350,7 +350,7 @@ func (s *Events) CreateEndpointEvent(ctx context.Context, projectID string, crea
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "CreateEndpointEvent",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "CreateEvent", "json", `request:"mediaType=application/json"`)
@@ -643,7 +643,7 @@ func (s *Events) GetEndpointEvent(ctx context.Context, projectID string, eventID
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetEndpointEvent",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -929,7 +929,7 @@ func (s *Events) ReplayEndpointEvent(ctx context.Context, projectID string, even
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "ReplayEndpointEvent",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -1210,7 +1210,7 @@ func (s *Events) BatchReplayEvents(ctx context.Context, request BatchReplayEvent
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "BatchReplayEvents",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -1500,7 +1500,7 @@ func (s *Events) CreateBroadcastEvent(ctx context.Context, projectID string, bro
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "CreateBroadcastEvent",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "BroadcastEvent", "json", `request:"mediaType=application/json"`)
@@ -1793,7 +1793,7 @@ func (s *Events) CreateDynamicEvent(ctx context.Context, projectID string, dynam
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "CreateDynamicEvent",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "DynamicEvent", "json", `request:"mediaType=application/json"`)
@@ -2086,7 +2086,7 @@ func (s *Events) CreateEndpointFanoutEvent(ctx context.Context, projectID string
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "CreateEndpointFanoutEvent",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "FanoutEvent", "json", `request:"mediaType=application/json"`)

@@ -51,60 +51,60 @@ type GetSubscriptionsRequest struct {
 	Sort *string `queryParam:"style=form,explode=true,name=sort"`
 }
 
-func (o *GetSubscriptionsRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetSubscriptionsRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetSubscriptionsRequest) GetDirection() *GetSubscriptionsDirection {
-	if o == nil {
+func (g *GetSubscriptionsRequest) GetDirection() *GetSubscriptionsDirection {
+	if g == nil {
 		return nil
 	}
-	return o.Direction
+	return g.Direction
 }
 
-func (o *GetSubscriptionsRequest) GetEndpointID() []string {
-	if o == nil {
+func (g *GetSubscriptionsRequest) GetEndpointID() []string {
+	if g == nil {
 		return nil
 	}
-	return o.EndpointID
+	return g.EndpointID
 }
 
-func (o *GetSubscriptionsRequest) GetName() *string {
-	if o == nil {
+func (g *GetSubscriptionsRequest) GetName() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Name
+	return g.Name
 }
 
-func (o *GetSubscriptionsRequest) GetNextPageCursor() *string {
-	if o == nil {
+func (g *GetSubscriptionsRequest) GetNextPageCursor() *string {
+	if g == nil {
 		return nil
 	}
-	return o.NextPageCursor
+	return g.NextPageCursor
 }
 
-func (o *GetSubscriptionsRequest) GetPerPage() *int64 {
-	if o == nil {
+func (g *GetSubscriptionsRequest) GetPerPage() *int64 {
+	if g == nil {
 		return nil
 	}
-	return o.PerPage
+	return g.PerPage
 }
 
-func (o *GetSubscriptionsRequest) GetPrevPageCursor() *string {
-	if o == nil {
+func (g *GetSubscriptionsRequest) GetPrevPageCursor() *string {
+	if g == nil {
 		return nil
 	}
-	return o.PrevPageCursor
+	return g.PrevPageCursor
 }
 
-func (o *GetSubscriptionsRequest) GetSort() *string {
-	if o == nil {
+func (g *GetSubscriptionsRequest) GetSort() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Sort
+	return g.Sort
 }
 
 // GetSubscriptionsNotFoundError - Not Found
@@ -157,18 +157,18 @@ type GetSubscriptionsData struct {
 	Pagination *PaginationData        `json:"pagination,omitempty"`
 }
 
-func (o *GetSubscriptionsData) GetContent() []SubscriptionResponse {
-	if o == nil {
+func (g *GetSubscriptionsData) GetContent() []SubscriptionResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Content
+	return g.Content
 }
 
-func (o *GetSubscriptionsData) GetPagination() *PaginationData {
-	if o == nil {
+func (g *GetSubscriptionsData) GetPagination() *PaginationData {
+	if g == nil {
 		return nil
 	}
-	return o.Pagination
+	return g.Pagination
 }
 
 // GetSubscriptionsResponseBody - OK
@@ -178,25 +178,25 @@ type GetSubscriptionsResponseBody struct {
 	Data    *GetSubscriptionsData `json:"data,omitempty"`
 }
 
-func (o *GetSubscriptionsResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetSubscriptionsResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetSubscriptionsResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetSubscriptionsResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetSubscriptionsResponseBody) GetData() *GetSubscriptionsData {
-	if o == nil {
+func (g *GetSubscriptionsResponseBody) GetData() *GetSubscriptionsData {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetSubscriptionsResponse struct {
@@ -205,16 +205,16 @@ type GetSubscriptionsResponse struct {
 	Object *GetSubscriptionsResponseBody
 }
 
-func (o *GetSubscriptionsResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetSubscriptionsResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetSubscriptionsResponse) GetObject() *GetSubscriptionsResponseBody {
-	if o == nil {
+func (g *GetSubscriptionsResponse) GetObject() *GetSubscriptionsResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }
