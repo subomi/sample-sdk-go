@@ -69,7 +69,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>")
+	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -110,7 +110,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>")
+	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -133,10 +133,6 @@ func main() {
 * [GetDeliveryAttempts](docs/sdks/deliveryattempts/README.md#getdeliveryattempts) - List delivery attempts
 * [GetDeliveryAttempt](docs/sdks/deliveryattempts/README.md#getdeliveryattempt) - Retrieve a delivery attempt
 
-### [Endpoints](docs/sdks/endpoints/README.md)
-
-* [PauseEndpoint](docs/sdks/endpoints/README.md#pauseendpoint) - Pause endpoint
-
 ### [EventDeliveries](docs/sdks/eventdeliveries/README.md)
 
 * [GetEventDeliveriesPaged](docs/sdks/eventdeliveries/README.md#geteventdeliveriespaged) - List all event deliveries
@@ -158,7 +154,6 @@ func main() {
 
 ### [EventTypes](docs/sdks/eventtypes/README.md)
 
-* [GetEventTypes](docs/sdks/eventtypes/README.md#geteventtypes) - Retrieves a project's event types
 * [CreateEventType](docs/sdks/eventtypes/README.md#createeventtype) - Create an event type
 * [UpdateEventType](docs/sdks/eventtypes/README.md#updateeventtype) - Updates an event type
 * [DeprecateEventType](docs/sdks/eventtypes/README.md#deprecateeventtype) - Deprecates an event type
@@ -238,7 +233,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>", convoy.WithRetries(
+	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{}, convoy.WithRetries(
 		retry.Config{
 			Strategy: "backoff",
 			Backoff: &retry.BackoffStrategy{
@@ -289,7 +284,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>")
+	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -308,14 +303,14 @@ Handling errors in this SDK should largely match your expectations. All operatio
 
 By Default, an API error will return `convoy.APIError`. When custom error responses are specified for an operation, the SDK may also return their associated error. You can refer to respective *Errors* tables in SDK docs for more details on possible error types for each operation.
 
-For example, the `PauseEndpoint` function may return the following errors:
+For example, the `CreateEventType` function may return the following errors:
 
-| Error Type                            | Status Code | Content Type     |
-| ------------------------------------- | ----------- | ---------------- |
-| convoy.PauseEndpointBadRequestError   | 400         | application/json |
-| convoy.PauseEndpointUnauthorizedError | 401         | application/json |
-| convoy.PauseEndpointNotFoundError     | 404         | application/json |
-| convoy.APIError                       | 4XX, 5XX    | \*/\*            |
+| Error Type                              | Status Code | Content Type     |
+| --------------------------------------- | ----------- | ---------------- |
+| convoy.CreateEventTypeBadRequestError   | 400         | application/json |
+| convoy.CreateEventTypeUnauthorizedError | 401         | application/json |
+| convoy.CreateEventTypeNotFoundError     | 404         | application/json |
+| convoy.APIError                         | 4XX, 5XX    | \*/\*            |
 
 ### Example
 
@@ -337,22 +332,22 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>")
+	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{})
 	if err != nil {
 
-		var e *PauseEndpointBadRequestError
+		var e *CreateEventTypeBadRequestError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
 		}
 
-		var e *PauseEndpointUnauthorizedError
+		var e *CreateEventTypeUnauthorizedError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
 		}
 
-		var e *PauseEndpointNotFoundError
+		var e *CreateEventTypeNotFoundError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
@@ -393,7 +388,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.Endpoints.PauseEndpoint(ctx, "<id>", "<id>")
+	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{})
 	if err != nil {
 		log.Fatal(err)
 	}

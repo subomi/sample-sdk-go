@@ -3,8 +3,6 @@
 
 ## Overview
 
-Portal Links related APIs
-
 ### Available Operations
 
 * [LoadPortalLinksPaged](#loadportallinkspaged) - List all portal links
