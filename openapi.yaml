@@ -25,150 +25,6 @@ tags:
   - description: Meta Events related APIs
     name: Meta Events
 paths:
-  /v1/projects/{projectID}/event-types:
-    post:
-      description: This endpoint creates an event type
-      operationId: CreateEventType
-      parameters:
-        - description: Project ID
-          in: path
-          name: projectID
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/CreateEventType'
-        description: Event Type Details
-        required: true
-        x-originalParamName: eventType
-      responses:
-        "201":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/EventTypeResponse'
-                    type: object
-          description: Created
-        "400":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/Object'
-                    type: object
-          description: Bad Request
-        "401":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/Object'
-                    type: object
-          description: Unauthorized
-        "404":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/Object'
-                    type: object
-          description: Not Found
-      security:
-        - BearerAuth: []
-      summary: Create an event type
-      tags:
-        - EventTypes
-  /v1/projects/{projectID}/event-types/{eventTypeID}:
-    put:
-      description: This endpoint updates an event type
-      operationId: UpdateEventType
-      parameters:
-        - description: Project ID
-          in: path
-          name: projectID
-          required: true
-          schema:
-            type: string
-        - description: Event Type ID
-          in: path
-          name: eventTypeID
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/UpdateEventType'
-        description: Event Type Details
-        required: true
-        x-originalParamName: eventType
-      responses:
-        "201":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/EventTypeResponse'
-                    type: object
-          description: Created
-        "400":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/Object'
-                    type: object
-          description: Bad Request
-        "401":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/Object'
-                    type: object
-          description: Unauthorized
-        "404":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/Object'
-                    type: object
-          description: Not Found
-      security:
-        - BearerAuth: []
-      summary: Updates an event type
-      tags:
-        - EventTypes
   /v1/projects/{projectID}/event-types/{eventTypeId}/deprecate:
     post:
       description: This endpoint deprecates an event type
@@ -4608,22 +4464,6 @@ components:
           description: Specify a key for event deduplication
           type: string
       type: object
-    CreateEventType:
-      properties:
-        category:
-          description: Category is a product-specific grouping for the event type
-          type: string
-        description:
-          description: Description is used to describe what the event type does
-          type: string
-        json_schema:
-          additionalProperties: true
-          description: JSONSchema is the JSON structure of the event type
-          type: object
-        name:
-          description: Name is the event type name. E.g., invoice.created
-          type: string
-      type: object
     CreateFilterRequest:
       properties:
         body:
@@ -5283,19 +5123,6 @@ components:
           type: string
         content_type:
           type: string
-      type: object
-    UpdateEventType:
-      properties:
-        category:
-          description: Category is a product-specific grouping for the event type
-          type: string
-        description:
-          description: Description is used to describe what the event type does
-          type: string
-        json_schema:
-          additionalProperties: true
-          description: JSONSchema is the JSON structure of the event type
-          type: object
       type: object
     UpdateFilterRequest:
       properties:
