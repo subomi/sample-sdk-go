@@ -56,9 +56,10 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "GitHub Actions Bot"
           
-          # Add empty line to workflow.lock to trigger a commit
+          # Add empty line to workflow.lock and gen.lock to trigger a commit
           echo "" >> .speakeasy/workflow.lock
-          git add .speakeasy/workflow.lock
+          echo "" >> .speakeasy/gen.lock
+          git add .speakeasy/workflow.lock .speakeasy/gen.lock
           git commit -m "Update ga-release branch to $LAST_GA_TAG"
           
           git push origin ga-release
