@@ -16,149 +16,18 @@ servers:
 tags:
   - description: Subscription related APIs
     name: Subscriptions
-  - description: Endpoint related APIs
-    name: Endpoints
   - description: Event related APIs
     name: Events
   - description: Source related APIs
     name: Sources
   - description: EventDelivery related APIs
     name: Event Deliveries
-  - description: Portal Links related APIs
-    name: Portal Links
+  - description: Meta Events related APIs
+    name: Meta Events
   - description: Meta Events related APIs
     name: Meta Events
 paths:
-  /v1/projects/{projectID}/endpoints/{endpointID}/pause:
-    put:
-      description: Toggles an endpoint's status between active and paused states
-      operationId: PauseEndpoint
-      parameters:
-        - description: Project ID
-          in: path
-          name: projectID
-          required: true
-          schema:
-            type: string
-        - description: Endpoint ID
-          in: path
-          name: endpointID
-          required: true
-          schema:
-            type: string
-      responses:
-        "202":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/EndpointResponse'
-                    type: object
-          description: Accepted
-        "400":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/Object'
-                    type: object
-          description: Bad Request
-        "401":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/Object'
-                    type: object
-          description: Unauthorized
-        "404":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/Object'
-                    type: object
-          description: Not Found
-      security:
-        - BearerAuth: []
-      summary: Pause endpoint
-      tags:
-        - Endpoints
   /v1/projects/{projectID}/event-types:
-    get:
-      description: This endpoint fetches the project's event types
-      operationId: GetEventTypes
-      parameters:
-        - description: Project ID
-          in: path
-          name: projectID
-          required: true
-          schema:
-            type: string
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        items:
-                          $ref: '#/components/schemas/EventTypeResponse'
-                        type: array
-                    type: object
-          description: OK
-        "400":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/Object'
-                    type: object
-          description: Bad Request
-        "401":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/Object'
-                    type: object
-          description: Unauthorized
-        "404":
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/ServerResponse'
-                  - properties:
-                      data:
-                        $ref: '#/components/schemas/Object'
-                    type: object
-          description: Not Found
-      security:
-        - BearerAuth: []
-      summary: Retrieves a project's event types
-      tags:
-        - EventTypes
     post:
       description: This endpoint creates an event type
       operationId: CreateEventType
@@ -4905,55 +4774,6 @@ components:
         type:
           $ref: '#/components/schemas/EndpointAuthenticationType'
       type: object
-    EndpointResponse:
-      properties:
-        advanced_signatures:
-          type: boolean
-        authentication:
-          $ref: '#/components/schemas/EndpointAuthentication'
-        created_at:
-          type: string
-        deleted_at:
-          type: string
-        description:
-          type: string
-        events:
-          type: integer
-        failure_rate:
-          type: number
-        http_timeout:
-          type: integer
-        name:
-          type: string
-        owner_id:
-          type: string
-        project_id:
-          type: string
-        rate_limit:
-          type: integer
-        rate_limit_duration:
-          type: integer
-        secrets:
-          items:
-            $ref: '#/components/schemas/Secret'
-          type: array
-        slack_webhook_url:
-          type: string
-        status:
-          $ref: '#/components/schemas/EndpointStatus'
-        support_email:
-          type: string
-        uid:
-          type: string
-        updated_at:
-          type: string
-        url:
-          type: string
-      type: object
-      required:
-        - name
-        - url
-        - uid
     EventDeliveryResponse:
       properties:
         acknowledged_at:
