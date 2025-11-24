@@ -1,4 +1,4 @@
-name: Generate
+name: Generate RC
 permissions:
   checks: write
   contents: write
