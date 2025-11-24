@@ -52,6 +52,10 @@ jobs:
           # Create fresh ga-release branch from the GA tag
           git checkout -b ga-release "$LAST_GA_TAG"
           
+          # Configure git identity
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "GitHub Actions Bot"
+          
           # Make an empty commit
           git commit --allow-empty -m "Update ga-release branch to $LAST_GA_TAG"
           
