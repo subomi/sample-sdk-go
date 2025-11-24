@@ -38,72 +38,72 @@ type UpdateSubscription struct {
 	SourceID *string `json:"source_id,omitempty"`
 }
 
-func (o *UpdateSubscription) GetAlertConfig() *AlertConfiguration {
-	if o == nil {
+func (u *UpdateSubscription) GetAlertConfig() *AlertConfiguration {
+	if u == nil {
 		return nil
 	}
-	return o.AlertConfig
+	return u.AlertConfig
 }
 
-func (o *UpdateSubscription) GetAppID() *string {
-	if o == nil {
+func (u *UpdateSubscription) GetAppID() *string {
+	if u == nil {
 		return nil
 	}
-	return o.AppID
+	return u.AppID
 }
 
-func (o *UpdateSubscription) GetDeliveryMode() *UpdateSubscriptionDeliveryMode {
-	if o == nil {
+func (u *UpdateSubscription) GetDeliveryMode() *UpdateSubscriptionDeliveryMode {
+	if u == nil {
 		return nil
 	}
-	return o.DeliveryMode
+	return u.DeliveryMode
 }
 
-func (o *UpdateSubscription) GetEndpointID() *string {
-	if o == nil {
+func (u *UpdateSubscription) GetEndpointID() *string {
+	if u == nil {
 		return nil
 	}
-	return o.EndpointID
+	return u.EndpointID
 }
 
-func (o *UpdateSubscription) GetFilterConfig() *FilterConfiguration {
-	if o == nil {
+func (u *UpdateSubscription) GetFilterConfig() *FilterConfiguration {
+	if u == nil {
 		return nil
 	}
-	return o.FilterConfig
+	return u.FilterConfig
 }
 
-func (o *UpdateSubscription) GetFunction() *string {
-	if o == nil {
+func (u *UpdateSubscription) GetFunction() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Function
+	return u.Function
 }
 
-func (o *UpdateSubscription) GetName() *string {
-	if o == nil {
+func (u *UpdateSubscription) GetName() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Name
+	return u.Name
 }
 
-func (o *UpdateSubscription) GetRateLimitConfig() *RateLimitConfiguration {
-	if o == nil {
+func (u *UpdateSubscription) GetRateLimitConfig() *RateLimitConfiguration {
+	if u == nil {
 		return nil
 	}
-	return o.RateLimitConfig
+	return u.RateLimitConfig
 }
 
-func (o *UpdateSubscription) GetRetryConfig() *RetryConfiguration {
-	if o == nil {
+func (u *UpdateSubscription) GetRetryConfig() *RetryConfiguration {
+	if u == nil {
 		return nil
 	}
-	return o.RetryConfig
+	return u.RetryConfig
 }
 
-func (o *UpdateSubscription) GetSourceID() *string {
-	if o == nil {
+func (u *UpdateSubscription) GetSourceID() *string {
+	if u == nil {
 		return nil
 	}
-	return o.SourceID
+	return u.SourceID
 }

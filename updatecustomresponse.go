@@ -7,16 +7,16 @@ type UpdateCustomResponse struct {
 	ContentType *string `json:"content_type,omitempty"`
 }
 
-func (o *UpdateCustomResponse) GetBody() *string {
-	if o == nil {
+func (u *UpdateCustomResponse) GetBody() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Body
+	return u.Body
 }
 
-func (o *UpdateCustomResponse) GetContentType() *string {
-	if o == nil {
+func (u *UpdateCustomResponse) GetContentType() *string {
+	if u == nil {
 		return nil
 	}
-	return o.ContentType
+	return u.ContentType
 }

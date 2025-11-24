@@ -16,58 +16,58 @@ type Metadata struct {
 	Strategy   *StrategyProvider `json:"strategy,omitempty"`
 }
 
-func (o *Metadata) GetData() []int64 {
-	if o == nil {
+func (m *Metadata) GetData() []int64 {
+	if m == nil {
 		return nil
 	}
-	return o.Data
+	return m.Data
 }
 
-func (o *Metadata) GetIntervalSeconds() *int64 {
-	if o == nil {
+func (m *Metadata) GetIntervalSeconds() *int64 {
+	if m == nil {
 		return nil
 	}
-	return o.IntervalSeconds
+	return m.IntervalSeconds
 }
 
-func (o *Metadata) GetMaxRetrySeconds() *int64 {
-	if o == nil {
+func (m *Metadata) GetMaxRetrySeconds() *int64 {
+	if m == nil {
 		return nil
 	}
-	return o.MaxRetrySeconds
+	return m.MaxRetrySeconds
 }
 
-func (o *Metadata) GetNextSendTime() *string {
-	if o == nil {
+func (m *Metadata) GetNextSendTime() *string {
+	if m == nil {
 		return nil
 	}
-	return o.NextSendTime
+	return m.NextSendTime
 }
 
-func (o *Metadata) GetNumTrials() *int64 {
-	if o == nil {
+func (m *Metadata) GetNumTrials() *int64 {
+	if m == nil {
 		return nil
 	}
-	return o.NumTrials
+	return m.NumTrials
 }
 
-func (o *Metadata) GetRaw() *string {
-	if o == nil {
+func (m *Metadata) GetRaw() *string {
+	if m == nil {
 		return nil
 	}
-	return o.Raw
+	return m.Raw
 }
 
-func (o *Metadata) GetRetryLimit() *int64 {
-	if o == nil {
+func (m *Metadata) GetRetryLimit() *int64 {
+	if m == nil {
 		return nil
 	}
-	return o.RetryLimit
+	return m.RetryLimit
 }
 
-func (o *Metadata) GetStrategy() *StrategyProvider {
-	if o == nil {
+func (m *Metadata) GetStrategy() *StrategyProvider {
+	if m == nil {
 		return nil
 	}
-	return o.Strategy
+	return m.Strategy
 }

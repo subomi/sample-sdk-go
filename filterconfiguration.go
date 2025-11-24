@@ -9,16 +9,16 @@ type FilterConfiguration struct {
 	Filter *Fs `json:"filter,omitempty"`
 }
 
-func (o *FilterConfiguration) GetEventTypes() []string {
-	if o == nil {
+func (f *FilterConfiguration) GetEventTypes() []string {
+	if f == nil {
 		return nil
 	}
-	return o.EventTypes
+	return f.EventTypes
 }
 
-func (o *FilterConfiguration) GetFilter() *Fs {
-	if o == nil {
+func (f *FilterConfiguration) GetFilter() *Fs {
+	if f == nil {
 		return nil
 	}
-	return o.Filter
+	return f.Filter
 }

@@ -26,51 +26,51 @@ type DynamicEvent struct {
 	URL *string `json:"url,omitempty"`
 }
 
-func (o *DynamicEvent) GetCustomHeaders() map[string]string {
-	if o == nil {
+func (d *DynamicEvent) GetCustomHeaders() map[string]string {
+	if d == nil {
 		return nil
 	}
-	return o.CustomHeaders
+	return d.CustomHeaders
 }
 
-func (o *DynamicEvent) GetData() *DynamicEventData {
-	if o == nil {
+func (d *DynamicEvent) GetData() *DynamicEventData {
+	if d == nil {
 		return nil
 	}
-	return o.Data
+	return d.Data
 }
 
-func (o *DynamicEvent) GetEventType() *string {
-	if o == nil {
+func (d *DynamicEvent) GetEventType() *string {
+	if d == nil {
 		return nil
 	}
-	return o.EventType
+	return d.EventType
 }
 
-func (o *DynamicEvent) GetEventTypes() []string {
-	if o == nil {
+func (d *DynamicEvent) GetEventTypes() []string {
+	if d == nil {
 		return nil
 	}
-	return o.EventTypes
+	return d.EventTypes
 }
 
-func (o *DynamicEvent) GetIdempotencyKey() *string {
-	if o == nil {
+func (d *DynamicEvent) GetIdempotencyKey() *string {
+	if d == nil {
 		return nil
 	}
-	return o.IdempotencyKey
+	return d.IdempotencyKey
 }
 
-func (o *DynamicEvent) GetSecret() *string {
-	if o == nil {
+func (d *DynamicEvent) GetSecret() *string {
+	if d == nil {
 		return nil
 	}
-	return o.Secret
+	return d.Secret
 }
 
-func (o *DynamicEvent) GetURL() *string {
-	if o == nil {
+func (d *DynamicEvent) GetURL() *string {
+	if d == nil {
 		return nil
 	}
-	return o.URL
+	return d.URL
 }

@@ -13,30 +13,30 @@ type CreateEventType struct {
 	Name *string `json:"name,omitempty"`
 }
 
-func (o *CreateEventType) GetCategory() *string {
-	if o == nil {
+func (c *CreateEventType) GetCategory() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Category
+	return c.Category
 }
 
-func (o *CreateEventType) GetDescription() *string {
-	if o == nil {
+func (c *CreateEventType) GetDescription() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Description
+	return c.Description
 }
 
-func (o *CreateEventType) GetJSONSchema() map[string]any {
-	if o == nil {
+func (c *CreateEventType) GetJSONSchema() map[string]any {
+	if c == nil {
 		return nil
 	}
-	return o.JSONSchema
+	return c.JSONSchema
 }
 
-func (o *CreateEventType) GetName() *string {
-	if o == nil {
+func (c *CreateEventType) GetName() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Name
+	return c.Name
 }

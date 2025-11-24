@@ -13,18 +13,18 @@ type GetDeliveryAttemptsRequest struct {
 	EventDeliveryID string `pathParam:"style=simple,explode=false,name=eventDeliveryID"`
 }
 
-func (o *GetDeliveryAttemptsRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetDeliveryAttemptsRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetDeliveryAttemptsRequest) GetEventDeliveryID() string {
-	if o == nil {
+func (g *GetDeliveryAttemptsRequest) GetEventDeliveryID() string {
+	if g == nil {
 		return ""
 	}
-	return o.EventDeliveryID
+	return g.EventDeliveryID
 }
 
 // GetDeliveryAttemptsNotFoundError - Not Found
@@ -79,25 +79,25 @@ type GetDeliveryAttemptsResponseBody struct {
 	Data    []DeliveryAttempt `json:"data,omitempty"`
 }
 
-func (o *GetDeliveryAttemptsResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetDeliveryAttemptsResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetDeliveryAttemptsResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetDeliveryAttemptsResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetDeliveryAttemptsResponseBody) GetData() []DeliveryAttempt {
-	if o == nil {
+func (g *GetDeliveryAttemptsResponseBody) GetData() []DeliveryAttempt {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetDeliveryAttemptsResponse struct {
@@ -106,16 +106,16 @@ type GetDeliveryAttemptsResponse struct {
 	Object *GetDeliveryAttemptsResponseBody
 }
 
-func (o *GetDeliveryAttemptsResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetDeliveryAttemptsResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetDeliveryAttemptsResponse) GetObject() *GetDeliveryAttemptsResponseBody {
-	if o == nil {
+func (g *GetDeliveryAttemptsResponse) GetObject() *GetDeliveryAttemptsResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

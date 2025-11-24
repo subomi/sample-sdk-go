@@ -28,142 +28,142 @@ type Event struct {
 	URLQueryParams   *string             `json:"url_query_params,omitempty"`
 }
 
-func (o *Event) GetAcknowledgedAt() *string {
-	if o == nil {
+func (e *Event) GetAcknowledgedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.AcknowledgedAt
+	return e.AcknowledgedAt
 }
 
-func (o *Event) GetAppID() *string {
-	if o == nil {
+func (e *Event) GetAppID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.AppID
+	return e.AppID
 }
 
-func (o *Event) GetCreatedAt() *string {
-	if o == nil {
+func (e *Event) GetCreatedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.CreatedAt
+	return e.CreatedAt
 }
 
-func (o *Event) GetData() []int64 {
-	if o == nil {
+func (e *Event) GetData() []int64 {
+	if e == nil {
 		return nil
 	}
-	return o.Data
+	return e.Data
 }
 
-func (o *Event) GetDeletedAt() *string {
-	if o == nil {
+func (e *Event) GetDeletedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.DeletedAt
+	return e.DeletedAt
 }
 
-func (o *Event) GetEndpointMetadata() []Endpoint {
-	if o == nil {
+func (e *Event) GetEndpointMetadata() []Endpoint {
+	if e == nil {
 		return nil
 	}
-	return o.EndpointMetadata
+	return e.EndpointMetadata
 }
 
-func (o *Event) GetEndpoints() []string {
-	if o == nil {
+func (e *Event) GetEndpoints() []string {
+	if e == nil {
 		return nil
 	}
-	return o.Endpoints
+	return e.Endpoints
 }
 
-func (o *Event) GetEventType() *string {
-	if o == nil {
+func (e *Event) GetEventType() *string {
+	if e == nil {
 		return nil
 	}
-	return o.EventType
+	return e.EventType
 }
 
-func (o *Event) GetHeaders() map[string][]string {
-	if o == nil {
+func (e *Event) GetHeaders() map[string][]string {
+	if e == nil {
 		return nil
 	}
-	return o.Headers
+	return e.Headers
 }
 
-func (o *Event) GetIdempotencyKey() *string {
-	if o == nil {
+func (e *Event) GetIdempotencyKey() *string {
+	if e == nil {
 		return nil
 	}
-	return o.IdempotencyKey
+	return e.IdempotencyKey
 }
 
-func (o *Event) GetIsDuplicateEvent() *bool {
-	if o == nil {
+func (e *Event) GetIsDuplicateEvent() *bool {
+	if e == nil {
 		return nil
 	}
-	return o.IsDuplicateEvent
+	return e.IsDuplicateEvent
 }
 
-func (o *Event) GetMetadata() *string {
-	if o == nil {
+func (e *Event) GetMetadata() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Metadata
+	return e.Metadata
 }
 
-func (o *Event) GetProjectID() *string {
-	if o == nil {
+func (e *Event) GetProjectID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.ProjectID
+	return e.ProjectID
 }
 
-func (o *Event) GetRaw() *string {
-	if o == nil {
+func (e *Event) GetRaw() *string {
+	if e == nil {
 		return nil
 	}
-	return o.Raw
+	return e.Raw
 }
 
-func (o *Event) GetSourceID() *string {
-	if o == nil {
+func (e *Event) GetSourceID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.SourceID
+	return e.SourceID
 }
 
-func (o *Event) GetSourceMetadata() *Source {
-	if o == nil {
+func (e *Event) GetSourceMetadata() *Source {
+	if e == nil {
 		return nil
 	}
-	return o.SourceMetadata
+	return e.SourceMetadata
 }
 
-func (o *Event) GetStatus() *EventStatus {
-	if o == nil {
+func (e *Event) GetStatus() *EventStatus {
+	if e == nil {
 		return nil
 	}
-	return o.Status
+	return e.Status
 }
 
-func (o *Event) GetUID() *string {
-	if o == nil {
+func (e *Event) GetUID() *string {
+	if e == nil {
 		return nil
 	}
-	return o.UID
+	return e.UID
 }
 
-func (o *Event) GetUpdatedAt() *string {
-	if o == nil {
+func (e *Event) GetUpdatedAt() *string {
+	if e == nil {
 		return nil
 	}
-	return o.UpdatedAt
+	return e.UpdatedAt
 }
 
-func (o *Event) GetURLQueryParams() *string {
-	if o == nil {
+func (e *Event) GetURLQueryParams() *string {
+	if e == nil {
 		return nil
 	}
-	return o.URLQueryParams
+	return e.URLQueryParams
 }

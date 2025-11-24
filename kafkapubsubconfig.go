@@ -9,30 +9,30 @@ type KafkaPubSubConfig struct {
 	TopicName       *string    `json:"topic_name,omitempty"`
 }
 
-func (o *KafkaPubSubConfig) GetAuth() *KafkaAuth {
-	if o == nil {
+func (k *KafkaPubSubConfig) GetAuth() *KafkaAuth {
+	if k == nil {
 		return nil
 	}
-	return o.Auth
+	return k.Auth
 }
 
-func (o *KafkaPubSubConfig) GetBrokers() []string {
-	if o == nil {
+func (k *KafkaPubSubConfig) GetBrokers() []string {
+	if k == nil {
 		return nil
 	}
-	return o.Brokers
+	return k.Brokers
 }
 
-func (o *KafkaPubSubConfig) GetConsumerGroupID() *string {
-	if o == nil {
+func (k *KafkaPubSubConfig) GetConsumerGroupID() *string {
+	if k == nil {
 		return nil
 	}
-	return o.ConsumerGroupID
+	return k.ConsumerGroupID
 }
 
-func (o *KafkaPubSubConfig) GetTopicName() *string {
-	if o == nil {
+func (k *KafkaPubSubConfig) GetTopicName() *string {
+	if k == nil {
 		return nil
 	}
-	return o.TopicName
+	return k.TopicName
 }

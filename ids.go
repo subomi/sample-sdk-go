@@ -7,9 +7,9 @@ type IDs struct {
 	Ids []string `json:"ids,omitempty"`
 }
 
-func (o *IDs) GetIds() []string {
-	if o == nil {
+func (i *IDs) GetIds() []string {
+	if i == nil {
 		return nil
 	}
-	return o.Ids
+	return i.Ids
 }

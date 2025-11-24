@@ -13,18 +13,18 @@ type PauseEndpointRequest struct {
 	EndpointID string `pathParam:"style=simple,explode=false,name=endpointID"`
 }
 
-func (o *PauseEndpointRequest) GetProjectID() string {
-	if o == nil {
+func (p *PauseEndpointRequest) GetProjectID() string {
+	if p == nil {
 		return ""
 	}
-	return o.ProjectID
+	return p.ProjectID
 }
 
-func (o *PauseEndpointRequest) GetEndpointID() string {
-	if o == nil {
+func (p *PauseEndpointRequest) GetEndpointID() string {
+	if p == nil {
 		return ""
 	}
-	return o.EndpointID
+	return p.EndpointID
 }
 
 // PauseEndpointNotFoundError - Not Found
@@ -79,25 +79,25 @@ type PauseEndpointResponseBody struct {
 	Data    *EndpointResponse `json:"data,omitempty"`
 }
 
-func (o *PauseEndpointResponseBody) GetMessage() *string {
-	if o == nil {
+func (p *PauseEndpointResponseBody) GetMessage() *string {
+	if p == nil {
 		return nil
 	}
-	return o.Message
+	return p.Message
 }
 
-func (o *PauseEndpointResponseBody) GetStatus() *bool {
-	if o == nil {
+func (p *PauseEndpointResponseBody) GetStatus() *bool {
+	if p == nil {
 		return nil
 	}
-	return o.Status
+	return p.Status
 }
 
-func (o *PauseEndpointResponseBody) GetData() *EndpointResponse {
-	if o == nil {
+func (p *PauseEndpointResponseBody) GetData() *EndpointResponse {
+	if p == nil {
 		return nil
 	}
-	return o.Data
+	return p.Data
 }
 
 type PauseEndpointResponse struct {
@@ -106,16 +106,16 @@ type PauseEndpointResponse struct {
 	Object *PauseEndpointResponseBody
 }
 
-func (o *PauseEndpointResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (p *PauseEndpointResponse) GetHTTPMeta() HTTPMetadata {
+	if p == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return p.HTTPMeta
 }
 
-func (o *PauseEndpointResponse) GetObject() *PauseEndpointResponseBody {
-	if o == nil {
+func (p *PauseEndpointResponse) GetObject() *PauseEndpointResponseBody {
+	if p == nil {
 		return nil
 	}
-	return o.Object
+	return p.Object
 }

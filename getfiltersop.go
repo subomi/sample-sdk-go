@@ -13,18 +13,18 @@ type GetFiltersRequest struct {
 	SubscriptionID string `pathParam:"style=simple,explode=false,name=subscriptionID"`
 }
 
-func (o *GetFiltersRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetFiltersRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetFiltersRequest) GetSubscriptionID() string {
-	if o == nil {
+func (g *GetFiltersRequest) GetSubscriptionID() string {
+	if g == nil {
 		return ""
 	}
-	return o.SubscriptionID
+	return g.SubscriptionID
 }
 
 // GetFiltersNotFoundError - Not Found
@@ -79,25 +79,25 @@ type GetFiltersResponseBody struct {
 	Data    []FilterResponse `json:"data,omitempty"`
 }
 
-func (o *GetFiltersResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetFiltersResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetFiltersResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetFiltersResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetFiltersResponseBody) GetData() []FilterResponse {
-	if o == nil {
+func (g *GetFiltersResponseBody) GetData() []FilterResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetFiltersResponse struct {
@@ -106,16 +106,16 @@ type GetFiltersResponse struct {
 	Object *GetFiltersResponseBody
 }
 
-func (o *GetFiltersResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetFiltersResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetFiltersResponse) GetObject() *GetFiltersResponseBody {
-	if o == nil {
+func (g *GetFiltersResponse) GetObject() *GetFiltersResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

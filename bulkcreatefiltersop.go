@@ -15,25 +15,25 @@ type BulkCreateFiltersRequest struct {
 	RequestBody []CreateFilterRequest `request:"mediaType=application/json"`
 }
 
-func (o *BulkCreateFiltersRequest) GetProjectID() string {
-	if o == nil {
+func (b *BulkCreateFiltersRequest) GetProjectID() string {
+	if b == nil {
 		return ""
 	}
-	return o.ProjectID
+	return b.ProjectID
 }
 
-func (o *BulkCreateFiltersRequest) GetSubscriptionID() string {
-	if o == nil {
+func (b *BulkCreateFiltersRequest) GetSubscriptionID() string {
+	if b == nil {
 		return ""
 	}
-	return o.SubscriptionID
+	return b.SubscriptionID
 }
 
-func (o *BulkCreateFiltersRequest) GetRequestBody() []CreateFilterRequest {
-	if o == nil {
+func (b *BulkCreateFiltersRequest) GetRequestBody() []CreateFilterRequest {
+	if b == nil {
 		return []CreateFilterRequest{}
 	}
-	return o.RequestBody
+	return b.RequestBody
 }
 
 // BulkCreateFiltersNotFoundError - Not Found
@@ -88,25 +88,25 @@ type BulkCreateFiltersResponseBody struct {
 	Data    []FilterResponse `json:"data,omitempty"`
 }
 
-func (o *BulkCreateFiltersResponseBody) GetMessage() *string {
-	if o == nil {
+func (b *BulkCreateFiltersResponseBody) GetMessage() *string {
+	if b == nil {
 		return nil
 	}
-	return o.Message
+	return b.Message
 }
 
-func (o *BulkCreateFiltersResponseBody) GetStatus() *bool {
-	if o == nil {
+func (b *BulkCreateFiltersResponseBody) GetStatus() *bool {
+	if b == nil {
 		return nil
 	}
-	return o.Status
+	return b.Status
 }
 
-func (o *BulkCreateFiltersResponseBody) GetData() []FilterResponse {
-	if o == nil {
+func (b *BulkCreateFiltersResponseBody) GetData() []FilterResponse {
+	if b == nil {
 		return nil
 	}
-	return o.Data
+	return b.Data
 }
 
 type BulkCreateFiltersResponse struct {
@@ -115,16 +115,16 @@ type BulkCreateFiltersResponse struct {
 	Object *BulkCreateFiltersResponseBody
 }
 
-func (o *BulkCreateFiltersResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (b *BulkCreateFiltersResponse) GetHTTPMeta() HTTPMetadata {
+	if b == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return b.HTTPMeta
 }
 
-func (o *BulkCreateFiltersResponse) GetObject() *BulkCreateFiltersResponseBody {
-	if o == nil {
+func (b *BulkCreateFiltersResponse) GetObject() *BulkCreateFiltersResponseBody {
+	if b == nil {
 		return nil
 	}
-	return o.Object
+	return b.Object
 }

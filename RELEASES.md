@@ -29,3 +29,13 @@ Based on:
 - [go v0.1.0] .
 ### Releases
 - [Go v0.1.0] https://github.com/subomi/sample-sdk-go/releases/tag/v0.1.0 - .
+
+## 2025-11-24 15:04:13
+### Changes
+Based on:
+- OpenAPI Doc  
+- Speakeasy CLI 1.660.0 (2.760.2) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.2.0] .
+### Releases
+- [Go v0.2.0] https://github.com/subomi/sample-sdk-go/releases/tag/v0.2.0 - .

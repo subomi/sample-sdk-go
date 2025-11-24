@@ -60,7 +60,7 @@ func (s *Subscriptions) GetSubscriptions(ctx context.Context, request GetSubscri
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetSubscriptions",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -350,7 +350,7 @@ func (s *Subscriptions) CreateSubscription(ctx context.Context, projectID string
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "CreateSubscription",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "CreateSubscription", "json", `request:"mediaType=application/json"`)
@@ -643,7 +643,7 @@ func (s *Subscriptions) DeleteSubscription(ctx context.Context, projectID string
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "DeleteSubscription",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -929,7 +929,7 @@ func (s *Subscriptions) GetSubscription(ctx context.Context, projectID string, s
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetSubscription",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -1216,7 +1216,7 @@ func (s *Subscriptions) UpdateSubscription(ctx context.Context, projectID string
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "UpdateSubscription",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "UpdateSubscription", "json", `request:"mediaType=application/json"`)
@@ -1509,7 +1509,7 @@ func (s *Subscriptions) TestSubscriptionFilter(ctx context.Context, projectID st
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "TestSubscriptionFilter",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "TestFilter", "json", `request:"mediaType=application/json"`)
@@ -1802,7 +1802,7 @@ func (s *Subscriptions) TestSubscriptionFunction(ctx context.Context, projectID 
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "TestSubscriptionFunction",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "FunctionRequest", "json", `request:"mediaType=application/json"`)

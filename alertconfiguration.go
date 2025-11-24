@@ -9,16 +9,16 @@ type AlertConfiguration struct {
 	Threshold *string `json:"threshold,omitempty"`
 }
 
-func (o *AlertConfiguration) GetCount() *int64 {
-	if o == nil {
+func (a *AlertConfiguration) GetCount() *int64 {
+	if a == nil {
 		return nil
 	}
-	return o.Count
+	return a.Count
 }
 
-func (o *AlertConfiguration) GetThreshold() *string {
-	if o == nil {
+func (a *AlertConfiguration) GetThreshold() *string {
+	if a == nil {
 		return nil
 	}
-	return o.Threshold
+	return a.Threshold
 }

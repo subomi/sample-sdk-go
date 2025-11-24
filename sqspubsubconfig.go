@@ -9,30 +9,30 @@ type SQSPubSubConfig struct {
 	SecretKey     *string `json:"secret_key,omitempty"`
 }
 
-func (o *SQSPubSubConfig) GetAccessKeyID() *string {
-	if o == nil {
+func (s *SQSPubSubConfig) GetAccessKeyID() *string {
+	if s == nil {
 		return nil
 	}
-	return o.AccessKeyID
+	return s.AccessKeyID
 }
 
-func (o *SQSPubSubConfig) GetDefaultRegion() *string {
-	if o == nil {
+func (s *SQSPubSubConfig) GetDefaultRegion() *string {
+	if s == nil {
 		return nil
 	}
-	return o.DefaultRegion
+	return s.DefaultRegion
 }
 
-func (o *SQSPubSubConfig) GetQueueName() *string {
-	if o == nil {
+func (s *SQSPubSubConfig) GetQueueName() *string {
+	if s == nil {
 		return nil
 	}
-	return o.QueueName
+	return s.QueueName
 }
 
-func (o *SQSPubSubConfig) GetSecretKey() *string {
-	if o == nil {
+func (s *SQSPubSubConfig) GetSecretKey() *string {
+	if s == nil {
 		return nil
 	}
-	return o.SecretKey
+	return s.SecretKey
 }

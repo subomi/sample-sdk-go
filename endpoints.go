@@ -60,7 +60,7 @@ func (s *Endpoints) GetEndpoints(ctx context.Context, request GetEndpointsReques
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetEndpoints",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -350,7 +350,7 @@ func (s *Endpoints) CreateEndpoint(ctx context.Context, projectID string, create
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "CreateEndpoint",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "CreateEndpoint", "json", `request:"mediaType=application/json"`)
@@ -643,7 +643,7 @@ func (s *Endpoints) DeleteEndpoint(ctx context.Context, projectID string, endpoi
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "DeleteEndpoint",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -929,7 +929,7 @@ func (s *Endpoints) GetEndpoint(ctx context.Context, projectID string, endpointI
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetEndpoint",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -1216,7 +1216,7 @@ func (s *Endpoints) UpdateEndpoint(ctx context.Context, projectID string, endpoi
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "UpdateEndpoint",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "UpdateEndpoint", "json", `request:"mediaType=application/json"`)
@@ -1509,7 +1509,7 @@ func (s *Endpoints) ActivateEndpoint(ctx context.Context, projectID string, endp
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "ActivateEndpoint",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -1796,7 +1796,7 @@ func (s *Endpoints) ExpireSecret(ctx context.Context, projectID string, endpoint
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "ExpireSecret",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "ExpireSecret", "json", `request:"mediaType=application/json"`)
@@ -2089,7 +2089,7 @@ func (s *Endpoints) PauseEndpoint(ctx context.Context, projectID string, endpoin
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "PauseEndpoint",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 

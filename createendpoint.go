@@ -42,100 +42,100 @@ type CreateEndpoint struct {
 	URL string `json:"url"`
 }
 
-func (o *CreateEndpoint) GetAdvancedSignatures() *bool {
-	if o == nil {
+func (c *CreateEndpoint) GetAdvancedSignatures() *bool {
+	if c == nil {
 		return nil
 	}
-	return o.AdvancedSignatures
+	return c.AdvancedSignatures
 }
 
-func (o *CreateEndpoint) GetAppID() *string {
-	if o == nil {
+func (c *CreateEndpoint) GetAppID() *string {
+	if c == nil {
 		return nil
 	}
-	return o.AppID
+	return c.AppID
 }
 
-func (o *CreateEndpoint) GetAuthentication() *EndpointAuthentication {
-	if o == nil {
+func (c *CreateEndpoint) GetAuthentication() *EndpointAuthentication {
+	if c == nil {
 		return nil
 	}
-	return o.Authentication
+	return c.Authentication
 }
 
-func (o *CreateEndpoint) GetDescription() *string {
-	if o == nil {
+func (c *CreateEndpoint) GetDescription() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Description
+	return c.Description
 }
 
-func (o *CreateEndpoint) GetHTTPTimeout() *int64 {
-	if o == nil {
+func (c *CreateEndpoint) GetHTTPTimeout() *int64 {
+	if c == nil {
 		return nil
 	}
-	return o.HTTPTimeout
+	return c.HTTPTimeout
 }
 
-func (o *CreateEndpoint) GetIsDisabled() *bool {
-	if o == nil {
+func (c *CreateEndpoint) GetIsDisabled() *bool {
+	if c == nil {
 		return nil
 	}
-	return o.IsDisabled
+	return c.IsDisabled
 }
 
-func (o *CreateEndpoint) GetName() string {
-	if o == nil {
+func (c *CreateEndpoint) GetName() string {
+	if c == nil {
 		return ""
 	}
-	return o.Name
+	return c.Name
 }
 
-func (o *CreateEndpoint) GetOwnerID() *string {
-	if o == nil {
+func (c *CreateEndpoint) GetOwnerID() *string {
+	if c == nil {
 		return nil
 	}
-	return o.OwnerID
+	return c.OwnerID
 }
 
-func (o *CreateEndpoint) GetRateLimit() *int64 {
-	if o == nil {
+func (c *CreateEndpoint) GetRateLimit() *int64 {
+	if c == nil {
 		return nil
 	}
-	return o.RateLimit
+	return c.RateLimit
 }
 
-func (o *CreateEndpoint) GetRateLimitDuration() *int64 {
-	if o == nil {
+func (c *CreateEndpoint) GetRateLimitDuration() *int64 {
+	if c == nil {
 		return nil
 	}
-	return o.RateLimitDuration
+	return c.RateLimitDuration
 }
 
-func (o *CreateEndpoint) GetSecret() *string {
-	if o == nil {
+func (c *CreateEndpoint) GetSecret() *string {
+	if c == nil {
 		return nil
 	}
-	return o.Secret
+	return c.Secret
 }
 
-func (o *CreateEndpoint) GetSlackWebhookURL() *string {
-	if o == nil {
+func (c *CreateEndpoint) GetSlackWebhookURL() *string {
+	if c == nil {
 		return nil
 	}
-	return o.SlackWebhookURL
+	return c.SlackWebhookURL
 }
 
-func (o *CreateEndpoint) GetSupportEmail() *string {
-	if o == nil {
+func (c *CreateEndpoint) GetSupportEmail() *string {
+	if c == nil {
 		return nil
 	}
-	return o.SupportEmail
+	return c.SupportEmail
 }
 
-func (o *CreateEndpoint) GetURL() string {
-	if o == nil {
+func (c *CreateEndpoint) GetURL() string {
+	if c == nil {
 		return ""
 	}
-	return o.URL
+	return c.URL
 }

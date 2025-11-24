@@ -11,44 +11,44 @@ type Secret struct {
 	Value     *string `json:"value,omitempty"`
 }
 
-func (o *Secret) GetCreatedAt() *string {
-	if o == nil {
+func (s *Secret) GetCreatedAt() *string {
+	if s == nil {
 		return nil
 	}
-	return o.CreatedAt
+	return s.CreatedAt
 }
 
-func (o *Secret) GetDeletedAt() *string {
-	if o == nil {
+func (s *Secret) GetDeletedAt() *string {
+	if s == nil {
 		return nil
 	}
-	return o.DeletedAt
+	return s.DeletedAt
 }
 
-func (o *Secret) GetExpiresAt() *string {
-	if o == nil {
+func (s *Secret) GetExpiresAt() *string {
+	if s == nil {
 		return nil
 	}
-	return o.ExpiresAt
+	return s.ExpiresAt
 }
 
-func (o *Secret) GetUID() *string {
-	if o == nil {
+func (s *Secret) GetUID() *string {
+	if s == nil {
 		return nil
 	}
-	return o.UID
+	return s.UID
 }
 
-func (o *Secret) GetUpdatedAt() *string {
-	if o == nil {
+func (s *Secret) GetUpdatedAt() *string {
+	if s == nil {
 		return nil
 	}
-	return o.UpdatedAt
+	return s.UpdatedAt
 }
 
-func (o *Secret) GetValue() *string {
-	if o == nil {
+func (s *Secret) GetValue() *string {
+	if s == nil {
 		return nil
 	}
-	return o.Value
+	return s.Value
 }

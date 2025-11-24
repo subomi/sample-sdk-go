@@ -7,16 +7,16 @@ type FilterSchema struct {
 	Header any `json:"header,omitempty"`
 }
 
-func (o *FilterSchema) GetBody() any {
-	if o == nil {
+func (f *FilterSchema) GetBody() any {
+	if f == nil {
 		return nil
 	}
-	return o.Body
+	return f.Body
 }
 
-func (o *FilterSchema) GetHeader() any {
-	if o == nil {
+func (f *FilterSchema) GetHeader() any {
+	if f == nil {
 		return nil
 	}
-	return o.Header
+	return f.Header
 }

@@ -8,23 +8,23 @@ type FunctionRequest struct {
 	Type     *string        `json:"type,omitempty"`
 }
 
-func (o *FunctionRequest) GetFunction() *string {
-	if o == nil {
+func (f *FunctionRequest) GetFunction() *string {
+	if f == nil {
 		return nil
 	}
-	return o.Function
+	return f.Function
 }
 
-func (o *FunctionRequest) GetPayload() map[string]any {
-	if o == nil {
+func (f *FunctionRequest) GetPayload() map[string]any {
+	if f == nil {
 		return nil
 	}
-	return o.Payload
+	return f.Payload
 }
 
-func (o *FunctionRequest) GetType() *string {
-	if o == nil {
+func (f *FunctionRequest) GetType() *string {
+	if f == nil {
 		return nil
 	}
-	return o.Type
+	return f.Type
 }

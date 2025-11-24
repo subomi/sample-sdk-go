@@ -60,7 +60,7 @@ func (s *EventDeliveries) GetEventDeliveriesPaged(ctx context.Context, request G
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetEventDeliveriesPaged",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -350,7 +350,7 @@ func (s *EventDeliveries) GetEventDelivery(ctx context.Context, projectID string
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetEventDelivery",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -636,7 +636,7 @@ func (s *EventDeliveries) ResendEventDelivery(ctx context.Context, projectID str
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "ResendEventDelivery",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -917,7 +917,7 @@ func (s *EventDeliveries) BatchRetryEventDelivery(ctx context.Context, request B
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "BatchRetryEventDelivery",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -1207,7 +1207,7 @@ func (s *EventDeliveries) ForceResendEventDeliveries(ctx context.Context, projec
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "ForceResendEventDeliveries",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "IDs", "json", `request:"mediaType=application/json"`)

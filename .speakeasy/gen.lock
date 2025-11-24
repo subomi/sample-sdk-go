@@ -3,24 +3,24 @@ id: 6e7b91ca-db99-42ff-94be-b5c538c41b05
 management:
   docChecksum: 5eecbeab1e31ed44df9d8375601f7401
   docVersion: 24.1.4
-  speakeasyVersion: 1.606.0
-  generationVersion: 2.686.7
-  releaseVersion: 0.1.0
-  configChecksum: d4119f0691ca97efcd8a47c4ff79a3d4
+  speakeasyVersion: 1.660.0
+  generationVersion: 2.760.2
+  releaseVersion: 0.2.0
+  configChecksum: c7a6e4dc13d77b27b7535459a4504880
   repoURL: https://github.com/subomi/sample-sdk-go.git
   installationURL: https://github.com/subomi/sample-sdk-go
 features:
   go:
     additionalDependencies: 0.1.0
-    core: 3.9.3
+    core: 3.13.2
     defaultEnabledRetries: 0.2.0
     devContainers: 2.90.0
     envVarSecurityUsage: 0.3.2
     flattening: 2.81.1
-    globalSecurity: 2.82.11
+    globalSecurity: 2.82.12
     globalSecurityCallbacks: 0.1.0
     globalSecurityFlattening: 0.1.0
-    globalServerURLs: 2.82.3
+    globalServerURLs: 2.83.0
     intellisenseMarkdownSupport: 0.1.0
     openEnums: 0.1.0
     responseFormat: 0.1.2
@@ -551,7 +551,6 @@ generatedFiles:
   - docs/revokeportallinkresponse.md
   - docs/revokeportallinkresponsebody.md
   - docs/revokeportallinkunauthorizederror.md
-  - docs/sdks/convoy/README.md
   - docs/sdks/deliveryattempts/README.md
   - docs/sdks/endpoints/README.md
   - docs/sdks/eventdeliveries/README.md
@@ -665,6 +664,8 @@ generatedFiles:
   - internal/utils/security.go
   - internal/utils/utils.go
   - metaevents.go
+  - optionalnullable/optionalnullable.go
+  - optionalnullable/optionalnullable_test.go
   - options.go
   - portallinks.go
   - retry/config.go
@@ -673,7 +674,6 @@ generatedFiles:
   - types/bigint.go
   - types/date.go
   - types/datetime.go
-  - types/decimal.go
   - types/pointers.go
 examples:
   CreateEndpointEvent:

@@ -13,18 +13,18 @@ type DeleteEndpointRequest struct {
 	EndpointID string `pathParam:"style=simple,explode=false,name=endpointID"`
 }
 
-func (o *DeleteEndpointRequest) GetProjectID() string {
-	if o == nil {
+func (d *DeleteEndpointRequest) GetProjectID() string {
+	if d == nil {
 		return ""
 	}
-	return o.ProjectID
+	return d.ProjectID
 }
 
-func (o *DeleteEndpointRequest) GetEndpointID() string {
-	if o == nil {
+func (d *DeleteEndpointRequest) GetEndpointID() string {
+	if d == nil {
 		return ""
 	}
-	return o.EndpointID
+	return d.EndpointID
 }
 
 // DeleteEndpointNotFoundError - Not Found
@@ -79,25 +79,25 @@ type DeleteEndpointResponseBody struct {
 	Data    *Object `json:"data,omitempty"`
 }
 
-func (o *DeleteEndpointResponseBody) GetMessage() *string {
-	if o == nil {
+func (d *DeleteEndpointResponseBody) GetMessage() *string {
+	if d == nil {
 		return nil
 	}
-	return o.Message
+	return d.Message
 }
 
-func (o *DeleteEndpointResponseBody) GetStatus() *bool {
-	if o == nil {
+func (d *DeleteEndpointResponseBody) GetStatus() *bool {
+	if d == nil {
 		return nil
 	}
-	return o.Status
+	return d.Status
 }
 
-func (o *DeleteEndpointResponseBody) GetData() *Object {
-	if o == nil {
+func (d *DeleteEndpointResponseBody) GetData() *Object {
+	if d == nil {
 		return nil
 	}
-	return o.Data
+	return d.Data
 }
 
 type DeleteEndpointResponse struct {
@@ -106,16 +106,16 @@ type DeleteEndpointResponse struct {
 	Object *DeleteEndpointResponseBody
 }
 
-func (o *DeleteEndpointResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (d *DeleteEndpointResponse) GetHTTPMeta() HTTPMetadata {
+	if d == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return d.HTTPMeta
 }
 
-func (o *DeleteEndpointResponse) GetObject() *DeleteEndpointResponseBody {
-	if o == nil {
+func (d *DeleteEndpointResponse) GetObject() *DeleteEndpointResponseBody {
+	if d == nil {
 		return nil
 	}
-	return o.Object
+	return d.Object
 }

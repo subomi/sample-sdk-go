@@ -13,18 +13,18 @@ type ResendEventDeliveryRequest struct {
 	EventDeliveryID string `pathParam:"style=simple,explode=false,name=eventDeliveryID"`
 }
 
-func (o *ResendEventDeliveryRequest) GetProjectID() string {
-	if o == nil {
+func (r *ResendEventDeliveryRequest) GetProjectID() string {
+	if r == nil {
 		return ""
 	}
-	return o.ProjectID
+	return r.ProjectID
 }
 
-func (o *ResendEventDeliveryRequest) GetEventDeliveryID() string {
-	if o == nil {
+func (r *ResendEventDeliveryRequest) GetEventDeliveryID() string {
+	if r == nil {
 		return ""
 	}
-	return o.EventDeliveryID
+	return r.EventDeliveryID
 }
 
 // ResendEventDeliveryNotFoundError - Not Found
@@ -79,25 +79,25 @@ type ResendEventDeliveryResponseBody struct {
 	Data    *EventDeliveryResponse `json:"data,omitempty"`
 }
 
-func (o *ResendEventDeliveryResponseBody) GetMessage() *string {
-	if o == nil {
+func (r *ResendEventDeliveryResponseBody) GetMessage() *string {
+	if r == nil {
 		return nil
 	}
-	return o.Message
+	return r.Message
 }
 
-func (o *ResendEventDeliveryResponseBody) GetStatus() *bool {
-	if o == nil {
+func (r *ResendEventDeliveryResponseBody) GetStatus() *bool {
+	if r == nil {
 		return nil
 	}
-	return o.Status
+	return r.Status
 }
 
-func (o *ResendEventDeliveryResponseBody) GetData() *EventDeliveryResponse {
-	if o == nil {
+func (r *ResendEventDeliveryResponseBody) GetData() *EventDeliveryResponse {
+	if r == nil {
 		return nil
 	}
-	return o.Data
+	return r.Data
 }
 
 type ResendEventDeliveryResponse struct {
@@ -106,16 +106,16 @@ type ResendEventDeliveryResponse struct {
 	Object *ResendEventDeliveryResponseBody
 }
 
-func (o *ResendEventDeliveryResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (r *ResendEventDeliveryResponse) GetHTTPMeta() HTTPMetadata {
+	if r == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return r.HTTPMeta
 }
 
-func (o *ResendEventDeliveryResponse) GetObject() *ResendEventDeliveryResponseBody {
-	if o == nil {
+func (r *ResendEventDeliveryResponse) GetObject() *ResendEventDeliveryResponseBody {
+	if r == nil {
 		return nil
 	}
-	return o.Object
+	return r.Object
 }

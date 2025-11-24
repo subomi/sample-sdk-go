@@ -63,102 +63,102 @@ type GetEventDeliveriesPagedRequest struct {
 	SubscriptionID *string `queryParam:"style=form,explode=true,name=subscriptionId"`
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetProjectID() string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetProjectID() string {
+	if g == nil {
 		return ""
 	}
-	return o.ProjectID
+	return g.ProjectID
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetDirection() *GetEventDeliveriesPagedDirection {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetDirection() *GetEventDeliveriesPagedDirection {
+	if g == nil {
 		return nil
 	}
-	return o.Direction
+	return g.Direction
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetEndDate() *string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetEndDate() *string {
+	if g == nil {
 		return nil
 	}
-	return o.EndDate
+	return g.EndDate
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetEndpointID() []string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetEndpointID() []string {
+	if g == nil {
 		return nil
 	}
-	return o.EndpointID
+	return g.EndpointID
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetEventID() *string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetEventID() *string {
+	if g == nil {
 		return nil
 	}
-	return o.EventID
+	return g.EventID
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetEventType() *string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetEventType() *string {
+	if g == nil {
 		return nil
 	}
-	return o.EventType
+	return g.EventType
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetIdempotencyKey() *string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetIdempotencyKey() *string {
+	if g == nil {
 		return nil
 	}
-	return o.IdempotencyKey
+	return g.IdempotencyKey
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetNextPageCursor() *string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetNextPageCursor() *string {
+	if g == nil {
 		return nil
 	}
-	return o.NextPageCursor
+	return g.NextPageCursor
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetPerPage() *int64 {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetPerPage() *int64 {
+	if g == nil {
 		return nil
 	}
-	return o.PerPage
+	return g.PerPage
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetPrevPageCursor() *string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetPrevPageCursor() *string {
+	if g == nil {
 		return nil
 	}
-	return o.PrevPageCursor
+	return g.PrevPageCursor
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetSort() *string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetSort() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Sort
+	return g.Sort
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetStartDate() *string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetStartDate() *string {
+	if g == nil {
 		return nil
 	}
-	return o.StartDate
+	return g.StartDate
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetStatus() []string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetStatus() []string {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetEventDeliveriesPagedRequest) GetSubscriptionID() *string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedRequest) GetSubscriptionID() *string {
+	if g == nil {
 		return nil
 	}
-	return o.SubscriptionID
+	return g.SubscriptionID
 }
 
 // GetEventDeliveriesPagedNotFoundError - Not Found
@@ -211,18 +211,18 @@ type GetEventDeliveriesPagedData struct {
 	Pagination *PaginationData         `json:"pagination,omitempty"`
 }
 
-func (o *GetEventDeliveriesPagedData) GetContent() []EventDeliveryResponse {
-	if o == nil {
+func (g *GetEventDeliveriesPagedData) GetContent() []EventDeliveryResponse {
+	if g == nil {
 		return nil
 	}
-	return o.Content
+	return g.Content
 }
 
-func (o *GetEventDeliveriesPagedData) GetPagination() *PaginationData {
-	if o == nil {
+func (g *GetEventDeliveriesPagedData) GetPagination() *PaginationData {
+	if g == nil {
 		return nil
 	}
-	return o.Pagination
+	return g.Pagination
 }
 
 // GetEventDeliveriesPagedResponseBody - OK
@@ -232,25 +232,25 @@ type GetEventDeliveriesPagedResponseBody struct {
 	Data    *GetEventDeliveriesPagedData `json:"data,omitempty"`
 }
 
-func (o *GetEventDeliveriesPagedResponseBody) GetMessage() *string {
-	if o == nil {
+func (g *GetEventDeliveriesPagedResponseBody) GetMessage() *string {
+	if g == nil {
 		return nil
 	}
-	return o.Message
+	return g.Message
 }
 
-func (o *GetEventDeliveriesPagedResponseBody) GetStatus() *bool {
-	if o == nil {
+func (g *GetEventDeliveriesPagedResponseBody) GetStatus() *bool {
+	if g == nil {
 		return nil
 	}
-	return o.Status
+	return g.Status
 }
 
-func (o *GetEventDeliveriesPagedResponseBody) GetData() *GetEventDeliveriesPagedData {
-	if o == nil {
+func (g *GetEventDeliveriesPagedResponseBody) GetData() *GetEventDeliveriesPagedData {
+	if g == nil {
 		return nil
 	}
-	return o.Data
+	return g.Data
 }
 
 type GetEventDeliveriesPagedResponse struct {
@@ -259,16 +259,16 @@ type GetEventDeliveriesPagedResponse struct {
 	Object *GetEventDeliveriesPagedResponseBody
 }
 
-func (o *GetEventDeliveriesPagedResponse) GetHTTPMeta() HTTPMetadata {
-	if o == nil {
+func (g *GetEventDeliveriesPagedResponse) GetHTTPMeta() HTTPMetadata {
+	if g == nil {
 		return HTTPMetadata{}
 	}
-	return o.HTTPMeta
+	return g.HTTPMeta
 }
 
-func (o *GetEventDeliveriesPagedResponse) GetObject() *GetEventDeliveriesPagedResponseBody {
-	if o == nil {
+func (g *GetEventDeliveriesPagedResponse) GetObject() *GetEventDeliveriesPagedResponseBody {
+	if g == nil {
 		return nil
 	}
-	return o.Object
+	return g.Object
 }

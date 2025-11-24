@@ -23,44 +23,44 @@ type CreateEvent struct {
 	IdempotencyKey *string `json:"idempotency_key,omitempty"`
 }
 
-func (o *CreateEvent) GetAppID() *string {
-	if o == nil {
+func (c *CreateEvent) GetAppID() *string {
+	if c == nil {
 		return nil
 	}
-	return o.AppID
+	return c.AppID
 }
 
-func (o *CreateEvent) GetCustomHeaders() map[string]string {
-	if o == nil {
+func (c *CreateEvent) GetCustomHeaders() map[string]string {
+	if c == nil {
 		return nil
 	}
-	return o.CustomHeaders
+	return c.CustomHeaders
 }
 
-func (o *CreateEvent) GetData() *CreateEventData {
-	if o == nil {
+func (c *CreateEvent) GetData() *CreateEventData {
+	if c == nil {
 		return nil
 	}
-	return o.Data
+	return c.Data
 }
 
-func (o *CreateEvent) GetEndpointID() *string {
-	if o == nil {
+func (c *CreateEvent) GetEndpointID() *string {
+	if c == nil {
 		return nil
 	}
-	return o.EndpointID
+	return c.EndpointID
 }
 
-func (o *CreateEvent) GetEventType() *string {
-	if o == nil {
+func (c *CreateEvent) GetEventType() *string {
+	if c == nil {
 		return nil
 	}
-	return o.EventType
+	return c.EventType
 }
 
-func (o *CreateEvent) GetIdempotencyKey() *string {
-	if o == nil {
+func (c *CreateEvent) GetIdempotencyKey() *string {
+	if c == nil {
 		return nil
 	}
-	return o.IdempotencyKey
+	return c.IdempotencyKey
 }

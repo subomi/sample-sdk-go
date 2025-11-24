@@ -7,16 +7,16 @@ type FunctionResponse struct {
 	Payload any      `json:"payload,omitempty"`
 }
 
-func (o *FunctionResponse) GetLog() []string {
-	if o == nil {
+func (f *FunctionResponse) GetLog() []string {
+	if f == nil {
 		return nil
 	}
-	return o.Log
+	return f.Log
 }
 
-func (o *FunctionResponse) GetPayload() any {
-	if o == nil {
+func (f *FunctionResponse) GetPayload() any {
+	if f == nil {
 		return nil
 	}
-	return o.Payload
+	return f.Payload
 }

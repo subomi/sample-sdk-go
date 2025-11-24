@@ -63,7 +63,7 @@ func (s *EventTypes) GetEventTypes(ctx context.Context, projectID string, opts .
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "GetEventTypes",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -349,7 +349,7 @@ func (s *EventTypes) CreateEventType(ctx context.Context, projectID string, crea
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "CreateEventType",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "CreateEventType", "json", `request:"mediaType=application/json"`)
@@ -643,7 +643,7 @@ func (s *EventTypes) UpdateEventType(ctx context.Context, projectID string, even
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "UpdateEventType",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "UpdateEventType", "json", `request:"mediaType=application/json"`)
@@ -936,7 +936,7 @@ func (s *EventTypes) DeprecateEventType(ctx context.Context, projectID string, e
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "DeprecateEventType",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 
@@ -1222,7 +1222,7 @@ func (s *EventTypes) ImportOpenAPISpec(ctx context.Context, projectID string, im
 		BaseURL:          baseURL,
 		Context:          ctx,
 		OperationID:      "ImportOpenApiSpec",
-		OAuth2Scopes:     []string{},
+		OAuth2Scopes:     nil,
 		SecuritySource:   s.sdkConfiguration.Security,
 	}
 	bodyReader, reqContentType, err := utils.SerializeRequestBody(ctx, request, false, false, "ImportOpenAPISpec", "json", `request:"mediaType=application/json"`)

@@ -39,93 +39,93 @@ type UpdateEndpoint struct {
 	URL *string `json:"url,omitempty"`
 }
 
-func (o *UpdateEndpoint) GetAdvancedSignatures() *bool {
-	if o == nil {
+func (u *UpdateEndpoint) GetAdvancedSignatures() *bool {
+	if u == nil {
 		return nil
 	}
-	return o.AdvancedSignatures
+	return u.AdvancedSignatures
 }
 
-func (o *UpdateEndpoint) GetAuthentication() *EndpointAuthentication {
-	if o == nil {
+func (u *UpdateEndpoint) GetAuthentication() *EndpointAuthentication {
+	if u == nil {
 		return nil
 	}
-	return o.Authentication
+	return u.Authentication
 }
 
-func (o *UpdateEndpoint) GetDescription() *string {
-	if o == nil {
+func (u *UpdateEndpoint) GetDescription() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Description
+	return u.Description
 }
 
-func (o *UpdateEndpoint) GetHTTPTimeout() *int64 {
-	if o == nil {
+func (u *UpdateEndpoint) GetHTTPTimeout() *int64 {
+	if u == nil {
 		return nil
 	}
-	return o.HTTPTimeout
+	return u.HTTPTimeout
 }
 
-func (o *UpdateEndpoint) GetIsDisabled() *bool {
-	if o == nil {
+func (u *UpdateEndpoint) GetIsDisabled() *bool {
+	if u == nil {
 		return nil
 	}
-	return o.IsDisabled
+	return u.IsDisabled
 }
 
-func (o *UpdateEndpoint) GetName() *string {
-	if o == nil {
+func (u *UpdateEndpoint) GetName() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Name
+	return u.Name
 }
 
-func (o *UpdateEndpoint) GetOwnerID() *string {
-	if o == nil {
+func (u *UpdateEndpoint) GetOwnerID() *string {
+	if u == nil {
 		return nil
 	}
-	return o.OwnerID
+	return u.OwnerID
 }
 
-func (o *UpdateEndpoint) GetRateLimit() *int64 {
-	if o == nil {
+func (u *UpdateEndpoint) GetRateLimit() *int64 {
+	if u == nil {
 		return nil
 	}
-	return o.RateLimit
+	return u.RateLimit
 }
 
-func (o *UpdateEndpoint) GetRateLimitDuration() *int64 {
-	if o == nil {
+func (u *UpdateEndpoint) GetRateLimitDuration() *int64 {
+	if u == nil {
 		return nil
 	}
-	return o.RateLimitDuration
+	return u.RateLimitDuration
 }
 
-func (o *UpdateEndpoint) GetSecret() *string {
-	if o == nil {
+func (u *UpdateEndpoint) GetSecret() *string {
+	if u == nil {
 		return nil
 	}
-	return o.Secret
+	return u.Secret
 }
 
-func (o *UpdateEndpoint) GetSlackWebhookURL() *string {
-	if o == nil {
+func (u *UpdateEndpoint) GetSlackWebhookURL() *string {
+	if u == nil {
 		return nil
 	}
-	return o.SlackWebhookURL
+	return u.SlackWebhookURL
 }
 
-func (o *UpdateEndpoint) GetSupportEmail() *string {
-	if o == nil {
+func (u *UpdateEndpoint) GetSupportEmail() *string {
+	if u == nil {
 		return nil
 	}
-	return o.SupportEmail
+	return u.SupportEmail
 }
 
-func (o *UpdateEndpoint) GetURL() *string {
-	if o == nil {
+func (u *UpdateEndpoint) GetURL() *string {
+	if u == nil {
 		return nil
 	}
-	return o.URL
+	return u.URL
 }
