@@ -45,9 +45,13 @@ jobs:
 
           echo "Last GA release: $LAST_GA_TAG"
 
-          # Create or update ga-release branch from the GA tag
-          git checkout -B ga-release "$LAST_GA_TAG"
-          git push -f origin ga-release
+          # Delete old ga-release branch if it exists
+          git branch -D ga-release 2>/dev/null || true
+          git push origin --delete ga-release 2>/dev/null || true
+
+          # Create fresh ga-release branch from the GA tag
+          git checkout -b ga-release "$LAST_GA_TAG"
+          git push origin ga-release
 
           echo "Created ga-release branch from $LAST_GA_TAG"
 
