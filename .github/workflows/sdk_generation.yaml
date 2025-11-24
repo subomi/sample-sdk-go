@@ -22,15 +22,20 @@ permissions:
       - labeled
       - unlabeled
 jobs:
-  create-ga-branch:
+  prepare-revert-pr:
     runs-on: ubuntu-latest
+    outputs:
+      pr_number: ${{ steps.create-pr.outputs.pull-request-number }}
+      last_ga_tag: ${{ steps.find-tag.outputs.last_ga_tag }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Find last GA release and create branch
+      - name: Find last GA release
+        id: find-tag
         run: |
           # Fetch all tags
           git fetch --tags
@@ -44,27 +49,138 @@ jobs:
           fi
 
           echo "Last GA release: $LAST_GA_TAG"
+          echo "last_ga_tag=$LAST_GA_TAG" >> $GITHUB_OUTPUT
 
-          # Delete old ga-release branch if it exists
-          git branch -D ga-release 2>/dev/null || true
-          git push origin --delete ga-release 2>/dev/null || true
-
-          # Create fresh ga-release branch from the GA tag
-          git checkout -b ga-release "$LAST_GA_TAG"
+      - name: Create revert branch with workflow.lock from GA tag
+        id: create-branch
+        run: |
+          LAST_GA_TAG="${{ steps.find-tag.outputs.last_ga_tag }}"
+          BRANCH_NAME="revert-locks-to-${LAST_GA_TAG}"
           
           # Configure git identity
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "GitHub Actions Bot"
           
-          # Add empty line to workflow.lock and gen.lock to trigger a commit
-          echo "" >> .speakeasy/workflow.lock
-          echo "" >> .speakeasy/gen.lock
-          git add .speakeasy/workflow.lock .speakeasy/gen.lock
-          git commit -m "Update ga-release branch to $LAST_GA_TAG"
+          # Create branch from main
+          git checkout -b "$BRANCH_NAME" origin/main
           
-          git push origin ga-release
+          # Restore workflow.lock from the GA tag
+          git restore --source="$LAST_GA_TAG" .speakeasy/workflow.lock
+          
+          # Commit the changes
+          git add .speakeasy/workflow.lock
+          git commit -m "Revert workflow.lock to $LAST_GA_TAG for GA release"
+          
+          # Push the branch
+          git push origin "$BRANCH_NAME"
+          
+          echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
 
-          echo "Created ga-release branch from $LAST_GA_TAG"
+      - name: Create Pull Request
+        id: create-pr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: revert-locks-to-${{ steps.find-tag.outputs.last_ga_tag }}
+          title: "🔄 Revert workflow.lock to ${{ steps.find-tag.outputs.last_ga_tag }} for GA release"
+          body: |
+            ## Automated workflow.lock Revert
+            
+            This PR reverts `.speakeasy/workflow.lock` to its state at the last GA release tag: **${{ steps.find-tag.outputs.last_ga_tag }}**
+            
+            ### Purpose
+            This ensures the SDK generation workflow uses the same workflow lock file version as the last stable GA release.
+            
+            ### Auto-merge
+            This PR will be automatically merged to proceed with the GA release workflow.
+          labels: |
+            automated
+            ga-release
+          
+      - name: Enable auto-merge
+        if: steps.create-pr.outputs.pull-request-number != ''
+        run: |
+          gh pr merge ${{ steps.create-pr.outputs.pull-request-number }} --auto --squash --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  wait-for-merge:
+    needs: prepare-revert-pr
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Wait for PR to be merged
+        timeout-minutes: 10
+        run: |
+          PR_NUMBER="${{ needs.prepare-revert-pr.outputs.pr_number }}"
+          
+          if [ -z "$PR_NUMBER" ]; then
+            echo "No PR was created, skipping wait"
+            exit 0
+          fi
+          
+          echo "Waiting for PR #$PR_NUMBER to be merged..."
+          
+          # Poll the PR status until it's merged
+          MAX_ATTEMPTS=60
+          ATTEMPT=0
+          
+          while [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do
+            PR_STATE=$(gh pr view $PR_NUMBER --json state,mergedAt --jq '.state')
+            MERGED_AT=$(gh pr view $PR_NUMBER --json mergedAt --jq '.mergedAt')
+            
+            if [ "$PR_STATE" = "MERGED" ] || [ "$MERGED_AT" != "null" ]; then
+              echo "✅ PR #$PR_NUMBER has been merged!"
+              exit 0
+            fi
+            
+            if [ "$PR_STATE" = "CLOSED" ]; then
+              echo "❌ PR #$PR_NUMBER was closed without merging"
+              exit 1
+            fi
+            
+            echo "PR state: $PR_STATE - waiting... (attempt $ATTEMPT/$MAX_ATTEMPTS)"
+            sleep 10
+            ATTEMPT=$((ATTEMPT + 1))
+          done
+          
+          echo "❌ Timeout waiting for PR to be merged"
+          exit 1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  create-ga-branch:
+    needs: wait-for-merge
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Create GA release branch from main
+        run: |
+          # Fetch latest changes after PR merge
+          git fetch origin main
+          git checkout main
+          git pull origin main
+          
+          # Configure git identity
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "GitHub Actions Bot"
+          
+          # Delete old ga-release branch if it exists
+          git branch -D ga-release 2>/dev/null || true
+          git push origin --delete ga-release 2>/dev/null || true
+          
+          # Create fresh ga-release branch from main (which now has the reverted workflow.lock)
+          git checkout -b ga-release main
+          git push origin ga-release
+          
+          echo "✅ Created ga-release branch from main with reverted workflow.lock"
 
   generate:
     needs: create-ga-branch
