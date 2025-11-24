@@ -16,7 +16,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{})
+	res, err := s.EventTypes.DeprecateEventType(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}
