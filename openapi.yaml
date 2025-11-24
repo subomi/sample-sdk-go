@@ -26,8 +26,6 @@ tags:
     name: Event Deliveries
   - description: Portal Links related APIs
     name: Portal Links
-  - description: Portal Links related APIs
-    name: Portal Links
   - description: Meta Events related APIs
     name: Meta Events
 paths:
