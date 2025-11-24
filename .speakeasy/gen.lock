@@ -5,8 +5,8 @@ management:
   docVersion: 24.1.4
   speakeasyVersion: 1.660.0
   generationVersion: 2.760.2
-  releaseVersion: 0.2.0
-  configChecksum: c7a6e4dc13d77b27b7535459a4504880
+  releaseVersion: 0.2.1
+  configChecksum: b4b24b22462d5de3b2653d13fd284f93
   repoURL: https://github.com/subomi/sample-sdk-go.git
   installationURL: https://github.com/subomi/sample-sdk-go
 features:

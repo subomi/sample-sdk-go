@@ -15,7 +15,7 @@ targets:
         sourceRevisionDigest: sha256:6c57ebb77d7b87091c1153e3dc748781fc6cfac5f6250fe6f38c5f4cc43e0aef
         sourceBlobDigest: sha256:aefbb05246b51767295ed37524f6c02c5a16ca1fcd9f83fea00b8185a2e1d746
         codeSamplesNamespace: convoy-api-reference-go-code-samples
-        codeSamplesRevisionDigest: sha256:52afad1145b7397714b27275b84f37d39cf861587585da8a46c3f5e4f3d497ce
+        codeSamplesRevisionDigest: sha256:9e25c27e996b15bbbdc02fb2879b1a21738fcd362cf14bf2420e6c613da50d7d
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
