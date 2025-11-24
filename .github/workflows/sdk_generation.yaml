@@ -22,12 +22,42 @@ permissions:
       - labeled
       - unlabeled
 jobs:
+  create-ga-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find last GA release and create branch
+        run: |
+          # Fetch all tags
+          git fetch --tags
+
+          # Get all tags, filter out pre-releases (containing -), sort by semver, and get the latest
+          LAST_GA_TAG=$(git tag -l | grep -v '-' | sort -V | tail -n 1)
+
+          if [ -z "$LAST_GA_TAG" ]; then
+            echo "No GA release tag found"
+            exit 1
+          fi
+
+          echo "Last GA release: $LAST_GA_TAG"
+
+          # Create or update ga-release branch from the GA tag
+          git checkout -B ga-release "$LAST_GA_TAG"
+          git push -f origin ga-release
+
+          echo "Created ga-release branch from $LAST_GA_TAG"
+
   generate:
+    needs: create-ga-branch
     uses: subomi/sdk-generation-action/.github/workflows/workflow-executor.yaml@main
     with:
       force: ${{ github.event.inputs.force }}
       mode: pr
-      feature_branch: tag/v0.0.18
+      feature_branch: ga-release
       set_version: ${{ github.event.inputs.set_version }}
     secrets:
       github_access_token: ${{ secrets.GITHUB_TOKEN }}
