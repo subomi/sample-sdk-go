@@ -36,7 +36,6 @@ tags:
 - description: Meta Events related APIs
   name: Meta Events
 paths:
-  /illegal-
   /v1/projects/{projectID}/endpoints:
     get:
       description: This endpoint fetches an endpoints
