@@ -101,9 +101,7 @@ jobs:
             --base main \
             --head "$BRANCH_NAME" \
             --title "🔄 Revert workflow.lock to $LAST_GA_TAG for GA release" \
-            --body "$PR_BODY" \
-            --label "automated" \
-            --label "ga-release")
+            --body "$PR_BODY")
           
           # Extract PR number from URL
           PR_NUMBER=$(echo "$PR_URL" | grep -oE '[0-9]+$')
