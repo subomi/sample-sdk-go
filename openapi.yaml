@@ -24,8 +24,6 @@ tags:
     name: Event Deliveries
   - description: Meta Events related APIs
     name: Meta Events
-  - description: Meta Events related APIs
-    name: Meta Events
 paths:
   /v1/projects/{projectID}/event-types:
     post:
