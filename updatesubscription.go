@@ -14,6 +14,17 @@ func (e UpdateSubscriptionDeliveryMode) ToPointer() *UpdateSubscriptionDeliveryM
 	return &e
 }
 
+// IsExact returns true if the value matches a known enum value, false otherwise.
+func (e *UpdateSubscriptionDeliveryMode) IsExact() bool {
+	if e != nil {
+		switch *e {
+		case "at_least_once", "at_most_once":
+			return true
+		}
+	}
+	return false
+}
+
 type UpdateSubscription struct {
 	// Alert configuration
 	AlertConfig *AlertConfiguration `json:"alert_config,omitempty"`
