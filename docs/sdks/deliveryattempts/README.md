@@ -1,5 +1,4 @@
 # DeliveryAttempts
-(*DeliveryAttempts*)
 
 ## Overview
 
