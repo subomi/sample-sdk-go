@@ -1,5 +1,4 @@
 # MetaEvents
-(*MetaEvents*)
 
 ## Overview
 

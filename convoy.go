@@ -2,7 +2,7 @@
 
 package convoy
 
-// Generated from OpenAPI doc version 24.1.4 and generator version 2.760.2
+// Generated from OpenAPI doc version 24.1.4 and generator version 2.781.2
 
 import (
 	"context"
@@ -141,7 +141,7 @@ func New(opts ...SDKOption) *Convoy {
 	sdk := &Convoy{
 		SDKVersion: "0.3.0-rc.1",
 		sdkConfiguration: config.SDKConfiguration{
-			UserAgent:  "speakeasy-sdk/go 0.3.0-rc.1 2.760.2 24.1.4 github.com/frain-dev/convoy",
+			UserAgent:  "speakeasy-sdk/go 0.3.0-rc.1 2.781.2 24.1.4 github.com/frain-dev/convoy",
 			ServerList: ServerList,
 		},
 		hooks: hooks.New(),

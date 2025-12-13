@@ -1,5 +1,4 @@
 # EventDeliveries
-(*EventDeliveries*)
 
 ## Overview
 
