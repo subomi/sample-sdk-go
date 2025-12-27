@@ -12,3 +12,14 @@ const (
 func (e DeliveryMode) ToPointer() *DeliveryMode {
 	return &e
 }
+
+// IsExact returns true if the value matches a known enum value, false otherwise.
+func (e *DeliveryMode) IsExact() bool {
+	if e != nil {
+		switch *e {
+		case "at_least_once", "at_most_once":
+			return true
+		}
+	}
+	return false
+}
