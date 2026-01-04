@@ -1,5 +1,4 @@
 # Filters
-(*Filters*)
 
 ## Overview
 
