@@ -24,6 +24,7 @@ generation:
   schemas:
     allOfMergeStrategy: shallowMerge
   requestBodyFieldName: ""
+  persistentEdits: {}
   tests:
     generateTests: false
     generateNewTests: true
@@ -37,6 +38,7 @@ go:
   defaultErrorName: APIError
   envVarPrefix: CONVOY
   flattenGlobalSecurity: true
+  forwardCompatibleEnumsByDefault: false
   imports:
     option: openapi
     paths:
@@ -46,10 +48,12 @@ go:
       shared: ""
       webhooks: ""
   includeEmptyObjects: false
+  inferUnionDiscriminators: false
   inputModelSuffix: input
   maxMethodParams: 4
   methodArguments: require-security-and-request
   modulePath: github.com/frain-dev/convoy
+  multipartArrayFormat: legacy
   nullableOptionalWrapper: false
   outputModelSuffix: output
   respectRequiredFields: false
