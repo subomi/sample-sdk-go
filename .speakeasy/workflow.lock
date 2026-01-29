@@ -2,20 +2,20 @@ speakeasyVersion: 1.660.0
 sources:
     Convoy API Reference:
         sourceNamespace: convoy-api-reference
-        sourceRevisionDigest: sha256:b1f5ace514b1221e6cbef1f4dbeadbdffdff0aaab84ff0b0599db14da17e9617
-        sourceBlobDigest: sha256:475e73c3be895a94b68e3e98dedceb2a7a0324977b42c053030ac3225bad888d
+        sourceRevisionDigest: sha256:ff6b50d67a07daea1564fec86d69509098a60c7eaad8ad40ea5ae0bf7bbe875a
+        sourceBlobDigest: sha256:8967c7a257f6116442ab57e782e4386eb7fa8a38d121327e491c4bb85a33c82d
         tags:
             - latest
-            - ga-release
+            - speakeasy-sdk-regen-1764035064
             - 24.1.4
 targets:
     convoy:
         source: Convoy API Reference
         sourceNamespace: convoy-api-reference
-        sourceRevisionDigest: sha256:b1f5ace514b1221e6cbef1f4dbeadbdffdff0aaab84ff0b0599db14da17e9617
-        sourceBlobDigest: sha256:475e73c3be895a94b68e3e98dedceb2a7a0324977b42c053030ac3225bad888d
+        sourceRevisionDigest: sha256:ff6b50d67a07daea1564fec86d69509098a60c7eaad8ad40ea5ae0bf7bbe875a
+        sourceBlobDigest: sha256:8967c7a257f6116442ab57e782e4386eb7fa8a38d121327e491c4bb85a33c82d
         codeSamplesNamespace: convoy-api-reference-go-code-samples
-        codeSamplesRevisionDigest: sha256:05952b1a6d88ac944ddb9b290804e8f7e22c1b3546e39c2116cad2666be4629c
+        codeSamplesRevisionDigest: sha256:a711f3520d24226082f730427943ed8a6f708ac64697a395211861ba2e39cbe1
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
