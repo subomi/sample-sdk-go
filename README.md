@@ -69,7 +69,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{})
+	res, err := s.EventTypes.DeprecateEventType(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -110,7 +110,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{})
+	res, err := s.EventTypes.DeprecateEventType(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -154,8 +154,6 @@ func main() {
 
 ### [EventTypes](docs/sdks/eventtypes/README.md)
 
-* [CreateEventType](docs/sdks/eventtypes/README.md#createeventtype) - Create an event type
-* [UpdateEventType](docs/sdks/eventtypes/README.md#updateeventtype) - Updates an event type
 * [DeprecateEventType](docs/sdks/eventtypes/README.md#deprecateeventtype) - Deprecates an event type
 * [ImportOpenAPISpec](docs/sdks/eventtypes/README.md#importopenapispec) - Import event types from OpenAPI spec
 
@@ -233,7 +231,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{}, convoy.WithRetries(
+	res, err := s.EventTypes.DeprecateEventType(ctx, "<id>", "<id>", convoy.WithRetries(
 		retry.Config{
 			Strategy: "backoff",
 			Backoff: &retry.BackoffStrategy{
@@ -284,7 +282,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{})
+	res, err := s.EventTypes.DeprecateEventType(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -303,14 +301,14 @@ Handling errors in this SDK should largely match your expectations. All operatio
 
 By Default, an API error will return `convoy.APIError`. When custom error responses are specified for an operation, the SDK may also return their associated error. You can refer to respective *Errors* tables in SDK docs for more details on possible error types for each operation.
 
-For example, the `CreateEventType` function may return the following errors:
+For example, the `DeprecateEventType` function may return the following errors:
 
-| Error Type                              | Status Code | Content Type     |
-| --------------------------------------- | ----------- | ---------------- |
-| convoy.CreateEventTypeBadRequestError   | 400         | application/json |
-| convoy.CreateEventTypeUnauthorizedError | 401         | application/json |
-| convoy.CreateEventTypeNotFoundError     | 404         | application/json |
-| convoy.APIError                         | 4XX, 5XX    | \*/\*            |
+| Error Type                                 | Status Code | Content Type     |
+| ------------------------------------------ | ----------- | ---------------- |
+| convoy.DeprecateEventTypeBadRequestError   | 400         | application/json |
+| convoy.DeprecateEventTypeUnauthorizedError | 401         | application/json |
+| convoy.DeprecateEventTypeNotFoundError     | 404         | application/json |
+| convoy.APIError                            | 4XX, 5XX    | \*/\*            |
 
 ### Example
 
@@ -332,22 +330,22 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{})
+	res, err := s.EventTypes.DeprecateEventType(ctx, "<id>", "<id>")
 	if err != nil {
 
-		var e *CreateEventTypeBadRequestError
+		var e *DeprecateEventTypeBadRequestError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
 		}
 
-		var e *CreateEventTypeUnauthorizedError
+		var e *DeprecateEventTypeUnauthorizedError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
 		}
 
-		var e *CreateEventTypeNotFoundError
+		var e *DeprecateEventTypeNotFoundError
 		if errors.As(err, &e) {
 			// handle error
 			log.Fatal(e.Error())
@@ -388,7 +386,7 @@ func main() {
 		convoy.WithSecurity(os.Getenv("CONVOY_BEARER_AUTH")),
 	)
 
-	res, err := s.EventTypes.CreateEventType(ctx, "<id>", convoy.CreateEventType{})
+	res, err := s.EventTypes.DeprecateEventType(ctx, "<id>", "<id>")
 	if err != nil {
 		log.Fatal(err)
 	}
