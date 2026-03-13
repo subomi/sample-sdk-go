@@ -1,5 +1,4 @@
 # Filters
-(*Filters*)
 
 ## Overview
 
@@ -53,8 +52,8 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `subscriptionID`                                      | *string*                                              | :heavy_check_mark:                                    | Subscription ID                                       |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `subscriptionID`                                      | `string`                                              | :heavy_check_mark:                                    | Subscription ID                                       |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
 ### Response
@@ -111,8 +110,8 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `subscriptionID`                                      | *string*                                              | :heavy_check_mark:                                    | Subscription ID                                       |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `subscriptionID`                                      | `string`                                              | :heavy_check_mark:                                    | Subscription ID                                       |
 | `createFilterRequest`                                 | [CreateFilterRequest](../../createfilterrequest.md)   | :heavy_check_mark:                                    | Filter to create                                      |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
@@ -168,9 +167,9 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `subscriptionID`                                      | *string*                                              | :heavy_check_mark:                                    | Subscription ID                                       |
-| `filterID`                                            | *string*                                              | :heavy_check_mark:                                    | Filter ID                                             |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `subscriptionID`                                      | `string`                                              | :heavy_check_mark:                                    | Subscription ID                                       |
+| `filterID`                                            | `string`                                              | :heavy_check_mark:                                    | Filter ID                                             |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
 ### Response
@@ -225,9 +224,9 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `subscriptionID`                                      | *string*                                              | :heavy_check_mark:                                    | Subscription ID                                       |
-| `filterID`                                            | *string*                                              | :heavy_check_mark:                                    | Filter ID                                             |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `subscriptionID`                                      | `string`                                              | :heavy_check_mark:                                    | Subscription ID                                       |
+| `filterID`                                            | `string`                                              | :heavy_check_mark:                                    | Filter ID                                             |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
 ### Response
@@ -282,9 +281,9 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `subscriptionID`                                      | *string*                                              | :heavy_check_mark:                                    | Subscription ID                                       |
-| `filterID`                                            | *string*                                              | :heavy_check_mark:                                    | Filter ID                                             |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `subscriptionID`                                      | `string`                                              | :heavy_check_mark:                                    | Subscription ID                                       |
+| `filterID`                                            | `string`                                              | :heavy_check_mark:                                    | Filter ID                                             |
 | `updateFilterRequest`                                 | [UpdateFilterRequest](../../updatefilterrequest.md)   | :heavy_check_mark:                                    | Updated filter                                        |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
@@ -344,8 +343,8 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `subscriptionID`                                      | *string*                                              | :heavy_check_mark:                                    | Subscription ID                                       |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `subscriptionID`                                      | `string`                                              | :heavy_check_mark:                                    | Subscription ID                                       |
 | `requestBody`                                         | [][CreateFilterRequest](../../createfilterrequest.md) | :heavy_check_mark:                                    | Filters to create                                     |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
@@ -401,8 +400,8 @@ func main() {
 | Parameter                                                     | Type                                                          | Required                                                      | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | `ctx`                                                         | [context.Context](https://pkg.go.dev/context#Context)         | :heavy_check_mark:                                            | The context to use for the request.                           |
-| `projectID`                                                   | *string*                                                      | :heavy_check_mark:                                            | Project ID                                                    |
-| `subscriptionID`                                              | *string*                                                      | :heavy_check_mark:                                            | Subscription ID                                               |
+| `projectID`                                                   | `string`                                                      | :heavy_check_mark:                                            | Project ID                                                    |
+| `subscriptionID`                                              | `string`                                                      | :heavy_check_mark:                                            | Subscription ID                                               |
 | `requestBody`                                                 | [][BulkUpdateFilterRequest](../../bulkupdatefilterrequest.md) | :heavy_check_mark:                                            | Filters to update                                             |
 | `opts`                                                        | [][convoy.Option](../../option.md)                            | :heavy_minus_sign:                                            | The options for this request.                                 |
 
@@ -460,9 +459,9 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `subscriptionID`                                      | *string*                                              | :heavy_check_mark:                                    | Subscription ID                                       |
-| `eventType`                                           | *string*                                              | :heavy_check_mark:                                    | Event Type                                            |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `subscriptionID`                                      | `string`                                              | :heavy_check_mark:                                    | Subscription ID                                       |
+| `eventType`                                           | `string`                                              | :heavy_check_mark:                                    | Event Type                                            |
 | `testFilterRequest`                                   | [TestFilterRequest](../../testfilterrequest.md)       | :heavy_check_mark:                                    | Payload to test                                       |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 

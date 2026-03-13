@@ -1,5 +1,4 @@
 # DeliveryAttempts
-(*DeliveryAttempts*)
 
 ## Overview
 
@@ -47,8 +46,8 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `eventDeliveryID`                                     | *string*                                              | :heavy_check_mark:                                    | event delivery id                                     |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `eventDeliveryID`                                     | `string`                                              | :heavy_check_mark:                                    | event delivery id                                     |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
 ### Response
@@ -103,9 +102,9 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `eventDeliveryID`                                     | *string*                                              | :heavy_check_mark:                                    | event delivery id                                     |
-| `deliveryAttemptID`                                   | *string*                                              | :heavy_check_mark:                                    | delivery attempt id                                   |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `eventDeliveryID`                                     | `string`                                              | :heavy_check_mark:                                    | event delivery id                                     |
+| `deliveryAttemptID`                                   | `string`                                              | :heavy_check_mark:                                    | delivery attempt id                                   |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
 ### Response

@@ -1,5 +1,15 @@
 # SourceType
 
+## Example Usage
+
+```go
+import (
+	"github.com/frain-dev/convoy"
+)
+
+value := convoy.SourceTypeHTTP
+```
+
 
 ## Values
 

@@ -2,7 +2,7 @@
 
 package convoy
 
-// Generated from OpenAPI doc version 24.1.4 and generator version 2.760.2
+// Generated from OpenAPI doc version 24.1.4 and generator version 2.862.0
 
 import (
 	"context"
@@ -70,7 +70,7 @@ type Convoy struct {
 
 type SDKOption func(*Convoy)
 
-// WithServerURL allows the overriding of the default server URL
+// WithServerURL allows providing an alternative server URL
 func WithServerURL(serverURL string) SDKOption {
 	return func(sdk *Convoy) {
 		sdk.sdkConfiguration.ServerURL = serverURL
@@ -141,7 +141,7 @@ func New(opts ...SDKOption) *Convoy {
 	sdk := &Convoy{
 		SDKVersion: "0.3.0-rc.1",
 		sdkConfiguration: config.SDKConfiguration{
-			UserAgent:  "speakeasy-sdk/go 0.3.0-rc.1 2.760.2 24.1.4 github.com/frain-dev/convoy",
+			UserAgent:  "speakeasy-sdk/go 0.3.0-rc.1 2.862.0 24.1.4 github.com/frain-dev/convoy",
 			ServerList: ServerList,
 		},
 		hooks: hooks.New(),

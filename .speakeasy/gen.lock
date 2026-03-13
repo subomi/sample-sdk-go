@@ -1,639 +1,2264 @@
 lockVersion: 2.0.0
 id: 6e7b91ca-db99-42ff-94be-b5c538c41b05
 management:
-  docChecksum: a1a0ce3ac516d962a429e7b47463f5d3
+  docChecksum: 786e9588f09901c0ec56f6424c5b5358
   docVersion: 24.1.4
-  speakeasyVersion: 1.660.0
-  generationVersion: 2.760.2
-  releaseVersion: 0.2.0
-  configChecksum: c7a6e4dc13d77b27b7535459a4504880
+  speakeasyVersion: 1.753.0
+  generationVersion: 2.862.0
+  releaseVersion: 0.3.0-rc.1
+  configChecksum: 64e651858c7d1b869c5d4c16921e4bcc
   repoURL: https://github.com/subomi/sample-sdk-go.git
   installationURL: https://github.com/subomi/sample-sdk-go
+persistentEdits:
+  generation_id: a440c2a9-93b9-4a24-9a6d-3cd5cda737ce
+  pristine_commit_hash: 9a6aa8ec8c9d26be07e5d6d4d590a98f47557982
+  pristine_tree_hash: d98badfb9b4d356abca0ce0cc24adfee27733374
 features:
   go:
     additionalDependencies: 0.1.0
-    core: 3.13.2
+    core: 3.13.36
     defaultEnabledRetries: 0.2.0
     devContainers: 2.90.0
     envVarSecurityUsage: 0.3.2
-    flattening: 2.81.1
-    globalSecurity: 2.82.12
+    flattening: 2.81.2
+    globalSecurity: 2.82.13
     globalSecurityCallbacks: 0.1.0
     globalSecurityFlattening: 0.1.0
-    globalServerURLs: 2.83.0
+    globalServerURLs: 2.83.1
     intellisenseMarkdownSupport: 0.1.0
     openEnums: 0.1.0
     responseFormat: 0.1.2
     retries: 2.84.2
-    sdkHooks: 0.2.0
-generatedFiles:
-  - .devcontainer/README.md
-  - .devcontainer/devcontainer.json
-  - .devcontainer/setup.sh
-  - .gitattributes
-  - /activateendpointop.go
-  - /alertconfiguration.go
-  - /amqpauth.go
-  - /amqpexchange.go
-  - /amqppubsubconfig.go
-  - /apierror.go
-  - /apikey.go
-  - /basicauth.go
-  - /batchreplayeventsop.go
-  - /batchretryeventdeliveryop.go
-  - /broadcastevent.go
-  - /bulkcreatefiltersop.go
-  - /bulkupdatefilterrequest.go
-  - /bulkupdatefiltersop.go
-  - /climetadata.go
-  - /createbroadcasteventop.go
-  - /createdynamiceventop.go
-  - /createendpointeventop.go
-  - /createendpointfanouteventop.go
-  - /createevent.go
-  - /createeventtype.go
-  - /createeventtypeop.go
-  - /createfilterop.go
-  - /createfilterrequest.go
-  - /createportallinkop.go
-  - /createsource.go
-  - /createsourceop.go
-  - /createsubscription.go
-  - /createsubscriptionop.go
-  - /customresponse.go
-  - /deletefilterop.go
-  - /deletesourceop.go
-  - /deletesubscriptionop.go
-  - /deliveryattempt.go
-  - /deliverymode.go
-  - /deprecateeventtypeop.go
-  - /device.go
-  - /devicestatus.go
-  - /dynamicevent.go
-  - /encodingtype.go
-  - /endpoint.go
-  - /endpointauthentication.go
-  - /endpointauthenticationtype.go
-  - /endpointresponse.go
-  - /endpointstatus.go
-  - /event.go
-  - /eventdeliveryresponse.go
-  - /eventdeliverystatus.go
-  - /eventresponse.go
-  - /eventstatus.go
-  - /eventtyperesponse.go
-  - /expiresecret.go
-  - /expiresecretop.go
-  - /fanoutevent.go
-  - /filterconfiguration.go
-  - /filterresponse.go
-  - /filterschema.go
-  - /forceresendeventdeliveriesop.go
-  - /fs.go
-  - /functionrequest.go
-  - /functionresponse.go
-  - /generateportaltokenop.go
-  - /getdeliveryattemptop.go
-  - /getdeliveryattemptsop.go
-  - /getendpointeventop.go
-  - /geteventdeliveriespagedop.go
-  - /geteventdeliveryop.go
-  - /geteventspagedop.go
-  - /geteventtypesop.go
-  - /getfilterop.go
-  - /getfiltersop.go
-  - /getmetaeventop.go
-  - /getmetaeventspagedop.go
-  - /getportallinkop.go
-  - /getsourceop.go
-  - /getsubscriptionop.go
-  - /getsubscriptionsop.go
-  - /googlepubsubconfig.go
-  - /hmac.go
-  - /httpmetadata.go
-  - /ids.go
-  - /importopenapispec.go
-  - /importopenapispecop.go
-  - /kafkaauth.go
-  - /kafkapubsubconfig.go
-  - /loadportallinkspagedop.go
-  - /loadsourcespagedop.go
-  - /metadata.go
-  - /metaeventattempt.go
-  - /metaeventresponse.go
-  - /object.go
-  - /paginationdata.go
-  - /pauseendpointop.go
-  - /portallink.go
-  - /portallinkresponse.go
-  - /providerconfig.go
-  - /pubsubconfig.go
-  - /pubsubtype.go
-  - /ratelimitconfiguration.go
-  - /refreshportallinkauthtokenop.go
-  - /replayendpointeventop.go
-  - /resendeventdeliveryop.go
-  - /resendmetaeventop.go
-  - /retryconfiguration.go
-  - /revokeportallinkop.go
-  - /secret.go
-  - /security.go
-  - /source.go
-  - /sourceprovider.go
-  - /sourceresponse.go
-  - /sourcetype.go
-  - /sqspubsubconfig.go
-  - /strategyprovider.go
-  - /subscriptionresponse.go
-  - /subscriptiontype.go
-  - /testfilter.go
-  - /testfilterop.go
-  - /testfilterrequest.go
-  - /testfilterresponse.go
-  - /testsourcefunctionop.go
-  - /testsubscriptionfilterop.go
-  - /testsubscriptionfunctionop.go
-  - /twitterproviderconfig.go
-  - /updatecustomresponse.go
-  - /updateeventtype.go
-  - /updateeventtypeop.go
-  - /updatefilterop.go
-  - /updatefilterrequest.go
-  - /updateportallinkop.go
-  - /updatesource.go
-  - /updatesourceop.go
-  - /updatesubscription.go
-  - /updatesubscriptionop.go
-  - /verifierconfig.go
-  - /verifiertype.go
-  - USAGE.md
-  - convoy.go
-  - deliveryattempts.go
-  - docs/activateendpointbadrequesterror.md
-  - docs/activateendpointnotfounderror.md
-  - docs/activateendpointrequest.md
-  - docs/activateendpointresponse.md
-  - docs/activateendpointresponsebody.md
-  - docs/activateendpointunauthorizederror.md
-  - docs/alertconfiguration.md
-  - docs/amqpauth.md
-  - docs/amqpexchange.md
-  - docs/amqppubsubconfig.md
-  - docs/apikey.md
-  - docs/basicauth.md
-  - docs/batchreplayeventsbadrequesterror.md
-  - docs/batchreplayeventsdirection.md
-  - docs/batchreplayeventsnotfounderror.md
-  - docs/batchreplayeventsrequest.md
-  - docs/batchreplayeventsresponse.md
-  - docs/batchreplayeventsresponsebody.md
-  - docs/batchreplayeventsunauthorizederror.md
-  - docs/batchretryeventdeliverybadrequesterror.md
-  - docs/batchretryeventdeliverydirection.md
-  - docs/batchretryeventdeliverynotfounderror.md
-  - docs/batchretryeventdeliveryrequest.md
-  - docs/batchretryeventdeliveryresponse.md
-  - docs/batchretryeventdeliveryresponsebody.md
-  - docs/batchretryeventdeliveryunauthorizederror.md
-  - docs/broadcastevent.md
-  - docs/broadcasteventdata.md
-  - docs/bulkcreatefiltersbadrequesterror.md
-  - docs/bulkcreatefiltersnotfounderror.md
-  - docs/bulkcreatefiltersrequest.md
-  - docs/bulkcreatefiltersresponse.md
-  - docs/bulkcreatefiltersresponsebody.md
-  - docs/bulkcreatefiltersunauthorizederror.md
-  - docs/bulkupdatefilterrequest.md
-  - docs/bulkupdatefiltersbadrequesterror.md
-  - docs/bulkupdatefiltersnotfounderror.md
-  - docs/bulkupdatefiltersrequest.md
-  - docs/bulkupdatefiltersresponse.md
-  - docs/bulkupdatefiltersresponsebody.md
-  - docs/bulkupdatefiltersunauthorizederror.md
-  - docs/climetadata.md
-  - docs/createbroadcasteventbadrequesterror.md
-  - docs/createbroadcasteventnotfounderror.md
-  - docs/createbroadcasteventrequest.md
-  - docs/createbroadcasteventresponse.md
-  - docs/createbroadcasteventresponsebody.md
-  - docs/createbroadcasteventunauthorizederror.md
-  - docs/createdynamiceventbadrequesterror.md
-  - docs/createdynamiceventnotfounderror.md
-  - docs/createdynamiceventrequest.md
-  - docs/createdynamiceventresponse.md
-  - docs/createdynamiceventunauthorizederror.md
-  - docs/createendpointeventbadrequesterror.md
-  - docs/createendpointeventnotfounderror.md
-  - docs/createendpointeventrequest.md
-  - docs/createendpointeventresponse.md
-  - docs/createendpointeventresponsebody.md
-  - docs/createendpointeventunauthorizederror.md
-  - docs/createendpointfanouteventbadrequesterror.md
-  - docs/createendpointfanouteventnotfounderror.md
-  - docs/createendpointfanouteventrequest.md
-  - docs/createendpointfanouteventresponse.md
-  - docs/createendpointfanouteventresponsebody.md
-  - docs/createendpointfanouteventunauthorizederror.md
-  - docs/createevent.md
-  - docs/createeventdata.md
-  - docs/createeventtype.md
-  - docs/createeventtypebadrequesterror.md
-  - docs/createeventtypenotfounderror.md
-  - docs/createeventtyperequest.md
-  - docs/createeventtyperesponse.md
-  - docs/createeventtyperesponsebody.md
-  - docs/createeventtypeunauthorizederror.md
-  - docs/createfilterbadrequesterror.md
-  - docs/createfilternotfounderror.md
-  - docs/createfilterrequest.md
-  - docs/createfilterrequestrequest.md
-  - docs/createfilterresponse.md
-  - docs/createfilterresponsebody.md
-  - docs/createfilterunauthorizederror.md
-  - docs/createportallinkbadrequesterror.md
-  - docs/createportallinknotfounderror.md
-  - docs/createportallinkrequest.md
-  - docs/createportallinkresponse.md
-  - docs/createportallinkresponsebody.md
-  - docs/createportallinkunauthorizederror.md
-  - docs/createsource.md
-  - docs/createsourcebadrequesterror.md
-  - docs/createsourcenotfounderror.md
-  - docs/createsourcerequest.md
-  - docs/createsourceresponse.md
-  - docs/createsourceresponsebody.md
-  - docs/createsourceunauthorizederror.md
-  - docs/createsubscription.md
-  - docs/createsubscriptionbadrequesterror.md
-  - docs/createsubscriptiondeliverymode.md
-  - docs/createsubscriptionnotfounderror.md
-  - docs/createsubscriptionrequest.md
-  - docs/createsubscriptionresponse.md
-  - docs/createsubscriptionresponsebody.md
-  - docs/createsubscriptionunauthorizederror.md
-  - docs/customresponse.md
-  - docs/deletefilterbadrequesterror.md
-  - docs/deletefilternotfounderror.md
-  - docs/deletefilterrequest.md
-  - docs/deletefilterresponse.md
-  - docs/deletefilterresponsebody.md
-  - docs/deletefilterunauthorizederror.md
-  - docs/deletesourcebadrequesterror.md
-  - docs/deletesourcenotfounderror.md
-  - docs/deletesourcerequest.md
-  - docs/deletesourceresponse.md
-  - docs/deletesourceresponsebody.md
-  - docs/deletesourceunauthorizederror.md
-  - docs/deletesubscriptionbadrequesterror.md
-  - docs/deletesubscriptionnotfounderror.md
-  - docs/deletesubscriptionrequest.md
-  - docs/deletesubscriptionresponse.md
-  - docs/deletesubscriptionresponsebody.md
-  - docs/deletesubscriptionunauthorizederror.md
-  - docs/deliveryattempt.md
-  - docs/deliverymode.md
-  - docs/deprecateeventtypebadrequesterror.md
-  - docs/deprecateeventtypenotfounderror.md
-  - docs/deprecateeventtyperequest.md
-  - docs/deprecateeventtyperesponse.md
-  - docs/deprecateeventtyperesponsebody.md
-  - docs/deprecateeventtypeunauthorizederror.md
-  - docs/device.md
-  - docs/devicestatus.md
-  - docs/dynamicevent.md
-  - docs/dynamiceventdata.md
-  - docs/encodingtype.md
-  - docs/endpoint.md
-  - docs/endpointauthentication.md
-  - docs/endpointauthenticationtype.md
-  - docs/endpointresponse.md
-  - docs/endpointstatus.md
-  - docs/event.md
-  - docs/eventdeliveryresponse.md
-  - docs/eventdeliverystatus.md
-  - docs/eventresponse.md
-  - docs/eventstatus.md
-  - docs/eventtyperesponse.md
-  - docs/expiresecret.md
-  - docs/expiresecretbadrequesterror.md
-  - docs/expiresecretnotfounderror.md
-  - docs/expiresecretrequest.md
-  - docs/expiresecretresponse.md
-  - docs/expiresecretresponsebody.md
-  - docs/expiresecretunauthorizederror.md
-  - docs/fanoutevent.md
-  - docs/fanouteventdata.md
-  - docs/filterconfiguration.md
-  - docs/filterresponse.md
-  - docs/filterschema.md
-  - docs/forceresendeventdeliveriesbadrequesterror.md
-  - docs/forceresendeventdeliveriesnotfounderror.md
-  - docs/forceresendeventdeliveriesrequest.md
-  - docs/forceresendeventdeliveriesresponse.md
-  - docs/forceresendeventdeliveriesresponsebody.md
-  - docs/forceresendeventdeliveriesunauthorizederror.md
-  - docs/fs.md
-  - docs/functionrequest.md
-  - docs/functionresponse.md
-  - docs/generateportaltokenbadrequesterror.md
-  - docs/generateportaltokennotfounderror.md
-  - docs/generateportaltokenrequest.md
-  - docs/generateportaltokenresponse.md
-  - docs/generateportaltokenresponsebody.md
-  - docs/generateportaltokenunauthorizederror.md
-  - docs/getdeliveryattemptbadrequesterror.md
-  - docs/getdeliveryattemptnotfounderror.md
-  - docs/getdeliveryattemptrequest.md
-  - docs/getdeliveryattemptresponse.md
-  - docs/getdeliveryattemptresponsebody.md
-  - docs/getdeliveryattemptsbadrequesterror.md
-  - docs/getdeliveryattemptsnotfounderror.md
-  - docs/getdeliveryattemptsrequest.md
-  - docs/getdeliveryattemptsresponse.md
-  - docs/getdeliveryattemptsresponsebody.md
-  - docs/getdeliveryattemptsunauthorizederror.md
-  - docs/getdeliveryattemptunauthorizederror.md
-  - docs/getendpointeventbadrequesterror.md
-  - docs/getendpointeventnotfounderror.md
-  - docs/getendpointeventrequest.md
-  - docs/getendpointeventresponse.md
-  - docs/getendpointeventresponsebody.md
-  - docs/getendpointeventunauthorizederror.md
-  - docs/geteventdeliveriespagedbadrequesterror.md
-  - docs/geteventdeliveriespageddata.md
-  - docs/geteventdeliveriespageddirection.md
-  - docs/geteventdeliveriespagednotfounderror.md
-  - docs/geteventdeliveriespagedrequest.md
-  - docs/geteventdeliveriespagedresponse.md
-  - docs/geteventdeliveriespagedresponsebody.md
-  - docs/geteventdeliveriespagedunauthorizederror.md
-  - docs/geteventdeliverybadrequesterror.md
-  - docs/geteventdeliverynotfounderror.md
-  - docs/geteventdeliveryrequest.md
-  - docs/geteventdeliveryresponse.md
-  - docs/geteventdeliveryresponsebody.md
-  - docs/geteventdeliveryunauthorizederror.md
-  - docs/geteventspagedbadrequesterror.md
-  - docs/geteventspageddata.md
-  - docs/geteventspageddirection.md
-  - docs/geteventspagednotfounderror.md
-  - docs/geteventspagedrequest.md
-  - docs/geteventspagedresponse.md
-  - docs/geteventspagedresponsebody.md
-  - docs/geteventspagedunauthorizederror.md
-  - docs/geteventtypesbadrequesterror.md
-  - docs/geteventtypesnotfounderror.md
-  - docs/geteventtypesrequest.md
-  - docs/geteventtypesresponse.md
-  - docs/geteventtypesresponsebody.md
-  - docs/geteventtypesunauthorizederror.md
-  - docs/getfilterbadrequesterror.md
-  - docs/getfilternotfounderror.md
-  - docs/getfilterrequest.md
-  - docs/getfilterresponse.md
-  - docs/getfilterresponsebody.md
-  - docs/getfiltersbadrequesterror.md
-  - docs/getfiltersnotfounderror.md
-  - docs/getfiltersrequest.md
-  - docs/getfiltersresponse.md
-  - docs/getfiltersresponsebody.md
-  - docs/getfiltersunauthorizederror.md
-  - docs/getfilterunauthorizederror.md
-  - docs/getmetaeventbadrequesterror.md
-  - docs/getmetaeventnotfounderror.md
-  - docs/getmetaeventrequest.md
-  - docs/getmetaeventresponse.md
-  - docs/getmetaeventresponsebody.md
-  - docs/getmetaeventspagedbadrequesterror.md
-  - docs/getmetaeventspageddata.md
-  - docs/getmetaeventspageddirection.md
-  - docs/getmetaeventspagednotfounderror.md
-  - docs/getmetaeventspagedrequest.md
-  - docs/getmetaeventspagedresponse.md
-  - docs/getmetaeventspagedresponsebody.md
-  - docs/getmetaeventspagedunauthorizederror.md
-  - docs/getmetaeventunauthorizederror.md
-  - docs/getportallinkbadrequesterror.md
-  - docs/getportallinknotfounderror.md
-  - docs/getportallinkrequest.md
-  - docs/getportallinkresponse.md
-  - docs/getportallinkresponsebody.md
-  - docs/getportallinkunauthorizederror.md
-  - docs/getsourcebadrequesterror.md
-  - docs/getsourcenotfounderror.md
-  - docs/getsourcerequest.md
-  - docs/getsourceresponse.md
-  - docs/getsourceresponsebody.md
-  - docs/getsourceunauthorizederror.md
-  - docs/getsubscriptionbadrequesterror.md
-  - docs/getsubscriptionnotfounderror.md
-  - docs/getsubscriptionrequest.md
-  - docs/getsubscriptionresponse.md
-  - docs/getsubscriptionresponsebody.md
-  - docs/getsubscriptionsbadrequesterror.md
-  - docs/getsubscriptionsdata.md
-  - docs/getsubscriptionsdirection.md
-  - docs/getsubscriptionsnotfounderror.md
-  - docs/getsubscriptionsrequest.md
-  - docs/getsubscriptionsresponse.md
-  - docs/getsubscriptionsresponsebody.md
-  - docs/getsubscriptionsunauthorizederror.md
-  - docs/getsubscriptionunauthorizederror.md
-  - docs/googlepubsubconfig.md
-  - docs/hmac.md
-  - docs/httpmetadata.md
-  - docs/ids.md
-  - docs/importopenapispec.md
-  - docs/importopenapispecbadrequesterror.md
-  - docs/importopenapispecnotfounderror.md
-  - docs/importopenapispecrequest.md
-  - docs/importopenapispecresponse.md
-  - docs/importopenapispecresponsebody.md
-  - docs/importopenapispecunauthorizederror.md
-  - docs/kafkaauth.md
-  - docs/kafkapubsubconfig.md
-  - docs/loadportallinkspagedbadrequesterror.md
-  - docs/loadportallinkspageddata.md
-  - docs/loadportallinkspageddirection.md
-  - docs/loadportallinkspagednotfounderror.md
-  - docs/loadportallinkspagedrequest.md
-  - docs/loadportallinkspagedresponse.md
-  - docs/loadportallinkspagedresponsebody.md
-  - docs/loadportallinkspagedunauthorizederror.md
-  - docs/loadsourcespagedbadrequesterror.md
-  - docs/loadsourcespageddata.md
-  - docs/loadsourcespageddirection.md
-  - docs/loadsourcespagednotfounderror.md
-  - docs/loadsourcespagedrequest.md
-  - docs/loadsourcespagedresponse.md
-  - docs/loadsourcespagedresponsebody.md
-  - docs/loadsourcespagedunauthorizederror.md
-  - docs/metadata.md
-  - docs/metaeventattempt.md
-  - docs/metaeventresponse.md
-  - docs/object.md
-  - docs/option.md
-  - docs/paginationdata.md
-  - docs/pauseendpointbadrequesterror.md
-  - docs/pauseendpointnotfounderror.md
-  - docs/pauseendpointrequest.md
-  - docs/pauseendpointresponse.md
-  - docs/pauseendpointresponsebody.md
-  - docs/pauseendpointunauthorizederror.md
-  - docs/portallink.md
-  - docs/portallinkresponse.md
-  - docs/providerconfig.md
-  - docs/pubsubconfig.md
-  - docs/pubsubtype.md
-  - docs/ratelimitconfiguration.md
-  - docs/refreshportallinkauthtokenbadrequesterror.md
-  - docs/refreshportallinkauthtokennotfounderror.md
-  - docs/refreshportallinkauthtokenrequest.md
-  - docs/refreshportallinkauthtokenresponse.md
-  - docs/refreshportallinkauthtokenresponsebody.md
-  - docs/refreshportallinkauthtokenunauthorizederror.md
-  - docs/replayendpointeventbadrequesterror.md
-  - docs/replayendpointeventnotfounderror.md
-  - docs/replayendpointeventrequest.md
-  - docs/replayendpointeventresponse.md
-  - docs/replayendpointeventresponsebody.md
-  - docs/replayendpointeventunauthorizederror.md
-  - docs/resendeventdeliverybadrequesterror.md
-  - docs/resendeventdeliverynotfounderror.md
-  - docs/resendeventdeliveryrequest.md
-  - docs/resendeventdeliveryresponse.md
-  - docs/resendeventdeliveryresponsebody.md
-  - docs/resendeventdeliveryunauthorizederror.md
-  - docs/resendmetaeventbadrequesterror.md
-  - docs/resendmetaeventnotfounderror.md
-  - docs/resendmetaeventrequest.md
-  - docs/resendmetaeventresponse.md
-  - docs/resendmetaeventresponsebody.md
-  - docs/resendmetaeventunauthorizederror.md
-  - docs/retryconfiguration.md
-  - docs/revokeportallinkbadrequesterror.md
-  - docs/revokeportallinknotfounderror.md
-  - docs/revokeportallinkrequest.md
-  - docs/revokeportallinkresponse.md
-  - docs/revokeportallinkresponsebody.md
-  - docs/revokeportallinkunauthorizederror.md
-  - docs/sdks/deliveryattempts/README.md
-  - docs/sdks/endpoints/README.md
-  - docs/sdks/eventdeliveries/README.md
-  - docs/sdks/events/README.md
-  - docs/sdks/eventtypes/README.md
-  - docs/sdks/filters/README.md
-  - docs/sdks/metaevents/README.md
-  - docs/sdks/portallinks/README.md
-  - docs/sdks/sources/README.md
-  - docs/sdks/subscriptions/README.md
-  - docs/secret.md
-  - docs/security.md
-  - docs/source.md
-  - docs/sourceprovider.md
-  - docs/sourceresponse.md
-  - docs/sourcetype.md
-  - docs/sqspubsubconfig.md
-  - docs/strategyprovider.md
-  - docs/subscriptionresponse.md
-  - docs/subscriptiontype.md
-  - docs/testfilter.md
-  - docs/testfilterbadrequesterror.md
-  - docs/testfilternotfounderror.md
-  - docs/testfilterrequest.md
-  - docs/testfilterrequestrequest.md
-  - docs/testfilterresponse.md
-  - docs/testfilterresponsebody.md
-  - docs/testfilterresponseresponse.md
-  - docs/testfilterunauthorizederror.md
-  - docs/testsourcefunctionbadrequesterror.md
-  - docs/testsourcefunctionnotfounderror.md
-  - docs/testsourcefunctionrequest.md
-  - docs/testsourcefunctionresponse.md
-  - docs/testsourcefunctionresponsebody.md
-  - docs/testsourcefunctionunauthorizederror.md
-  - docs/testsubscriptionfilterbadrequesterror.md
-  - docs/testsubscriptionfilternotfounderror.md
-  - docs/testsubscriptionfilterrequest.md
-  - docs/testsubscriptionfilterresponse.md
-  - docs/testsubscriptionfilterresponsebody.md
-  - docs/testsubscriptionfilterunauthorizederror.md
-  - docs/testsubscriptionfunctionbadrequesterror.md
-  - docs/testsubscriptionfunctionnotfounderror.md
-  - docs/testsubscriptionfunctionrequest.md
-  - docs/testsubscriptionfunctionresponse.md
-  - docs/testsubscriptionfunctionresponsebody.md
-  - docs/testsubscriptionfunctionunauthorizederror.md
-  - docs/twitterproviderconfig.md
-  - docs/updatecustomresponse.md
-  - docs/updateeventtype.md
-  - docs/updateeventtypebadrequesterror.md
-  - docs/updateeventtypenotfounderror.md
-  - docs/updateeventtyperequest.md
-  - docs/updateeventtyperesponse.md
-  - docs/updateeventtyperesponsebody.md
-  - docs/updateeventtypeunauthorizederror.md
-  - docs/updatefilterbadrequesterror.md
-  - docs/updatefilternotfounderror.md
-  - docs/updatefilterrequest.md
-  - docs/updatefilterrequestrequest.md
-  - docs/updatefilterresponse.md
-  - docs/updatefilterresponsebody.md
-  - docs/updatefilterunauthorizederror.md
-  - docs/updateportallinkbadrequesterror.md
-  - docs/updateportallinknotfounderror.md
-  - docs/updateportallinkrequest.md
-  - docs/updateportallinkresponse.md
-  - docs/updateportallinkresponsebody.md
-  - docs/updateportallinkunauthorizederror.md
-  - docs/updatesource.md
-  - docs/updatesourcebadrequesterror.md
-  - docs/updatesourcenotfounderror.md
-  - docs/updatesourcerequest.md
-  - docs/updatesourceresponse.md
-  - docs/updatesourceresponsebody.md
-  - docs/updatesourceunauthorizederror.md
-  - docs/updatesubscription.md
-  - docs/updatesubscriptionbadrequesterror.md
-  - docs/updatesubscriptiondeliverymode.md
-  - docs/updatesubscriptionnotfounderror.md
-  - docs/updatesubscriptionrequest.md
-  - docs/updatesubscriptionresponse.md
-  - docs/updatesubscriptionresponsebody.md
-  - docs/updatesubscriptionunauthorizederror.md
-  - docs/verifierconfig.md
-  - docs/verifiertype.md
-  - endpoints.go
-  - eventdeliveries.go
-  - events.go
-  - eventtypes.go
-  - filters.go
-  - go.mod
-  - internal/config/sdkconfiguration.go
-  - internal/hooks/hooks.go
-  - internal/utils/contenttype.go
-  - internal/utils/env.go
-  - internal/utils/form.go
-  - internal/utils/headers.go
-  - internal/utils/json.go
-  - internal/utils/pathparams.go
-  - internal/utils/queryparams.go
-  - internal/utils/requestbody.go
-  - internal/utils/retries.go
-  - internal/utils/security.go
-  - internal/utils/utils.go
-  - metaevents.go
-  - optionalnullable/optionalnullable.go
-  - optionalnullable/optionalnullable_test.go
-  - options.go
-  - portallinks.go
-  - retry/config.go
-  - sources.go
-  - subscriptions.go
-  - types/bigint.go
-  - types/date.go
-  - types/datetime.go
-  - types/pointers.go
+    sdkHooks: 0.3.0
+trackedFiles:
+  .devcontainer/README.md:
+    id: b170c0f184ac
+    last_write_checksum: sha1:a4e9b8701174881cecc3a28a712c75a1152405e1
+    pristine_git_object: b2a7bf1d19722b3fde6f1d291984f34dfba6bd7c
+  .devcontainer/devcontainer.json:
+    id: b34062a34eb1
+    last_write_checksum: sha1:a518b2fc2f92e998593a1dcb935db4ca1eb2e2f1
+    pristine_git_object: 92f5ba5b54156225322fb4b09d2acf4abde9abc9
+  .devcontainer/setup.sh:
+    id: 5f1dfbfeb8eb
+    last_write_checksum: sha1:0443cc8beac352499afd25be90adf28d3736dbe0
+    pristine_git_object: 9003242ad92f98da28b1e4dad2129b5b1dabab59
+  .gitattributes:
+    id: 24139dae6567
+    last_write_checksum: sha1:84b0115789fc3ea52e31df701d8a27f76077e29f
+    pristine_git_object: e6a994416d0f527912d2d272e2583458f4fc9bcb
+  USAGE.md:
+    id: 3aed33ce6e6f
+    last_write_checksum: sha1:7e8fa424e5ed16abec29df0c4a074dbc3309251a
+    pristine_git_object: 5c4dc44f392e467a3eda5bdab92ec19eba2e1288
+  alertconfiguration.go:
+    id: 8f533cdc4c31
+    last_write_checksum: sha1:59354dcb49f15ddb5af514a289fc63490d96f3c4
+    pristine_git_object: 493bd7cac8781f4a1791662d312a39889dd1c471
+  amqpauth.go:
+    id: 421fa5a600b0
+    last_write_checksum: sha1:efef47846d9b89792b3fef33d365fb82032fccb0
+    pristine_git_object: bbab9a27432eaadaa28a2a9333d502b7b73a1b6d
+  amqpexchange.go:
+    id: 6ab1d4327853
+    last_write_checksum: sha1:5517090e51b31e471901b7e7607169a1d1dd2adf
+    pristine_git_object: 450bf91735a6266089cf9bfd86ec7e54c1f20765
+  amqppubsubconfig.go:
+    id: 696c605fac28
+    last_write_checksum: sha1:06fa3c1eb1e5215eccc615e463ca0932842af7d4
+    pristine_git_object: 670df8d75f0aa4f053c40a6dd8fe38a15f17cb0a
+  apierror.go:
+    id: 511024e22eaa
+    last_write_checksum: sha1:31032b3acecb0265448e5952ef99e2f6eed6e4c1
+    pristine_git_object: d9a341f0c0d3ce31718623270b4557d7eee4e31f
+  apikey.go:
+    id: e5092d46c19c
+    last_write_checksum: sha1:65fd82d795cbda04a35138e7b0e025b7e4c9ce16
+    pristine_git_object: fc2291ce3635a62a659b9069e337cd7982deac64
+  basicauth.go:
+    id: 95de0aea1a38
+    last_write_checksum: sha1:b24b974bd591f80104352b31561f69272e5f8f8d
+    pristine_git_object: f953acb0e6be43a44ca6bef08b667559cb3b9dd3
+  batchreplayeventsop.go:
+    id: 9b2c5e33fc46
+    last_write_checksum: sha1:69393f1afdc3c2f6c31b7c63e589489c6ac41396
+    pristine_git_object: 4e11d5b15dea90b4a4e21028a9027b3b2473041b
+  batchretryeventdeliveryop.go:
+    id: 6f1c50473540
+    last_write_checksum: sha1:b637f3028865ed01fc5e7807a33f06b816b09c10
+    pristine_git_object: d51136d13be9f56e053626559f6d48cba5b92db9
+  broadcastevent.go:
+    id: e73fe2960939
+    last_write_checksum: sha1:41da89b5bcd88bdd6f65483cda2be39f8b11926f
+    pristine_git_object: c31dbe9eabbbec2d5c86d531f6914c12ba3c7d0f
+  bulkcreatefiltersop.go:
+    id: 8f720aafd020
+    last_write_checksum: sha1:bd5d6090e6d886af196dee62240cb1a6c2a900ec
+    pristine_git_object: 71ebcbf816118b77f7481b7bb553a8d17eda6fe2
+  bulkupdatefilterrequest.go:
+    id: 56b81dbb0c32
+    last_write_checksum: sha1:0c420a7665ed5b97a2da9a6af740854e9f45f1ba
+    pristine_git_object: 2ef1fe0e9350d4fac38c6fc7879d3e98f8823155
+  bulkupdatefiltersop.go:
+    id: 0d821c4e1a49
+    last_write_checksum: sha1:62b4c6cae46de13bf8f554d5332f330547297e2e
+    pristine_git_object: 11491fccd0468700c6c93d3567c070707283cfc6
+  climetadata.go:
+    id: 98ec05946b87
+    last_write_checksum: sha1:56e9517b070f14b15eb8c0347e8d7807998970db
+    pristine_git_object: c7031bd779507e3191dfe0c0f9d3183c7b95cfc3
+  convoy.go:
+    id: 8a4c9bff5f0d
+    last_write_checksum: sha1:5b6d86a69178bd4d02c98d7f946f247ecfdd2e31
+    pristine_git_object: 3dce436eef8d6b5ad67b6328d902774cfaf97d4f
+  createbroadcasteventop.go:
+    id: 4fce2631dad6
+    last_write_checksum: sha1:6fafc8601d581896eec9fda9d56fec51aba16e96
+    pristine_git_object: c72b0f168d8ba840ab27dc26974e7f021345f9ab
+  createdynamiceventop.go:
+    id: 94687d739145
+    last_write_checksum: sha1:b8a71d5ca76b7a35fc80e3babec45088f0568a2e
+    pristine_git_object: c10de46a1e87352a540b79449fb3a2bfcfd63f70
+  createendpointeventop.go:
+    id: 1081f9ef6e0d
+    last_write_checksum: sha1:fd24dde9cf2dac7cfb8237393ca9ac8f25de401b
+    pristine_git_object: 212d961f208287cd1a90d7101b759e1d0012d87f
+  createendpointfanouteventop.go:
+    id: 2f8f7f7e2c1a
+    last_write_checksum: sha1:c81d64ecc979a130e0357c649585b3a4625ff4df
+    pristine_git_object: e27a75eb00f5d8cad177efde25a9299f3caee211
+  createevent.go:
+    id: a27c5f8c3d6e
+    last_write_checksum: sha1:c78a53a16bd5cc70eaa9d1c4b7e152e3eed5b29b
+    pristine_git_object: f247e8aca4093e84dbb7a019358e86410f3a77af
+  createfilterop.go:
+    id: 7815cdeddb9c
+    last_write_checksum: sha1:5af9bb12e66ef64fdb29d96e403bbd32e4967f55
+    pristine_git_object: 771d6ca109d137bceb4643a4230e17c70932c65c
+  createfilterrequest.go:
+    id: 31a0c44046c3
+    last_write_checksum: sha1:1ce9756ac2583ed3c9200971cd16c5fe09c53f4e
+    pristine_git_object: e7780f3984d80e2f48a729deeceee284dec643b5
+  createportallinkop.go:
+    id: 320afb69b3e0
+    last_write_checksum: sha1:204e51d4fef111bd98f7e480185dd4db58f99bcf
+    pristine_git_object: 684f0a257797d2e2a69c452ce532e33254f105a1
+  createsource.go:
+    id: dc03b56af2bc
+    last_write_checksum: sha1:3fdf2efb30e00eb109c2409dd36edf3b918eafbb
+    pristine_git_object: d3e9028fa198bc2b1f55b68cdf97bb702d1de052
+  createsourceop.go:
+    id: c0bf5d8516df
+    last_write_checksum: sha1:bfe4eb0a58eccbeaa9614f03f30093356884a30b
+    pristine_git_object: 8f6c6718c377d2bbe150f99df2fd705190a2dd38
+  createsubscription.go:
+    id: bfd8f4e9f259
+    last_write_checksum: sha1:0f03789e32ebe4abd027073800b6feee34eab398
+    pristine_git_object: dafd7ab625466b299b84c5009bbd7e544ee6704c
+  createsubscriptionop.go:
+    id: ae5c9cec2758
+    last_write_checksum: sha1:f00e9cb17671d88d447693daa47901c9be44338a
+    pristine_git_object: 1d85ba733c1fe0f25554453d3de623b99fa71208
+  customresponse.go:
+    id: ebf71922c8d3
+    last_write_checksum: sha1:96a1b2310249760e4c15b2fa4352e838d6efc3bf
+    pristine_git_object: 30ba7eb390846d950722fc1f41d5586a55e87c7c
+  deletefilterop.go:
+    id: 622caa998eb4
+    last_write_checksum: sha1:66e5a90c7ff6b6111e4f9420d46412e4d5882636
+    pristine_git_object: 29654dad05c78ea1cb363cdf674cea54912aa73c
+  deletesourceop.go:
+    id: 8167c95ac5fb
+    last_write_checksum: sha1:eca6adf7c6f44fd1313aa1e8d5e247a166bfa3ab
+    pristine_git_object: 141720ed45604db8cc3bb0f04a2dcdc11d98a9d4
+  deletesubscriptionop.go:
+    id: fa427f861728
+    last_write_checksum: sha1:0d68a528cd6122691096a1c9169b46b4cc1e80e8
+    pristine_git_object: 9be7f239524b1e4e97d53e12af1c8a3ee3af71d0
+  deliveryattempt.go:
+    id: c61c89b12880
+    last_write_checksum: sha1:4760d67e4d7109c8dfe29a033ca903c51bcf5edb
+    pristine_git_object: e7814f4e84ad6af1f67859d5a0cb481bf7ac0a94
+  deliveryattempts.go:
+    id: 0d71a6b42c9a
+    last_write_checksum: sha1:ac009fbcf8a28db5c5f018a238b4e3ab03708647
+    pristine_git_object: 4778725d5291fd43c39c07c32f0af611e102d759
+  deliverymode.go:
+    id: e18a9f62082a
+    last_write_checksum: sha1:c39e501fa9e50f4b280bb97487e788dcf644e1e5
+    pristine_git_object: d986acc2faf1a1a2cd78491a11dfd262fc147856
+  deprecateeventtypeop.go:
+    id: 34ecfaea873e
+    last_write_checksum: sha1:61873e6dc571e3a0d07eb10bb26e2aad97fde0de
+    pristine_git_object: 3ec9e4d08fa1ff3478c8a406fdeb61f0723987f0
+  device.go:
+    id: 06bca96a24ac
+    last_write_checksum: sha1:635d2041b7d0ab3f63c4a884cb08c187c59c7057
+    pristine_git_object: d31ce69349573b7de6e2e3a1067039696a9abd88
+  devicestatus.go:
+    id: 97d9b2e629be
+    last_write_checksum: sha1:4b2b3ddcc2c5c18ad201b10a06de5f64dac1dfbc
+    pristine_git_object: ee768444543754bd38dcf1bd87f78b1384579b33
+  docs/alertconfiguration.md:
+    id: fc4814a1db5f
+    last_write_checksum: sha1:b9b09b54f2ff34905c47d3c0b6155b64a4a6c9ad
+    pristine_git_object: 060f75f6af6d41a20af7110000091ce0bdd4e03d
+  docs/amqpauth.md:
+    id: 366a27c9b394
+    last_write_checksum: sha1:bc1067ad5d9cbc47124100c7e15671ef5899fd0a
+    pristine_git_object: 8fdadbb706506dd7beff92b3e68b5d04b2a42dd1
+  docs/amqpexchange.md:
+    id: d88f4323566f
+    last_write_checksum: sha1:b361e1c62eb49f6500be3cfc8c8bca891f5179bf
+    pristine_git_object: 696bc6a2628e309beb6bd8f649fe489393740b78
+  docs/amqppubsubconfig.md:
+    id: 1006cb1258af
+    last_write_checksum: sha1:ebb20e87f70afff5e4389cb802e3dec367e42a65
+    pristine_git_object: 727fa15af2a45e0cc7323be0af7f1d8204ab4035
+  docs/apikey.md:
+    id: a5186cbac179
+    last_write_checksum: sha1:8ff2ab6e62f5ab24be69f644717452dfc18da13c
+    pristine_git_object: 8a509e6f7565b4487495ba8e2589c3f346a5ebb7
+  docs/basicauth.md:
+    id: 9dc0b3cd45ad
+    last_write_checksum: sha1:5a245e09db5e2741392e9ac2fd0a7d653fba3d9f
+    pristine_git_object: f6c857a4dcc87e58fd3d67ec2a480e4342731671
+  docs/batchreplayeventsbadrequesterror.md:
+    id: e4371626ca28
+    last_write_checksum: sha1:499a9c1e5f1f34a1665bcfe4108b2c944a15d526
+    pristine_git_object: 1a52c1400202f167beede45ff5aa8ef9d81e2c24
+  docs/batchreplayeventsdirection.md:
+    id: 6eaeeb0ac6a8
+    last_write_checksum: sha1:bd67793ce2a6909d130b2487024d788368284746
+    pristine_git_object: 487051c2b7d32d95d0c5b0a5270c4498f968eb9f
+  docs/batchreplayeventsnotfounderror.md:
+    id: 46ee4170bfec
+    last_write_checksum: sha1:d4b10a90e1feb2eabe1e980b49303687155ad9ac
+    pristine_git_object: 0a223bcc70416280c49d86540b86c289e951a208
+  docs/batchreplayeventsrequest.md:
+    id: 6b781a5a193d
+    last_write_checksum: sha1:178a69f0b4865851e5fce5778099518400341a24
+    pristine_git_object: 348073413f047c7e77c00159bd6c5b16957314d8
+  docs/batchreplayeventsresponse.md:
+    id: bfa28cb686ae
+    last_write_checksum: sha1:177315c429703b04d4caeacebae79adb3e4becd5
+    pristine_git_object: a71d9802aabc31b1b39bdbd25d530e88445e2bb0
+  docs/batchreplayeventsresponsebody.md:
+    id: 143000fe9d31
+    last_write_checksum: sha1:d98a9fd97b546898b43719fe6b79b3e5c43835cc
+    pristine_git_object: 8e8f9a83e2519b3c68edc2eb3da362522a22c987
+  docs/batchreplayeventsunauthorizederror.md:
+    id: e4b7dced60e1
+    last_write_checksum: sha1:7387025e75500b7b19225965de151fd214cf525b
+    pristine_git_object: ff4e493ef5b65f6f85638921dc8ed3f3fbcd3787
+  docs/batchretryeventdeliverybadrequesterror.md:
+    id: 4331ea7b8611
+    last_write_checksum: sha1:1dcb5e4336efc78a7725b4efee8170db8f34eaff
+    pristine_git_object: ae35068bb6e186a6c750e37e6336cf6b940564e7
+  docs/batchretryeventdeliverydirection.md:
+    id: b68d6d818e14
+    last_write_checksum: sha1:c04c65af4199ef1e42d6e6bc368dff5a5fd30c4f
+    pristine_git_object: a03cff8924cc9192b377759127e60b3510d798f2
+  docs/batchretryeventdeliverynotfounderror.md:
+    id: 3b3424a605f2
+    last_write_checksum: sha1:644d29e67593a7a211d01e68deb4e7b7d1780407
+    pristine_git_object: 4627fe4eccfb87b28b03e3354cdb5de04a6e1759
+  docs/batchretryeventdeliveryrequest.md:
+    id: f66f7d876f24
+    last_write_checksum: sha1:23b1d7c48154ea9fbbd4db1496ff45f065934430
+    pristine_git_object: 3bdddba3bf7c374a134b59ae5730c581d475bc02
+  docs/batchretryeventdeliveryresponse.md:
+    id: 6d9bb2a5541a
+    last_write_checksum: sha1:b9312f9f19704d7d0887a83e26fee8aec4b86355
+    pristine_git_object: 6dc418da834162c6ed5d6b5aecf02a3cca0adeb7
+  docs/batchretryeventdeliveryresponsebody.md:
+    id: bae83e6f5488
+    last_write_checksum: sha1:b766303fd2ec82a6ff7738a8cb54ab84a298a019
+    pristine_git_object: e3daa38af66e64b5a095c2d9061224086c0988e6
+  docs/batchretryeventdeliveryunauthorizederror.md:
+    id: affc8af0f54f
+    last_write_checksum: sha1:c3f9e4a3069bd8a041aecf9f7480d36549ea8577
+    pristine_git_object: 1fc4eb4dd1b218232ca76e4f3b503590b5222268
+  docs/broadcastevent.md:
+    id: 44bc6bca1b26
+    last_write_checksum: sha1:dbe9180149a53172e58a3b6932f75e6ea75eca7e
+    pristine_git_object: abe2c8db1f8b752223e75710bd9ac6273f03baba
+  docs/broadcasteventdata.md:
+    id: c605ba0dbb8d
+    last_write_checksum: sha1:be3be0e0682682bb1f7df0d8a7449de1bdc62261
+    pristine_git_object: ad5258e0a2925a663e9cbfba37528e0041acba1b
+  docs/bulkcreatefiltersbadrequesterror.md:
+    id: 25c99e9afcf7
+    last_write_checksum: sha1:cd42a9b83895aaec6795542d455f713c127078b6
+    pristine_git_object: 5afa883b06137c6011120295dce0a7471b7ba1ea
+  docs/bulkcreatefiltersnotfounderror.md:
+    id: 78eba12b09cd
+    last_write_checksum: sha1:bf88840c9712a27cd96180a1f528d5c5a8f058c5
+    pristine_git_object: 7677f15ce4f3f4cc05d5b47f54737e3b82749722
+  docs/bulkcreatefiltersrequest.md:
+    id: 3ed1ecd80f0e
+    last_write_checksum: sha1:434a58b37773f8b07036ff6f0f273792895f18d8
+    pristine_git_object: 51e0d940360c0e0ee680a0f07dcbbfbb3f5b57e3
+  docs/bulkcreatefiltersresponse.md:
+    id: 35d3c8afb4de
+    last_write_checksum: sha1:2a1b7d1212b78012b0eb8bb4ec5d0968fdf33746
+    pristine_git_object: 04ef09f5beec30ae11c48cea0127bef917816500
+  docs/bulkcreatefiltersresponsebody.md:
+    id: 24c8646a8bd8
+    last_write_checksum: sha1:529ae63a0e74775ff416648f031d8f50bf3341af
+    pristine_git_object: a6683df3d1cde45f214471b2c6792e85c78b59e2
+  docs/bulkcreatefiltersunauthorizederror.md:
+    id: 873d7ec93454
+    last_write_checksum: sha1:5d4b342c066949dd1b3718c1cdcbe57cedf5ac22
+    pristine_git_object: 64fd5c96daba477b1971f011098f9ac08b2c4273
+  docs/bulkupdatefilterrequest.md:
+    id: 11f08b6987a7
+    last_write_checksum: sha1:f827a4950012cdf74b766fdc931c276e0aba1016
+    pristine_git_object: e55375646a1fc2e8b9a8dc42ba84d9b1ab2b2574
+  docs/bulkupdatefiltersbadrequesterror.md:
+    id: 71f5249f5551
+    last_write_checksum: sha1:ffa77a31558690597f4dc7f438567866fa19f2c6
+    pristine_git_object: ce93c8461383500a3aaa49a7bf00f23f9125d028
+  docs/bulkupdatefiltersnotfounderror.md:
+    id: dba6dd02736a
+    last_write_checksum: sha1:3416593c0781b89762bca7432a03bc5a91e3f76e
+    pristine_git_object: cc64eca24ec655d4f4f57757e72799308c126872
+  docs/bulkupdatefiltersrequest.md:
+    id: 525cdc2eb014
+    last_write_checksum: sha1:bfe52a99dd8afd54ab36996ca214bd170f12b0c1
+    pristine_git_object: c11093cb2dc8eddad2f71c5045cc1287e08cf858
+  docs/bulkupdatefiltersresponse.md:
+    id: f05b3fe877cb
+    last_write_checksum: sha1:8d09a0d583b18d54ca202e4d815178fa7dbdfc65
+    pristine_git_object: dccbe867b4c68790c88d0f9793f26024c5ce626d
+  docs/bulkupdatefiltersresponsebody.md:
+    id: 05426395f5c7
+    last_write_checksum: sha1:1d8613c551cf2b7b3f792c778600f50cba2e3d6d
+    pristine_git_object: 3029527baa3a95775f4647b0a0e602272a7becc2
+  docs/bulkupdatefiltersunauthorizederror.md:
+    id: 1f4e3366bae1
+    last_write_checksum: sha1:5f2203db123ccafe19ff55eff59e134156671c6e
+    pristine_git_object: 971c70c7ed36b77df031e0879e3e3da824850608
+  docs/climetadata.md:
+    id: 4aceb50fbad5
+    last_write_checksum: sha1:35c937c3cfdb9b74a9a5c25ffe3c3f0473612e25
+    pristine_git_object: 38a19e11e56fab42a66188b3d86cc18840ed9270
+  docs/createbroadcasteventbadrequesterror.md:
+    id: 2ea3a7f93874
+    last_write_checksum: sha1:b1d40cbace5a6fd97491a312c71a72874b928f4d
+    pristine_git_object: 9067199d54a4117c767b1c17801ad2f0f291bfa8
+  docs/createbroadcasteventnotfounderror.md:
+    id: 78751a1c99c8
+    last_write_checksum: sha1:91b5ec02e392c1920f7396e25294884aa732ce3d
+    pristine_git_object: 3c0ad9b6077a4a8f945992a81a75d442a19b4f93
+  docs/createbroadcasteventrequest.md:
+    id: 9150c8bf482b
+    last_write_checksum: sha1:5ffef287516828ee21271494513ce8e9dc6578ab
+    pristine_git_object: 1b0424f07cdbfe18ea06edf6cdf0c1b46273e666
+  docs/createbroadcasteventresponse.md:
+    id: 79e59050e1b0
+    last_write_checksum: sha1:d1f07466a8040f2957a4e139e4dbf0b66ad47c21
+    pristine_git_object: f61a788c8533137d807da5f8ff713773277e4df4
+  docs/createbroadcasteventresponsebody.md:
+    id: 88a2df0a8f64
+    last_write_checksum: sha1:1c1b08e7ae0ab67521c019ea3f01c199d30161bb
+    pristine_git_object: 9156027a4bc6f5dc0c6f9f2e7406fd8745dec16e
+  docs/createbroadcasteventunauthorizederror.md:
+    id: 595561b40a07
+    last_write_checksum: sha1:6e3b2c3f28eae3bf8f57b5d460326ea7c757eec4
+    pristine_git_object: d1d322af939ab440df18c9544c053f1a5e3b7971
+  docs/createdynamiceventbadrequesterror.md:
+    id: 4b91723b39d5
+    last_write_checksum: sha1:6b45d0fc5fabd6b2ce14ee705f89bdfffb9f386e
+    pristine_git_object: ea872ee1e14790aef0b40346cfcd0570144e2439
+  docs/createdynamiceventnotfounderror.md:
+    id: bf8072607c00
+    last_write_checksum: sha1:46bfd65f6b26dfea5fd02b22fddf1936db4f75c2
+    pristine_git_object: 2674195c27ecc76848147e66ea40f9150cd25ad0
+  docs/createdynamiceventrequest.md:
+    id: 60b248798b06
+    last_write_checksum: sha1:d74f8020f17935388dab9f9c069ab409deb71514
+    pristine_git_object: 45e731a66d64021172c5527efd0d59a5eea8efda
+  docs/createdynamiceventresponse.md:
+    id: 5139fc6726e9
+    last_write_checksum: sha1:215090a608687eb93e16b278c71c8846c57d8351
+    pristine_git_object: 9e6aed8302cb14316a2ba6cc96cb7f635f8382a7
+  docs/createdynamiceventunauthorizederror.md:
+    id: 6c0cd5f2c0aa
+    last_write_checksum: sha1:d002e44732e8b9bdd6e300fe8f2dfff88097f426
+    pristine_git_object: 8069bc86411891a003ea64fc571566da6e841441
+  docs/createendpointeventbadrequesterror.md:
+    id: 9db76ea67154
+    last_write_checksum: sha1:64815241fa168948e29312c0299dfb5b76c71a35
+    pristine_git_object: 50b1c5eabdb20819f8951637224f5ff19dffa19f
+  docs/createendpointeventnotfounderror.md:
+    id: fafd5f3bb69e
+    last_write_checksum: sha1:d4a66d2988178b466366a2996253c53855e0bb49
+    pristine_git_object: 651880e8776af447e7861a80b86925d1931a2406
+  docs/createendpointeventrequest.md:
+    id: 511a6b6d73fd
+    last_write_checksum: sha1:8c3459925196c2d9c846f7cb08ebea4f6a248f00
+    pristine_git_object: 44c0918062574346cecd43002c9c6f40a8be0ccc
+  docs/createendpointeventresponse.md:
+    id: d2c4a44287bf
+    last_write_checksum: sha1:6b40c1364fa68f135482019662af05c1e58e419c
+    pristine_git_object: a084447362675c7dadcbf03350785f3d7bdf082d
+  docs/createendpointeventresponsebody.md:
+    id: c99db0f569ca
+    last_write_checksum: sha1:90920368e7b16ce4ec96d9a5dfe03157bb187145
+    pristine_git_object: c82c0bccaefe795d148cbaf8de276e0a776b04ff
+  docs/createendpointeventunauthorizederror.md:
+    id: bdc52e7126f2
+    last_write_checksum: sha1:2c107e5e90801fb0b77b978ca7c450d81576d557
+    pristine_git_object: e063d506f8f8467dc3eea577e89ef816b84dac79
+  docs/createendpointfanouteventbadrequesterror.md:
+    id: cf7aec8e9cf7
+    last_write_checksum: sha1:d5d38ebda75881c5efee3792b87c31a725fce48b
+    pristine_git_object: 76164c9dfa181de938bb0097c321d7fbc4574288
+  docs/createendpointfanouteventnotfounderror.md:
+    id: 6d5892804d8c
+    last_write_checksum: sha1:e6f23cf9513d175f8436380342261eab8a92955f
+    pristine_git_object: 059873e069f691940289e3c6f8240add1763cf32
+  docs/createendpointfanouteventrequest.md:
+    id: bb86dae10f90
+    last_write_checksum: sha1:1079652e2e0f1986ec66519329aaba48a6f93eae
+    pristine_git_object: 67d3b8942968376d7f3d436755f6fa160032f26b
+  docs/createendpointfanouteventresponse.md:
+    id: 8e455483e9b8
+    last_write_checksum: sha1:029925cb8212ac22e3f591edcda50c394eaf94e8
+    pristine_git_object: 0556d4d6ddc76cc3e9552892589cf1d374a701c1
+  docs/createendpointfanouteventresponsebody.md:
+    id: 7fe8aac968cc
+    last_write_checksum: sha1:f0f9824af505b7587d943a06e29d779c5dc44bd6
+    pristine_git_object: 4a81ad9792abf116ce7afc34bcf795c24ad5483b
+  docs/createendpointfanouteventunauthorizederror.md:
+    id: a2b50cfd4f89
+    last_write_checksum: sha1:21f068ea03be3e219d15147e7e1ba558d06841ec
+    pristine_git_object: 88dc989cd7e6098dde1c3a2b2df636c34152c4de
+  docs/createevent.md:
+    id: 2ca401d649d0
+    last_write_checksum: sha1:87cb16fa8a50f056db29ba11d04b19ca79daebbd
+    pristine_git_object: e3fab43e5722a3cc0510c2a895086633c125d766
+  docs/createeventdata.md:
+    id: 9b9930f343b2
+    last_write_checksum: sha1:8b3de39ca241d2065ea1af2f86a003eac110c5a4
+    pristine_git_object: 7fff47d4358017156d11eeed5a422452c641102f
+  docs/createfilterbadrequesterror.md:
+    id: f06b2baaf8a2
+    last_write_checksum: sha1:eb60db4ff0668c407b105c864b4b9f1d820bf5b3
+    pristine_git_object: e87566162fbd0d88d22951cf987e04a92a6981e1
+  docs/createfilternotfounderror.md:
+    id: f2b9beed630e
+    last_write_checksum: sha1:4fa202a6cf97b6acd9cb7424b3e4499754e309ca
+    pristine_git_object: ccb8ab19a2fac81d56868b2fe17888991dd1d6cd
+  docs/createfilterrequest.md:
+    id: 19912e71a6b8
+    last_write_checksum: sha1:5a6af9e3c48b7c601727ebbf88d1e0af46669c67
+    pristine_git_object: c97229369e9514aee64b60f6af7c98808134bd53
+  docs/createfilterrequestrequest.md:
+    id: e895dd10f1ce
+    last_write_checksum: sha1:1b7f265b82a8c33f8c26795865fd9bea51c8e85b
+    pristine_git_object: e419d3970f6dda8849e54b54e2b58c7612a8c1b8
+  docs/createfilterresponse.md:
+    id: 30351bf34c69
+    last_write_checksum: sha1:1a25379cf7debf7841d1b71e974c095457b42a0e
+    pristine_git_object: 85be3493edd314e6571df830c73a17740a396c98
+  docs/createfilterresponsebody.md:
+    id: f45fa10d29e5
+    last_write_checksum: sha1:4809e1b1f4ebbc24703a93ddf1d8687efdc22767
+    pristine_git_object: 991479c034fad80f0cab1d498c1b56a89505504e
+  docs/createfilterunauthorizederror.md:
+    id: 0490ba0f70f3
+    last_write_checksum: sha1:5a27d27149181537d8b368dd75986a17e2e0fb0c
+    pristine_git_object: f729379c1af44e3a001bab83cb6d2804469f4749
+  docs/createportallinkbadrequesterror.md:
+    id: 51904234192e
+    last_write_checksum: sha1:3f3c84bb0db24e0b3387cbed7068cd66008f461a
+    pristine_git_object: 098e3d0661501bb95548320f6d3870849175f4a3
+  docs/createportallinknotfounderror.md:
+    id: 9399c04c359b
+    last_write_checksum: sha1:7b5e42e6f10f39336a75f4dc790042e07bd400a0
+    pristine_git_object: 5dd93da518674fc2332442f9825f550a004d3793
+  docs/createportallinkrequest.md:
+    id: 69860e06e25a
+    last_write_checksum: sha1:bc5895e55447553da19c5aa4b9e389e0f1295406
+    pristine_git_object: 60a84443680877ea7f46bf3f35830f34f9a5dce0
+  docs/createportallinkresponse.md:
+    id: 1ffa8dcd86a1
+    last_write_checksum: sha1:04d9391de933f974d06841d71bcfebf50a64d1fa
+    pristine_git_object: c489c9547623bad050ce7237e00a60fd9b465a85
+  docs/createportallinkresponsebody.md:
+    id: e11490561ec2
+    last_write_checksum: sha1:a1b7faa6ee91def7ac2a203230d5802aa9c8db0b
+    pristine_git_object: fcd1dac1e3fc9ea6df0c74e6619319f263854f6c
+  docs/createportallinkunauthorizederror.md:
+    id: 09611d1c9a21
+    last_write_checksum: sha1:3dcb1d264ffa7896e6203e98877cef45ee3d5fd4
+    pristine_git_object: cf9cd60349b5b5f3bfc1a72ed6a5b2ded02da903
+  docs/createsource.md:
+    id: 5106fdd26677
+    last_write_checksum: sha1:0b7a5db9e72e56b949160eaac6d78c994eb0e509
+    pristine_git_object: 0a7ce5f1f6435bc35b55c71093d9a360f6e8a4a1
+  docs/createsourcebadrequesterror.md:
+    id: 0d1c12bcbe16
+    last_write_checksum: sha1:a1d6a032e923d35ce220b84aab19f911b7d8213b
+    pristine_git_object: 278c225a4cd23c3380eb546ce2d73b07333033b8
+  docs/createsourcenotfounderror.md:
+    id: dcf3e27b4853
+    last_write_checksum: sha1:e07940bfcbc051c613c4d45309256c25193fa9bb
+    pristine_git_object: 3af07f2c3eb814027b123b00ecd7e53bb340d94d
+  docs/createsourcerequest.md:
+    id: 524047b9e019
+    last_write_checksum: sha1:fb7be1631f67ae66e6f4c6412824822b4c7c29f8
+    pristine_git_object: 19c65131319a472f0394f94c0ac3926ecc4b02b1
+  docs/createsourceresponse.md:
+    id: e4a097b12546
+    last_write_checksum: sha1:e0267c488bdebbef53370f9aaf935b3d8878eb67
+    pristine_git_object: 776a1eef873ce852e8ad168a9d20467acffbeb26
+  docs/createsourceresponsebody.md:
+    id: 5b34f9955d90
+    last_write_checksum: sha1:bcacf23840a51a8af7d6bf3407c70020f4606b0c
+    pristine_git_object: b0161fc23c315cf0603029638fa5550ee10b7d2e
+  docs/createsourceunauthorizederror.md:
+    id: 103336dfa908
+    last_write_checksum: sha1:1202fdfec032a75d4effe8e90e8311d016b18efc
+    pristine_git_object: 47aeddf287343d3220f6980289ca259ba825e40a
+  docs/createsubscription.md:
+    id: aa080d3520da
+    last_write_checksum: sha1:3ddfa42d68a2a81ea9843a6c94f0736348cdb3fa
+    pristine_git_object: 844db9d47d7ad3a8c0404c135719cf2735ab480c
+  docs/createsubscriptionbadrequesterror.md:
+    id: db2638a97318
+    last_write_checksum: sha1:c69dc558d51cc3546b80b7997f98494f3ef2842d
+    pristine_git_object: 079ce976ba129b81437ecb2a6d3363962edf00b9
+  docs/createsubscriptiondeliverymode.md:
+    id: 461af3adf60f
+    last_write_checksum: sha1:7ee99cc804e6cf06e24177c77a49100b4d267d14
+    pristine_git_object: 1dcbef2e03fd41085ec8ff576fdff39d766d8b5b
+  docs/createsubscriptionnotfounderror.md:
+    id: c2ce267abb3a
+    last_write_checksum: sha1:26c248d564fa68143faae16213b33fb1b866f25d
+    pristine_git_object: 03887f1758ce32be706a13fbde14bf0c6971fedd
+  docs/createsubscriptionrequest.md:
+    id: 5a820a7fa7e6
+    last_write_checksum: sha1:d2441e61a512694f061f32485d0df00dbc5f21db
+    pristine_git_object: 5979c87fd385cb0c8a17dcaed2300c3d50a6cfb0
+  docs/createsubscriptionresponse.md:
+    id: fb1c32f99579
+    last_write_checksum: sha1:0fdab6f829e7ba6c29947c90b456eba7046d6444
+    pristine_git_object: 5fa01b93ff21bd14a2adef7738dfe804880d4659
+  docs/createsubscriptionresponsebody.md:
+    id: 4b8bf0c3ec14
+    last_write_checksum: sha1:2d4b5bcad21f79295e2f2e972e5d03c4254792c8
+    pristine_git_object: e60b06ad8761f30619dddf1e73af78ad843a6318
+  docs/createsubscriptionunauthorizederror.md:
+    id: 45d96f584669
+    last_write_checksum: sha1:bdd14c45e52a22051df3a6aced1dff218ea237ea
+    pristine_git_object: 2655e682f5bff203d5a84d5415487ffb8420cf0e
+  docs/customresponse.md:
+    id: 5fd0f6cbb9d8
+    last_write_checksum: sha1:d73c3ccfd414d7fd7ce4b2b4d1ec32e57fcc7f0a
+    pristine_git_object: 4be0519fde42f58d79a5b7272726cfcbc9514013
+  docs/deletefilterbadrequesterror.md:
+    id: c510fc86e762
+    last_write_checksum: sha1:6621b314e8facf3253314698a12ecf9de93bb9f6
+    pristine_git_object: 295249101792e0f2043a053195e210467384cb9c
+  docs/deletefilternotfounderror.md:
+    id: bba0255c0897
+    last_write_checksum: sha1:8f29bdd5a80e4d024306d3779d7ff8dfdb75659a
+    pristine_git_object: d0b56e2f9a05daf113481ad52597775a211279a2
+  docs/deletefilterrequest.md:
+    id: 4bf44b2b6f18
+    last_write_checksum: sha1:2066bb90e9f64740242d505648e6f5c67841480c
+    pristine_git_object: 5d7dbd00848d2c40abfaf20d87b2d4cf10ce4ccb
+  docs/deletefilterresponse.md:
+    id: 32725cc839bb
+    last_write_checksum: sha1:16e51ea50f175d515ccaeae94f41799356660379
+    pristine_git_object: 87816d998d16ec389374323f744eed562b1c0b89
+  docs/deletefilterresponsebody.md:
+    id: 09a7c2ec9876
+    last_write_checksum: sha1:d9bcb09b93cf0bfd682a3888ae01994a87d8a690
+    pristine_git_object: 87d5560a3f4361278f9f955c0dbe98aa62f99ee2
+  docs/deletefilterunauthorizederror.md:
+    id: eda032d1aad3
+    last_write_checksum: sha1:51658a204aca7d80fcf26ecde9779102887f7550
+    pristine_git_object: d1afe9730b1f8b315a34bfb84b1c87f798be1ef4
+  docs/deletesourcebadrequesterror.md:
+    id: e972580dbb69
+    last_write_checksum: sha1:e7d0538c2bce816de33f91e0b376ecbcc7bc673a
+    pristine_git_object: 6a5ada44d89095120d62065843aa5cd096d06f6b
+  docs/deletesourcenotfounderror.md:
+    id: 24c2fbc87fae
+    last_write_checksum: sha1:85223456a7f726408a084ccff17e74c73ca99964
+    pristine_git_object: 5d5d6005183fd0a5652dcaab7649d0cb6b158f53
+  docs/deletesourcerequest.md:
+    id: 9841f526d210
+    last_write_checksum: sha1:e5f4e62c0714f9b7e93604575876f717082a5401
+    pristine_git_object: 803df07c709cf69492c643cb74f07a13c8413374
+  docs/deletesourceresponse.md:
+    id: b77780e4070c
+    last_write_checksum: sha1:f7cca317a8d03fcbd6d80dcf4dbb0c8a7da8161d
+    pristine_git_object: 3d2bbf5f28b6c2c4aadc18da14a405600618cff8
+  docs/deletesourceresponsebody.md:
+    id: 4686a6eb3ded
+    last_write_checksum: sha1:35f21f376b8755f9707e5890732da4d8ec45a1a3
+    pristine_git_object: 47b78e4a51f1889b75f4afd09297be39608c5cef
+  docs/deletesourceunauthorizederror.md:
+    id: 5a6f20f85f3e
+    last_write_checksum: sha1:baf79088d7f2f9cccc4f1f443128cf106527c500
+    pristine_git_object: 9b605523876d89551b74e3f33b3dc146a6fc7b12
+  docs/deletesubscriptionbadrequesterror.md:
+    id: e7f7bb54c449
+    last_write_checksum: sha1:ec018d2dcb648344dc02893636d321dd9a812194
+    pristine_git_object: 01285bcbb0a7405259856fb769fc4d36d3c5c0a0
+  docs/deletesubscriptionnotfounderror.md:
+    id: e988928894f0
+    last_write_checksum: sha1:6087a15cf8bb136a469582ca3c2269c8208d1c9e
+    pristine_git_object: 7251d45286941d582e0eedc9499250b7c4d33ef1
+  docs/deletesubscriptionrequest.md:
+    id: e842d9cbdf6c
+    last_write_checksum: sha1:dc1f73557f1a145ccd7cdb2cc0efe9522354e6ea
+    pristine_git_object: 5ad23aa93c1da15a85cda5423e68abda525484f6
+  docs/deletesubscriptionresponse.md:
+    id: 8e924ccbb685
+    last_write_checksum: sha1:e4d532b7f309d6780a10d1b9de0a08c1422ddbe9
+    pristine_git_object: 2470be36102e404450c1fa871c1ebaeb2d315c5f
+  docs/deletesubscriptionresponsebody.md:
+    id: 003e821c3a81
+    last_write_checksum: sha1:8a527a5ef3a27956b9045f3f2ecfb83252b4fd05
+    pristine_git_object: e29ca24604d661cf2ca2b678bf4c548ce51d7202
+  docs/deletesubscriptionunauthorizederror.md:
+    id: cc85a368c996
+    last_write_checksum: sha1:e3875433c591afe34484c6177e082c5f98748512
+    pristine_git_object: 3e436a6d1165318929cf354e6aae782ad9addcae
+  docs/deliveryattempt.md:
+    id: 9464cbb553d1
+    last_write_checksum: sha1:b5bbace923f4271748888bd2a0cc7cc307868d89
+    pristine_git_object: 2ea5c1c7cff67d6db6f25be6f5232a227cc5411f
+  docs/deliverymode.md:
+    id: b8787e664e92
+    last_write_checksum: sha1:26d45e1515614a2b014e1beade2f388ce099b4ec
+    pristine_git_object: a4384b283792a6562c91ded8bf49245d43e66a68
+  docs/deprecateeventtypebadrequesterror.md:
+    id: 28e10cfdc058
+    last_write_checksum: sha1:e299a50a3cd30b93543a7fdd514521ab87da01e1
+    pristine_git_object: 0831d385c565b4ee12b34cd12ca4bbd33aa5ce8b
+  docs/deprecateeventtypenotfounderror.md:
+    id: 393998d332da
+    last_write_checksum: sha1:0a38f08c91c39eb964ca2a0617402118aead6202
+    pristine_git_object: 8ebfa4c11f1ef3092f147eb1d3f662fe1b8cff6a
+  docs/deprecateeventtyperequest.md:
+    id: d83c005254b1
+    last_write_checksum: sha1:177f62fe59b3de463f6e9ff42172dc22837b9870
+    pristine_git_object: 7047801627e5f621f5289709c63df88afb708926
+  docs/deprecateeventtyperesponse.md:
+    id: a273ea223d78
+    last_write_checksum: sha1:7f95cbc6e9cd34df76b1a6309208cc73bf942687
+    pristine_git_object: 33c081fa3e4e9b0b863cdf566dada39f122c11cd
+  docs/deprecateeventtyperesponsebody.md:
+    id: 7c1dc141134c
+    last_write_checksum: sha1:2e9260ea60fe7ac53bcff19ce02ed40ab0af2952
+    pristine_git_object: cf69392ea0c4c4b735b87a67b97ecab2f6b75a99
+  docs/deprecateeventtypeunauthorizederror.md:
+    id: e5d6c2216ff2
+    last_write_checksum: sha1:a6872cc7ee0157cd08ae3ac3a17cfd5b6412a963
+    pristine_git_object: b73a8dc5030cab28c5b95c6b75ef0603d3b81703
+  docs/device.md:
+    id: 3708ae998146
+    last_write_checksum: sha1:3715172504b73771931863b773edacd160a7e423
+    pristine_git_object: 845b39a1c963d5dfb63482775fc6ecb9ef26d310
+  docs/devicestatus.md:
+    id: da52834c616c
+    last_write_checksum: sha1:9559035041ea6939068c28cd7c3fad056bbcb749
+    pristine_git_object: c3466119a9c8ed3b0cb8a1d2145ae8c6429350a9
+  docs/dynamicevent.md:
+    id: b11e130fdbdc
+    last_write_checksum: sha1:048b05b87f026a12199886083cbf8e018b0892c6
+    pristine_git_object: b481e22a34ebda74f29d34dd2f71b90d26ad0fc1
+  docs/dynamiceventdata.md:
+    id: 28f8a93e916d
+    last_write_checksum: sha1:b426402867cf082f799b3518e0197c5ad4363658
+    pristine_git_object: f990d2f2980f5104b7256461b1b248c2d340412b
+  docs/encodingtype.md:
+    id: 2d4b478fcd9f
+    last_write_checksum: sha1:501e4f89756a89f601a6705c0ba701b727ac336c
+    pristine_git_object: 0ed3e5b1e93681689c4e25dd4ae99ad05eb7203f
+  docs/endpoint.md:
+    id: c01e7a375ab7
+    last_write_checksum: sha1:e74136278c22816627f38b02c5c33faebdfa717a
+    pristine_git_object: 21a367db75a46f4a34d0313696734e94bc2e13ea
+  docs/endpointauthentication.md:
+    id: 1d501c2c1c11
+    last_write_checksum: sha1:a0f53da0e14d9b9ca09ce401c2785c42ee7ec23e
+    pristine_git_object: 2f45b72c49dee476554979aeb4756c600cf4e866
+  docs/endpointauthenticationtype.md:
+    id: 0128d36e4d27
+    last_write_checksum: sha1:504204c1bb70b385f09e90e37d3323ff0d0ce822
+    pristine_git_object: 8fd4e49be4a2c1cdd376dd61b772108f70b72532
+  docs/endpointstatus.md:
+    id: 222d00d7dfa2
+    last_write_checksum: sha1:e163f88621a0a46a01d5c4ce6b5575df2ac6bacf
+    pristine_git_object: 89d2f8b1009e570f906c6d1b433d6c2e31649d2c
+  docs/event.md:
+    id: 45009a52e88d
+    last_write_checksum: sha1:e688e7208b875a4bc7185b646bb9b1a7c8b27163
+    pristine_git_object: f9fa17ac83a1ed30704b71a8cca4a3897bad7a93
+  docs/eventdeliveryresponse.md:
+    id: d5366eb5326f
+    last_write_checksum: sha1:972aa80c67255325a7f2689b1843a668db4bac1b
+    pristine_git_object: 4bcf36d7b45892a921dc47174ad21ed0e8ed4fdf
+  docs/eventdeliverystatus.md:
+    id: 2cb2f2079ca6
+    last_write_checksum: sha1:f7c0cbb5b87f6b24cbb2b06da5ac522b3c7c0842
+    pristine_git_object: 0b8d5bde544aa3f4ba4edea549c77b495bba88d1
+  docs/eventresponse.md:
+    id: 223f6d3c0312
+    last_write_checksum: sha1:1cb3335a160b12f6f2b96c6cd44219fc3fbdc08e
+    pristine_git_object: 8444316661dc7c58eaec7313b68fcfb085ccc2ab
+  docs/eventstatus.md:
+    id: e233213ecc68
+    last_write_checksum: sha1:e59ccece50c3d78f02596bbf9cac69c83f370723
+    pristine_git_object: f7b0b7406a164ea64c9dd3ad6be9fdc4865a5095
+  docs/eventtyperesponse.md:
+    id: 9312846fcaaa
+    last_write_checksum: sha1:3d2063cb01089383adec5c4add66b94a97bee24f
+    pristine_git_object: 0134e57480badc395843c1d80689d2dd71613108
+  docs/fanoutevent.md:
+    id: f75a8b894733
+    last_write_checksum: sha1:5a2802a2a067e3c0c2a3abae5115187a1e8617ba
+    pristine_git_object: fd1851f353934abe504df35fdfdc925dfc22ca43
+  docs/fanouteventdata.md:
+    id: bdda4af38b50
+    last_write_checksum: sha1:f56b50cdb5ad5f88bae676561b79a6dd82098b2c
+    pristine_git_object: 564fe5ac5309cf5c7cdec4275271ec4c7c9fe64b
+  docs/filterconfiguration.md:
+    id: ca958b7abfc3
+    last_write_checksum: sha1:b88d358e9857d9a7e2d5b3ac1f548257ddc73f54
+    pristine_git_object: 1a13c702651efd5924f7c142ef93b79d409b5cfa
+  docs/filterresponse.md:
+    id: b4cb6c60ec67
+    last_write_checksum: sha1:81f9939137496055b2fc43cd1ef7f1b967d2e911
+    pristine_git_object: 3fa9a5d802dee459112203fd2b008657d0cb18b2
+  docs/filterschema.md:
+    id: 36ee049893fc
+    last_write_checksum: sha1:35c3c663cf25ce88dc824a477d29655852862c4b
+    pristine_git_object: e1d8ee3152f916be4d5556530d07e4b5ba79b5b3
+  docs/forceresendeventdeliveriesbadrequesterror.md:
+    id: bb16aa27ce24
+    last_write_checksum: sha1:675610006db17913873553da5772b2f225a0264f
+    pristine_git_object: 9cb12f4aa35da4d271019d7f58d6444cd4c93d11
+  docs/forceresendeventdeliveriesnotfounderror.md:
+    id: ef74c1636c1d
+    last_write_checksum: sha1:d56133ab31ec6e4421873e353206def093736489
+    pristine_git_object: dca2ef947cac05828227eb5d8d10cabb0b20e9f3
+  docs/forceresendeventdeliveriesrequest.md:
+    id: e47c7febaaad
+    last_write_checksum: sha1:7bce4a28fbd5d456c609adacc996117a13d6e8ec
+    pristine_git_object: da4840cbf82b3c8b3640b027144189515d95b499
+  docs/forceresendeventdeliveriesresponse.md:
+    id: 958c146f1d73
+    last_write_checksum: sha1:b996046eb9d18f9a11522b657975f3e469247f7a
+    pristine_git_object: 06a150b8ca7154523add7a1abfaf993542e4f842
+  docs/forceresendeventdeliveriesresponsebody.md:
+    id: 679bbb975e68
+    last_write_checksum: sha1:ce59462686ebfdc1746d83d978e1a9a0d04ec7b3
+    pristine_git_object: 7834bd14284ffd0a422080dde87e66510ffb1d54
+  docs/forceresendeventdeliveriesunauthorizederror.md:
+    id: 876de431e584
+    last_write_checksum: sha1:198bef81f36889106aacf79c3b6d84b0a7040d68
+    pristine_git_object: 233001e713a1f593d771e0796c69379efb5e8c69
+  docs/fs.md:
+    id: 12421cdb575d
+    last_write_checksum: sha1:5721beff55e625df2a456c381ccfee96d89853ed
+    pristine_git_object: 169ebc4ff2abca0ccba6a679d669de0bc26e7d41
+  docs/functionrequest.md:
+    id: ce668473ad20
+    last_write_checksum: sha1:59c19b25a5da401ad2d845c2b5ba1d794118537c
+    pristine_git_object: 614c4c5f2bb19840f3caa8b8aea408269e8f33f7
+  docs/functionresponse.md:
+    id: 8827e6e19036
+    last_write_checksum: sha1:41405247a3f725da7e4edbc98682c781904d974d
+    pristine_git_object: d9bcf7ca6a0cf63506e01342274201677cb1a703
+  docs/generateportaltokenbadrequesterror.md:
+    id: f3d981239a02
+    last_write_checksum: sha1:646fc48bc397913b61006c404843dd3c49e4d995
+    pristine_git_object: 01342887b6f1f7a76446e72667818af87bf08d62
+  docs/generateportaltokennotfounderror.md:
+    id: 338611f56064
+    last_write_checksum: sha1:b0718aa03848c6d8c8f958537886109d6cd8fa64
+    pristine_git_object: 350abbd2c7d92f182df6ce64cfbf20fbdfd852b0
+  docs/generateportaltokenrequest.md:
+    id: 2262c1999822
+    last_write_checksum: sha1:825232a4002fd9d82034942b054051ae29130cd9
+    pristine_git_object: a2ebaf9be8f420afdc28e1d2f79f58ddd2d56e8f
+  docs/generateportaltokenresponse.md:
+    id: 3b1ef535163f
+    last_write_checksum: sha1:9d481ed9dc50b85f46d06ed1865ef5514c583e2f
+    pristine_git_object: eb5250e8f0c6509315be967853845c1ac7b76352
+  docs/generateportaltokenresponsebody.md:
+    id: 63bf9f3a9e2a
+    last_write_checksum: sha1:4b5531ce1bedaf2a35287ce00f613f1e15aaf78c
+    pristine_git_object: ad39d0f8c7ed6aaf37d76b5f80cd58dbe3da140c
+  docs/generateportaltokenunauthorizederror.md:
+    id: dd2cfdf025c8
+    last_write_checksum: sha1:f4a61ae591327aca9109a753cf00b47c1ab38b4b
+    pristine_git_object: 6b1091bad91ad2763990729a42667a335800b974
+  docs/getdeliveryattemptbadrequesterror.md:
+    id: e5ea1a144e72
+    last_write_checksum: sha1:c070e5ad0eff732efef1c885a895ef0ced053f8a
+    pristine_git_object: e89775008f7675f84c3e1566b2f67864ed7cbd46
+  docs/getdeliveryattemptnotfounderror.md:
+    id: c22d4d095599
+    last_write_checksum: sha1:06aaba4b821a5dec5f2b2c687a9defee39f29ffe
+    pristine_git_object: 52a04df7821bae444d995f9803750b45cf4154d8
+  docs/getdeliveryattemptrequest.md:
+    id: 5d1342729fb3
+    last_write_checksum: sha1:3f110fd62e8ca8194a4d349e28d48471cf44abbb
+    pristine_git_object: 382f7d4beb135e72b51bab6258ab932c1663818c
+  docs/getdeliveryattemptresponse.md:
+    id: d3f7d28ae373
+    last_write_checksum: sha1:528a50105fa9ec605b4a729354c660514d6ab6ec
+    pristine_git_object: 9cfe038068d2d3f52101fbe2fcdc9deefcf297c9
+  docs/getdeliveryattemptresponsebody.md:
+    id: c9d7dee4f2a1
+    last_write_checksum: sha1:2935c907293d75b34e647f044bcb37530c9227f3
+    pristine_git_object: e065606b16530f7aa8856a57ac7ac9e295ea69d0
+  docs/getdeliveryattemptsbadrequesterror.md:
+    id: 765ef7eccb51
+    last_write_checksum: sha1:10e5c67946db46e1301f006915d523c7addb1c44
+    pristine_git_object: e8fd8aea0dabcfc74aa66f5b5e4682106f42d958
+  docs/getdeliveryattemptsnotfounderror.md:
+    id: 22f0ea33c973
+    last_write_checksum: sha1:3b34447de66badebf9243b1aa17a13b022b2c4bf
+    pristine_git_object: ad93a3b5fd3a61648913cfa62eb567b583d9933b
+  docs/getdeliveryattemptsrequest.md:
+    id: 10912bfedb4a
+    last_write_checksum: sha1:ec9de31b948c3f1ccd5267ce0ddfc20e295efb55
+    pristine_git_object: a0f2d032183e5ccddffbd785bc8dd69a479e05bd
+  docs/getdeliveryattemptsresponse.md:
+    id: 02b20e835746
+    last_write_checksum: sha1:b3d45ca7fd3ffbe5fde93f03f024778e295522e9
+    pristine_git_object: 2282454df583206e82972861d2cf3dbbbef4cd45
+  docs/getdeliveryattemptsresponsebody.md:
+    id: 36eaca521693
+    last_write_checksum: sha1:97807af42a05ad5ec4ff1bbe02417c776ce4409b
+    pristine_git_object: a7ffa072a50a0d21385616ce98e074d4f33baeb5
+  docs/getdeliveryattemptsunauthorizederror.md:
+    id: 303523283df8
+    last_write_checksum: sha1:8626d36a28e25c27a8cae4993d696bfc9836b7ed
+    pristine_git_object: 6e7ef0d4b80d8e68eeb68682da314b7f49491db8
+  docs/getdeliveryattemptunauthorizederror.md:
+    id: b99d4a119b21
+    last_write_checksum: sha1:9b567c2f75830e00fa77df5eb0f56c610e0d242c
+    pristine_git_object: 27ca0da1e2aa936d2766bf421343d80c281da213
+  docs/getendpointeventbadrequesterror.md:
+    id: f3d91d73fc4b
+    last_write_checksum: sha1:272cd46269652287ca409fbd23ccbc4d942f2657
+    pristine_git_object: 62fc1307636221fa4f45ac7636d6f9037deb65ec
+  docs/getendpointeventnotfounderror.md:
+    id: 7e12eba21f88
+    last_write_checksum: sha1:28306c2f1eb9f8733c9e6afcbadaffc85ad17338
+    pristine_git_object: f3af4d29694e93ebaa887ce081381136cbde9b95
+  docs/getendpointeventrequest.md:
+    id: ef40562d7a4f
+    last_write_checksum: sha1:97332ada8d865fdccb8a67f047b3edd7b5cec508
+    pristine_git_object: c658d7859d8d2dfa5075fe0dc3b44cb59ed9ba7c
+  docs/getendpointeventresponse.md:
+    id: ce39fed0423b
+    last_write_checksum: sha1:d5c6ca2e242e2080b87d12476c100fda36aa76f6
+    pristine_git_object: a36165572d0b347b40325114b3f239157005e9b8
+  docs/getendpointeventresponsebody.md:
+    id: 4028a1006229
+    last_write_checksum: sha1:0a4deb064fdfa6fbd9c0d1922d3fd33af46a7121
+    pristine_git_object: 81b7941a5d24a07b5c73b6c007db575b64d89b19
+  docs/getendpointeventunauthorizederror.md:
+    id: a798d308e3c9
+    last_write_checksum: sha1:b2d8183ca0360291541a153388b1dd3b6e2e7d7e
+    pristine_git_object: ccdac0864fdf3f31907b5eb6d416d1698cb53b9a
+  docs/geteventdeliveriespagedbadrequesterror.md:
+    id: 38906e39c186
+    last_write_checksum: sha1:e234bdc6c3dc6793fb9e973a996536adc1259848
+    pristine_git_object: afc75de4c6d39fbf53f53e02de8073fde009fcee
+  docs/geteventdeliveriespageddata.md:
+    id: 9c334e63158f
+    last_write_checksum: sha1:78c921511c753849e0e421ac53de6b2e7bbff9a4
+    pristine_git_object: 4b83473f34b4487fe785513a4a39c4fd42710e8a
+  docs/geteventdeliveriespageddirection.md:
+    id: 6905090317a7
+    last_write_checksum: sha1:e6d9b009793da86787aae78adb7174ed7ae1f1e9
+    pristine_git_object: 155eb8ea1d4bef68f6ee6a8238c1da6fae32f520
+  docs/geteventdeliveriespagednotfounderror.md:
+    id: 574bd7ea8873
+    last_write_checksum: sha1:f10a47f8a436bf7a319622f66b56cc98e75a9c97
+    pristine_git_object: 7e7544e1a24fbb7046467049132d9962f533671c
+  docs/geteventdeliveriespagedrequest.md:
+    id: 8907817acd6a
+    last_write_checksum: sha1:7e7112e2ca84853014126b69e6e01d9583c37533
+    pristine_git_object: 29dccf7490232c8d451d6feec9668666d903c718
+  docs/geteventdeliveriespagedresponse.md:
+    id: 9322d0400029
+    last_write_checksum: sha1:bde2dbad0c86f6f4e5c8f911cb6ce70aacb5e31a
+    pristine_git_object: 693a67c5fe3c5f6ba29260175bf32de31bfa9e02
+  docs/geteventdeliveriespagedresponsebody.md:
+    id: d44133e49358
+    last_write_checksum: sha1:d49619de76460ad929b71660d443e6a1b15c2a65
+    pristine_git_object: ee6aa4f7066c1b3dcc7254ee936de9101bdc747d
+  docs/geteventdeliveriespagedunauthorizederror.md:
+    id: a0cf7b589a02
+    last_write_checksum: sha1:64980404f50a23b88ecd578714a428c2b636e21f
+    pristine_git_object: 20caa03d2d9c63a20435335a672ef2c23321d257
+  docs/geteventdeliverybadrequesterror.md:
+    id: 027ef9296771
+    last_write_checksum: sha1:90bdf44eacc290d2fe63de7f28a04471de4cfc7d
+    pristine_git_object: 36608e0ea7066ba5bdfa3f65bb1e6c77c06cafec
+  docs/geteventdeliverynotfounderror.md:
+    id: 1109821e52e7
+    last_write_checksum: sha1:ace83ab50260d6218475b3cae0b2095ee3c132f4
+    pristine_git_object: f8e78c1374c4f4b2e11fb236aa878b7ff9db26f4
+  docs/geteventdeliveryrequest.md:
+    id: 7c30fceae6ec
+    last_write_checksum: sha1:0e65aaf35a446b5efc4c7e79278d2d2a7bf3c1aa
+    pristine_git_object: fa6300510b5b6e2321313bb54e8611e81a683269
+  docs/geteventdeliveryresponse.md:
+    id: 176bd6efee69
+    last_write_checksum: sha1:9bb9f8316009c5e5edda2e15bf766e5155448f54
+    pristine_git_object: a9037fcb1bf6236fac39291a4e963560b6abbc6d
+  docs/geteventdeliveryresponsebody.md:
+    id: 88b4d98ac15f
+    last_write_checksum: sha1:31bd38a1f8e403b04bd5770f8ea698ac8df7c95e
+    pristine_git_object: 15dd2fe618fbca02464944a44bbcad46799a6f97
+  docs/geteventdeliveryunauthorizederror.md:
+    id: fe4f5168414e
+    last_write_checksum: sha1:cebf0ef5f8fd55ade63387eb398fdf120d2975e3
+    pristine_git_object: 5e6626937f26ec96252365669829d963da6a2572
+  docs/geteventspagedbadrequesterror.md:
+    id: 17f6e1665f25
+    last_write_checksum: sha1:a8dc99aacc5e6c990472a28053a0c52c0ab39b11
+    pristine_git_object: c915d044a512a13c9e35968cb1b2f2c6c4fbb0ec
+  docs/geteventspageddata.md:
+    id: 116f9b7cda77
+    last_write_checksum: sha1:3f7c46411c8249764889367dd5699b57e3dbc4de
+    pristine_git_object: 24bbbb24ff8262a7354982eeb33d66d50b0b7d44
+  docs/geteventspageddirection.md:
+    id: b971ceb66e54
+    last_write_checksum: sha1:5c14a8d3c203c853732092495701652d1c240246
+    pristine_git_object: 4cc76439dd47618de2b90e9dcbffe58dc36c1756
+  docs/geteventspagednotfounderror.md:
+    id: 202a81c5e7b5
+    last_write_checksum: sha1:964110c1fb3d57538756f8f4b39a4ea718ab8e76
+    pristine_git_object: 10de82fb8ecb14a201513a4d3ea036f980d240e0
+  docs/geteventspagedrequest.md:
+    id: 49ab339a22a6
+    last_write_checksum: sha1:c7df0b70238c3c9889e4be7887292423cefd6682
+    pristine_git_object: f9212a23501ff7794cc18047b131b54a607ba07c
+  docs/geteventspagedresponse.md:
+    id: 674d3887d3d1
+    last_write_checksum: sha1:e422428d0633b4743b28cc2ef7073b4162c11d1b
+    pristine_git_object: 3d3dcf43688daef4cbece7a398f6b7a9c5259bc4
+  docs/geteventspagedresponsebody.md:
+    id: ce7e5b745a67
+    last_write_checksum: sha1:be14da4b0ee398fff3588bab76b3bf271a14de5c
+    pristine_git_object: 75cd720ea3b675c22a38cbfd1a91bf1d0218c00c
+  docs/geteventspagedunauthorizederror.md:
+    id: 2263aabde2e5
+    last_write_checksum: sha1:1ee30d72ad0c91b2be1e12ef18000f5e399f4d26
+    pristine_git_object: a9c5505356587bdc0dd71c053852f579e1d7adc2
+  docs/getfilterbadrequesterror.md:
+    id: a891676c0890
+    last_write_checksum: sha1:e3c33b40571c4f200bbbd53bad17c0533dccc800
+    pristine_git_object: c11c503d8110f176dc0453a49d5dee91b794d382
+  docs/getfilternotfounderror.md:
+    id: 6864d0c34f8a
+    last_write_checksum: sha1:e4abc8601d933bfab76bad365c10f2f9aacd0863
+    pristine_git_object: dd3276cc83ae1f7fbfdc3a750b2e1c7274ddc063
+  docs/getfilterrequest.md:
+    id: 313a3ef0d47b
+    last_write_checksum: sha1:a3eecd5cd1e6a48aed1d64c3b1b2b3dc46440e95
+    pristine_git_object: 2c648febd18dc872a8c41a6f40067a86c044111f
+  docs/getfilterresponse.md:
+    id: b5811beaea4d
+    last_write_checksum: sha1:f77f4d537633ef8b6c5f91be7e42c1a625d0f14d
+    pristine_git_object: 976fc36c5e9bd5bc210a0e9058cb068317dc4605
+  docs/getfilterresponsebody.md:
+    id: 70e3b0ef9a91
+    last_write_checksum: sha1:ef5d1049c375925b38ced52bf50a23a0b1889627
+    pristine_git_object: f1a56a13b209a63466f086ebbbf32f5345db86f3
+  docs/getfiltersbadrequesterror.md:
+    id: a82911867ab5
+    last_write_checksum: sha1:c195ba44ea79d66013866e013593dd2d2eab14f7
+    pristine_git_object: 935ba43cdcca3e9e9f23372872e6bc877306ec96
+  docs/getfiltersnotfounderror.md:
+    id: 078ee946a357
+    last_write_checksum: sha1:2a929af31054c288f8cbd588e1a4f503b62b74de
+    pristine_git_object: 3813087f2ec55ea81165f15051070a55296e54a8
+  docs/getfiltersrequest.md:
+    id: 7a9ae82d8839
+    last_write_checksum: sha1:e515c535ba4fd28ee3e44141a1894decd1d96b52
+    pristine_git_object: 1d482cd7c84aa60a36b47d98143abbf1094d842e
+  docs/getfiltersresponse.md:
+    id: da934ad24e5c
+    last_write_checksum: sha1:4fd2c1cfd7030e3f0c33cc5f534439b387c2fdaf
+    pristine_git_object: 9aea78516ad7fd03ffd4f0d49e5bdd20c786ef4a
+  docs/getfiltersresponsebody.md:
+    id: 8b83cf629397
+    last_write_checksum: sha1:6fe6a65fed3ac1dbe9aa2f49c09490c64ba9b70e
+    pristine_git_object: b289dcd3886fb45e9b649b113de221e021a861b0
+  docs/getfiltersunauthorizederror.md:
+    id: dea639cff5b5
+    last_write_checksum: sha1:5aa791655bdcb518e219639824bbe1719bf87075
+    pristine_git_object: 32d73d0a25ac19dfd48a6f6abe2b038d3dba2250
+  docs/getfilterunauthorizederror.md:
+    id: d055013084b5
+    last_write_checksum: sha1:3d0cb88ef4402b6418b9daddd072861d0cb76e4b
+    pristine_git_object: de5d92711ef6a9fae6e337b2fbb0803ee48f8e67
+  docs/getmetaeventbadrequesterror.md:
+    id: 02f37154543c
+    last_write_checksum: sha1:d51ca4f28fd780b6bb7b6a2809bbcc1d721ba27a
+    pristine_git_object: 25c841b9ed2ad1c36a3b3d93db74fc4ef4116321
+  docs/getmetaeventnotfounderror.md:
+    id: 3d1111ef11bd
+    last_write_checksum: sha1:7f2e47bc5fa2cb6948f8ec92ea5981c537a29027
+    pristine_git_object: 1effc84fe7942241491c75c397c5cc6db2bc048f
+  docs/getmetaeventrequest.md:
+    id: a56c82fed517
+    last_write_checksum: sha1:0aa1a5df1eae47e50b0b87baf60a2292022db2be
+    pristine_git_object: faeb2747dc9a7468bb0eb90f72aca996e9d5e162
+  docs/getmetaeventresponse.md:
+    id: b50b6cb5fd47
+    last_write_checksum: sha1:9544812ccaf09c3557e038b45ac5878ea44e5c6d
+    pristine_git_object: fb2385d23d5b3514d2e71c692b51bc5014737f55
+  docs/getmetaeventresponsebody.md:
+    id: f8b59896b311
+    last_write_checksum: sha1:c34951c1e78fd17058a8f107db9a4e1526a53996
+    pristine_git_object: eb12c2322b7c671d31322a396cc5af82fb3120bb
+  docs/getmetaeventspagedbadrequesterror.md:
+    id: e9d5d60f32b0
+    last_write_checksum: sha1:2d6e18d0de1ebb26dd5ac850da4b81d6060bb08b
+    pristine_git_object: 8cb96e153b530c0fb7e88a85b02cde493438c517
+  docs/getmetaeventspageddata.md:
+    id: c152b0406190
+    last_write_checksum: sha1:0e7a0975be18cebc2ad1bd16fcb38ef7815361da
+    pristine_git_object: ad606c1d8dafd5476d6b620019a085cf6a64b802
+  docs/getmetaeventspageddirection.md:
+    id: bf0e8de0afd4
+    last_write_checksum: sha1:da4dbfda6d06c7394847e167d902e516f939b92c
+    pristine_git_object: 0d8a43ce1284471501637a955a6f9dfd8b4f13d5
+  docs/getmetaeventspagednotfounderror.md:
+    id: 557f558b75aa
+    last_write_checksum: sha1:41114c530c19b92f04d885897d88845f763725fe
+    pristine_git_object: 87de3c0b6acfd863f63cce58be6268e3344d605d
+  docs/getmetaeventspagedrequest.md:
+    id: 7a870b7768b5
+    last_write_checksum: sha1:9cd89feac09321119a7f21769e2944a85618d548
+    pristine_git_object: 4bc937cbdec6c159dded2dc01a4dae7f703b1566
+  docs/getmetaeventspagedresponse.md:
+    id: d2021daa7d4f
+    last_write_checksum: sha1:2aebb49dfe8e4267a56d4fe7a28308d7ec03b38d
+    pristine_git_object: e10f7eaa3d2d9576d4af93441aedee77a29764f7
+  docs/getmetaeventspagedresponsebody.md:
+    id: a58cdead4817
+    last_write_checksum: sha1:a14fcc7227c264827cc4246a430e08c6fae0fee1
+    pristine_git_object: ba95a3d32cfea1e359d13f95ca79e53486a7dacb
+  docs/getmetaeventspagedunauthorizederror.md:
+    id: 45d447929fa3
+    last_write_checksum: sha1:6e6c69bfb9caa9adb70ba0eff6c751c4fbd0e81b
+    pristine_git_object: 156860969b5d58e93e9fd1cd667fa50e7cc20e9c
+  docs/getmetaeventunauthorizederror.md:
+    id: 18f373f0446f
+    last_write_checksum: sha1:0d4e4865b62f2ecdf9a201cfe980b08d22bc9cac
+    pristine_git_object: 65eb0430fde29a210c3ef3b20b8599bb35483126
+  docs/getportallinkbadrequesterror.md:
+    id: 05856e220c3c
+    last_write_checksum: sha1:5bbc00186cccc7897d62c82bd7b74893854d48b4
+    pristine_git_object: 19c014536bfdfc12d5987cfc1a6861101bdbb750
+  docs/getportallinknotfounderror.md:
+    id: c09e2e3a1f3d
+    last_write_checksum: sha1:fec19ede8965ef50744333cbf41871eb74309d2d
+    pristine_git_object: 9d5e8116875518561f0e10b457357dba64613269
+  docs/getportallinkrequest.md:
+    id: f3465b40d0ef
+    last_write_checksum: sha1:6915e1c9851ae29300781ad502535581f9097784
+    pristine_git_object: 52cd55e2182274156002d9e28b6fe8b1d3fe0731
+  docs/getportallinkresponse.md:
+    id: 804beaaa1947
+    last_write_checksum: sha1:0e728fbb21e0956c37e4a4ebada71a4627c8c2a2
+    pristine_git_object: 469b886da00bd79ed1e36d7105750c245cd71511
+  docs/getportallinkresponsebody.md:
+    id: 95abe84623ff
+    last_write_checksum: sha1:376b894b11d9b0ff18df238fc75402594809e53f
+    pristine_git_object: ce7eaa86305f4304f21b72797bbf0e334926b29f
+  docs/getportallinkunauthorizederror.md:
+    id: 9c710f31c2da
+    last_write_checksum: sha1:120e5adfe86ccab48d00f0b691270c2d830a193d
+    pristine_git_object: 95e0e7fb03aff962bfbadc405f4d70f24230ae5b
+  docs/getsourcebadrequesterror.md:
+    id: dcc9db63c79e
+    last_write_checksum: sha1:54d592e0f074c7bdd379309f290927a5ab053d37
+    pristine_git_object: 04f14b8ea726cd57ae67752ba1429ee89a9a76c0
+  docs/getsourcenotfounderror.md:
+    id: b3fc72f0e41e
+    last_write_checksum: sha1:b11ca498c8b043f8347cb0dafff1d5507760a454
+    pristine_git_object: 3bd0b75e9cd6140f704617883844dbcfcdc39e09
+  docs/getsourcerequest.md:
+    id: 5124afaedea4
+    last_write_checksum: sha1:e801547a1c114b440fab41603ee24a393e8049ca
+    pristine_git_object: 897e7dcf9cb2d81ccfba1ea9de379283919e7a49
+  docs/getsourceresponse.md:
+    id: 92d56dedd785
+    last_write_checksum: sha1:f33efefa1d73c71015a6590318e964b68199d22d
+    pristine_git_object: bdfc71742113fe3fdde39bd6b3e26dc46c5d5df4
+  docs/getsourceresponsebody.md:
+    id: 6f027664b316
+    last_write_checksum: sha1:439ae98e814115ec74957bc044af4c0c34d8e9d6
+    pristine_git_object: 27ac918c18352fa186c3e9212ba9ec721cb763d4
+  docs/getsourceunauthorizederror.md:
+    id: fba863b3a0cc
+    last_write_checksum: sha1:a9cf333a2b036ca279667c17fcf7cacb26f7d876
+    pristine_git_object: 06feebffbd6471e4e88b786d33bc9e4375500bb1
+  docs/getsubscriptionbadrequesterror.md:
+    id: 6387695cfdfd
+    last_write_checksum: sha1:2788c37bcdb06abd1681cb6365c89970e7ada1bd
+    pristine_git_object: 8ab295216affe79e7b62460c07867be11b4ddd70
+  docs/getsubscriptionnotfounderror.md:
+    id: 2a180b7dea6f
+    last_write_checksum: sha1:e5f651e1f0a3aceff855107cfb6bf7000bb2705b
+    pristine_git_object: e78233d218d3de43b6272dd29825cefb4ca50fa4
+  docs/getsubscriptionrequest.md:
+    id: a7d77343e417
+    last_write_checksum: sha1:45adff4162082d2696439600de69f6ba79d3d2b0
+    pristine_git_object: fd078e9ff0c9507b7dba022062349eb3ef133cad
+  docs/getsubscriptionresponse.md:
+    id: 786122e70630
+    last_write_checksum: sha1:db7396efb65622c02ca37614e51751a168ea3a8b
+    pristine_git_object: a00418f846d28dde58154bca28a0529fde6b105b
+  docs/getsubscriptionresponsebody.md:
+    id: 4c685201393a
+    last_write_checksum: sha1:da4d08d22dffd7997876af78a546c06b4aab9503
+    pristine_git_object: 168c2cc59d02e75082a3186d67401e6148eceba7
+  docs/getsubscriptionsbadrequesterror.md:
+    id: 334a9c6108bb
+    last_write_checksum: sha1:1a275321d180f380f24e9eecf7e91048ff99bc72
+    pristine_git_object: 7c8bb9011ba5d73449bc166db1810f3df1a969c4
+  docs/getsubscriptionsdata.md:
+    id: 554541087c7e
+    last_write_checksum: sha1:be10782583cc6bfafc3babb717551f8aea090d95
+    pristine_git_object: 0bf6a53c1af4f265f59cbe5678b5b4041f14df21
+  docs/getsubscriptionsdirection.md:
+    id: f4cf57bfdbc4
+    last_write_checksum: sha1:21b1a2c8cdeb1d94835ac6618e5ee3b6ff3479df
+    pristine_git_object: 73d6fc2ede69e19459a96fb930289998e34522c2
+  docs/getsubscriptionsnotfounderror.md:
+    id: 017adf6cea02
+    last_write_checksum: sha1:f340d1715c75faeeba37b6295280c7376f1617db
+    pristine_git_object: 6bd17ee48d874e028046ec47bffa6ab18c4aeb32
+  docs/getsubscriptionsrequest.md:
+    id: 496996ca436e
+    last_write_checksum: sha1:5e21a397708382f1d8f940a09266142371930e8d
+    pristine_git_object: cd3296a37b6223951a458f25159fdae17ee4892d
+  docs/getsubscriptionsresponse.md:
+    id: 5a58dfc72808
+    last_write_checksum: sha1:8da5b39cde02add8167b02e35dba0a7813545649
+    pristine_git_object: 1e51582031eb88c432616e31832246d10c668a0b
+  docs/getsubscriptionsresponsebody.md:
+    id: 2793eba1409e
+    last_write_checksum: sha1:ee3de00a4689daae2e3cbd30f643b8e49abb6341
+    pristine_git_object: d9a95fdc789b4d14d87f19ae9a3d53654b2080b8
+  docs/getsubscriptionsunauthorizederror.md:
+    id: 9556890124f4
+    last_write_checksum: sha1:6b5983420d1890242bbf8baf4fc73453528f52b1
+    pristine_git_object: 5e8133266246a3073c849ae4eb710dd6ddfea815
+  docs/getsubscriptionunauthorizederror.md:
+    id: 6381b67d9bc3
+    last_write_checksum: sha1:8725e003a1390bec1e41cae9a9e45fb9696556fe
+    pristine_git_object: 7c10461fc25e82a9a1cac5bd891e538b495fa097
+  docs/googlepubsubconfig.md:
+    id: 07830e08e814
+    last_write_checksum: sha1:6d7f3eb2c0ccdd0328765d7b4af24db9556f919a
+    pristine_git_object: 81a144d37b00c99e8f290bfbc9fcb0c63c9e1638
+  docs/hmac.md:
+    id: 4b6c91e15025
+    last_write_checksum: sha1:215117b7c44dcc7b432f0ef973e7de5da4e6612a
+    pristine_git_object: f873ace169abbdad416468d138196b4ebcb9793c
+  docs/httpmetadata.md:
+    id: acdfc0279d63
+    last_write_checksum: sha1:7c40945dac218ce5e5e11e7c907d27a3ea14c417
+    pristine_git_object: df1fdd59f3c85e4ba70573ff7954b12ac1d33d08
+  docs/ids.md:
+    id: acd78053d02b
+    last_write_checksum: sha1:f45e67a22454196b584ca7650bf13e5488e8a7d9
+    pristine_git_object: 37c63af5d79d52965bfbf7fef4a8e46f8e1bd1ad
+  docs/importopenapispec.md:
+    id: 81887ad6741b
+    last_write_checksum: sha1:3fbca27d281a7ee8f649e3299e1def0f9ed498e9
+    pristine_git_object: 4aa6953a717ae43a33360d6e63ea52b9bb10d5c5
+  docs/importopenapispecbadrequesterror.md:
+    id: 2e4d31f5792c
+    last_write_checksum: sha1:e0cdbd0afada3c56b0ed73e7dede8626ab40d8da
+    pristine_git_object: 4798b95cd5042f5394d6a4040079b377b871f2f4
+  docs/importopenapispecnotfounderror.md:
+    id: dc31e08647fe
+    last_write_checksum: sha1:a9ebffc1a6b643a81241fcf88299f90ee2b773fd
+    pristine_git_object: b6e8abfb69dd0b1301a89769d5ba961879e8778f
+  docs/importopenapispecrequest.md:
+    id: f2c21e818080
+    last_write_checksum: sha1:2341cb15abf7ffd5825d795824fa3593b87b7cd5
+    pristine_git_object: aa449b9ce826bc7f6b052f209b99c2a3e6d09e69
+  docs/importopenapispecresponse.md:
+    id: 127ee2077a9b
+    last_write_checksum: sha1:6a90f713861625343cbebf6e8dc9f2dd3cb68cc6
+    pristine_git_object: a0a53fa2c81d6a5337b06801054d874e52b37867
+  docs/importopenapispecresponsebody.md:
+    id: e71b9cabd4c8
+    last_write_checksum: sha1:a7aaf5f1d531f2645e11f58d2e6e87c61ab52ea3
+    pristine_git_object: 4855f98fa2ed1172451e8d80d7ff39ea980f16f4
+  docs/importopenapispecunauthorizederror.md:
+    id: 256475c2efa1
+    last_write_checksum: sha1:b9774203b66a788209cca3dac41be7401eb66351
+    pristine_git_object: 86c4ba6ce15d50e97a6164a06db4d7c84e7983c1
+  docs/kafkaauth.md:
+    id: 2b1712c5bd3f
+    last_write_checksum: sha1:152f1628abc6f6ee6d46aea070553bbaf1c77c63
+    pristine_git_object: efbad48f2ae4575b834fc2e09f87d19bce7a6b69
+  docs/kafkapubsubconfig.md:
+    id: 54b1063a2eb0
+    last_write_checksum: sha1:0e1c541e1154c31ad8da5446b6a8f3687833e08f
+    pristine_git_object: c26f575ec8188faf72b56d5ba1970efcca80b666
+  docs/loadportallinkspagedbadrequesterror.md:
+    id: a79b97d04ff8
+    last_write_checksum: sha1:391ab5ea8023a28ec2769075834d9948cd91b91a
+    pristine_git_object: ed4749bccedf4e70e0207518017eabe8465744f5
+  docs/loadportallinkspageddata.md:
+    id: de43fce8bd9c
+    last_write_checksum: sha1:d58ada99d21b907730d7e945d61958d55f416d7a
+    pristine_git_object: 8bfe34654bc5af8a0b6db61741374c501b7312b8
+  docs/loadportallinkspageddirection.md:
+    id: 892c4dd57c9b
+    last_write_checksum: sha1:318dede9f6eee34db03be4d71783cb825fd1b41b
+    pristine_git_object: 0c5ab418287c5ffb01f2eda590ea757c878d2dc8
+  docs/loadportallinkspagednotfounderror.md:
+    id: a0f0fe57939d
+    last_write_checksum: sha1:60ea1b94d1a1278d66ef47866bc95d097fb7bc5a
+    pristine_git_object: a02bb5d4dacc1a65f1bcce0961e4884ef451edb0
+  docs/loadportallinkspagedrequest.md:
+    id: 6efd3712e77b
+    last_write_checksum: sha1:2aa96c2c7ddc97947b63d79612a475024376d848
+    pristine_git_object: 6db0866353218a58bbf484d3ad82a55650b41a71
+  docs/loadportallinkspagedresponse.md:
+    id: 490c38d4eb1c
+    last_write_checksum: sha1:22e5f4bb960c9d2fb79b04bf6aa0f39dc7e404d1
+    pristine_git_object: 3a240075a898facafe372e06e40e2870daceb9d3
+  docs/loadportallinkspagedresponsebody.md:
+    id: 74fb572e68cb
+    last_write_checksum: sha1:e6bd19a38127edba48bbc18989276fe12fb3c4e8
+    pristine_git_object: adb07c56f763900a58d747bf87f7c211cef9d7dd
+  docs/loadportallinkspagedunauthorizederror.md:
+    id: 50eacc77f491
+    last_write_checksum: sha1:56a246e7d36930b51aa17ce5952896a1f9247c74
+    pristine_git_object: fe15212287b87808f0b1b9346f0a9aa7a2a8c5c4
+  docs/loadsourcespagedbadrequesterror.md:
+    id: cb747f7d92f1
+    last_write_checksum: sha1:526b16e8accf16c17f4509f7bb512b84cb6c695a
+    pristine_git_object: 622958cb485d61ab26121e92ff2438521e646332
+  docs/loadsourcespageddata.md:
+    id: f67cfa3f95da
+    last_write_checksum: sha1:96f08495faf3fcb7cdf95fd9dc8a7c560ae879dd
+    pristine_git_object: 95e72559dd0293ddfc3d1f526f7117efa5a9f0d6
+  docs/loadsourcespageddirection.md:
+    id: 8d20b7107508
+    last_write_checksum: sha1:1d5e869afb7dfad026ff8a46356708fb445cea0e
+    pristine_git_object: 5391a67c7bdfec9fcf41b62876d1e21492f0fb4b
+  docs/loadsourcespagednotfounderror.md:
+    id: 7b3b33f62810
+    last_write_checksum: sha1:1d5f7c3df1a4068d0372b18eabe532b860345c1e
+    pristine_git_object: b04a4260246b9eafb9a69a3d90d36e42a3e13a4c
+  docs/loadsourcespagedrequest.md:
+    id: 4a9b36845544
+    last_write_checksum: sha1:0297c2ed58cb8fb689ab47a7eaa6cdba5bc3825e
+    pristine_git_object: 90884f5aa0aa54475a58c1b1a56a3f186701067b
+  docs/loadsourcespagedresponse.md:
+    id: 4cfc24f788a0
+    last_write_checksum: sha1:f6ef107cdf216a659943cbb0ebf95b9bc0d81de5
+    pristine_git_object: f86d187da2556e85d620c87067c07eaf34d5e716
+  docs/loadsourcespagedresponsebody.md:
+    id: 5da13749415b
+    last_write_checksum: sha1:08726b8f6f9839e0436313c1cf7eb495b4437c61
+    pristine_git_object: 394458f8e5502998a82456adff49e5af8eac83ff
+  docs/loadsourcespagedunauthorizederror.md:
+    id: 5e5064569902
+    last_write_checksum: sha1:17b7bfd8bfef7b87963afb11a2ad3280a7671f48
+    pristine_git_object: 65f583d099f909b2facf6b4d7a4bbec6f49dd6dc
+  docs/metadata.md:
+    id: 00b426909880
+    last_write_checksum: sha1:8aaeaba3d39962b3b566635818aa79ecef859a1d
+    pristine_git_object: ef8d47652a3eb65de54ffc2e675825d56a9030df
+  docs/metaeventattempt.md:
+    id: 992c321a503a
+    last_write_checksum: sha1:fa334aac1777e957c4c5e9107b46140afff688f6
+    pristine_git_object: eb0cfb5a99d1f75e2d2861b8581a56e3ff37aed0
+  docs/metaeventresponse.md:
+    id: c6593d919820
+    last_write_checksum: sha1:beaa85d44a078c919f47338a5e0a8083bb600993
+    pristine_git_object: 34a94e6accbb50e2dcda3fadecb5bf63e48c0c09
+  docs/object.md:
+    id: ea379fd6a78d
+    last_write_checksum: sha1:eeafc7eaf840a0401ffd9f96c7833ba9db0a8467
+    pristine_git_object: f3210cd99a5ac366708af42a1d4e9df5395c45db
+  docs/option.md:
+    id: e180315d7399
+    last_write_checksum: sha1:8a3bdc5c50612531d79e261f1bb6bf5f2a099e33
+    pristine_git_object: 0438bdee1d7dd2ba1e716e172988dada97bc7d55
+  docs/paginationdata.md:
+    id: 1916379583b2
+    last_write_checksum: sha1:1433262601ad6e44302f0a0e7ab1e78449f26b03
+    pristine_git_object: cecc9f257c9c8033970252bd677ff974a8bf128c
+  docs/portallink.md:
+    id: 5ef9d0593843
+    last_write_checksum: sha1:332a7af6c7e78002b3d9931c688a9739886b9720
+    pristine_git_object: 707186e33d8f5ff12cecc7bd9ec21fdd7f30b3ce
+  docs/portallinkresponse.md:
+    id: 4f184de5f6c5
+    last_write_checksum: sha1:60218af4648212ce3106feb02d0a658d7906f9d4
+    pristine_git_object: e26869f994120b974a12308df0aac6c6fcbe0096
+  docs/providerconfig.md:
+    id: 06d21fa8375c
+    last_write_checksum: sha1:8906b013b0c744dfc43d7b77f0a2f53f343563e4
+    pristine_git_object: fbf772d996c7de615cb884ee2350116f648cd3ef
+  docs/pubsubconfig.md:
+    id: f988c481ae51
+    last_write_checksum: sha1:99fe9499f39252d69f7fc57a5fc499fbfcb4b5ab
+    pristine_git_object: 5ad64c635aa748247ce8ed09e98bb53397b6eaf6
+  docs/pubsubtype.md:
+    id: 12231b6ed0ee
+    last_write_checksum: sha1:4f5cbef6d685475d990561bcbfc6c15677742299
+    pristine_git_object: 30abbdf93f18284fbf5a6627070d70130c15c0b6
+  docs/ratelimitconfiguration.md:
+    id: 3ec1a4269f9b
+    last_write_checksum: sha1:271c083715064effff769a4e3b1e0d0e5105bbbd
+    pristine_git_object: d831c3762af075e614db4516f47c6a66ed038104
+  docs/refreshportallinkauthtokenbadrequesterror.md:
+    id: c76551064317
+    last_write_checksum: sha1:0076e4393b282c2851ceba922f992c8e41882dc8
+    pristine_git_object: 5694303e8134081af0c5627ba1bc1fedbf29e0ee
+  docs/refreshportallinkauthtokennotfounderror.md:
+    id: 5416ea61fc97
+    last_write_checksum: sha1:e460ffcf1f98213818450899644c9a5d9d6875ee
+    pristine_git_object: 294d6049ca832ea51cf6691f963d7790606eab00
+  docs/refreshportallinkauthtokenrequest.md:
+    id: 94d9f56a8652
+    last_write_checksum: sha1:879f8c35dd5d36757e6159b403f07220f2504200
+    pristine_git_object: edc7b59cd7e9e05d62a9b927ae4960388f6433c6
+  docs/refreshportallinkauthtokenresponse.md:
+    id: 03d0ead531a9
+    last_write_checksum: sha1:3c0b5d854e95da7b71326ebe0e37ca7035b094e0
+    pristine_git_object: dd77693ab913721a1f6ce370bb6380a41937dd02
+  docs/refreshportallinkauthtokenresponsebody.md:
+    id: b2c9a9ce9f19
+    last_write_checksum: sha1:147f1e4b0d3037d8ecd529d0988e35fd8a4e69fe
+    pristine_git_object: 8647b242f3cc0889fe55245eb31e3b175f9c50dc
+  docs/refreshportallinkauthtokenunauthorizederror.md:
+    id: 0f3c1b533993
+    last_write_checksum: sha1:f2750600df88dc186c7ba513f250a72145db183d
+    pristine_git_object: a35463cd99bd3c086ac7669c006651e41d6108ba
+  docs/replayendpointeventbadrequesterror.md:
+    id: 8663af632a97
+    last_write_checksum: sha1:d6fc7248fd11c7bf4d92e06438dc98d2acb45237
+    pristine_git_object: 5599a7458a0f62272033886cd56eda914fd5ad73
+  docs/replayendpointeventnotfounderror.md:
+    id: 70c137dc538d
+    last_write_checksum: sha1:a60972580645d22f82a772459dd466e3e0ceca07
+    pristine_git_object: 73b42808e76ac0b12fcaee2eac281d224ec1c8eb
+  docs/replayendpointeventrequest.md:
+    id: 9633fa5f03bc
+    last_write_checksum: sha1:f9f6ca9c853e25709d933b9600f62b170e2e30f6
+    pristine_git_object: 80d08ecac19b3de886e4cd99cfab81a9aa75b6f5
+  docs/replayendpointeventresponse.md:
+    id: de8d60530a28
+    last_write_checksum: sha1:75f8c9e3764f7964f1505aeb6e8e987be69e2e17
+    pristine_git_object: 07bc78c5e300d10a65ffc8bf7f258f2673b42ce6
+  docs/replayendpointeventresponsebody.md:
+    id: fc42b54f394a
+    last_write_checksum: sha1:350c23032e53bb4a1bcd1685a73b3ee0bf589b0a
+    pristine_git_object: f0d729af290f70fc67b7e549b14347e25ab9318a
+  docs/replayendpointeventunauthorizederror.md:
+    id: 020d82b70461
+    last_write_checksum: sha1:4edae874ff7003fd3f704726f52eb1985783c227
+    pristine_git_object: 936d5b3b1ca12e45255f006f918c698f98a4adcc
+  docs/resendeventdeliverybadrequesterror.md:
+    id: 8c42422f645d
+    last_write_checksum: sha1:e8e36d2bcbd6f5f6110757a0e5e5c3b8a0b632f8
+    pristine_git_object: f0264ca43e2a331c156a0a71d9ab65eaf58671ef
+  docs/resendeventdeliverynotfounderror.md:
+    id: be3678f7be7f
+    last_write_checksum: sha1:09f8c4f95602e50064c3e674815b3cd83059d28d
+    pristine_git_object: a5a3a73f41e51a67159474b1ebd4cfaaec76ec97
+  docs/resendeventdeliveryrequest.md:
+    id: d425ac6eeb4c
+    last_write_checksum: sha1:455ddbe8106a78d4ba6c027d8a3b0d7c0b3ea03c
+    pristine_git_object: 81a5142b9024a59a9f2a1bc6830fe623c21c0d4a
+  docs/resendeventdeliveryresponse.md:
+    id: a8dadff6371b
+    last_write_checksum: sha1:1c46699e8f7e28c4af15bb2ad04c58969bcf7864
+    pristine_git_object: 087ee8f2d18264e0fa993469e2539194bccba719
+  docs/resendeventdeliveryresponsebody.md:
+    id: 8bb6f0dd7432
+    last_write_checksum: sha1:c2046e4e634df2f015a6d84482b831a472bed0cc
+    pristine_git_object: 160c179d984635c5e28ae3d04bdd6efbcd9f01f5
+  docs/resendeventdeliveryunauthorizederror.md:
+    id: edd3d5f3532a
+    last_write_checksum: sha1:d6eeaa31c0a44b5a24c6d82a6461da6554e9867a
+    pristine_git_object: b9fc4ed5e9b76b73b3fba1942c4679d8253ca5c7
+  docs/resendmetaeventbadrequesterror.md:
+    id: ec4ecda5e5b2
+    last_write_checksum: sha1:a75216442db384279e753c4c1866423db3ccd89f
+    pristine_git_object: a852cc48e6655174e6ecd96b90b751f5d3587e1c
+  docs/resendmetaeventnotfounderror.md:
+    id: 6f94c915e7eb
+    last_write_checksum: sha1:765d6202c9390d02023bd2132ae4fbee54650bb9
+    pristine_git_object: 7b76e3480ac2a141c545d251c77377275ffd580c
+  docs/resendmetaeventrequest.md:
+    id: b6dd9fa403f7
+    last_write_checksum: sha1:993823ade9201655133af99fad3df6d6f189993c
+    pristine_git_object: 1d509bc44a7896571f92f7af8d870e676300c767
+  docs/resendmetaeventresponse.md:
+    id: c8b1f5ece62f
+    last_write_checksum: sha1:39fd2d7abbbe22bad3a52056ad395179ad788615
+    pristine_git_object: 972ce195595527ae8c22832f66e9890ce2f874fa
+  docs/resendmetaeventresponsebody.md:
+    id: 91950b877007
+    last_write_checksum: sha1:3593d2f4f804351eb2e77209ff3967c9aa49a7df
+    pristine_git_object: 506ac5a2ea464fb4e3f08ed29225a27f4f8de7d7
+  docs/resendmetaeventunauthorizederror.md:
+    id: 96dff6e5fc32
+    last_write_checksum: sha1:eca58199c5cedc6b050f7a187d9a8868730ab511
+    pristine_git_object: 19ce11fa24b56db666b7a9893217f8d1fd11ad3b
+  docs/retryconfiguration.md:
+    id: 1fd7d747ea4e
+    last_write_checksum: sha1:be9f99dec572fd666caa0fa096d91d150e383a23
+    pristine_git_object: bb667688ac1c0d0cd9e181dc26f618b07eebe95b
+  docs/revokeportallinkbadrequesterror.md:
+    id: 3abcca945914
+    last_write_checksum: sha1:fd2e2c21b11ddb57c6985fa6c6bba0f718d1e6de
+    pristine_git_object: 3bcd732f5744bf2678359dde5e8a10a4eac47a4d
+  docs/revokeportallinknotfounderror.md:
+    id: 9b9680055589
+    last_write_checksum: sha1:1367f5bf47eae9cebbe84ade2e5a63a2124210e8
+    pristine_git_object: aed65ad40763c44e7d6b96181148c7dcad5b6af2
+  docs/revokeportallinkrequest.md:
+    id: 77041dc81946
+    last_write_checksum: sha1:2299ca5555d94fff97168fb130aa5e07fe9b5d9e
+    pristine_git_object: c94b94ecfd83a6bd6df64f4a515b9eeb0cf12bc5
+  docs/revokeportallinkresponse.md:
+    id: 7835e6e1326c
+    last_write_checksum: sha1:4cdbd5150edc7c0807dba83889578a3985af602d
+    pristine_git_object: 8e756f77adf84017ddca2e8698cc8d575bfe8de5
+  docs/revokeportallinkresponsebody.md:
+    id: 1c0d8b20910d
+    last_write_checksum: sha1:77932e393bc0e472b7ff62436c16f0d8ce58128e
+    pristine_git_object: 7c21501f84fa632061233fa26af0a115f36f989e
+  docs/revokeportallinkunauthorizederror.md:
+    id: 8631c303d627
+    last_write_checksum: sha1:0f24b72efe903e4b42b98ae7778ee4b1333380a4
+    pristine_git_object: a2e6e3d3be0ea72f5273834b776c414972687cb8
+  docs/sdks/deliveryattempts/README.md:
+    id: c21205e87214
+    last_write_checksum: sha1:cd413762c74e5363314755a575bbe18fe236d975
+    pristine_git_object: 0d72f00f5a0d3abd07680d42a3c6ea13e2bea715
+  docs/sdks/eventdeliveries/README.md:
+    id: 3b23c9df9b1b
+    last_write_checksum: sha1:71ccbb0f8c422ee1664cf6250fbe183a37f78e71
+    pristine_git_object: bde7c6b8e2c0bfafa5d9b9d5a053009cb00864b6
+  docs/sdks/events/README.md:
+    id: cf45a4390b9b
+    last_write_checksum: sha1:4019c685ad7153dd2dc64b97680c89db237a8a4d
+    pristine_git_object: 6b1c6e5f9a2f88c441ad2baf38ea2e1019374dfc
+  docs/sdks/eventtypes/README.md:
+    id: e3c4448534b1
+    last_write_checksum: sha1:36bf70bfd153e884d33482608768bff7a9dd71e0
+    pristine_git_object: 6c41d303aef051f00716fc66c4b1164fba03ec31
+  docs/sdks/filters/README.md:
+    id: f713bbbc8beb
+    last_write_checksum: sha1:02e5eb08ec112d22fca434c0e638fb6e30e07bf1
+    pristine_git_object: f31b83ae02b53de2b4df45f729d9fa427ee92ce0
+  docs/sdks/metaevents/README.md:
+    id: cd2aef3e8025
+    last_write_checksum: sha1:08cd83a0739317ce94b7247a42b349c997cf0b9b
+    pristine_git_object: f1763a7c150295ab7330dde8c778f6c436e24f27
+  docs/sdks/portallinks/README.md:
+    id: e9673e898026
+    last_write_checksum: sha1:70f084820c48f62ba81f11c1e681998b687074eb
+    pristine_git_object: a83cedbdca743535e62a85e1be085e493d9a35cd
+  docs/sdks/sources/README.md:
+    id: c1396b2a57d9
+    last_write_checksum: sha1:cb7a7307ca3d08e57af9feabbb9b8767af4e3567
+    pristine_git_object: 2ea8b1f2dd91a26076ab0190e4b07afe2d20b46d
+  docs/sdks/subscriptions/README.md:
+    id: 298b9ab3c3e0
+    last_write_checksum: sha1:73eece333e2f245e04713cb48af7dc79aeaa363d
+    pristine_git_object: c7a9863ad841039e90523926ed027e8790ac0cca
+  docs/secret.md:
+    id: d133bc4e9495
+    last_write_checksum: sha1:7c65f67502dc10496a4043ed3b73346c872285c2
+    pristine_git_object: 21b3cf74705d9bb2878a097faa9704057f7557ab
+  docs/security.md:
+    id: cb8d0ac6ce38
+    last_write_checksum: sha1:3d20d8f28e0ecfee6550ce09129b5ec06e25c24d
+    pristine_git_object: c15c11e5000d4802bfc26a199e249e734ad2b549
+  docs/source.md:
+    id: bb79eb0e2489
+    last_write_checksum: sha1:d6f4ffdcbf2b33c73ee057167a67f2ebc3d5f5c5
+    pristine_git_object: 26aeb31756d0db7fe51ec46849f950547979508b
+  docs/sourceprovider.md:
+    id: d5996c15661c
+    last_write_checksum: sha1:cfb5dc06233854916cfb7df285709bf3fa52cdf8
+    pristine_git_object: 7915743f2db01b7ab47a5eacd4a6f82b310f82e8
+  docs/sourceresponse.md:
+    id: 32b3dd1d7a6c
+    last_write_checksum: sha1:ae8f2cd76d67fcaa04a8b4c7e30514c3a26e49a1
+    pristine_git_object: 1078f93532964b0d802e970d3752de37c0f06631
+  docs/sourcetype.md:
+    id: 2aea51c40f2c
+    last_write_checksum: sha1:b81206a05035ece30bd63d982374bd5d36f13b1f
+    pristine_git_object: baa8e3ebb215c7d01ea6ecabf19b52aee9514f4f
+  docs/sqspubsubconfig.md:
+    id: 971facfa57d1
+    last_write_checksum: sha1:ec81c5f749f5f77e2ccfe73f8e36315f73ed7716
+    pristine_git_object: 12716da0e4333242792496bea005107c366a154f
+  docs/strategyprovider.md:
+    id: 48f81875b5cb
+    last_write_checksum: sha1:e7041bacbbc246e60c2d84d267bf87f990857526
+    pristine_git_object: 59e8a735e3cf23dc3f3901b91af954ea302c411a
+  docs/subscriptionresponse.md:
+    id: c9da4e2255ab
+    last_write_checksum: sha1:13504c2cd5a78ccbe616e9d6c1f1656be874fb6a
+    pristine_git_object: e30ef0c631a580a7674278220a6b62bb7c35c51c
+  docs/subscriptiontype.md:
+    id: bc92554cf977
+    last_write_checksum: sha1:ef76b649a74d77ee0f4bad920914f16d4ee00d4b
+    pristine_git_object: 636ec830d6a78b5b15a927dd00298b95343e3606
+  docs/testfilter.md:
+    id: 4f327fe4bb2b
+    last_write_checksum: sha1:e988353c8831c1af5442c0df5fa89a53025dece7
+    pristine_git_object: cd2f92d6f85ab75b3d1e8e89451260eb5075f876
+  docs/testfilterbadrequesterror.md:
+    id: f1178257f5f5
+    last_write_checksum: sha1:77f5f46475ceb3507263981c8c959a3407e61e6c
+    pristine_git_object: 0bb397840205479092f81f8b5c21d5b957c94aa0
+  docs/testfilternotfounderror.md:
+    id: 7ed26f974fab
+    last_write_checksum: sha1:b724a7ad91b497a5fb319bbed79249ca1ca0df17
+    pristine_git_object: eba38d33336dcda2bc0989725a6997e38a314d24
+  docs/testfilterrequest.md:
+    id: 0a987768e261
+    last_write_checksum: sha1:512be0862d9a1a461082689d1042c129a7b13978
+    pristine_git_object: b84d11688086efe52a3b43325722f915086a0416
+  docs/testfilterrequestrequest.md:
+    id: 125bc8d369c6
+    last_write_checksum: sha1:f2b96b91f399bda1beea2ced8aef0b58fd91364f
+    pristine_git_object: cd456f9099ea94b72cbfc9c34188f551cc9d0021
+  docs/testfilterresponse.md:
+    id: 2be6e62d61d1
+    last_write_checksum: sha1:4da20f984c6aa0c523a61dfc12fce2ea23363d2f
+    pristine_git_object: 1a1af9d8248061fe14133da563a886e2eb64d915
+  docs/testfilterresponsebody.md:
+    id: 4d153b54107a
+    last_write_checksum: sha1:768d7d860ed736bccaa3540802747868aae739cf
+    pristine_git_object: 5b381a4a3924ccf2c646431bba95f97e74962b48
+  docs/testfilterresponseresponse.md:
+    id: d757865cf602
+    last_write_checksum: sha1:d68cf2fd59f932b27f031e7762e16026559731ea
+    pristine_git_object: d68ba646486e2fb34d15b6f65ad6cb43114408ec
+  docs/testfilterunauthorizederror.md:
+    id: 3066dcd0a3d7
+    last_write_checksum: sha1:c64c427c63bcfd656f8a1b534c068bad539b0b31
+    pristine_git_object: 2d55d40591210b0a31b75a552297a7ce7d8b8ef4
+  docs/testsourcefunctionbadrequesterror.md:
+    id: 1628f80933fe
+    last_write_checksum: sha1:3c7aa3e99ad19a695faf2a1aff4524ef472faa88
+    pristine_git_object: e14af7e7133e86148d66a2869c592965d617eb7b
+  docs/testsourcefunctionnotfounderror.md:
+    id: aa7d6ad2f307
+    last_write_checksum: sha1:63d9810ef0b14eb52753a89402204e75720b6a38
+    pristine_git_object: 4b3f70d5e8de309a73e669629cd64137fd30e8ad
+  docs/testsourcefunctionrequest.md:
+    id: 51edea3d2fbc
+    last_write_checksum: sha1:7f9cc47179ecb99e8845cf74f180b7dbf9ee28ab
+    pristine_git_object: 9b6c657d9e0e1bf67c337a1e23f2fcb45510ee1d
+  docs/testsourcefunctionresponse.md:
+    id: 55885d3a3f69
+    last_write_checksum: sha1:bda233f7c2b95f1f86c7fbcc89af751adc9cda1a
+    pristine_git_object: 820a583930e978bb6fe41e230821268766375a4b
+  docs/testsourcefunctionresponsebody.md:
+    id: e7a4de5c8170
+    last_write_checksum: sha1:48eb22d5082583171b63b2f4073d410d1ef9e3f1
+    pristine_git_object: 226fd3864acdfcd78c64196fd5c41c24de5d48a8
+  docs/testsourcefunctionunauthorizederror.md:
+    id: f8f2f9b29035
+    last_write_checksum: sha1:f6c35287b58dc3ea19acbcd043d03195ac56f19e
+    pristine_git_object: 72525cfaadf7ff82527a9bb9daafbb783e174f20
+  docs/testsubscriptionfilterbadrequesterror.md:
+    id: 0fd185b3aceb
+    last_write_checksum: sha1:beb6f180ffa25ff9a58550cac7950e8487c5a0a0
+    pristine_git_object: 5be6b520cf35765af59cecd455edae87dd0d94c0
+  docs/testsubscriptionfilternotfounderror.md:
+    id: "314181429523"
+    last_write_checksum: sha1:dac6f63401576f4624ddbab5953c93f88661eaa3
+    pristine_git_object: 473256a139a8dd9a0dc9de48d80efc3848c2b563
+  docs/testsubscriptionfilterrequest.md:
+    id: 5055054dc8cc
+    last_write_checksum: sha1:c1cb0ebac6d151d382eedb4730af4275267735f9
+    pristine_git_object: 56e12eaa4aa72d910280fe97736a0a78d27d9c4b
+  docs/testsubscriptionfilterresponse.md:
+    id: 21922f44835c
+    last_write_checksum: sha1:7d88786c65b4ef9c084299cc6178335006ef2393
+    pristine_git_object: 35e64e89ae2f61efc6486a9ff44877f3d6b18a9e
+  docs/testsubscriptionfilterresponsebody.md:
+    id: 6a1575a00b63
+    last_write_checksum: sha1:c9187ab6a76661e4c182c9a64fc0c5e62c61f5d6
+    pristine_git_object: 875f730d52d407a5499a730006912b6c77432768
+  docs/testsubscriptionfilterunauthorizederror.md:
+    id: 55be4ade44b3
+    last_write_checksum: sha1:2dc139dcb1ee239888135d67eff7c1aff3fdfd46
+    pristine_git_object: f66d14485048151873fc3818f248c1a412ca3b64
+  docs/testsubscriptionfunctionbadrequesterror.md:
+    id: 7e2fcd9254dd
+    last_write_checksum: sha1:1fa3d4178c8b76e5084639ccd426c526ba2ea22b
+    pristine_git_object: 579fc2e019c5a48faf953b1a73d103e053d99a19
+  docs/testsubscriptionfunctionnotfounderror.md:
+    id: 9a5b0a8cc833
+    last_write_checksum: sha1:aceecb915204d9e885d0940b73e5dcf808b1638e
+    pristine_git_object: f9dbcf4f8662792bad74ec57baa5499a232c299c
+  docs/testsubscriptionfunctionrequest.md:
+    id: 4aa9c5fc0ab3
+    last_write_checksum: sha1:2ab4da4a559058cbaba87cf0a7a5e9878b33dbd9
+    pristine_git_object: ad7d63e03919a5d2432e63e7b54b6150197ff7ed
+  docs/testsubscriptionfunctionresponse.md:
+    id: 65fe7cdd848d
+    last_write_checksum: sha1:ab9dad860a03c7ae77f023b9c21828542dbc0fa8
+    pristine_git_object: 3474dd0eacb0d8f0c47942c51dfba7e84e11e37b
+  docs/testsubscriptionfunctionresponsebody.md:
+    id: 6a3ca7669816
+    last_write_checksum: sha1:30f2c433a7b587846298a9bab192a0a6373ccc45
+    pristine_git_object: 0bb920132584ec18c026a7a211c570ef8a04ed80
+  docs/testsubscriptionfunctionunauthorizederror.md:
+    id: f0de376aade1
+    last_write_checksum: sha1:bf6b21de0421face63bd6a2fbb30e4c5f4bfbf80
+    pristine_git_object: 93717f0cb15c7ce49db6191945848955597584a7
+  docs/twitterproviderconfig.md:
+    id: 28ace1a363a3
+    last_write_checksum: sha1:e29650803156fd22542ea5430abedab709fc9057
+    pristine_git_object: 906237f84b545f5bb2e1c9e79268bc0dea7c682f
+  docs/updatecustomresponse.md:
+    id: 6655d07fab1f
+    last_write_checksum: sha1:0cd0da09f9ec09f426b3c1cf349589d3047bf943
+    pristine_git_object: f4a1015f5554a0fe25ad9e67c4abe25008d4a889
+  docs/updatefilterbadrequesterror.md:
+    id: 0e07a1c2a916
+    last_write_checksum: sha1:453c06d77a8fa894a2e1dd0bbb3410a70ad397a3
+    pristine_git_object: ab99d8b7283a8de8f433e85d751872f778e75780
+  docs/updatefilternotfounderror.md:
+    id: 1d42742349e9
+    last_write_checksum: sha1:7efab0830f5362a06caa9857ff93772a6cdc1458
+    pristine_git_object: 58baaf1cd8015accc8c90a3ca1bd1a35b635d5aa
+  docs/updatefilterrequest.md:
+    id: 07ad9d8b7cd6
+    last_write_checksum: sha1:7684aefa30092c6fb9db170b2c194027d8b7b29f
+    pristine_git_object: 0e131b5353a590b9f17b5125edb421661cf9cf0d
+  docs/updatefilterrequestrequest.md:
+    id: 83d85af68880
+    last_write_checksum: sha1:000ceab8c0429d5d94737406812c84a985964582
+    pristine_git_object: 47fd56586d9a56347ec170729ea304871f4dfc4d
+  docs/updatefilterresponse.md:
+    id: eb91131df2bb
+    last_write_checksum: sha1:71c0808f43b0321ad85579e01326529bbc005c86
+    pristine_git_object: ac627e9866fa16bcae54a8777e4d12ce0fa9d1e9
+  docs/updatefilterresponsebody.md:
+    id: 9141f4b9acc1
+    last_write_checksum: sha1:6cd40e3fef8f2f6ba93c0438062bf61d28024a59
+    pristine_git_object: 4b9170885737a7e9dacd5f9a54dd7da2cbac07d4
+  docs/updatefilterunauthorizederror.md:
+    id: 042b9f54da8f
+    last_write_checksum: sha1:849f191f23bbc5ca93429f6287f6d0402bbb6107
+    pristine_git_object: d4d49b93b194a901fe1425b64ff2e2c56fcc1c99
+  docs/updateportallinkbadrequesterror.md:
+    id: b9229b59bdb9
+    last_write_checksum: sha1:d025bd4376053c1b9bc1ea2429abb7a11372606a
+    pristine_git_object: 4bf093ddb2ae8fab4a0d7f1bf8335fba7901cdf5
+  docs/updateportallinknotfounderror.md:
+    id: 46b61cf363a3
+    last_write_checksum: sha1:9d3a6021cfbf717bdef141a11f2b3c464ad6e323
+    pristine_git_object: 149df4191a2856bc15c12a63ef0f4d913e77a761
+  docs/updateportallinkrequest.md:
+    id: 9050edee510c
+    last_write_checksum: sha1:c3d6f4efec3e0e0ea6652a6dedeead46df0d0a84
+    pristine_git_object: 25859fd18461514b68e8a6565ca2d2ae1d9bb2b5
+  docs/updateportallinkresponse.md:
+    id: f7b0f2d1926a
+    last_write_checksum: sha1:50282426eccdb6d730b13fc3494f2c2252d38524
+    pristine_git_object: ef9540ef8bf96977d26eb24c1737815f6f710faf
+  docs/updateportallinkresponsebody.md:
+    id: 60a8d82c1f0b
+    last_write_checksum: sha1:549ad78aa881bee97ddd87f07fd941325d8a2840
+    pristine_git_object: 973a221bcde007a3c7620fffee616a2be83fbd59
+  docs/updateportallinkunauthorizederror.md:
+    id: 594010e85829
+    last_write_checksum: sha1:f02b552847ad46348cf09ab6a0808d943ac0fd01
+    pristine_git_object: c0fb27360e9d0a1102fdbe79832dddf4642f7ae5
+  docs/updatesource.md:
+    id: 5cd317049cea
+    last_write_checksum: sha1:481b542102bd80737f28e7f4f1a97b52f04eca4c
+    pristine_git_object: 62673fc67b42c8f7253aafc612843cb2504da22f
+  docs/updatesourcebadrequesterror.md:
+    id: 10bd9d158591
+    last_write_checksum: sha1:fe97e2d1fe705252e6e01de0e4680e72137b96b1
+    pristine_git_object: 8ccf7e3274aa74f98b79937736223bc32ab7686f
+  docs/updatesourcenotfounderror.md:
+    id: 287682462ee3
+    last_write_checksum: sha1:93c61d711aaeaa7f469b4c11dafb1c839e2c244e
+    pristine_git_object: 46b40b8dff99c9eac1f7f0e1dba2476753de1f5f
+  docs/updatesourcerequest.md:
+    id: 34bfdb0f9fcd
+    last_write_checksum: sha1:ac2a57d6620915d588f2d7e69b65ab8ceceb0f30
+    pristine_git_object: 2506bf52a656f91b3715b6bedb470f55b27189c5
+  docs/updatesourceresponse.md:
+    id: 478e86b6e091
+    last_write_checksum: sha1:ee317482136929ff5f513453f25207d51d4c37b4
+    pristine_git_object: 3d486564b400476d3a04e93743e28bd98d9bc97e
+  docs/updatesourceresponsebody.md:
+    id: d08395492fa7
+    last_write_checksum: sha1:bb1e3244d7ad981d4c55c50db60893d9d9401594
+    pristine_git_object: b64049aa7fb94efb8e6a85cd67e04846d6c922ba
+  docs/updatesourceunauthorizederror.md:
+    id: dbde03606f40
+    last_write_checksum: sha1:1843b04fa55e3eacd6b80d0a8d6f9184826d9433
+    pristine_git_object: eb46ae3833edb4a612270e146d491e89761ec291
+  docs/updatesubscription.md:
+    id: b5250aefd7ed
+    last_write_checksum: sha1:b97a7ebee7a98ce095233e8d21a5759623696818
+    pristine_git_object: 82372115c2bf60462b7662e232047741fbb78b30
+  docs/updatesubscriptionbadrequesterror.md:
+    id: 688078ea7557
+    last_write_checksum: sha1:8b558095629352ac2d3dc26748f2ce7d34213f73
+    pristine_git_object: 28e0bb17c678594def81876cd25bd53a2cb4bf11
+  docs/updatesubscriptiondeliverymode.md:
+    id: a3a2caf4d88d
+    last_write_checksum: sha1:ff36a457884ce12dfb0402540ce066e5c1ba6b76
+    pristine_git_object: f120a705c223a95c44403f3eeff09ed33044cae7
+  docs/updatesubscriptionnotfounderror.md:
+    id: 5ea34df559c7
+    last_write_checksum: sha1:a52119fb134bb624bffe93e7ce1db0c378bb8551
+    pristine_git_object: 88384da797e9c3e51e2498c2be16a3dd4dd977a0
+  docs/updatesubscriptionrequest.md:
+    id: 8d15ab0bef73
+    last_write_checksum: sha1:f2081da3cfb43e35463a21264a8bef524e31b1dd
+    pristine_git_object: cad7fb01b54f8b5b727a0085d69d535a7ad61287
+  docs/updatesubscriptionresponse.md:
+    id: 169c2c7fd728
+    last_write_checksum: sha1:b9afe3f06acef12eab5eeffecbb0ba50384ba7ee
+    pristine_git_object: 98977d3a0d8b10d9f718e93ae7fef5d6f90c941b
+  docs/updatesubscriptionresponsebody.md:
+    id: 6fee48e72d26
+    last_write_checksum: sha1:48d5b4b512c22e45f72697aa9b5a5c23185bc49a
+    pristine_git_object: 96ebc7dde5b8729bd91576b1a220c9be378d5f04
+  docs/updatesubscriptionunauthorizederror.md:
+    id: cb86106b4ea1
+    last_write_checksum: sha1:a73e63a442bc2d9e80d9e4f9ddcbaa89ff05d364
+    pristine_git_object: b45409cede09ed2970f58c53c9cf1b3c4ed6dcc8
+  docs/verifierconfig.md:
+    id: 9b2352d543b9
+    last_write_checksum: sha1:2617876af87e74e2ff90beb77404ebc67e8bcb44
+    pristine_git_object: 2da920d5083f9c72eba8d0d9a1f557f131b5e6c9
+  docs/verifiertype.md:
+    id: fa79f9cd600f
+    last_write_checksum: sha1:108f17587679b1574a7c2c8eecba2caee65ae6fb
+    pristine_git_object: c3126946255e89d9832ebf5ec5803a366ec2e631
+  dynamicevent.go:
+    id: 282050cb903a
+    last_write_checksum: sha1:bfa576cb11c29b7b5ddf6f429c51565b09cba80d
+    pristine_git_object: 81b22a34c7bc36566007f2fba886386be4d00589
+  encodingtype.go:
+    id: b714207b7de6
+    last_write_checksum: sha1:7bc8a1a09de7bd1d4711ab4999c962eb0c724c80
+    pristine_git_object: 7178e1181605f99db927e0b03247f7e79fa62906
+  endpoint.go:
+    id: 41586c310c05
+    last_write_checksum: sha1:62f2cf92f87746d2171558729d069a90117a5891
+    pristine_git_object: 1712a400efff0815ea91ab226cc489a2ae7695e6
+  endpointauthentication.go:
+    id: d0604fc2dcde
+    last_write_checksum: sha1:52c137d4ce2bb59cca6a4f78c24f9fa86e1b8b0b
+    pristine_git_object: 295af9b2f8958934d120707aebb31775bcac1948
+  endpointauthenticationtype.go:
+    id: 1a9e0788a93b
+    last_write_checksum: sha1:931096a5c17a2abbe45de8795086fc0b38a46d52
+    pristine_git_object: db2e20ea1e3f8145375607a76e948db2c7ec86f9
+  endpointstatus.go:
+    id: cb2eff267aeb
+    last_write_checksum: sha1:f472bb4b86fb3174d5d8a28ab40987461147b98a
+    pristine_git_object: 43c19d41c4a7d108fb1cd935e3ef0e9f46f26bb8
+  event.go:
+    id: 214a728043d3
+    last_write_checksum: sha1:086a88e4c2ab60f309fada9c18790a836c1c5532
+    pristine_git_object: 7352f9e032e92a1359867dba576d0ad482489258
+  eventdeliveries.go:
+    id: b02f47f771c2
+    last_write_checksum: sha1:4a80d4244e3ef6242bec84782c9875adf230c896
+    pristine_git_object: 4e4664cc0b1b00db1a708a1706e99e417fa6181d
+  eventdeliveryresponse.go:
+    id: 5a1295281fb4
+    last_write_checksum: sha1:a743fea3df08d04178b1512657e3c7a22f2d7136
+    pristine_git_object: 4f7dd9ab57d0a994640c18f3059dd55b1a82da14
+  eventdeliverystatus.go:
+    id: c53a3d3e7745
+    last_write_checksum: sha1:a6d75a21be526c689b0e1e7b277caefcbf783e84
+    pristine_git_object: 912190e6acb512a1b57b51169204d8f01035c4b6
+  eventresponse.go:
+    id: 2fa6e13439de
+    last_write_checksum: sha1:8e558f3532ec300a85b13f6a3bdff4fb1850f256
+    pristine_git_object: 78c1ade0801f2b88c839f87f22aacf42ec46c52b
+  events.go:
+    id: fe26b3f87ab7
+    last_write_checksum: sha1:a80c706eac67a6f895ace615b44f5c7cba909705
+    pristine_git_object: e7dbc8f71397d21cce5d25c1793547281c340d2d
+  eventstatus.go:
+    id: 326be4c1634f
+    last_write_checksum: sha1:21a79c86954c9320a5c11016fa278451424a4d8b
+    pristine_git_object: 92b07bd1b0e74c63c1be943dc277efc184177b4e
+  eventtyperesponse.go:
+    id: 92f389503276
+    last_write_checksum: sha1:5ee0e90dc1c6e3ff6d6d8e5ccdefaea3eb5b5eb0
+    pristine_git_object: ff87b291fe122177634e3257b6038a654d4b9da6
+  eventtypes.go:
+    id: e27548f4ff9b
+    last_write_checksum: sha1:a115e34ee9f422676e8312db585dbe9ba8010940
+    pristine_git_object: b4327cf96c2d44d06aa242ff5aff85ecb36cbf68
+  fanoutevent.go:
+    id: eb6ba24d080f
+    last_write_checksum: sha1:2bf2bb5ba2f485dd73f9546570f5d673d1caac6d
+    pristine_git_object: ddcbe3c9bc826b7f95aa1672fadaa52776aad601
+  filterconfiguration.go:
+    id: 2cd733e785a8
+    last_write_checksum: sha1:8075b3cd79a53f75ef69a5cc76fb081e2a7ed961
+    pristine_git_object: 8740b0506bca0572df1198d6c8ade9e675d40beb
+  filterresponse.go:
+    id: 780bcdc6f180
+    last_write_checksum: sha1:2962c57d4ea01b885cc0c41bf2a84823cd059aa4
+    pristine_git_object: 7dbb58e2c9a786f9533ebdb0e39df6d3ac718e63
+  filters.go:
+    id: be66a6c8975c
+    last_write_checksum: sha1:c638848bf4ffb1297e455022d024b9dc5e65a27d
+    pristine_git_object: e600a22c383bc39dfbfe5bd828e458dcb84b8fd5
+  filterschema.go:
+    id: 4266689e49d1
+    last_write_checksum: sha1:3a54448ae7f85487de07637f666d175ffe46c50b
+    pristine_git_object: e5f03ac59532ec009de26bb8197de3a5d49e9385
+  forceresendeventdeliveriesop.go:
+    id: 4d45c30bb653
+    last_write_checksum: sha1:0a69c1a33fddfc88af6afe54e90d288906e3751d
+    pristine_git_object: e607e1ecbcce80c435e9fcc012d4d51d80bb0f1c
+  fs.go:
+    id: d4080daf2859
+    last_write_checksum: sha1:efe61f9d41fc7a2f07d29578d60701d91ba98d55
+    pristine_git_object: b7016e17aa463c635516289b3cd6b0c025058e1f
+  functionrequest.go:
+    id: 0bbaea0744b1
+    last_write_checksum: sha1:cd65f7182c41032498d786bde22c42d2e4aab57a
+    pristine_git_object: 93760315ecb3604933413d7d0d27e52f2d3dd1ab
+  functionresponse.go:
+    id: d8e45f98ca44
+    last_write_checksum: sha1:f332d6d15d6a1fedc2ad13de6a461fa6319742e7
+    pristine_git_object: 1c4c2a62c5f2f6e2a7f4868dfece836604fe4f7b
+  generateportaltokenop.go:
+    id: 270e2e706427
+    last_write_checksum: sha1:c29991fe3ab641973fec366abd28a4e550580337
+    pristine_git_object: b6777256af6781a58d77b5c7562b94318a3c7e43
+  getdeliveryattemptop.go:
+    id: 914e1cdcd494
+    last_write_checksum: sha1:12c1ba79474b6b678adbbd452812542def4f1cb3
+    pristine_git_object: 3952fe945bbdfca74d1ea6b246a74e3ad5c63398
+  getdeliveryattemptsop.go:
+    id: 16729a6d9555
+    last_write_checksum: sha1:131803f24ae62a1457129158b3ead135ba182041
+    pristine_git_object: 8bf3d0b3bc7dd82db0e0d672e8a28b45f2a1da1e
+  getendpointeventop.go:
+    id: d978e54b59be
+    last_write_checksum: sha1:2778adbea3704163952bab4faa74222082a746de
+    pristine_git_object: 7e1fe32b4b55a3551a2edc29af447e6edff01f9f
+  geteventdeliveriespagedop.go:
+    id: d16c202f440e
+    last_write_checksum: sha1:65f7556794a1ae924ed3e0bbc6c4fcc68ad456dd
+    pristine_git_object: 10915f3b6c5399c72f4fbef1d8f78e675ecf411b
+  geteventdeliveryop.go:
+    id: 6f4dc662e6af
+    last_write_checksum: sha1:4a3dad1fc94eab46651b741dbb7a306652e76c1e
+    pristine_git_object: 7c1719012623d54eb8fa702f35599069bcc8f94e
+  geteventspagedop.go:
+    id: 56a202ff3c7d
+    last_write_checksum: sha1:9edee9faef6baa746b6f7e374b3b03e273a4df2e
+    pristine_git_object: e056b15027e8dd844002aba08f058c156582f82e
+  getfilterop.go:
+    id: c421f9580f83
+    last_write_checksum: sha1:2ea093b417426c721591a8ce772919d95658b386
+    pristine_git_object: cb2db2156a02eabb208d87cae37b552bd7242fab
+  getfiltersop.go:
+    id: b3e6570d270a
+    last_write_checksum: sha1:00a7848312d6516c2a70e9327709241ded1e8e3a
+    pristine_git_object: 3f2c568865dea25c8d87a22c32a6b5bea5427b62
+  getmetaeventop.go:
+    id: d33da07904e1
+    last_write_checksum: sha1:7aaec652443ec28b45c75781b01c1f235dfd6d6b
+    pristine_git_object: 5520f7f7ed8b9dfaec0f984cee4690055414ce60
+  getmetaeventspagedop.go:
+    id: 811d84d0f6c5
+    last_write_checksum: sha1:6b36e7e15015016d85a93dd12de28d67fd71b3e6
+    pristine_git_object: 68bd2b2dd5e7009ffb209ed3c7415cb22d461f31
+  getportallinkop.go:
+    id: 5d60c9bc32d6
+    last_write_checksum: sha1:1e35ec15a888da28340798003f39f4d236ebaaaa
+    pristine_git_object: defad0ebf57af0b62b2403edef2dfc43f80a0de2
+  getsourceop.go:
+    id: 484979713cf4
+    last_write_checksum: sha1:2250da79a334f015b1beb49ba856b6e90d9d20d7
+    pristine_git_object: c96493599f9a46d4e204a090086785be995e085f
+  getsubscriptionop.go:
+    id: 1e4470e4a000
+    last_write_checksum: sha1:7593da7d85b9253b7dd6d430b1db878047558fea
+    pristine_git_object: eb3ef46eb4e43a3c64fccb0ca4867823a74afe43
+  getsubscriptionsop.go:
+    id: a8d751e08660
+    last_write_checksum: sha1:b0bc75897221b16733112104f89436dc58e89f63
+    pristine_git_object: 4ec81b47df62ff250cbdfb3f83a219b6f6c4ddc9
+  go.mod:
+    id: c47645c391ad
+    last_write_checksum: sha1:a363d85f41e9c8d99dae641248d438f0dad2476a
+    pristine_git_object: 74400bf5e3fe97063bf77195b059735f5d0c8d8d
+  googlepubsubconfig.go:
+    id: 2d969154abed
+    last_write_checksum: sha1:41ec8254141f5e60b05c072256c7582fc8078389
+    pristine_git_object: dba2f8680c37ccc67a6e369f25cba78aadbe8505
+  hmac.go:
+    id: d645b14ad062
+    last_write_checksum: sha1:91b5956febc2f2925db9d7cba8544bcb9ee5c334
+    pristine_git_object: f1dea1d451ea6664db5081aed10a2e4453fb8d76
+  httpmetadata.go:
+    id: 49248396eddb
+    last_write_checksum: sha1:19eade87eb3c7fef49ed5f37fa88bcd76793d535
+    pristine_git_object: 09ffdc21165b0178c87f53805a6e2f6d3c89f644
+  ids.go:
+    id: 9908b231ed31
+    last_write_checksum: sha1:dec20b83c1c0a106640b3dfe591405f57e1cf034
+    pristine_git_object: e43576eb49f11f7c08f9fefa6fc55c6a454d39ce
+  importopenapispec.go:
+    id: c651a00d666f
+    last_write_checksum: sha1:2dd44c89bd0523496458c7ae68628f5bb12d6eca
+    pristine_git_object: ced68ac237fa8a514417a80695b3aaca433d561d
+  importopenapispecop.go:
+    id: bdad4c473616
+    last_write_checksum: sha1:b30f8a8fbdeaef146cd233691394891217b00b51
+    pristine_git_object: 7e590d3ee380eaaccc956f331f3a0c443e5e0f51
+  internal/config/sdkconfiguration.go:
+    id: 33b8bfac5265
+    last_write_checksum: sha1:02625b8e896962d1782be931331a8b423e858cf3
+    pristine_git_object: a6694321d10879bc1e1d170181b6866c5a725cd3
+  internal/hooks/hooks.go:
+    id: 336be70ed5c0
+    last_write_checksum: sha1:b0a7d910f1d1167ba76d6d48dcd42f04973bc66a
+    pristine_git_object: f26a7343d49dfe1c6fbd06447aac5cf6bd7dbca6
+  internal/utils/contenttype.go:
+    id: 928a56fe6755
+    last_write_checksum: sha1:ab5cfd860d02c6e6a37f89e2b5649a9859947fb1
+    pristine_git_object: f6487e01eb987c0aa49e7aa50b5ff24830314c63
+  internal/utils/env.go:
+    id: ac8bab30c73d
+    last_write_checksum: sha1:1e0bcb2d2caed9f3657f1dbc99b55811bed0298c
+    pristine_git_object: 110d464eacf2387b347bad1cb903666354a339e9
+  internal/utils/form.go:
+    id: 8ea133d76535
+    last_write_checksum: sha1:05480619652aaec1101942527527dcef53393866
+    pristine_git_object: 1d3a044ef0cbca2df4b030193bc2020e76995685
+  internal/utils/headers.go:
+    id: 90d4f18d4adf
+    last_write_checksum: sha1:b1ab8a6261f8647db04cf6c288c91fb52aa84d09
+    pristine_git_object: 1515c1baddbdf0eb76031062ceb3fb93fabffbea
+  internal/utils/json.go:
+    id: ad03e3c502d8
+    last_write_checksum: sha1:1669fb2d0efb717f748a2724edc7a19adfdba63f
+    pristine_git_object: 417fe2563a51860fa9e161c985ceaa55c1f79155
+  internal/utils/pathparams.go:
+    id: 1f3e0c30fd90
+    last_write_checksum: sha1:322d5fe33001f5331bb1cab2fc6a977e78ec3c68
+    pristine_git_object: 8bedb341ebdec8e43a8d56fd5e55a0323f8b9aea
+  internal/utils/queryparams.go:
+    id: e7f604e65a58
+    last_write_checksum: sha1:b97de4e12d11bb8d01d8141b9c5b8a5adee48639
+    pristine_git_object: e691b26b7fac54f04f9121875a160aca8004d8c6
+  internal/utils/requestbody.go:
+    id: 22445ec1c044
+    last_write_checksum: sha1:57ddee62c4efc27352cf57d7355bd10ad9ec022c
+    pristine_git_object: c7a6034d3b046c85af0dc989694d9afc4a4f63e7
+  internal/utils/retries.go:
+    id: b5e011d15c2d
+    last_write_checksum: sha1:95591dd58dc373c9956ca08ced0ca5026de65ad7
+    pristine_git_object: dc0aa1b66d07f255ec6464e0e7c00c4a318bbadb
+  internal/utils/security.go:
+    id: eeb54c55241b
+    last_write_checksum: sha1:52cefded5223c60fcac5bd56574370e27a4bc3d5
+    pristine_git_object: ce2e1c0cffe3bbd3f111eace502f895175daad22
+  internal/utils/union.go:
+    id: db86c85746b6
+    last_write_checksum: sha1:017c7904c8b835da1153c44930da9e6bdf1e4430
+    pristine_git_object: 16184f7885451b4138b3d000fbcc177e6d0a9c47
+  internal/utils/union_test.go:
+    id: 4b56247171bd
+    last_write_checksum: sha1:83ac73c1901de4c6db90f65cf5879163f3d47a00
+    pristine_git_object: f66814c73ace94d8e71d785fd6161fb405745754
+  internal/utils/utils.go:
+    id: 1133b2a27019
+    last_write_checksum: sha1:36a3e6fb95d71868d1755dbb3b924a37340c7ea7
+    pristine_git_object: b32a14db51857aafab25498ba32fa2905c92b5d8
+  kafkaauth.go:
+    id: 0c178e687669
+    last_write_checksum: sha1:440ccece9dd488a85404be0f823f622e6c3f1030
+    pristine_git_object: cd65ffef73172fce0cfdc0e582babe6c64ed67cd
+  kafkapubsubconfig.go:
+    id: d06c7a1799a2
+    last_write_checksum: sha1:8f142a5d6d6269141f65c2a4704256e5778211cd
+    pristine_git_object: 39d905e7e895e8fc5b38c2694fe4003b25273c7d
+  loadportallinkspagedop.go:
+    id: eb1158535e4f
+    last_write_checksum: sha1:e0ad06cd64a4252e42cf49ae9aa8d31977f0973b
+    pristine_git_object: afb9850093e12922f5ef7205f6741e1ca0d4afe7
+  loadsourcespagedop.go:
+    id: 03a02213a629
+    last_write_checksum: sha1:09f85ddef906742923a6bb76fe3756074439ea3e
+    pristine_git_object: a73d3987bbb3995adad2e653a8334158c802e29c
+  metadata.go:
+    id: 52ff7515a520
+    last_write_checksum: sha1:d7908e5954a217e2572e9126673759b44ddca78e
+    pristine_git_object: f3195ede104f6c5dd144884137232ba13771c025
+  metaeventattempt.go:
+    id: 058c0988dd5b
+    last_write_checksum: sha1:6999a282c1b94d4c20f5ea98ddbe3b790f73ebd2
+    pristine_git_object: c7e15b3dae7c82010ef14d17eaae423ac1c55b1d
+  metaeventresponse.go:
+    id: 5c6b56122bb3
+    last_write_checksum: sha1:61bb375af1291a8127428d3f25f2c8eeaff7ad52
+    pristine_git_object: 08a7f9befac89c41f312e3e5f40da49463bafea6
+  metaevents.go:
+    id: b0e3b22d7212
+    last_write_checksum: sha1:e3fd3148ed17ae8fcff4048c53942b2af2a1d260
+    pristine_git_object: b46ade23890b548c063437bf616d5631ac457283
+  object.go:
+    id: f08a48ff7e0b
+    last_write_checksum: sha1:e76fde91a817220653845f9b7a6374058eea1780
+    pristine_git_object: 406e8e24096a0e74b6dbd584a4cfc9fa1a07b789
+  optionalnullable/optionalnullable.go:
+    id: ce60f259ead3
+    last_write_checksum: sha1:d6aff1a420c31e025ea21d46cf056e305ae76fe8
+    pristine_git_object: c6739be0619b6726565e0f11855ffe44b0e5607e
+  optionalnullable/optionalnullable_test.go:
+    id: ad67101ebca3
+    last_write_checksum: sha1:2e9433eff1651ac77d6678ea76880d9a4980cbc2
+    pristine_git_object: e6e5a01c6e721e879e24a38a1f97e3e27d4686d4
+  options.go:
+    id: eaebf584e5ee
+    last_write_checksum: sha1:a83a4911b8f6b4524b0b7d05e364f972f4af67a3
+    pristine_git_object: e76c2643c4b76c053ac3c9d26db0a73c130e81b0
+  paginationdata.go:
+    id: efd17490e7c4
+    last_write_checksum: sha1:d9d99704a896dc3e1178b684b72f9289790fd5bb
+    pristine_git_object: 6543f7dd7b259edc45e509e223b058b13b9f12bf
+  portallink.go:
+    id: 18141a365e02
+    last_write_checksum: sha1:ae257b8bd928db4249f8374af8d8cfa07c3414bd
+    pristine_git_object: 6f69d829024ec829f6ad4f5623531f333ba9cad1
+  portallinkresponse.go:
+    id: da5553e51f23
+    last_write_checksum: sha1:cd24e2d134f777e2ec4a6df968bdf0da43967a49
+    pristine_git_object: f72274d54c500ad03fd9f638a743e2e2bbbd0c34
+  portallinks.go:
+    id: 18a3cba2f4b9
+    last_write_checksum: sha1:207d620fe877283872887051db4029fa0897a878
+    pristine_git_object: a59d507187b785a5fd5f881d468816ef7d25374f
+  providerconfig.go:
+    id: c7b2f5940884
+    last_write_checksum: sha1:a421f595dfb62fea51e27da9fd2648fc52768e5c
+    pristine_git_object: c36cf9e117ba4dacc72667d733bdfd558e976aad
+  pubsubconfig.go:
+    id: 7342c4b8f75a
+    last_write_checksum: sha1:c0985fad84863a80136ddecb6475aaeb681dfdfb
+    pristine_git_object: 0833ede795c2e4420f0bbd4c4c0b87ada3e9d081
+  pubsubtype.go:
+    id: 088b0e763eb6
+    last_write_checksum: sha1:c3346a8cd9d5aa3c6a8bf3e534d59b1ecb825b7a
+    pristine_git_object: 6cc8e8282af7af55f5e6a30a78074d64dc55ef71
+  ratelimitconfiguration.go:
+    id: e088d577ecc2
+    last_write_checksum: sha1:29f352d506fb9da22fda1026326376f4b936193a
+    pristine_git_object: 705605b7fe42f7c430005ddb4475790b1482e9a9
+  refreshportallinkauthtokenop.go:
+    id: bd131c40e1ca
+    last_write_checksum: sha1:0dd468f736f959491abbc6cfbf1f4261ec9a06ec
+    pristine_git_object: 8a9f9ec44bb79134b5a689c09a1ebdef752bd3a5
+  replayendpointeventop.go:
+    id: d7437ec932b7
+    last_write_checksum: sha1:2e090746809b0a2a9e691d9694442015e89bec60
+    pristine_git_object: 8ab5634c50de5ddf5f3105bec1e54cbed049ff2d
+  resendeventdeliveryop.go:
+    id: 13b568509bb5
+    last_write_checksum: sha1:090d673e047d5a4cb4e2659efb20f4075deab320
+    pristine_git_object: 19f5ae8f74ac3af1c2f2d31ea6ff60365a4f782b
+  resendmetaeventop.go:
+    id: 09d64b1b3a0b
+    last_write_checksum: sha1:c477e909eb5e791116d98d7a35a5b2173a1eccec
+    pristine_git_object: d13d502983aa707583c18979ee072e96f99388d4
+  retry/config.go:
+    id: 82d673cb0389
+    last_write_checksum: sha1:7f7d96b59a18e95bac847ae09c63bbd911ee8432
+    pristine_git_object: 5b3dc7c122d8ab08905485342d7474f8f163888d
+  retryconfiguration.go:
+    id: a9d83e45542b
+    last_write_checksum: sha1:c53648da32882c7151bd5cc4434a2855bae4446d
+    pristine_git_object: b2af51321879f986173ede0d9e1aec1c6ac66e62
+  revokeportallinkop.go:
+    id: 48c36899dbca
+    last_write_checksum: sha1:039dc783ff39a8e9e0fa63a294b5172c8d7eb31d
+    pristine_git_object: d6e3a0fe60b13efc04337e5b75283c141f8ae301
+  secret.go:
+    id: 4947aa1934bf
+    last_write_checksum: sha1:b4a9dd9feea2755ec7b00cfb47146c15d102c7e3
+    pristine_git_object: 5638019244d64f1c7ec6a82af43d397ede2130af
+  security.go:
+    id: d22d67f172c5
+    last_write_checksum: sha1:19605cabf83fb8a518da076ebb06eeb052c08572
+    pristine_git_object: 7ab246bc192c18d8dbd53a2b23b40c91927d0902
+  source.go:
+    id: e91347169ef8
+    last_write_checksum: sha1:ef42703e8c9f3e9fed75476acd27468f755c950a
+    pristine_git_object: f50b0655fcd9d2f8a57581274910547f0d2f341d
+  sourceprovider.go:
+    id: 0af12170e666
+    last_write_checksum: sha1:168a2267795c8cb9da0165edb0cc7bd797e3aa75
+    pristine_git_object: b6cabc65e75c0aadc9c238c8d6ebf263469f12ee
+  sourceresponse.go:
+    id: 12ed75606c1f
+    last_write_checksum: sha1:7939752d5169a5b56c3cabb5331d475d22a8ce5e
+    pristine_git_object: f462fb7ce9af6ec0eabed52823270c2c19736b88
+  sources.go:
+    id: 4d2231a4f6a8
+    last_write_checksum: sha1:7548ff43998093ffceaa9bbd08ff894ad7813124
+    pristine_git_object: 8846897271a7486c4c8f909dc0e66005a3349572
+  sourcetype.go:
+    id: f3557ceaf20d
+    last_write_checksum: sha1:001cf1ffb2357d76a1531b1c78b9aee0822fead9
+    pristine_git_object: 36c66f8c42289f255d2812c933905f97592e0c9c
+  sqspubsubconfig.go:
+    id: e994031945ce
+    last_write_checksum: sha1:d74f2b97a5dae78caa66cdae897ffdf5e86e19b3
+    pristine_git_object: 729ba3756b0ff4e42241a0cd8cc21e877775f214
+  strategyprovider.go:
+    id: a2e809c0fdc7
+    last_write_checksum: sha1:85ae787b312f6bcbdd413b53c362d6d4102c625b
+    pristine_git_object: 174da05982921e2017b0afabe4f36e05345a71f6
+  subscriptionresponse.go:
+    id: eb54925bd2ff
+    last_write_checksum: sha1:85554f8a041708749e276eeeb60e828bdbd3073f
+    pristine_git_object: 9a4e4404c637ba1abf38022bb7fdefd3932b2f05
+  subscriptions.go:
+    id: 7ffd9f652eea
+    last_write_checksum: sha1:9f13e29af46508be70b206cf16debdcf6fc69acd
+    pristine_git_object: 0b9d22292f462cd978ed8c91463171ba0cb1e777
+  subscriptiontype.go:
+    id: 8c05d2c7a3ab
+    last_write_checksum: sha1:3a45b02f788994409142ece63b0b03d50bddf34e
+    pristine_git_object: fe8f95b7df8365966804e6f7ae6377ba3806927d
+  testfilter.go:
+    id: 7137cf83c38e
+    last_write_checksum: sha1:7879c1004ab55952ef16109b602497a6c84ea9e0
+    pristine_git_object: c55a63cca55345433f14f074f3e011dc270d05f9
+  testfilterop.go:
+    id: 6cd21fccd11c
+    last_write_checksum: sha1:45791b5072b07dd10b7c6232e71fd2450b17052a
+    pristine_git_object: 112eed9f5709085bfa6fa9eac97c81f018597fda
+  testfilterrequest.go:
+    id: 333bc3b0d92f
+    last_write_checksum: sha1:7c97a877d95da29f66603190ad2d7abb4c1c61e0
+    pristine_git_object: 0b858a7eda81554c12d74abd66ad99f011bf46b7
+  testfilterresponse.go:
+    id: b5ca03b5bf6c
+    last_write_checksum: sha1:3da77379f1803716f14a9c97e3aa8d35cb91f95a
+    pristine_git_object: a88fbfe5687cd45b904c4a445574b236eb5088a0
+  testsourcefunctionop.go:
+    id: 284b12f1a2ee
+    last_write_checksum: sha1:4767237c2b9b29a799efcf50773ed750c34b15b4
+    pristine_git_object: eafdc23bbee0a728c6f9fd621c6abbc54cdd37c6
+  testsubscriptionfilterop.go:
+    id: e514b58a2cc4
+    last_write_checksum: sha1:bc0a64101af17ae1ef4ae704efb86fd8e76e3483
+    pristine_git_object: ef132e68e4eeb50fc03112ba040be8af38d26923
+  testsubscriptionfunctionop.go:
+    id: 33cff6b4e2bb
+    last_write_checksum: sha1:f6a0812b76c4980334d3190116748e2e0829a04e
+    pristine_git_object: d4db622efb4831eab26162759b3ddfa07e8402aa
+  twitterproviderconfig.go:
+    id: 4afae828593f
+    last_write_checksum: sha1:e1ed6b6a11bbdab64a18b8da30208c287aadb62b
+    pristine_git_object: 3a9c0c4ee316c6b6ee6e1dd02b25190997733608
+  types/bigint.go:
+    id: 6f911e1a03c3
+    last_write_checksum: sha1:49b004005d0461fb04b846eca062b070b0360b31
+    pristine_git_object: 9c6a086d51595888a6ff787ebcb8693559afee95
+  types/date.go:
+    id: 231a623ce1b7
+    last_write_checksum: sha1:3036a2e1ed15a1d484c093367eba000c38f384d0
+    pristine_git_object: 5b2782f219efe6bfbce46fc2dec68998eb759438
+  types/datetime.go:
+    id: 5023aac30a47
+    last_write_checksum: sha1:196d050af6450669214e9ae4fd28e56263ae2b5d
+    pristine_git_object: 3eff332daa04e34cec5ffb10add670bafd8ac454
+  types/pointers.go:
+    id: 6d0d0a6cb6f3
+    last_write_checksum: sha1:fc2275ea006257ba9ba4ff6f2a2cdb6205371eef
+    pristine_git_object: 35c439d2661e08fcb6a854096fd7b9a8561b3938
+  updatecustomresponse.go:
+    id: 82f50c4a5ec1
+    last_write_checksum: sha1:3b7f076a846e7b8bdd2641e78c1b5c516807b36e
+    pristine_git_object: b534ce44613add3e9e0974236a229165e3d6cd48
+  updatefilterop.go:
+    id: e81ea864e621
+    last_write_checksum: sha1:97149673e326d43f031204d25c9ee172d1759e83
+    pristine_git_object: 351454ec536a029fe96525bb773553738e546bd3
+  updatefilterrequest.go:
+    id: 5afbc837c945
+    last_write_checksum: sha1:f45b7858c7a072542350f3f083cd164e12cf9b99
+    pristine_git_object: e83f1130272d5de2b05c0ff859be5a2a33f35940
+  updateportallinkop.go:
+    id: 5c640905d5f8
+    last_write_checksum: sha1:f3dc4c22c2be9c6f7d8bc6c4eb5faff47a7156a2
+    pristine_git_object: b54cf61f9c244a3b9c5235bd85de789acd2c6dd3
+  updatesource.go:
+    id: a18ddb32ccdb
+    last_write_checksum: sha1:9193b4450171cc445a30d55d2ae4b81ebbf41a38
+    pristine_git_object: d0eba605ac12710d24daff2bf95c96d3ec437733
+  updatesourceop.go:
+    id: aa5a73d43a09
+    last_write_checksum: sha1:0cf173458f00dcd87cc50e9bb81f308d313f1c60
+    pristine_git_object: 1997c6a78abcd05e20727978bb24230ea88eef41
+  updatesubscription.go:
+    id: 954d4435355e
+    last_write_checksum: sha1:3cf19e0d3aee6e86e280db3934ea169b4b596ad8
+    pristine_git_object: 0ae5a98fb4bf4f51f388192eb4bb4b38055f3d17
+  updatesubscriptionop.go:
+    id: e02eceaa2c26
+    last_write_checksum: sha1:1b91a984935e36915c0eddbd473720a7e051d66d
+    pristine_git_object: c4222159ed09c7fbd85dc31ae705d92e5ef7c093
+  verifierconfig.go:
+    id: 9a315c4f60ca
+    last_write_checksum: sha1:723ef9a56cc15549e3a154cddeabdf0d878a253d
+    pristine_git_object: 1276cd8cf0823a82de614cc1ebca34568e50d5ee
+  verifiertype.go:
+    id: 6729543b8ddb
+    last_write_checksum: sha1:5eb93b4296e6e149cbcafbacf8007be9820d3e4c
+    pristine_git_object: 88df32f0bade14fe7c5c1151adf50f49eafcd789
 examples:
   CreateEndpointEvent:
     speakeasy-default-create-endpoint-event:
@@ -1569,7 +3194,618 @@ examples:
           application/json: {}
 examplesVersion: 1.0.2
 releaseNotes: |
-  ## Go SDK Changes Detected:
-  * `Convoy.Endpoints.DeleteEndpoint()`: **Deleted** **Breaking** :warning:
-  * `Convoy.Endpoints.GetEndpoint()`: **Deleted** **Breaking** :warning:
-  * `Convoy.Endpoints.UpdateEndpoint()`: **Deleted** **Breaking** :warning:
+  ## Go SDK Changes:
+  * `Convoy.Endpoints.ActivateEndpoint()`: **Removed** (Breaking ⚠️)
+  * `Convoy.Endpoints.ExpireSecret()`: **Removed** (Breaking ⚠️)
+  * `Convoy.Endpoints.PauseEndpoint()`: **Removed** (Breaking ⚠️)
+  * `Convoy.EventTypes.GetEventTypes()`: **Removed** (Breaking ⚠️)
+  * `Convoy.EventTypes.CreateEventType()`: **Removed** (Breaking ⚠️)
+  * `Convoy.EventTypes.UpdateEventType()`: **Removed** (Breaking ⚠️)
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - /activateendpointop.go
+  - /alertconfiguration.go
+  - /amqpauth.go
+  - /amqpexchange.go
+  - /amqppubsubconfig.go
+  - /apierror.go
+  - /apikey.go
+  - /basicauth.go
+  - /batchreplayeventsop.go
+  - /batchretryeventdeliveryop.go
+  - /broadcastevent.go
+  - /bulkcreatefiltersop.go
+  - /bulkupdatefilterrequest.go
+  - /bulkupdatefiltersop.go
+  - /climetadata.go
+  - /createbroadcasteventop.go
+  - /createdynamiceventop.go
+  - /createendpointeventop.go
+  - /createendpointfanouteventop.go
+  - /createevent.go
+  - /createeventtype.go
+  - /createeventtypeop.go
+  - /createfilterop.go
+  - /createfilterrequest.go
+  - /createportallinkop.go
+  - /createsource.go
+  - /createsourceop.go
+  - /createsubscription.go
+  - /createsubscriptionop.go
+  - /customresponse.go
+  - /deletefilterop.go
+  - /deletesourceop.go
+  - /deletesubscriptionop.go
+  - /deliveryattempt.go
+  - /deliverymode.go
+  - /deprecateeventtypeop.go
+  - /device.go
+  - /devicestatus.go
+  - /dynamicevent.go
+  - /encodingtype.go
+  - /endpoint.go
+  - /endpointauthentication.go
+  - /endpointauthenticationtype.go
+  - /endpointresponse.go
+  - /endpointstatus.go
+  - /event.go
+  - /eventdeliveryresponse.go
+  - /eventdeliverystatus.go
+  - /eventresponse.go
+  - /eventstatus.go
+  - /eventtyperesponse.go
+  - /expiresecret.go
+  - /expiresecretop.go
+  - /fanoutevent.go
+  - /filterconfiguration.go
+  - /filterresponse.go
+  - /filterschema.go
+  - /forceresendeventdeliveriesop.go
+  - /fs.go
+  - /functionrequest.go
+  - /functionresponse.go
+  - /generateportaltokenop.go
+  - /getdeliveryattemptop.go
+  - /getdeliveryattemptsop.go
+  - /getendpointeventop.go
+  - /geteventdeliveriespagedop.go
+  - /geteventdeliveryop.go
+  - /geteventspagedop.go
+  - /geteventtypesop.go
+  - /getfilterop.go
+  - /getfiltersop.go
+  - /getmetaeventop.go
+  - /getmetaeventspagedop.go
+  - /getportallinkop.go
+  - /getsourceop.go
+  - /getsubscriptionop.go
+  - /getsubscriptionsop.go
+  - /googlepubsubconfig.go
+  - /hmac.go
+  - /httpmetadata.go
+  - /ids.go
+  - /importopenapispec.go
+  - /importopenapispecop.go
+  - /kafkaauth.go
+  - /kafkapubsubconfig.go
+  - /loadportallinkspagedop.go
+  - /loadsourcespagedop.go
+  - /metadata.go
+  - /metaeventattempt.go
+  - /metaeventresponse.go
+  - /object.go
+  - /paginationdata.go
+  - /pauseendpointop.go
+  - /portallink.go
+  - /portallinkresponse.go
+  - /providerconfig.go
+  - /pubsubconfig.go
+  - /pubsubtype.go
+  - /ratelimitconfiguration.go
+  - /refreshportallinkauthtokenop.go
+  - /replayendpointeventop.go
+  - /resendeventdeliveryop.go
+  - /resendmetaeventop.go
+  - /retryconfiguration.go
+  - /revokeportallinkop.go
+  - /secret.go
+  - /security.go
+  - /source.go
+  - /sourceprovider.go
+  - /sourceresponse.go
+  - /sourcetype.go
+  - /sqspubsubconfig.go
+  - /strategyprovider.go
+  - /subscriptionresponse.go
+  - /subscriptiontype.go
+  - /testfilter.go
+  - /testfilterop.go
+  - /testfilterrequest.go
+  - /testfilterresponse.go
+  - /testsourcefunctionop.go
+  - /testsubscriptionfilterop.go
+  - /testsubscriptionfunctionop.go
+  - /twitterproviderconfig.go
+  - /updatecustomresponse.go
+  - /updateeventtype.go
+  - /updateeventtypeop.go
+  - /updatefilterop.go
+  - /updatefilterrequest.go
+  - /updateportallinkop.go
+  - /updatesource.go
+  - /updatesourceop.go
+  - /updatesubscription.go
+  - /updatesubscriptionop.go
+  - /verifierconfig.go
+  - /verifiertype.go
+  - USAGE.md
+  - convoy.go
+  - deliveryattempts.go
+  - docs/activateendpointbadrequesterror.md
+  - docs/activateendpointnotfounderror.md
+  - docs/activateendpointrequest.md
+  - docs/activateendpointresponse.md
+  - docs/activateendpointresponsebody.md
+  - docs/activateendpointunauthorizederror.md
+  - docs/alertconfiguration.md
+  - docs/amqpauth.md
+  - docs/amqpexchange.md
+  - docs/amqppubsubconfig.md
+  - docs/apikey.md
+  - docs/basicauth.md
+  - docs/batchreplayeventsbadrequesterror.md
+  - docs/batchreplayeventsdirection.md
+  - docs/batchreplayeventsnotfounderror.md
+  - docs/batchreplayeventsrequest.md
+  - docs/batchreplayeventsresponse.md
+  - docs/batchreplayeventsresponsebody.md
+  - docs/batchreplayeventsunauthorizederror.md
+  - docs/batchretryeventdeliverybadrequesterror.md
+  - docs/batchretryeventdeliverydirection.md
+  - docs/batchretryeventdeliverynotfounderror.md
+  - docs/batchretryeventdeliveryrequest.md
+  - docs/batchretryeventdeliveryresponse.md
+  - docs/batchretryeventdeliveryresponsebody.md
+  - docs/batchretryeventdeliveryunauthorizederror.md
+  - docs/broadcastevent.md
+  - docs/broadcasteventdata.md
+  - docs/bulkcreatefiltersbadrequesterror.md
+  - docs/bulkcreatefiltersnotfounderror.md
+  - docs/bulkcreatefiltersrequest.md
+  - docs/bulkcreatefiltersresponse.md
+  - docs/bulkcreatefiltersresponsebody.md
+  - docs/bulkcreatefiltersunauthorizederror.md
+  - docs/bulkupdatefilterrequest.md
+  - docs/bulkupdatefiltersbadrequesterror.md
+  - docs/bulkupdatefiltersnotfounderror.md
+  - docs/bulkupdatefiltersrequest.md
+  - docs/bulkupdatefiltersresponse.md
+  - docs/bulkupdatefiltersresponsebody.md
+  - docs/bulkupdatefiltersunauthorizederror.md
+  - docs/climetadata.md
+  - docs/createbroadcasteventbadrequesterror.md
+  - docs/createbroadcasteventnotfounderror.md
+  - docs/createbroadcasteventrequest.md
+  - docs/createbroadcasteventresponse.md
+  - docs/createbroadcasteventresponsebody.md
+  - docs/createbroadcasteventunauthorizederror.md
+  - docs/createdynamiceventbadrequesterror.md
+  - docs/createdynamiceventnotfounderror.md
+  - docs/createdynamiceventrequest.md
+  - docs/createdynamiceventresponse.md
+  - docs/createdynamiceventunauthorizederror.md
+  - docs/createendpointeventbadrequesterror.md
+  - docs/createendpointeventnotfounderror.md
+  - docs/createendpointeventrequest.md
+  - docs/createendpointeventresponse.md
+  - docs/createendpointeventresponsebody.md
+  - docs/createendpointeventunauthorizederror.md
+  - docs/createendpointfanouteventbadrequesterror.md
+  - docs/createendpointfanouteventnotfounderror.md
+  - docs/createendpointfanouteventrequest.md
+  - docs/createendpointfanouteventresponse.md
+  - docs/createendpointfanouteventresponsebody.md
+  - docs/createendpointfanouteventunauthorizederror.md
+  - docs/createevent.md
+  - docs/createeventdata.md
+  - docs/createeventtype.md
+  - docs/createeventtypebadrequesterror.md
+  - docs/createeventtypenotfounderror.md
+  - docs/createeventtyperequest.md
+  - docs/createeventtyperesponse.md
+  - docs/createeventtyperesponsebody.md
+  - docs/createeventtypeunauthorizederror.md
+  - docs/createfilterbadrequesterror.md
+  - docs/createfilternotfounderror.md
+  - docs/createfilterrequest.md
+  - docs/createfilterrequestrequest.md
+  - docs/createfilterresponse.md
+  - docs/createfilterresponsebody.md
+  - docs/createfilterunauthorizederror.md
+  - docs/createportallinkbadrequesterror.md
+  - docs/createportallinknotfounderror.md
+  - docs/createportallinkrequest.md
+  - docs/createportallinkresponse.md
+  - docs/createportallinkresponsebody.md
+  - docs/createportallinkunauthorizederror.md
+  - docs/createsource.md
+  - docs/createsourcebadrequesterror.md
+  - docs/createsourcenotfounderror.md
+  - docs/createsourcerequest.md
+  - docs/createsourceresponse.md
+  - docs/createsourceresponsebody.md
+  - docs/createsourceunauthorizederror.md
+  - docs/createsubscription.md
+  - docs/createsubscriptionbadrequesterror.md
+  - docs/createsubscriptiondeliverymode.md
+  - docs/createsubscriptionnotfounderror.md
+  - docs/createsubscriptionrequest.md
+  - docs/createsubscriptionresponse.md
+  - docs/createsubscriptionresponsebody.md
+  - docs/createsubscriptionunauthorizederror.md
+  - docs/customresponse.md
+  - docs/deletefilterbadrequesterror.md
+  - docs/deletefilternotfounderror.md
+  - docs/deletefilterrequest.md
+  - docs/deletefilterresponse.md
+  - docs/deletefilterresponsebody.md
+  - docs/deletefilterunauthorizederror.md
+  - docs/deletesourcebadrequesterror.md
+  - docs/deletesourcenotfounderror.md
+  - docs/deletesourcerequest.md
+  - docs/deletesourceresponse.md
+  - docs/deletesourceresponsebody.md
+  - docs/deletesourceunauthorizederror.md
+  - docs/deletesubscriptionbadrequesterror.md
+  - docs/deletesubscriptionnotfounderror.md
+  - docs/deletesubscriptionrequest.md
+  - docs/deletesubscriptionresponse.md
+  - docs/deletesubscriptionresponsebody.md
+  - docs/deletesubscriptionunauthorizederror.md
+  - docs/deliveryattempt.md
+  - docs/deliverymode.md
+  - docs/deprecateeventtypebadrequesterror.md
+  - docs/deprecateeventtypenotfounderror.md
+  - docs/deprecateeventtyperequest.md
+  - docs/deprecateeventtyperesponse.md
+  - docs/deprecateeventtyperesponsebody.md
+  - docs/deprecateeventtypeunauthorizederror.md
+  - docs/device.md
+  - docs/devicestatus.md
+  - docs/dynamicevent.md
+  - docs/dynamiceventdata.md
+  - docs/encodingtype.md
+  - docs/endpoint.md
+  - docs/endpointauthentication.md
+  - docs/endpointauthenticationtype.md
+  - docs/endpointresponse.md
+  - docs/endpointstatus.md
+  - docs/event.md
+  - docs/eventdeliveryresponse.md
+  - docs/eventdeliverystatus.md
+  - docs/eventresponse.md
+  - docs/eventstatus.md
+  - docs/eventtyperesponse.md
+  - docs/expiresecret.md
+  - docs/expiresecretbadrequesterror.md
+  - docs/expiresecretnotfounderror.md
+  - docs/expiresecretrequest.md
+  - docs/expiresecretresponse.md
+  - docs/expiresecretresponsebody.md
+  - docs/expiresecretunauthorizederror.md
+  - docs/fanoutevent.md
+  - docs/fanouteventdata.md
+  - docs/filterconfiguration.md
+  - docs/filterresponse.md
+  - docs/filterschema.md
+  - docs/forceresendeventdeliveriesbadrequesterror.md
+  - docs/forceresendeventdeliveriesnotfounderror.md
+  - docs/forceresendeventdeliveriesrequest.md
+  - docs/forceresendeventdeliveriesresponse.md
+  - docs/forceresendeventdeliveriesresponsebody.md
+  - docs/forceresendeventdeliveriesunauthorizederror.md
+  - docs/fs.md
+  - docs/functionrequest.md
+  - docs/functionresponse.md
+  - docs/generateportaltokenbadrequesterror.md
+  - docs/generateportaltokennotfounderror.md
+  - docs/generateportaltokenrequest.md
+  - docs/generateportaltokenresponse.md
+  - docs/generateportaltokenresponsebody.md
+  - docs/generateportaltokenunauthorizederror.md
+  - docs/getdeliveryattemptbadrequesterror.md
+  - docs/getdeliveryattemptnotfounderror.md
+  - docs/getdeliveryattemptrequest.md
+  - docs/getdeliveryattemptresponse.md
+  - docs/getdeliveryattemptresponsebody.md
+  - docs/getdeliveryattemptsbadrequesterror.md
+  - docs/getdeliveryattemptsnotfounderror.md
+  - docs/getdeliveryattemptsrequest.md
+  - docs/getdeliveryattemptsresponse.md
+  - docs/getdeliveryattemptsresponsebody.md
+  - docs/getdeliveryattemptsunauthorizederror.md
+  - docs/getdeliveryattemptunauthorizederror.md
+  - docs/getendpointeventbadrequesterror.md
+  - docs/getendpointeventnotfounderror.md
+  - docs/getendpointeventrequest.md
+  - docs/getendpointeventresponse.md
+  - docs/getendpointeventresponsebody.md
+  - docs/getendpointeventunauthorizederror.md
+  - docs/geteventdeliveriespagedbadrequesterror.md
+  - docs/geteventdeliveriespageddata.md
+  - docs/geteventdeliveriespageddirection.md
+  - docs/geteventdeliveriespagednotfounderror.md
+  - docs/geteventdeliveriespagedrequest.md
+  - docs/geteventdeliveriespagedresponse.md
+  - docs/geteventdeliveriespagedresponsebody.md
+  - docs/geteventdeliveriespagedunauthorizederror.md
+  - docs/geteventdeliverybadrequesterror.md
+  - docs/geteventdeliverynotfounderror.md
+  - docs/geteventdeliveryrequest.md
+  - docs/geteventdeliveryresponse.md
+  - docs/geteventdeliveryresponsebody.md
+  - docs/geteventdeliveryunauthorizederror.md
+  - docs/geteventspagedbadrequesterror.md
+  - docs/geteventspageddata.md
+  - docs/geteventspageddirection.md
+  - docs/geteventspagednotfounderror.md
+  - docs/geteventspagedrequest.md
+  - docs/geteventspagedresponse.md
+  - docs/geteventspagedresponsebody.md
+  - docs/geteventspagedunauthorizederror.md
+  - docs/geteventtypesbadrequesterror.md
+  - docs/geteventtypesnotfounderror.md
+  - docs/geteventtypesrequest.md
+  - docs/geteventtypesresponse.md
+  - docs/geteventtypesresponsebody.md
+  - docs/geteventtypesunauthorizederror.md
+  - docs/getfilterbadrequesterror.md
+  - docs/getfilternotfounderror.md
+  - docs/getfilterrequest.md
+  - docs/getfilterresponse.md
+  - docs/getfilterresponsebody.md
+  - docs/getfiltersbadrequesterror.md
+  - docs/getfiltersnotfounderror.md
+  - docs/getfiltersrequest.md
+  - docs/getfiltersresponse.md
+  - docs/getfiltersresponsebody.md
+  - docs/getfiltersunauthorizederror.md
+  - docs/getfilterunauthorizederror.md
+  - docs/getmetaeventbadrequesterror.md
+  - docs/getmetaeventnotfounderror.md
+  - docs/getmetaeventrequest.md
+  - docs/getmetaeventresponse.md
+  - docs/getmetaeventresponsebody.md
+  - docs/getmetaeventspagedbadrequesterror.md
+  - docs/getmetaeventspageddata.md
+  - docs/getmetaeventspageddirection.md
+  - docs/getmetaeventspagednotfounderror.md
+  - docs/getmetaeventspagedrequest.md
+  - docs/getmetaeventspagedresponse.md
+  - docs/getmetaeventspagedresponsebody.md
+  - docs/getmetaeventspagedunauthorizederror.md
+  - docs/getmetaeventunauthorizederror.md
+  - docs/getportallinkbadrequesterror.md
+  - docs/getportallinknotfounderror.md
+  - docs/getportallinkrequest.md
+  - docs/getportallinkresponse.md
+  - docs/getportallinkresponsebody.md
+  - docs/getportallinkunauthorizederror.md
+  - docs/getsourcebadrequesterror.md
+  - docs/getsourcenotfounderror.md
+  - docs/getsourcerequest.md
+  - docs/getsourceresponse.md
+  - docs/getsourceresponsebody.md
+  - docs/getsourceunauthorizederror.md
+  - docs/getsubscriptionbadrequesterror.md
+  - docs/getsubscriptionnotfounderror.md
+  - docs/getsubscriptionrequest.md
+  - docs/getsubscriptionresponse.md
+  - docs/getsubscriptionresponsebody.md
+  - docs/getsubscriptionsbadrequesterror.md
+  - docs/getsubscriptionsdata.md
+  - docs/getsubscriptionsdirection.md
+  - docs/getsubscriptionsnotfounderror.md
+  - docs/getsubscriptionsrequest.md
+  - docs/getsubscriptionsresponse.md
+  - docs/getsubscriptionsresponsebody.md
+  - docs/getsubscriptionsunauthorizederror.md
+  - docs/getsubscriptionunauthorizederror.md
+  - docs/googlepubsubconfig.md
+  - docs/hmac.md
+  - docs/httpmetadata.md
+  - docs/ids.md
+  - docs/importopenapispec.md
+  - docs/importopenapispecbadrequesterror.md
+  - docs/importopenapispecnotfounderror.md
+  - docs/importopenapispecrequest.md
+  - docs/importopenapispecresponse.md
+  - docs/importopenapispecresponsebody.md
+  - docs/importopenapispecunauthorizederror.md
+  - docs/kafkaauth.md
+  - docs/kafkapubsubconfig.md
+  - docs/loadportallinkspagedbadrequesterror.md
+  - docs/loadportallinkspageddata.md
+  - docs/loadportallinkspageddirection.md
+  - docs/loadportallinkspagednotfounderror.md
+  - docs/loadportallinkspagedrequest.md
+  - docs/loadportallinkspagedresponse.md
+  - docs/loadportallinkspagedresponsebody.md
+  - docs/loadportallinkspagedunauthorizederror.md
+  - docs/loadsourcespagedbadrequesterror.md
+  - docs/loadsourcespageddata.md
+  - docs/loadsourcespageddirection.md
+  - docs/loadsourcespagednotfounderror.md
+  - docs/loadsourcespagedrequest.md
+  - docs/loadsourcespagedresponse.md
+  - docs/loadsourcespagedresponsebody.md
+  - docs/loadsourcespagedunauthorizederror.md
+  - docs/metadata.md
+  - docs/metaeventattempt.md
+  - docs/metaeventresponse.md
+  - docs/object.md
+  - docs/option.md
+  - docs/paginationdata.md
+  - docs/pauseendpointbadrequesterror.md
+  - docs/pauseendpointnotfounderror.md
+  - docs/pauseendpointrequest.md
+  - docs/pauseendpointresponse.md
+  - docs/pauseendpointresponsebody.md
+  - docs/pauseendpointunauthorizederror.md
+  - docs/portallink.md
+  - docs/portallinkresponse.md
+  - docs/providerconfig.md
+  - docs/pubsubconfig.md
+  - docs/pubsubtype.md
+  - docs/ratelimitconfiguration.md
+  - docs/refreshportallinkauthtokenbadrequesterror.md
+  - docs/refreshportallinkauthtokennotfounderror.md
+  - docs/refreshportallinkauthtokenrequest.md
+  - docs/refreshportallinkauthtokenresponse.md
+  - docs/refreshportallinkauthtokenresponsebody.md
+  - docs/refreshportallinkauthtokenunauthorizederror.md
+  - docs/replayendpointeventbadrequesterror.md
+  - docs/replayendpointeventnotfounderror.md
+  - docs/replayendpointeventrequest.md
+  - docs/replayendpointeventresponse.md
+  - docs/replayendpointeventresponsebody.md
+  - docs/replayendpointeventunauthorizederror.md
+  - docs/resendeventdeliverybadrequesterror.md
+  - docs/resendeventdeliverynotfounderror.md
+  - docs/resendeventdeliveryrequest.md
+  - docs/resendeventdeliveryresponse.md
+  - docs/resendeventdeliveryresponsebody.md
+  - docs/resendeventdeliveryunauthorizederror.md
+  - docs/resendmetaeventbadrequesterror.md
+  - docs/resendmetaeventnotfounderror.md
+  - docs/resendmetaeventrequest.md
+  - docs/resendmetaeventresponse.md
+  - docs/resendmetaeventresponsebody.md
+  - docs/resendmetaeventunauthorizederror.md
+  - docs/retryconfiguration.md
+  - docs/revokeportallinkbadrequesterror.md
+  - docs/revokeportallinknotfounderror.md
+  - docs/revokeportallinkrequest.md
+  - docs/revokeportallinkresponse.md
+  - docs/revokeportallinkresponsebody.md
+  - docs/revokeportallinkunauthorizederror.md
+  - docs/sdks/deliveryattempts/README.md
+  - docs/sdks/endpoints/README.md
+  - docs/sdks/eventdeliveries/README.md
+  - docs/sdks/events/README.md
+  - docs/sdks/eventtypes/README.md
+  - docs/sdks/filters/README.md
+  - docs/sdks/metaevents/README.md
+  - docs/sdks/portallinks/README.md
+  - docs/sdks/sources/README.md
+  - docs/sdks/subscriptions/README.md
+  - docs/secret.md
+  - docs/security.md
+  - docs/source.md
+  - docs/sourceprovider.md
+  - docs/sourceresponse.md
+  - docs/sourcetype.md
+  - docs/sqspubsubconfig.md
+  - docs/strategyprovider.md
+  - docs/subscriptionresponse.md
+  - docs/subscriptiontype.md
+  - docs/testfilter.md
+  - docs/testfilterbadrequesterror.md
+  - docs/testfilternotfounderror.md
+  - docs/testfilterrequest.md
+  - docs/testfilterrequestrequest.md
+  - docs/testfilterresponse.md
+  - docs/testfilterresponsebody.md
+  - docs/testfilterresponseresponse.md
+  - docs/testfilterunauthorizederror.md
+  - docs/testsourcefunctionbadrequesterror.md
+  - docs/testsourcefunctionnotfounderror.md
+  - docs/testsourcefunctionrequest.md
+  - docs/testsourcefunctionresponse.md
+  - docs/testsourcefunctionresponsebody.md
+  - docs/testsourcefunctionunauthorizederror.md
+  - docs/testsubscriptionfilterbadrequesterror.md
+  - docs/testsubscriptionfilternotfounderror.md
+  - docs/testsubscriptionfilterrequest.md
+  - docs/testsubscriptionfilterresponse.md
+  - docs/testsubscriptionfilterresponsebody.md
+  - docs/testsubscriptionfilterunauthorizederror.md
+  - docs/testsubscriptionfunctionbadrequesterror.md
+  - docs/testsubscriptionfunctionnotfounderror.md
+  - docs/testsubscriptionfunctionrequest.md
+  - docs/testsubscriptionfunctionresponse.md
+  - docs/testsubscriptionfunctionresponsebody.md
+  - docs/testsubscriptionfunctionunauthorizederror.md
+  - docs/twitterproviderconfig.md
+  - docs/updatecustomresponse.md
+  - docs/updateeventtype.md
+  - docs/updateeventtypebadrequesterror.md
+  - docs/updateeventtypenotfounderror.md
+  - docs/updateeventtyperequest.md
+  - docs/updateeventtyperesponse.md
+  - docs/updateeventtyperesponsebody.md
+  - docs/updateeventtypeunauthorizederror.md
+  - docs/updatefilterbadrequesterror.md
+  - docs/updatefilternotfounderror.md
+  - docs/updatefilterrequest.md
+  - docs/updatefilterrequestrequest.md
+  - docs/updatefilterresponse.md
+  - docs/updatefilterresponsebody.md
+  - docs/updatefilterunauthorizederror.md
+  - docs/updateportallinkbadrequesterror.md
+  - docs/updateportallinknotfounderror.md
+  - docs/updateportallinkrequest.md
+  - docs/updateportallinkresponse.md
+  - docs/updateportallinkresponsebody.md
+  - docs/updateportallinkunauthorizederror.md
+  - docs/updatesource.md
+  - docs/updatesourcebadrequesterror.md
+  - docs/updatesourcenotfounderror.md
+  - docs/updatesourcerequest.md
+  - docs/updatesourceresponse.md
+  - docs/updatesourceresponsebody.md
+  - docs/updatesourceunauthorizederror.md
+  - docs/updatesubscription.md
+  - docs/updatesubscriptionbadrequesterror.md
+  - docs/updatesubscriptiondeliverymode.md
+  - docs/updatesubscriptionnotfounderror.md
+  - docs/updatesubscriptionrequest.md
+  - docs/updatesubscriptionresponse.md
+  - docs/updatesubscriptionresponsebody.md
+  - docs/updatesubscriptionunauthorizederror.md
+  - docs/verifierconfig.md
+  - docs/verifiertype.md
+  - endpoints.go
+  - eventdeliveries.go
+  - events.go
+  - eventtypes.go
+  - filters.go
+  - go.mod
+  - internal/config/sdkconfiguration.go
+  - internal/hooks/hooks.go
+  - internal/utils/contenttype.go
+  - internal/utils/env.go
+  - internal/utils/form.go
+  - internal/utils/headers.go
+  - internal/utils/json.go
+  - internal/utils/pathparams.go
+  - internal/utils/queryparams.go
+  - internal/utils/requestbody.go
+  - internal/utils/retries.go
+  - internal/utils/security.go
+  - internal/utils/utils.go
+  - metaevents.go
+  - optionalnullable/optionalnullable.go
+  - optionalnullable/optionalnullable_test.go
+  - options.go
+  - portallinks.go
+  - retry/config.go
+  - sources.go
+  - subscriptions.go
+  - types/bigint.go
+  - types/date.go
+  - types/datetime.go
+  - types/pointers.go
