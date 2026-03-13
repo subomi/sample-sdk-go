@@ -1,19 +1,103 @@
-## Options
+# Options
+
+## Global Options
+
+Global options are passed when initializing the SDK client and apply to all operations.
 
 ### WithServerURL
 
 WithServerURL allows providing an alternative server URL.
 
 ```go
-convoy.WithServerURL("http://api.example.com")
+convoy.WithServerURL("https://api.example.com")
 ```
 
-## WithTemplatedServerURL
+### WithTemplatedServerURL
 
 WithTemplatedServerURL allows providing an alternative server URL with templated parameters.
 
 ```go
-convoy.WithTemplatedServerURL("http://{host}:{port}", map[string]string{
+convoy.WithTemplatedServerURL("https://{host}:{port}", map[string]string{
+    "host": "api.example.com",
+    "port": "8080",
+})
+```
+
+### WithServerIndex
+
+WithServerIndex allows the overriding of the default server by index.
+
+```go
+convoy.WithServerIndex(1)
+```
+
+### WithClient
+
+WithClient allows the overriding of the default HTTP client used by the SDK.
+
+```go
+convoy.WithClient(httpClient)
+```
+
+### WithSecurity
+
+WithSecurity configures the SDK to use the provided security details.
+
+```go
+convoy.WithSecurity(/* ... */)
+```
+
+### WithSecuritySource
+
+WithSecuritySource configures the SDK to invoke the provided function on each method call to determine authentication.
+
+```go
+convoy.WithSecuritySource(/* ... */)
+```
+
+### WithRetryConfig
+
+WithRetryConfig allows setting the default retry configuration used by the SDK for all supported operations.
+
+```go
+convoy.WithRetryConfig(retry.Config{
+    Strategy: "backoff",
+    Backoff: retry.BackoffStrategy{
+        InitialInterval: 500 * time.Millisecond,
+        MaxInterval: 60 * time.Second,
+        Exponent: 1.5,
+        MaxElapsedTime: 5 * time.Minute,
+    },
+    RetryConnectionErrors: true,
+})
+```
+
+### WithTimeout
+
+WithTimeout sets the default request timeout for all operations.
+
+```go
+convoy.WithTimeout(30 * time.Second)
+```
+
+## Per-Method Options
+
+Per-method options are passed as the last argument to individual methods and override any global settings for that request.
+
+### WithMethodServerURL
+
+WithMethodServerURL allows providing an alternative server URL for a single request.
+
+```go
+convoy.WithMethodServerURL("http://api.example.com")
+```
+
+### WithMethodTemplatedServerURL
+
+WithMethodTemplatedServerURL allows providing an alternative server URL with templated parameters for a single request.
+
+```go
+convoy.WithMethodTemplatedServerURL("http://{host}:{port}", map[string]string{
     "host": "api.example.com",
     "port": "8080",
 })
@@ -21,7 +105,7 @@ convoy.WithTemplatedServerURL("http://{host}:{port}", map[string]string{
 
 ### WithRetries
 
-WithRetries allows customizing the default retry configuration. Only usable with methods that mention they support retries.
+WithRetries allows customizing the default retry configuration for a single request.
 
 ```go
 convoy.WithRetries(retry.Config{
@@ -34,4 +118,30 @@ convoy.WithRetries(retry.Config{
     },
     RetryConnectionErrors: true,
 })
+```
+
+### WithOperationTimeout
+
+WithOperationTimeout allows setting the request timeout for a single request.
+
+```go
+convoy.WithOperationTimeout(30 * time.Second)
+```
+
+### WithSetHeaders
+
+WithSetHeaders allows setting custom headers on a per-request basis. If the request already contains headers matching the provided keys, they will be overwritten.
+
+```go
+convoy.WithSetHeaders(map[string]string{
+    "X-Cache-TTL": "60",
+})
+```
+
+### WithURLOverride
+
+WithURLOverride allows overriding the default URL for an operation.
+
+```go
+convoy.WithURLOverride("/custom/path")
 ```

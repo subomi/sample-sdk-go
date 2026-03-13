@@ -1,5 +1,15 @@
 # EventDeliveryStatus
 
+## Example Usage
+
+```go
+import (
+	"github.com/frain-dev/convoy"
+)
+
+value := convoy.EventDeliveryStatusScheduled
+```
+
 
 ## Values
 

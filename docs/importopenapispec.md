@@ -5,4 +5,4 @@
 
 | Field              | Type               | Required           | Description        |
 | ------------------ | ------------------ | ------------------ | ------------------ |
-| `Spec`             | **string*          | :heavy_minus_sign: | N/A                |
+| `Spec`             | `*string`          | :heavy_minus_sign: | N/A                |

@@ -1,5 +1,4 @@
 # Subscriptions
-(*Subscriptions*)
 
 ## Overview
 
@@ -111,7 +110,7 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
 | `createSubscription`                                  | [CreateSubscription](../../createsubscription.md)     | :heavy_check_mark:                                    | Subscription details                                  |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
@@ -167,8 +166,8 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `subscriptionID`                                      | *string*                                              | :heavy_check_mark:                                    | subscription id                                       |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `subscriptionID`                                      | `string`                                              | :heavy_check_mark:                                    | subscription id                                       |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
 ### Response
@@ -223,8 +222,8 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `subscriptionID`                                      | *string*                                              | :heavy_check_mark:                                    | subscription id                                       |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `subscriptionID`                                      | `string`                                              | :heavy_check_mark:                                    | subscription id                                       |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
 ### Response
@@ -279,8 +278,8 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
-| `subscriptionID`                                      | *string*                                              | :heavy_check_mark:                                    | subscription id                                       |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `subscriptionID`                                      | `string`                                              | :heavy_check_mark:                                    | subscription id                                       |
 | `updateSubscription`                                  | [UpdateSubscription](../../updatesubscription.md)     | :heavy_check_mark:                                    | Subscription Details                                  |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
@@ -336,7 +335,7 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
 | `testFilter`                                          | [TestFilter](../../testfilter.md)                     | :heavy_check_mark:                                    | Filter Details                                        |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
@@ -392,7 +391,7 @@ func main() {
 | Parameter                                             | Type                                                  | Required                                              | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
 | `ctx`                                                 | [context.Context](https://pkg.go.dev/context#Context) | :heavy_check_mark:                                    | The context to use for the request.                   |
-| `projectID`                                           | *string*                                              | :heavy_check_mark:                                    | Project ID                                            |
+| `projectID`                                           | `string`                                              | :heavy_check_mark:                                    | Project ID                                            |
 | `functionRequest`                                     | [FunctionRequest](../../functionrequest.md)           | :heavy_check_mark:                                    | Function Details                                      |
 | `opts`                                                | [][convoy.Option](../../option.md)                    | :heavy_minus_sign:                                    | The options for this request.                         |
 
