@@ -3,16 +3,16 @@ id: 6e7b91ca-db99-42ff-94be-b5c538c41b05
 management:
   docChecksum: 786e9588f09901c0ec56f6424c5b5358
   docVersion: 24.1.4
-  speakeasyVersion: 1.753.0
-  generationVersion: 2.862.0
-  releaseVersion: 0.3.0-rc.1
-  configChecksum: 64e651858c7d1b869c5d4c16921e4bcc
+  speakeasyVersion: 1.755.1
+  generationVersion: 2.865.2
+  releaseVersion: 0.3.0-rc.2
+  configChecksum: 1c8e507e5d8c68e30d9404ad29c3555a
   repoURL: https://github.com/subomi/sample-sdk-go.git
   installationURL: https://github.com/subomi/sample-sdk-go
 persistentEdits:
-  generation_id: a440c2a9-93b9-4a24-9a6d-3cd5cda737ce
-  pristine_commit_hash: 9a6aa8ec8c9d26be07e5d6d4d590a98f47557982
-  pristine_tree_hash: d98badfb9b4d356abca0ce0cc24adfee27733374
+  generation_id: 502ffcae-8168-4a12-8511-fc827f74378b
+  pristine_commit_hash: 467ab59248ad12a885e12d4fc5953eaf1d5edc8f
+  pristine_tree_hash: 1f29053a50707a6abeff4771d36e8502e5a11c2e
 features:
   go:
     additionalDependencies: 0.1.0
@@ -109,8 +109,8 @@ trackedFiles:
     pristine_git_object: c7031bd779507e3191dfe0c0f9d3183c7b95cfc3
   convoy.go:
     id: 8a4c9bff5f0d
-    last_write_checksum: sha1:5b6d86a69178bd4d02c98d7f946f247ecfdd2e31
-    pristine_git_object: 3dce436eef8d6b5ad67b6328d902774cfaf97d4f
+    last_write_checksum: sha1:04955a773c4075f74b057bbf555ab5bd3ced0afc
+    pristine_git_object: 2c11299d0873a468b76da619f20463dbb7cf48d5
   createbroadcasteventop.go:
     id: 4fce2631dad6
     last_write_checksum: sha1:6fafc8601d581896eec9fda9d56fec51aba16e96
