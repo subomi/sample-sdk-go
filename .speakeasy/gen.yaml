@@ -33,7 +33,7 @@ generation:
     generateNewTests: true
     skipResponseBodyAssertions: false
 go:
-  version: 0.3.0-rc.1
+  version: 0.3.0-rc.2
   additionalDependencies: {}
   allowUnknownFieldsInWeakUnions: false
   baseErrorName: ConvoyError
